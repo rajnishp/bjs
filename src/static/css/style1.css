@@ -46,7 +46,7 @@ a:hover{
 
 .form-control:focus{
 	box-shadow: none;
-	border: 1px solid #58b325;
+	border: 1px solid #1ba7de;
 }
 
 .input-group-addon{
@@ -74,7 +74,7 @@ a:hover{
 }
 .logo{
 	font-size: 25px;
-	color: #58b325;
+	color: #1ba7de;
   	font-weight: 800;
   	text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ a:hover{
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
-	background-color: #58b325;
+	background-color: #1ba7de;
 	color: #FFF;
 }
 
@@ -109,11 +109,11 @@ a:hover{
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-	color: #58b325;
+	color: #1ba7de;
 }
 
 .btn-ads{
-	background-color: #58b325;
+	background-color: #1ba7de;
 }
 
 .dropdown-login{
@@ -127,7 +127,7 @@ a:hover{
 }
 
 .btn-custom{
-	background-color: #58b325;
+	background-color: #1ba7de;
 	color: #FFF;
 }
 
@@ -228,7 +228,7 @@ a:hover{
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #58b325;
+	color: #1ba7de;
 }
 
 .widget-header{
@@ -359,7 +359,7 @@ a:hover{
 
 
 .section-header{
-	color: #58b325;
+	color: #1ba7de;
 	text-transform: uppercase;	
 	border-bottom: 1px solid #DDD;
 	margin-bottom: 20px;
@@ -506,7 +506,7 @@ h2.product-title{
 	font-size: 30px;
 	font-weight: 700;
 	color: #FFF;
-	background-color: #58b325;
+	background-color: #1ba7de;
 	padding: 10px;
 	position: absolute;
 	right: 5px;
@@ -541,8 +541,8 @@ h2.product-title{
 }
 
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
-	background-color: #58b325;
-	border-color: #58b325;
+	background-color: #1ba7de;
+	border-color: #1ba7de;
 }
 
 .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover{
@@ -629,7 +629,7 @@ h2.product-title{
 }
 
 .item-price span{
-	color: #58b325;
+	color: #1ba7de;
 	font-size: 11px;
 }
 
@@ -739,7 +739,7 @@ h2.product-title{
 }
 
 .item-price-grid span{
-	color: #58b325;
+	color: #1ba7de;
 	font-size: 11px;
 }
 
@@ -783,7 +783,7 @@ h2.product-title{
 /*==============Counter================*/
 .counter{
 	padding: 20px 0;
-	background: #58b325;
+	background: #1ba7de;
 	color: #FFF;
 	text-align: center;
 	text-transform: uppercase;
