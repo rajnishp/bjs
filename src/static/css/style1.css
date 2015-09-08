@@ -13,6 +13,12 @@ a{
 	color: #777;
 }
 
+.service-request-image {
+	height: 175px;
+	max-width: 100%;
+}
+
+
 a:hover{
 	text-decoration: none;
 	color: #398110;

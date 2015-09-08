@@ -83,10 +83,10 @@ $logger -> debug ("get :: " .json_encode($_GET));
 				$homeController = new HomeController();
 				$where = $route[2];
 
-				switch ($page) {
+				switch ($where) {
 
-					case '':
-						$homeController ->  home();
+					case 'serviceRequest':
+						$homeController ->  serviceRequest();
 						break;
 					
 					default:

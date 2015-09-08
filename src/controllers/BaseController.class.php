@@ -27,7 +27,7 @@ abstract class BaseController {
 
 		$DAOFactory = new DAOFactory();
 		
-		//$this -> serviceRequestDAO = $DAOFactory->getServiceRequestDAO();
+		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestDAO();
 		
 		$this->process();
 

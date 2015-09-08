@@ -36,7 +36,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Blue Team</span></a>
+                        <a href="<?= $this -> baseUrl ?>" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Blue Team</span></a>
                     </div>
 
                     <div class="navbar-collapse collapse">
@@ -44,7 +44,7 @@
                             <li class="new-ads">
                                 <i class="fa fa-whatsapp icon-blue"></i> or 
                                 <i class="fa fa-phone icon-blue"></i>
-                                @ +91 - 8901414422 
+                                <b>@ +91 - 8901414422 </b>
                             </li>
                             <!-- <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
                             <li class="dropdown">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </header>
-            <section class="hero" style="padding-top: 100px; padding-bottom: 100px;">
+            <section class="hero" style="padding-top: 100px; padding-bottom: 80px;">
                 <div class="container text-center">
                     
                     <!-- <h2 class="hero-title">Find an Awesome Things Here</h2>
@@ -116,7 +116,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-car shortcut-icon icon-blue"></i>
+                                    <!-- <i class="fa fa-car shortcut-icon icon-blue"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/images.jpeg" >
                                     <h3>Maid</h3>
                                 </a>
                                 <!-- <span class="total-items">234,567</span> -->
@@ -125,7 +126,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-motorcycle shortcut-icon icon-green"></i>
+                                    <!-- <i class="fa fa-motorcycle shortcut-icon icon-green"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg">
                                     <h3>Cook</h3>
                                 </a>
                                 <!-- <span class="total-items">25,366</span> -->
@@ -134,7 +136,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-home shortcut-icon icon-brown"></i>
+                                    <!-- <i class="fa fa-home shortcut-icon icon-brown"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg">
                                     <h3>Electrician</h3>
                                 </a>
                                 <!-- <span class="total-items">252,546</span> -->
@@ -143,7 +146,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-female shortcut-icon icon-violet"></i>
+                                    <!-- <i class="fa fa-female shortcut-icon icon-violet"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg">
                                     <h3>Plumber</h3>
                                 </a>
                                <!--  <span class="total-items">52,546</span> -->
@@ -152,7 +156,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i>
+                                    <!-- <i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg">
                                     <h3>Baby Sitter</h3>
                                 </a>
                                 <!-- <span class="total-items">215,546</span> -->
@@ -161,7 +166,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i>
+                                    <!-- <i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securitygard.jpeg">
                                     <h3>Security Guard</h3>
                                 </a>
                                 <!-- <span class="total-items">415,546</span> -->
@@ -170,7 +176,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-gears shortcut-icon icon-light-blue"></i>
+                                    <!-- <i class="fa fa-gears shortcut-icon icon-light-blue"></i> -->
+                                    <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png">
                                     <h3>Driver</h3>
                                 </a>
                                 <!-- <span class="total-items">15,546</span> -->
@@ -179,7 +186,8 @@
                         <div class="col-xs-4 col-sm-3">
                             <div class="shortcut">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <i class="fa fa-wrench shortcut-icon icon-light-green"></i>
+                                    <!-- <i class="fa fa-wrench shortcut-icon icon-light-green"></i> -->
+                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gadener.jpeg">
                                     <h3>Gardner</h3>
                                 </a>
                                 <!-- <span class="total-items">152,546</span> -->
@@ -550,26 +558,26 @@
             <div class="account-wrapper">
 
                 
-                <form onsubmit="<?= $this-> baseUrl ?>home/serviceRequest">
+                <form onSubmit="return (validateServiceRequest());">
                     <div class="form-group">
                         <input class="form-control input-lg" placeholder="Name" name="name" id="name" type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Contact Number" id="contact_number" type="text">
+                        <input class="form-control input-lg" placeholder="Contact Number" id="mobile" type="text">
                     </div>
                     <div class="form-group">
                         <input class="form-control input-lg" placeholder="Full Address" id="address" type="textarea">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="checkbox">
                             <label class="string optional" for="terms">
                                 <input id="terms" style="" type="checkbox">
                                 <a href="#">I Agree with Term and Conditions</a>
                             </label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                        <button type="submit" class="btn btn-block btn-custom">Sign Up</button>
+                        <button type="submit" class="btn btn-block btn-custom">Submit Request</button>
                     </div>
                 </form>
                     
@@ -580,7 +588,6 @@
         <!--Modal footer-->
         <div class="modal-footer">
           <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
-          <button class="btn btn-primary">Submit Request</button>
         </div>
       </div>
     </div>
@@ -616,6 +623,81 @@
             }
         });
     });
+</script>
+
+<script type="text/javascript">
+    
+    function genericEmptyFieldValidator(fields){
+        returnBool = true;
+        $.each(fields, function( index, value ) {
+          console.log(value);
+          if($('#'+value).val() == "" || $('#'+value).val() == null){
+            $('#'+value).keypress(function() {
+                genericEmptyFieldValidator([value]);
+            });
+
+            $('#'+value).css("border-color", "red");
+            
+            returnBool = false;
+          }else{
+            $('#'+value).css("border-color", "blue");
+          }
+        });
+
+        return returnBool;
+    }
+
+    function postServiceRequest(fields) {
+        var dataString = "";
+
+        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() ;
+
+        alert(dataString); //return false;
+
+        $.ajax({
+            type: "POST",
+            url: "<?= $this-> baseUrl ?>" + "home/serviceRequest",
+            data: dataString,
+            cache: false,
+            success: function(result){
+                console.log("inside success");
+                alert(result);
+            },
+            error: function(result){
+              console.log("inside error");
+              alert(result);
+            }
+        });
+        return false;
+    }
+
+    function validateServiceRequest(){
+        
+        fields = ["name", "mobile", "address"];
+
+        if (genericEmptyFieldValidator(fields)) {
+
+            var phoneVal = $('#mobile').val();
+                  
+            var stripped = phoneVal.replace(/[\(\)\.\-\ ]/g, '');    
+            if (isNaN(parseInt(stripped))) {
+                //error("Contact No", "The mobile number contains illegal characters");
+                $('#mobile').css("border", "1px solid OrangeRed");
+                return false;
+            }
+            else if (phoneVal.length < 6) {
+                //error("Contact No", "Make sure you included valid contact number");
+                $('#mobile').css("border", "1px solid OrangeRed");
+                return false;
+            }
+   
+            postServiceRequest(fields);
+        
+        }
+        return false;
+
+    }
+
 </script>
 
  </body></html>

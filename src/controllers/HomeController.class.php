@@ -29,6 +29,15 @@ class HomeController extends BaseController {
 
 	}
 
+
+	function serviceRequest (){
+		if (isset($_POST['name'], $_POST['mobile'], $_POST['address'])) {
+
+			//$serviceRequestObj = 
+		
+		}
+	}
+
 }
 
 ?>
