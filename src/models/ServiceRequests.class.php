@@ -75,6 +75,16 @@
 		function getLastUpdateOn(){
 			return $this-> lastUpdateOn;
 		}
+		function toArray() {
+			return array (
+							name => $this -> name,
+							mobile=> $this -> mobile,
+							address => $this -> address,
+							addedOn => $this -> addedOn,
+							status => $this -> status			
+						);
+		}
+
 		
 	}
 ?>

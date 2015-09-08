@@ -89,12 +89,13 @@
                     </div>
                 </div>
             </header>
-            <section class="hero" style="padding-top: 100px; padding-bottom: 80px;">
+            <section class="hero" style="padding-top: 0px; padding-bottom: 20px;">
                 <div class="container text-center">
                     
-                    <!-- <h2 class="hero-title">Find an Awesome Things Here</h2>
-                    <p class="hero-description hidden-xs">Find all things you need on Blue Team. We give you a simple way.</p>
-                    <div class="row hero-search-box">
+                    <h2 class="hero-title">Hire Now</h2>
+                   
+                    <p class="hero-description hidden-xs">High skilled, Background verified, experienced and certified professional.</p>
+                    <!-- <div class="row hero-search-box">
                         <form>
                             <div class="col-md-4 col-sm-4 search-input">
                                 <input class="form-control input-lg search-first" placeholder="I'm feeling lucky..." type="text">
@@ -549,7 +550,7 @@
           <button data-dismiss="modal" class="close" type="button">
           <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title">Submit a service Request</h4>
+          <h4 class="modal-title">Contact Details</h4>
         </div>
 
         <!--Modal body-->
@@ -566,7 +567,7 @@
                         <input class="form-control input-lg" placeholder="Contact Number" id="mobile" type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Full Address" id="address" type="textarea">
+                        <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
                     <!-- <div class="form-group">
                         <div class="checkbox">
