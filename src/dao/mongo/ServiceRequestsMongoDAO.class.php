@@ -29,6 +29,20 @@
             //$this -> customerIdDAO = new CustomerIdMappingMySqlDAO();
         }
 
+        public function insert($serviceRequestObj) {
+            global $logger, $warnings_payload;
+
+            $return = array(
+                'name' => $serviceRequestObj -> getName(),
+                'mobile' => $serviceRequestObj -> getMobile(), 
+                'address' => $serviceRequestObj -> getAddress(),
+                'status' => 0,
+                'added_on' => date("Y-m-d H:i:s"),
+            );
+
+            //return $return;
+        }
+
 		public function insert($customerObj, $raw = null) {
             global $logger, $warnings_payload;
 

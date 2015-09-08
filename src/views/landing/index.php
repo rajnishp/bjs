@@ -527,8 +527,8 @@
         <ul class="pull-left footer-menu">
             <li>
                 <a href="#"> Home </a>
-                <a href="http://themes.gie-art.com/Blue Team/about.html"> About us </a>
-                <a href="http://themes.gie-art.com/Blue Team/contact.html"> Contact us </a>
+                <a href="#"> About us </a>
+                <a href="#"> Contact us </a>
             </li>
         </ul>
         <ul class="pull-right footer-menu">

@@ -33,8 +33,20 @@ class HomeController extends BaseController {
 	function serviceRequest (){
 		if (isset($_POST['name'], $_POST['mobile'], $_POST['address'])) {
 
-			//$serviceRequestObj = 
-		
+			$serviceRequestObj = new ServiceRequests (
+													$_POST['name'],
+													$_POST['mobile'],
+													$_POST['address'],
+													1,
+													date("Y-m-d H:i:s")
+												);
+			try {
+				$this -> serviceRequestDAO -> insert($serviceRequestObj);				
+			}
+			catch (Exception $e){
+				
+			}
+
 		}
 	}
 

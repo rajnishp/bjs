@@ -21,7 +21,7 @@ a{
 
 a:hover{
 	text-decoration: none;
-	color: #398110;
+	color: #09639e;
 }
 
 .no-padding{
@@ -111,7 +111,7 @@ a:hover{
 }
 
 .navbar-nav > li.new-ads a:hover, .navbar-nav > li.new-ads a:focus{
-	background-color: #398110;
+	background-color: #09639e;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
@@ -138,7 +138,7 @@ a:hover{
 }
 
 .btn-custom:hover{
-	background-color: #398110;
+	background-color: #09639e;
 	color: #FFF;
 }
 
@@ -387,7 +387,7 @@ a:hover{
 }
 
 .brands li label:hover{
-	color: #398110;
+	color: #09639e;
 }
 
 /*===============Product=================*/
@@ -413,7 +413,7 @@ a:hover{
 }
 
 .product-title a:hover{
-	color: #398110;
+	color: #09639e;
 }
 
 h2.product-title{
@@ -529,7 +529,7 @@ h2.product-title{
 
 .post-price:before{
 	border-right: 10px solid transparent;
-    border-top: 10px solid #398110;
+    border-top: 10px solid #09639e;
     right: 0;
     top: 100%;
     content: "";
@@ -543,7 +543,7 @@ h2.product-title{
 }
 
 .pagination li a:hover{
-	color: #398110;
+	color: #09639e;
 }
 
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
@@ -661,7 +661,7 @@ h2.product-title{
 }
 
 .item-meta ul li a:hover{
-	color: #398110;
+	color: #09639e;
 }
 
 .item-action ul{
