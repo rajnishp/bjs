@@ -4,25 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <title>Dlapak - General Listing Template</title>
-        <link rel="stylesheet" href="css/css.css" type="text/css">
+        <title>Blue Team </title>
+        <link rel="stylesheet" href="static/css/css.css" type="text/css">
         <!-- Essential styles -->
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.css" type="text/css"> 
+        <link rel="stylesheet" href="static/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="static/css/font-awesome.css" type="text/css"> 
 
-        <!-- Dlapak styles -->
-        <link id="theme_style" type="text/css" href="css/style1.css" rel="stylesheet" media="screen">
+        <!-- Blue Team styles -->
+        <link id="theme_style" type="text/css" href="static/css/style1.css" rel="stylesheet" media="screen">
 
 
         <!-- Favicon -->
-        <link href="http://themes.gie-asdfsart.com/dlapak/assets/img/favicon.png" rel="icon" type="image/png">
+        <link href="#" rel="icon" type="image/png">
 
         <!-- Assets -->
-        <link rel="stylesheet" href="css/owl.css">
-        <link rel="stylesheet" href="css/owl_002.css">
+        <link rel="stylesheet" href="static/css/owl.css">
+        <link rel="stylesheet" href="static/css/owl_002.css">
 
         <!-- JS Library -->
-        <script src="js/jquery_002.js"></script>
+        <script src="static/js/jquery_002.js"></script>
 
     </head>
     <body>
@@ -36,19 +36,19 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="http://themes.gie-art.com/dlapak/index.html" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Dlapak</span></a>
+                        <a href="#" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Blue Team</span></a>
                     </div>
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="new-ads"><a href="http://themes.gie-art.com/dlapak/account_create_post.html" class="btn btn-ads btn-block">Advertise</a></li>
-                            <li><a href="http://themes.gie-art.com/dlapak/signup.html">Signup</a></li>
+                            <li class="new-ads">WhatsApp or Call @ +91 - 8901414422 </li>
+                            <!-- <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Pages</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://themes.gie-art.com/dlapak/account_posts.html">My Ads</a></li>
-                                    <li><a href="http://themes.gie-art.com/dlapak/account_create_post.html">Create Ads</a></li>
-                                    <li><a href="http://themes.gie-art.com/dlapak/account_profile.html">My Profile</a></li>
+                                    <li><a href="http://themes.gie-art.com/Blue Team/account_posts.html">My Ads</a></li>
+                                    <li><a href="http://themes.gie-art.com/Blue Team/account_create_post.html">Create Ads</a></li>
+                                    <li><a href="http://themes.gie-art.com/Blue Team/account_profile.html">My Profile</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -76,19 +76,20 @@
                                             </div>
                                         </div>
                                         <input class="btn btn-custom btn-block" value="Sign In" type="submit">
-                                        <a href="http://themes.gie-art.com/dlapak/forgot_password.html" class="btn-block text-center">Forgot password?</a>
+                                        <a href="http://themes.gie-art.com/Blue Team/forgot_password.html" class="btn-block text-center">Forgot password?</a>
                                     </form>                                    
                                 </div>
-                            </li>
+                            </li> -->
 
                         </ul>
                     </div>
                 </div>
             </header>
-            <section class="hero">
+            <section class="hero" style="padding-top: 100px; padding-bottom: 100px;">
                 <div class="container text-center">
-                    <h2 class="hero-title">Find an Awesome Things Here</h2>
-                    <p class="hero-description hidden-xs">Find all things you need on DLapak. We give you a simple way.</p>
+                    
+                    <!-- <h2 class="hero-title">Find an Awesome Things Here</h2>
+                    <p class="hero-description hidden-xs">Find all things you need on Blue Team. We give you a simple way.</p>
                     <div class="row hero-search-box">
                         <form>
                             <div class="col-md-4 col-sm-4 search-input">
@@ -106,67 +107,131 @@
                                 <button class="btn btn-custom btn-block btn-lg"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#">
+                                    <i class="fa fa-car shortcut-icon icon-blue"></i>
+                                </a>
+                                <a href="#"><h3>Maid</h3></a>
+                                <!-- <span class="total-items">234,567</span> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#">
+                                    <i class="fa fa-motorcycle shortcut-icon icon-green"></i>
+                                </a>
+                                <a href="#"><h3>Cook</h3></a>
+                                <!-- <span class="total-items">25,366</span> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#">
+                                    <i class="fa fa-home shortcut-icon icon-brown"></i>
+                                </a>
+                                <a href="#"><h3>Electrician</h3></a>
+                                <!-- <span class="total-items">252,546</span> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#"><i class="fa fa-female shortcut-icon icon-violet"></i></a>
+                                <a href="#"><h3>Plumber</h3></a>
+                               <!--  <span class="total-items">52,546</span> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#"><i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i></a>
+                                <a href="#"><h3>Baby Sitter</h3></a>
+                                <!-- <span class="total-items">215,546</span> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#"><i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i></a>
+                                <a href="#"><h3>Security Guard</h3></a>
+                                <!-- <span class="total-items">415,546</span> -->
+                            </div>  
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#"><i class="fa fa-gears shortcut-icon icon-light-blue"></i></a>
+                                <a href="#"><h3>Driver</h3></a>
+                                <!-- <span class="total-items">15,546</span> -->
+                            </div>  
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="shortcut">
+                                <a href="#"><i class="fa fa-wrench shortcut-icon icon-light-green"></i></a>
+                                <a href="#"><h3>Gardner</h3></a>
+                                <!-- <span class="total-items">152,546</span> -->
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="main">
+            <!-- <section class="main">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-sm-8">
                             <div class="row">
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-car shortcut-icon icon-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Car</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-car shortcut-icon icon-blue"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Car</h3></a>
                                         <span class="total-items">234,567</span>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-motorcycle shortcut-icon icon-green"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Motorcycle</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-motorcycle shortcut-icon icon-green"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Motorcycle</h3></a>
                                         <span class="total-items">25,366</span>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-home shortcut-icon icon-brown"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Property</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-home shortcut-icon icon-brown"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Property</h3></a>
                                         <span class="total-items">252,546</span>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-female shortcut-icon icon-violet"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Fashion</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-female shortcut-icon icon-violet"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Fashion</h3></a>
                                         <span class="total-items">52,546</span>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Gadget</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Gadget</h3></a>
                                         <span class="total-items">215,546</span>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Sport</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Sport</h3></a>
                                         <span class="total-items">415,546</span>
                                     </div>  
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-gears shortcut-icon icon-light-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Industry</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-gears shortcut-icon icon-light-blue"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Industry</h3></a>
                                         <span class="total-items">15,546</span>
                                     </div>  
                                 </div>
                                 <div class="col-xs-4 col-sm-3">
                                     <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-wrench shortcut-icon icon-light-green"></i></a>
-                                        <a href="http://themes.gie-art.com/dlapak/category.html"><h3>Job</h3></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-wrench shortcut-icon icon-light-green"></i></a>
+                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Job</h3></a>
                                         <span class="total-items">152,546</span>
                                     </div>  
                                 </div>
@@ -183,16 +248,16 @@
                                                     <a href="#">Featured Ads</a>
                                                 </div>
                                                 <div class="item-img-grid">
-                                                    <img alt="" src="Dlapak%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
+                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
                                                 </div>
                                                 <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/dlapak/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
                                                 </div>
                                                 <div class="item-meta">
                                                     <ul>
                                                         <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/dlapak/category.html">Electronics</a> , <a href="http://themes.gie-art.com/dlapak/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
                                                         <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
                                                     </ul>
                                                 </div>
@@ -204,7 +269,7 @@
                                                     <div class="item-action-grid pull-right">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/dlapak/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -215,16 +280,16 @@
                                                     <a href="#">Featured Ads</a>
                                                 </div>
                                                 <div class="item-img-grid">
-                                                    <img alt="" src="Dlapak%20-%20General%20Listing%20Template_files/product-6.jpg" class="img-responsive img-center">
+                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-6.jpg" class="img-responsive img-center">
                                                 </div>
                                                 <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/dlapak/detail.html"><h4>Samsung Tab 3 V 116</h4></a>
+                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Samsung Tab 3 V 116</h4></a>
                                                 </div>
                                                 <div class="item-meta">
                                                     <ul>
                                                         <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/dlapak/category.html">Electronics</a> , <a href="http://themes.gie-art.com/dlapak/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
                                                         <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
                                                     </ul>
                                                 </div>
@@ -236,7 +301,7 @@
                                                     <div class="item-action-grid pull-right">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/dlapak/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -244,16 +309,16 @@
                                         </div></div><div style="width: 250px;" class="owl-item"><div class="item">
                                             <div class="item-ads-grid highlight-ads">
                                                 <div class="item-img-grid">
-                                                    <img alt="" src="Dlapak%20-%20General%20Listing%20Template_files/product-7.jpg" class="img-responsive img-center">
+                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-7.jpg" class="img-responsive img-center">
                                                 </div>
                                                 <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/dlapak/detail.html"><h4>Sony Experia Z2 LTE</h4></a>
+                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Sony Experia Z2 LTE</h4></a>
                                                 </div>
                                                 <div class="item-meta">
                                                     <ul>
                                                         <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/dlapak/category.html">Electronics</a> , <a href="http://themes.gie-art.com/dlapak/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
                                                         <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
                                                     </ul>
                                                 </div>
@@ -265,7 +330,7 @@
                                                     <div class="item-action-grid pull-right">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/dlapak/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -276,16 +341,16 @@
                                                     <a href="#">Featured Ads</a>
                                                 </div>
                                                 <div class="item-img-grid">
-                                                    <img alt="" src="Dlapak%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
+                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
                                                 </div>
                                                 <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/dlapak/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
                                                 </div>
                                                 <div class="item-meta">
                                                     <ul>
                                                         <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/dlapak/category.html">Electronics</a> , <a href="http://themes.gie-art.com/dlapak/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
                                                         <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
                                                     </ul>
                                                 </div>
@@ -297,7 +362,7 @@
                                                     <div class="item-action-grid pull-right">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/dlapak/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -308,16 +373,16 @@
                                                     <a href="#">Featured Ads</a>
                                                 </div>
                                                 <div class="item-img-grid">
-                                                    <img alt="" src="Dlapak%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
+                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
                                                 </div>
                                                 <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/dlapak/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
                                                 </div>
                                                 <div class="item-meta">
                                                     <ul>
                                                         <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/dlapak/category.html">Electronics</a> , <a href="http://themes.gie-art.com/dlapak/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/dlapak/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
+                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
                                                         <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
                                                     </ul>
                                                 </div>
@@ -329,7 +394,7 @@
                                                     <div class="item-action-grid pull-right">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/dlapak/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -395,12 +460,12 @@
                                 </div>
                             </div>
                             <div class="banner-widget">
-                                <img src="Dlapak%20-%20General%20Listing%20Template_files/600x275.png" alt="banner" class="img-responsive">
+                                <img src="Blue Team%20-%20General%20Listing%20Template_files/600x275.png" alt="banner" class="img-responsive">
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <div class="counter">
                 <div class="container">
                     <div class="row">
@@ -439,13 +504,13 @@
         <div class="container">
         <ul class="pull-left footer-menu">
             <li>
-                <a href="http://themes.gie-art.com/dlapak/index.html"> Home </a>
-                <a href="http://themes.gie-art.com/dlapak/about.html"> About us </a>
-                <a href="http://themes.gie-art.com/dlapak/contact.html"> Contact us </a>
+                <a href="#"> Home </a>
+                <a href="http://themes.gie-art.com/Blue Team/about.html"> About us </a>
+                <a href="http://themes.gie-art.com/Blue Team/contact.html"> Contact us </a>
             </li>
         </ul>
         <ul class="pull-right footer-menu">
-            <li> © 2015 Dlapak </li>
+            <li> © 2015 Blue Team </li>
         </ul>
         </div>
     </div>
