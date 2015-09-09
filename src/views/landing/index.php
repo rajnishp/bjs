@@ -37,7 +37,9 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button> -->
-                        <a href="<?= $this -> baseUrl ?>" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Blue Team</span></a>
+                        <a href="<?= $this -> baseUrl ?>" class="navbar-brand" style="padding-top: 0px;"><span class="logo">
+                        <!-- <i class="fa fa-recycle"></i> --> 
+                        <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"> Blue Team</span></a>
 
                         <div class="pull-right">
                             <ul class="nav navbar-nav navbar-right">
