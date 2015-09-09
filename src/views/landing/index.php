@@ -29,24 +29,35 @@
         <div class="wrapper">
             <header class="navbar navbar-default navbar-fixed-top navbar-top">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <div class="navbar-header" style="width: 98%;">
+                        <!-- <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </button>
+                        </button> -->
                         <a href="<?= $this -> baseUrl ?>" class="navbar-brand"><span class="logo"><i class="fa fa-recycle"></i> Blue Team</span></a>
-                    </div>
 
-                    <div class="navbar-collapse collapse">
+                        <div class="pull-right">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="new-ads">
+                                    <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
+                                    <i class="fa fa-phone shortcut-icon icon-blue"></i>
+                                    <b style="font-size: 25px; color: #1ba7de">  +91 - 8901414422 </b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                    
+                                    
+                    <!-- <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="new-ads">
                                 <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
                                 <i class="fa fa-phone shortcut-icon icon-blue"></i>
                                 <b style="font-size: 25px; color: #1ba7de">  +91 - 8901414422 </b>
                             </li>
-                            <!-- <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
+                            <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Pages</a>
                                 <ul class="dropdown-menu">
@@ -83,10 +94,10 @@
                                         <a href="http://themes.gie-art.com/Blue Team/forgot_password.html" class="btn-block text-center">Forgot password?</a>
                                     </form>                                    
                                 </div>
-                            </li> -->
+                            </li>
 
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </header>
             <section class="hero" style="padding-top: 0px; padding-bottom: 20px;">
@@ -94,7 +105,7 @@
                     
                     <h2 class="hero-title">Hire Now</h2>
                    
-                    <p class="hero-description hidden-xs">High skilled, Background verified, experienced and certified professional.</p>
+                    <p class="hero-description">High skilled, Background verified, experienced and certified professional.</p>
                     <!-- <div class="row hero-search-box">
                         <form>
                             <div class="col-md-4 col-sm-4 search-input">
@@ -114,7 +125,7 @@
                         </form>
                     </div> -->
                     <div class="row">
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Maid">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-car shortcut-icon icon-blue"></i> -->
@@ -124,7 +135,7 @@
                                 <!-- <span class="total-items">234,567</span> -->
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Cook">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-motorcycle shortcut-icon icon-green"></i> -->
@@ -134,7 +145,7 @@
                                 <!-- <span class="total-items">25,366</span> -->
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut"  id="Electrician">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-home shortcut-icon icon-brown"></i> -->
@@ -144,7 +155,7 @@
                                 <!-- <span class="total-items">252,546</span> -->
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Plumber">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-female shortcut-icon icon-violet"></i> -->
@@ -154,7 +165,7 @@
                                <!--  <span class="total-items">52,546</span> -->
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Baby Sitter">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i> -->
@@ -164,7 +175,7 @@
                                 <!-- <span class="total-items">215,546</span> -->
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Security Guard">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i> -->
@@ -174,7 +185,7 @@
                                 <!-- <span class="total-items">415,546</span> -->
                             </div>  
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Driver">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-gears shortcut-icon icon-light-blue"></i> -->
@@ -184,7 +195,7 @@
                                 <!-- <span class="total-items">15,546</span> -->
                             </div>  
                         </div>
-                        <div class="col-xs-4 col-sm-3">
+                        <div class="col-xs-6 col-sm-3">
                             <div class="shortcut" id="Gardener">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-wrench shortcut-icon icon-light-green"></i> -->
@@ -569,6 +580,9 @@
                     <div class="form-group">
                         <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
+
+                    <span id = "post_request_status"></span>
+
                     <!-- <div class="form-group">
                         <div class="checkbox">
                             <label class="string optional" for="terms">
@@ -581,6 +595,7 @@
                         <button type="submit" class="btn btn-block btn-custom">Submit Request</button>
                     </div>
                 </form>
+
                     
             </div> <!-- /.account-wrapper -->
           
@@ -588,7 +603,7 @@
 
         <!--Modal footer-->
         <div class="modal-footer">
-          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+          <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
         </div>
       </div>
     </div>
@@ -597,6 +612,7 @@
 <script src="<?= $this-> baseUrl ?>static/js/bootstrap.js"></script>
 <script src="<?= $this-> baseUrl ?>static/js/owl.js"></script>
 <script src="<?= $this-> baseUrl ?>static/js/jquery.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -650,6 +666,9 @@
     }
 
     function postServiceRequest(fields, hire_type) {
+        
+        $('span[id^="post_request_status"]').empty();
+
         var dataString = "";
 
         dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
@@ -660,12 +679,22 @@
             data: dataString,
             cache: false,
             success: function(result){
+                $("#name").val("");
+                $("#mobile").val("");
+                $("#address").val("");
                 console.log("inside success");
-                //alert(result);
+                $("#post_request_status").append("Thanks for your request. Our team will respond to your request within 24 hours.");
+                setTimeout(function () {
+                  $('span[id^="post_request_status"]').empty();
+                  $("#close_modal").click();
+                }, 10000);
             },
             error: function(result){
               console.log("inside error");
-              //alert(result);
+              $("#post_request_status").append(result);
+                setTimeout(function () {
+                  $('span[id^="post_request_status"]').empty();
+                }, 10000);
             }
         });
         return false;
