@@ -11,16 +11,18 @@
 		private $name;
 		private $mobile;
 		private $address;
+		private $type;
 		private $status;
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $mobile, $address, $status, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $mobile, $address, $type, $status, $addedOn, $lastUpdateOn, $uid = null) {
 			
 			$this -> uid = $uid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
 			$this -> address = $address;
+			$this -> type = $type;
 			$this -> status = $status;
 			$this -> addedOn = $addedOn;
 			$this -> lastUpdateOn = $lastUpdateOn;
@@ -62,6 +64,13 @@
 			return $this-> address;
 		}
 
+		function setType($type){
+			$this -> type = $type;
+		}
+		function getType(){
+			return $this-> type;
+		}
+
 		function setAddedOn($addedOn){
 			$this -> addedOn = $addedOn;
 		}
@@ -75,16 +84,17 @@
 		function getLastUpdateOn(){
 			return $this-> lastUpdateOn;
 		}
+
 		function toArray() {
 			return array (
 							name => $this -> name,
 							mobile=> $this -> mobile,
 							address => $this -> address,
-							addedOn => $this -> addedOn,
-							status => $this -> status			
+							type => $this -> type,
+							status => $this -> status,
+							addedOn => $this -> addedOn									
 						);
 		}
 
-		
 	}
 ?>
