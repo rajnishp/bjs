@@ -569,6 +569,9 @@
                     <div class="form-group">
                         <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
+
+                    <span id = "forget_email_status"></span>
+
                     <!-- <div class="form-group">
                         <div class="checkbox">
                             <label class="string optional" for="terms">
@@ -581,6 +584,7 @@
                         <button type="submit" class="btn btn-block btn-custom">Submit Request</button>
                     </div>
                 </form>
+
                     
             </div> <!-- /.account-wrapper -->
           
@@ -650,6 +654,9 @@
     }
 
     function postServiceRequest(fields, hire_type) {
+        
+        $('span[id^="forget_email_status"]').empty();
+
         var dataString = "";
 
         dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
@@ -661,11 +668,17 @@
             cache: false,
             success: function(result){
                 console.log("inside success");
-                //alert(result);
+                $("#forget_email_status").append("Thanks for your request. Our team will respond to your request within 24 hours.");
+                setTimeout(function () {
+                  $('span[id^="forget_email_status"]').empty();
+                }, 10000);
             },
             error: function(result){
               console.log("inside error");
-              //alert(result);
+              $("#forget_email_status").append(result);
+                setTimeout(function () {
+                  $('span[id^="forget_email_status"]').empty();
+                }, 10000);
             }
         });
         return false;
