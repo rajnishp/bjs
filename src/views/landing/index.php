@@ -566,7 +566,7 @@
         </div>
 
         <!--Modal body-->
-        <div class="modal-body">
+        <div class="modal-body" id="modal_body_form">
 
             <div class="account-wrapper">
 
@@ -578,6 +578,7 @@
                     <div class="form-group">
                         <input class="form-control input-lg" placeholder="Contact Number" id="mobile" type="text">
                     </div>
+                    <span id = "mobile_status"></span>
                     <div class="form-group">
                         <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
@@ -602,6 +603,16 @@
           
         </div>
 
+        <div class="modal-body" id="modal_result_show">
+            <span>
+                <div class='jumbotron' style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
+                    <p align='center'> Thanks for your request submission.<br>
+                                    Our team will respond to your request within 24 hours.<br>
+                    <br><a data-dismiss='modal' href='#'>Go Back</a></p>
+                </div>
+            </span>
+        </div>
+
         <!--Modal footer-->
         <div class="modal-footer">
           <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
@@ -617,6 +628,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
+        $("#modal_result_show").hide();
         // ===========Featured Owl Carousel============
         if ($(".owl-carousel-featured").length > 0) {
             $(".owl-carousel-featured").owlCarousel({
@@ -684,11 +696,18 @@
                 $("#mobile").val("");
                 $("#address").val("");
                 console.log("inside success");
-                $("#post_request_status").append("Thanks for your request. Our team will respond to your request within 24 hours.");
+/*                $("#post_request_status").append("");
                 setTimeout(function () {
                   $('span[id^="post_request_status"]').empty();
                   $("#close_modal").click();
-                }, 10000);
+                }, 10000);*/
+                $("#modal_body_form").hide();
+                $("#modal_result_show").show();
+                setTimeout(function () {
+                    $("#modal_body_form").show();
+                    $("#modal_result_show").hide();
+                    $("#close_modal").click();
+                }, 1000000);
             },
             error: function(result){
               console.log("inside error");
@@ -707,6 +726,8 @@
     });
 
     function validateServiceRequest(){
+
+        $('span[id^="mobile_status"]').empty();
         
         fields = ["name", "mobile", "address"];
 
@@ -718,17 +739,15 @@
             if (isNaN(parseInt(stripped))) {
                 //error("Contact No", "The mobile number contains illegal characters");
                 $('#mobile').css("border", "1px solid OrangeRed");
+                $('#mobile_status').append("<font style= 'color: red;'>*Enter valid mobile number. </font>");
                 return false;
             }
             else if (phoneVal.length != 10) {
                 //error("Contact No", "Make sure you included valid contact number");
                 $('#mobile').css("border", "1px solid OrangeRed");
+                $('#mobile_status').append("<font style= 'color: red;'>*Enter 10 digit  mobile number. </font>");
                 return false;
             }
-
-                  
-            
-            console.log(hire_type);
    
             postServiceRequest(fields, hire_type);
         
