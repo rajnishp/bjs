@@ -713,6 +713,7 @@
             },
             error: function(result){
               console.log("inside error");
+              console.log(result);
               $("#post_request_status").append(result);
                 setTimeout(function () {
                   $('span[id^="post_request_status"]').empty();
