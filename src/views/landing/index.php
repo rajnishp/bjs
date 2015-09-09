@@ -42,9 +42,9 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="new-ads">
-                                <i class="fa fa-whatsapp icon-blue"></i> or 
-                                <i class="fa fa-phone icon-blue"></i>
-                                <b>@ +91 - 8901414422 </b>
+                                <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
+                                <i class="fa fa-phone shortcut-icon icon-blue"></i>
+                                <b style="font-size: 25px; color: #1ba7de">  +91 - 8901414422 </b>
                             </li>
                             <!-- <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
                             <li class="dropdown">
@@ -89,12 +89,13 @@
                     </div>
                 </div>
             </header>
-            <section class="hero" style="padding-top: 100px; padding-bottom: 80px;">
+            <section class="hero" style="padding-top: 0px; padding-bottom: 20px;">
                 <div class="container text-center">
                     
-                    <!-- <h2 class="hero-title">Find an Awesome Things Here</h2>
-                    <p class="hero-description hidden-xs">Find all things you need on Blue Team. We give you a simple way.</p>
-                    <div class="row hero-search-box">
+                    <h2 class="hero-title">Hire Now</h2>
+                   
+                    <p class="hero-description hidden-xs">High skilled, Background verified, experienced and certified professional.</p>
+                    <!-- <div class="row hero-search-box">
                         <form>
                             <div class="col-md-4 col-sm-4 search-input">
                                 <input class="form-control input-lg search-first" placeholder="I'm feeling lucky..." type="text">
@@ -114,7 +115,7 @@
                     </div> -->
                     <div class="row">
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Maid">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-car shortcut-icon icon-blue"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/images.jpeg" >
@@ -124,7 +125,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Cook">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-motorcycle shortcut-icon icon-green"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg">
@@ -134,7 +135,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut"  id="Electrician">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-home shortcut-icon icon-brown"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg">
@@ -144,7 +145,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Plumber">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-female shortcut-icon icon-violet"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg">
@@ -154,7 +155,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Baby Sitter">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg">
@@ -164,7 +165,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Security Guard">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securitygard.jpeg">
@@ -174,7 +175,7 @@
                             </div>  
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Driver">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-gears shortcut-icon icon-light-blue"></i> -->
                                     <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png">
@@ -184,11 +185,11 @@
                             </div>  
                         </div>
                         <div class="col-xs-4 col-sm-3">
-                            <div class="shortcut">
+                            <div class="shortcut" id="Gardener">
                                 <a href="#" data-target="#service_request" data-toggle="modal">
                                     <!-- <i class="fa fa-wrench shortcut-icon icon-light-green"></i> -->
                                     <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gadener.jpeg">
-                                    <h3>Gardner</h3>
+                                    <h3>Gardener</h3>
                                 </a>
                                 <!-- <span class="total-items">152,546</span> -->
                             </div>  
@@ -494,29 +495,29 @@
                         <div class="col-md-3">
                             <div class="item-counter">
                                 <span class="item-icon"><i class="fa fa-database"></i></span>
-                                <div data-refresh-interval="100" data-speed="3000" data-to="7803" data-from="0" class="item-count">7803</div>
-                                <span class="item-info">Items</span>
+                                <div data-refresh-interval="100" data-speed="3000" data-to="245" data-from="0" class="item-count">245</div>
+                                <span class="item-info">Requests</span>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="item-counter">
                                 <span class="item-icon"><i class="fa fa-user-plus"></i></span>
-                                <div data-refresh-interval="50" data-speed="5000" data-to="427" data-from="0" class="item-count">427</div>
-                                <span class="item-info">Sellers</span>
+                                <div data-refresh-interval="50" data-speed="5000" data-to="152" data-from="0" class="item-count">152</div>
+                                <span class="item-info">Users</span>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="item-counter">
                                 <span class="item-icon"><i class="fa fa-map-marker"></i></span>
-                                <div data-refresh-interval="80" data-speed="5000" data-to="639" data-from="0" class="item-count">639</div>
+                                <div data-refresh-interval="80" data-speed="5000" data-to="123" data-from="0" class="item-count">123</div>
                                 <span class="item-info">Locations</span>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="item-counter">
                                 <span class="item-icon"><i class="fa fa-users"></i></span>
-                                <div data-refresh-interval="80" data-speed="5000" data-to="1548" data-from="0" class="item-count">1548</div>
-                                <span class="item-info">Members</span>
+                                <div data-refresh-interval="80" data-speed="5000" data-to="84" data-from="0" class="item-count">84</div>
+                                <span class="item-info">Workers</span>
                             </div>
                         </div>
                     </div>
@@ -549,7 +550,7 @@
           <button data-dismiss="modal" class="close" type="button">
           <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title">Submit a service Request</h4>
+          <h4 class="modal-title">Contact Details</h4>
         </div>
 
         <!--Modal body-->
@@ -566,7 +567,7 @@
                         <input class="form-control input-lg" placeholder="Contact Number" id="mobile" type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Full Address" id="address" type="textarea">
+                        <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
                     <!-- <div class="form-group">
                         <div class="checkbox">
@@ -626,7 +627,8 @@
 </script>
 
 <script type="text/javascript">
-    
+
+
     function genericEmptyFieldValidator(fields){
         returnBool = true;
         $.each(fields, function( index, value ) {
@@ -647,12 +649,10 @@
         return returnBool;
     }
 
-    function postServiceRequest(fields) {
+    function postServiceRequest(fields, hire_type) {
         var dataString = "";
 
-        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() ;
-
-        alert(dataString); //return false;
+        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
 
         $.ajax({
             type: "POST",
@@ -661,15 +661,20 @@
             cache: false,
             success: function(result){
                 console.log("inside success");
-                alert(result);
+                //alert(result);
             },
             error: function(result){
               console.log("inside error");
-              alert(result);
+              //alert(result);
             }
         });
         return false;
     }
+
+    var hire_type = "";
+    $('.shortcut').click(function(event) {
+        hire_type = $(this).attr('id') ;
+    });
 
     function validateServiceRequest(){
         
@@ -685,13 +690,17 @@
                 $('#mobile').css("border", "1px solid OrangeRed");
                 return false;
             }
-            else if (phoneVal.length < 6) {
+            else if (phoneVal.length != 10) {
                 //error("Contact No", "Make sure you included valid contact number");
                 $('#mobile').css("border", "1px solid OrangeRed");
                 return false;
             }
+
+                  
+            
+            console.log(hire_type);
    
-            postServiceRequest(fields);
+            postServiceRequest(fields, hire_type);
         
         }
         return false;

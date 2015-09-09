@@ -6,7 +6,7 @@
 
 	interface ServiceRequestsDAO {
 		
-		public function insert($customer, $raw);
+		public function insert($customer);
 		
 		public function update($customer, $raw);	
 

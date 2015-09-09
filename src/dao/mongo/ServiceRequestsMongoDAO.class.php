@@ -4,8 +4,7 @@
      * @author rajnish
 	**/
 
-	//require_once 'dao/CustomerDAO.interface.php';
-    //require_once 'dao/CustomerIdMappingDAO.interface.php';
+	//require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
     
@@ -20,30 +19,32 @@
 	class ServiceRequestsMongoDAO implements ServiceRequestsDAO {
 
         private $mongo;
-        private $customerIdDAO;
-
+        
         public function __construct () {
             $this -> mongo = new MongoDBUtil(array('db_name' => 'blueteam'));
             $this -> mongo -> init();
 
-            //$this -> customerIdDAO = new CustomerIdMappingMySqlDAO();
         }
 
         public function insert1($serviceRequestObj) {
             global $logger, $warnings_payload;
 
-            $return = array(
-                'name' => $serviceRequestObj -> getName(),
-                'mobile' => $serviceRequestObj -> getMobile(), 
-                'address' => $serviceRequestObj -> getAddress(),
-                'status' => 0,
-                'added_on' => date("Y-m-d H:i:s"),
-            );
+            $logger -> debug("Insert the customer into `customers` collection");
+
+            $logger -> debug ("Selecting collection: customers");
+            $this -> mongo -> selectCollection('service_requests');
+
+
+            $logger -> debug("Mongo Customer: " . json_encode($serviceRequestObj->toArray() ));
+            $result = $this -> mongo -> insert($serviceRequestObj->toArray()); 
+            $logger -> debug("Result: " . $result ['ok']);
+
+            return $result;
 
             //return $return;
         }
 
-		public function insert($customerObj, $raw = null) {
+		public function insert1($customerObj, $raw = null) {
             global $logger, $warnings_payload;
 
             $customerResult = $identifierMappingsResult = $rawResult = array(); 

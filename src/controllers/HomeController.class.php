@@ -23,7 +23,7 @@ class HomeController extends BaseController {
 
 		} catch (Exception $e) {
 
-			require_once 'views/error/pages-404.php';	
+			//require_once 'views/error/pages-404.php';	
 			$this->logger->error( "Error occur :500 ".json_encode($e) );
 		}
 
@@ -31,20 +31,21 @@ class HomeController extends BaseController {
 
 
 	function serviceRequest (){
-		if (isset($_POST['name'], $_POST['mobile'], $_POST['address'])) {
+		if (isset($_POST['name'], $_POST['mobile'], $_POST['address'], $_POST['type'])) {
 
 			$serviceRequestObj = new ServiceRequests (
 													$_POST['name'],
 													$_POST['mobile'],
 													$_POST['address'],
+													$_POST['type'],
 													1,
 													date("Y-m-d H:i:s")
 												);
 			try {
-				$this -> serviceRequestDAO -> insert($serviceRequestObj);				
+				$this -> serviceRequestDAO -> insert($serviceRequestObj);
 			}
 			catch (Exception $e){
-				
+				$this->logger->error( "Error occur :500 ".json_encode($e) );
 			}
 
 		}
