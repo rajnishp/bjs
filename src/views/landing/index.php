@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/css.css" type="text/css">
         <!-- Essential styles -->
         <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/font-awesome.css" type="text/css"> 
+        <!-- <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/font-awesome.css" type="text/css"> --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
         <!-- Blue Team styles -->
         <link id="theme_style" type="text/css" href="<?= $this-> baseUrl ?>static/css/style1.css" rel="stylesheet" media="screen">
