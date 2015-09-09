@@ -29,7 +29,7 @@
             //$this -> customerIdDAO = new CustomerIdMappingMySqlDAO();
         }
 
-        public function insert($serviceRequestObj) {
+        public function insert1($serviceRequestObj) {
             global $logger, $warnings_payload;
 
             $return = array(
