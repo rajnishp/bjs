@@ -26,7 +26,7 @@
 
         }
 
-        public function insert1($serviceRequestObj) {
+        public function insert($serviceRequestObj) {
             global $logger, $warnings_payload;
 
             $logger -> debug("Insert the customer into `customers` collection");
