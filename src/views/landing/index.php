@@ -570,7 +570,7 @@
                         <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                     </div>
 
-                    <span id = "forget_email_status"></span>
+                    <span id = "post_request_status"></span>
 
                     <!-- <div class="form-group">
                         <div class="checkbox">
@@ -592,7 +592,7 @@
 
         <!--Modal footer-->
         <div class="modal-footer">
-          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+          <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
         </div>
       </div>
     </div>
@@ -601,6 +601,7 @@
 <script src="<?= $this-> baseUrl ?>static/js/bootstrap.js"></script>
 <script src="<?= $this-> baseUrl ?>static/js/owl.js"></script>
 <script src="<?= $this-> baseUrl ?>static/js/jquery.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -655,7 +656,7 @@
 
     function postServiceRequest(fields, hire_type) {
         
-        $('span[id^="forget_email_status"]').empty();
+        $('span[id^="post_request_status"]').empty();
 
         var dataString = "";
 
@@ -667,17 +668,21 @@
             data: dataString,
             cache: false,
             success: function(result){
+                $("#name").val("");
+                $("#mobile").val("");
+                $("#address").val("");
                 console.log("inside success");
-                $("#forget_email_status").append("Thanks for your request. Our team will respond to your request within 24 hours.");
+                $("#post_request_status").append("Thanks for your request. Our team will respond to your request within 24 hours.");
                 setTimeout(function () {
-                  $('span[id^="forget_email_status"]').empty();
+                  $('span[id^="post_request_status"]').empty();
+                  $("#close_modal").click();
                 }, 10000);
             },
             error: function(result){
               console.log("inside error");
-              $("#forget_email_status").append(result);
+              $("#post_request_status").append(result);
                 setTimeout(function () {
-                  $('span[id^="forget_email_status"]').empty();
+                  $('span[id^="post_request_status"]').empty();
                 }, 10000);
             }
         });
