@@ -47,7 +47,14 @@ class HomeController extends BaseController {
 			catch (Exception $e){
 				$this->logger->error( "Error occur :500 ".json_encode($e) );
 			}
-
+			echo "Your request submitted successfuly";
+		}
+		else{
+			header('HTTP/1.1 500 Internal Server Error');
+			echo "Failed to submit request";
+			die();
+			//header('Location: '.$this-> baseUrl);
+			//base url redirected for any error occurred
 		}
 	}
 
