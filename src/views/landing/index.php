@@ -157,7 +157,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-6  col-md-offset-3">
                             <h2 class="hero-title">Hire Now</h2>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6" style="padding-top: 26px;">
+                        <div class="col-md-3 col-sm-6 col-xs-6 hero-title">
                             <div class="fb-like" data-href="https://www.facebook.com/blueteam.in" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>    
                         </div>
                     </div>
