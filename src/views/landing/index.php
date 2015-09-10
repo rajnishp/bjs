@@ -578,7 +578,7 @@
                         <input class="form-control input-lg" placeholder="Name" name="name" id="name" type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Contact Number" id="mobile" type="text">
+                        <input class="form-control input-lg" placeholder="Enter 10 digit mobile number" id="mobile" type="text">
                     </div>
                     <span id = "mobile_status"></span>
                     <div class="form-group">
@@ -607,10 +607,16 @@
 
         <div class="modal-body" id="modal_result_show">
             <span>
-                <div class='jumbotron' style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
-                    <p align='center'> Thanks for your request submission.<br>
-                                    Our team will respond to your request within 24 hours.<br>
-                    <br><a data-dismiss='modal' href='#'>Go Back</a></p>
+                <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
+                    <p > <h4 align='center'> <b>Thank you <span id="client_name" ></span></b><br /> <br />
+                                    Our team will contact you in next 24 hours.<br>
+                                    </h4>
+                                    <h5  align='center'>If you have any query, you can contact 24x7 <br/>
+                                        <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
+                                        <i class="fa fa-phone shortcut-icon icon-blue"></i>
+                                        <b style="font-size: 18px; color: #1ba7de">  +91 - 8901414422 </b>
+                                    </h5>
+                            </p>        
                 </div>
             </span>
         </div>
@@ -685,7 +691,7 @@
         $('span[id^="post_request_status"]').empty();
 
         var dataString = "";
-
+        $('#client_name').html( $('#'+fields[0]).val().capitalizeFirstLetter() );
         dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
 
         $.ajax({
@@ -694,6 +700,7 @@
             data: dataString,
             cache: false,
             success: function(result){
+
                 $("#name").val("");
                 $("#mobile").val("");
                 $("#address").val("");
@@ -705,11 +712,11 @@
                 }, 10000);*/
                 $("#modal_body_form").hide();
                 $("#modal_result_show").show();
-                setTimeout(function () {
+                /*setTimeout(function () {
                     $("#modal_body_form").show();
                     $("#modal_result_show").hide();
                     $("#close_modal").click();
-                }, 1000000);
+                }, 10000);*/
             },
             error: function(result){
               console.log("inside error");
@@ -722,10 +729,15 @@
         });
         return false;
     }
-
+    
     var hire_type = "";
     $('.shortcut').click(function(event) {
         hire_type = $(this).attr('id') ;
+    });
+
+    $('#close_modal').click(function(event) {
+        $("#modal_body_form").show();
+        $("#modal_result_show").hide();
     });
 
     function validateServiceRequest(){
@@ -759,6 +771,12 @@
 
     }
 
+String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+
+
 </script>
 
- </body></html>
+</body></html>
