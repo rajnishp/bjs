@@ -4,7 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <title>Blue Team </title>
+        <title>BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price.</title>
+
+         <!-- for Google -->
+      <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+      <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
+      <meta name="author" content="BlueTeam" />
+      <meta name="copyright" content="true" />
+      <meta name="application-name" content="website" />
+
+      <!-- for Facebook -->          
+      <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+      <meta name="og:author" content="BlueTeam" />
+      <meta property="og:type" content="website"/>
+      
+      <meta name="p:domain_verify" content=""/>
+      <meta property="og:image" content='<?= $this-> baseUrl ?>static/images/logo.png' />
+      <meta property="og:url" content="<?= $this-> baseUrl ?>" />
+      <meta property="og:image:type" content="image/jpeg" />
+
+      <meta property="og:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+
+      <!-- for Twitter -->          
+      <!-- <meta name="twitter:card" content="n/a" /> -->
+      <meta name="twitter:site" content="@hireblueteam">
+      <meta name="twitter:creator" content="@hireblueteam">
+      <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
+      <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+      <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+      <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
+
+
         <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/css.css" type="text/css">
         <!-- Essential styles -->
         <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.css" type="text/css">
@@ -67,6 +97,7 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>    
                     
                                     
@@ -122,9 +153,15 @@
             </header>
             <section class="hero" style="padding-top: 0px; padding-bottom: 20px;">
                 <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6  col-md-offset-3">
+                            <h2 class="hero-title">Hire Now</h2>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6" style="padding-top: 26px;">
+                            <div class="fb-like" data-href="https://www.facebook.com/blueteam.in" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>    
+                        </div>
+                    </div>
                     
-                    <h2 class="hero-title">Hire Now</h2>
-                   
                     <p class="hero-description">High skilled, Background verified, experienced and certified professional.</p>
                     <!-- <div class="row hero-search-box">
                         <form>
@@ -562,6 +599,7 @@
                 <a href="#"> About us </a>
                 <a href="#"> Contact us </a>
             </li>
+
         </ul>
         <ul class="pull-right footer-menu">
             <li> © 2015 Blue Team </li>
@@ -806,5 +844,17 @@ po.src = '//livechat.blueteam.in/index.php/chat/getstatus/(click)/internal/(posi
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 </script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=999514663402400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 </body></html>
