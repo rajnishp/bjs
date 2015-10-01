@@ -88,6 +88,9 @@ $logger -> debug ("get :: " .json_encode($_GET));
 					case 'serviceRequest':
 						$homeController ->  serviceRequest();
 						break;
+					case 'getInTouch':
+						$homeController ->  getInTouch();
+						break;
 					
 					default:
 						$homeController -> render ();

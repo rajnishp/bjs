@@ -19,7 +19,7 @@
         "expiry": 86400
     },
     "BLUETEAM_BASE_URL" : "http://loc.blueteam.in/",
-    
+    "BLUETEAM_CONTACT_NUMBER" : "+91-8901414422",
     "BLUETEAM_FILE_ROOT" : "/var/www/dpower4/BLUETEAM_files/uploads/",
     "BLUETEAM_VERSION"  : "v0",
     "BLUETEAM_DOMAIN" : "BLUETEAM.in"

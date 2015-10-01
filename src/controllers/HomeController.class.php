@@ -15,6 +15,7 @@ class HomeController extends BaseController {
 
 	function render (){
 		$baseUrl = $this->baseUrl;
+		$blueteamContactNumber = $this->blueteamContactNumber;
 		// here its shower that user is not in session
 		 
 		try{
@@ -39,10 +40,39 @@ class HomeController extends BaseController {
 													$_POST['address'],
 													$_POST['type'],
 													1,
-													date("Y-m-d H:i:s")
+													date("Y-m-d H:i:s"),
+													0
 												);
 			try {
 				$this -> serviceRequestDAO -> insert($serviceRequestObj);
+			}
+			catch (Exception $e){
+				$this->logger->error( "Error occur :500 ".json_encode($e) );
+			}
+			echo "Your request submitted successfuly";
+		}
+		else{
+			header('HTTP/1.1 500 Internal Server Error');
+			echo "Failed to submit request";
+			die();
+			//header('Location: '.$this-> baseUrl);
+			//base url redirected for any error occurred
+		}
+	}
+
+	function getInTouch (){
+		if (isset($_POST['contactname'], $_POST['contactemail'], $_POST['contactsubject'], $_POST['contactmessage'])) {
+
+			$getInTouchObj = new GetInTouch (
+													$_POST['contactname'],
+													$_POST['contactemail'],
+													$_POST['contactsubject'],
+													$_POST['contactmessage'],
+													"not_checked",
+													date("Y-m-d H:i:s")
+												);
+			try {
+				$this -> getInTouchDAO -> insert($getInTouchObj);
 			}
 			catch (Exception $e){
 				$this->logger->error( "Error occur :500 ".json_encode($e) );

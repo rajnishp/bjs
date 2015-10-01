@@ -10,12 +10,15 @@ abstract class BaseController {
 
 	protected $baseUrl;
 	protected $serviceRequestDAO;
+	protected $getInTouchDAO;
+	protected $blueteamContactNumber;
 
 
 	function __construct (  ){
 		
 		global $configs;
 		$this->baseUrl = $configs["BLUETEAM_BASE_URL"];
+		$this->blueteamContactNumber = $configs["BLUETEAM_CONTACT_NUMBER"];
 
 		$this->url = rtrim($this->baseUrl,"/").$_SERVER[REQUEST_URI];
 
@@ -28,6 +31,7 @@ abstract class BaseController {
 		$DAOFactory = new DAOFactory();
 		
 		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestDAO();
+		$this -> getInTouchDAO = $DAOFactory->getGetInTouchDAO();
 		
 		$this->process();
 

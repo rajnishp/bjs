@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
+        
         <title>BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price.</title>
 
-         <!-- for Google -->
-      <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
-      <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
-      <meta name="author" content="BlueTeam" />
-      <meta name="copyright" content="true" />
-      <meta name="application-name" content="website" />
+        <!-- for Google -->
+        <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+        <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
+        <meta name="author" content="BlueTeam" />
+        <meta name="copyright" content="true" />
+        <meta name="application-name" content="website" />
 
-      <!-- for Facebook -->          
-      <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
-      <meta name="og:author" content="BlueTeam" />
-      <meta property="og:type" content="website"/>
+        <!-- for Facebook -->          
+        <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+        <meta name="og:author" content="BlueTeam" />
+        <meta property="og:type" content="website"/>
       
-      <meta name="p:domain_verify" content=""/>
-      <meta property="og:image" content='<?= $this-> baseUrl ?>static/images/logo.png' />
-      <meta property="og:url" content="<?= $this-> baseUrl ?>" />
-      <meta property="og:image:type" content="image/jpeg" />
+        <meta name="p:domain_verify" content=""/>
+        <meta property="og:image" content='<?= $this-> baseUrl ?>static/images/logo.png' />
+        <meta property="og:url" content="<?= $this-> baseUrl ?>" />
+        <meta property="og:image:type" content="image/jpeg" />
 
-      <meta property="og:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+        <meta property="og:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
 
-      <!-- for Twitter -->          
-      <!-- <meta name="twitter:card" content="n/a" /> -->
-      <meta name="twitter:site" content="@hireblueteam">
-      <meta name="twitter:creator" content="@hireblueteam">
-      <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
-      <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
-      <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
-      <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
+        <!-- for Twitter -->          
+        <!-- <meta name="twitter:card" content="n/a" /> -->
+        <meta name="twitter:site" content="@hireblueteam">
+        <meta name="twitter:creator" content="@hireblueteam">
+        <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
+        <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+        <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+        <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
+        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/css.css" type="text/css">
-        <!-- Essential styles -->
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.css" type="text/css">
-        <!-- <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/font-awesome.css" type="text/css"> --> 
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/fonts.css">
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.min.css">
+       <!--  <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/font-awesome.min.css">
+        --> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- Blue Team styles -->
-        <link id="theme_style" type="text/css" href="<?= $this-> baseUrl ?>static/css/style1.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/animate.css">
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/revslider2.css">
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/style.css">
+        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/responsive.css">
 
-
-        <!-- Favicon -->
+        <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-72x72.png">
@@ -63,798 +67,1238 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="<?= $this-> baseUrl ?>static/images/fevicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        
+        <!--- jQuery -->
+        <script src="<?= $this-> baseUrl ?>static/js/jquery.min.js"></script>
 
+        <!-- Queryloader -->
+        <script src="<?= $this-> baseUrl ?>static/js/queryloader2.min.js"></script>
 
-        <!-- Assets -->
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/owl.css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/owl_002.css">
-
-        <!-- JS Library -->
-        <script src="<?= $this-> baseUrl ?>static/js/jquery_002.js"></script>
-
+        <!-- Modernizr -->
+        <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
+        
+        
     </head>
-    <body>
-        <div class="wrapper">
-            <header class="navbar navbar-default navbar-fixed-top navbar-top">
-                <div class="container">
-                    <div class="navbar-header" style="width: 98%;">
-                        <!-- <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button> -->
-                        <a href="<?= $this -> baseUrl ?>" class="navbar-brand" style="padding-top: 0px;"><span class="logo">
-                        <!-- <i class="fa fa-recycle"></i> --> 
-                        <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"> Blue Team</span></a>
+    <body data-spy="scroll" data-target="#main-menu">
+        <div class="geass-loader-overlay left"></div><!-- End .geass-loader-overlay left -->
+        <div class="geass-loader-overlay right"></div><!-- End .geass-loader-overlay right -->
+        <div id="wrapper">
 
-                        <div class="pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="new-ads">
-                                    <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
-                                    <i class="fa fa-phone shortcut-icon icon-blue"></i>
-                                    <b style="font-size: 25px; color: #1ba7de">  +91 - 8901414422 </b>
-                                </li>
-                            </ul>
-                        </div>
 
-                    </div>    
-                    
-                                    
-                    <!-- <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="new-ads">
-                                <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
-                                <i class="fa fa-phone shortcut-icon icon-blue"></i>
-                                <b style="font-size: 25px; color: #1ba7de">  +91 - 8901414422 </b>
-                            </li>
-                            <li><a href="http://themes.gie-art.com/Blue Team/signup.html">Signup</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="http://themes.gie-art.com/Blue Team/account_posts.html">My Ads</a></li>
-                                    <li><a href="http://themes.gie-art.com/Blue Team/account_create_post.html">Create Ads</a></li>
-                                    <li><a href="http://themes.gie-art.com/Blue Team/account_profile.html">My Profile</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i> <strong class="caret"></strong>&nbsp;</a>
-                                <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
-                                    <form>                       
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon addon-login"><i class="fa fa-user"></i></span>
-                                                <input placeholder="Username or email" required="required" class="form-control input-login" type="text">                                            
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon addon-login"><i class="addon fa fa-lock"></i></span>
-                                                <input placeholder="Password" required="required" class="form-control input-login" type="password">                                            
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label class="string optional" for="user_remember_me">
-                                                    <input id="user_remember_me" style="" type="checkbox">
-                                                    Remember me
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <input class="btn btn-custom btn-block" value="Sign In" type="submit">
-                                        <a href="http://themes.gie-art.com/Blue Team/forgot_password.html" class="btn-block text-center">Forgot password?</a>
-                                    </form>                                    
+            <?php include_once 'views/navbar/navbar.php'; ?>
+
+            <!-- Home Section -->
+
+            
+            <section id="home" class="section gfullscreen">
+                <div id="revslider-container">
+                    <div id="revslider">
+                        <ul>
+                            <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
+                                <img src="<?= $this-> baseUrl ?>static/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
+
+                                <div class="tp-caption rev-subtitle bigger fancy customin customout"
+                                    data-x="center"
+                                    data-y="140"
+                                    data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-speed="1100"
+                                    data-start="900"
+                                    data-easing="Power3.easeInOut"
+                                    data-endspeed="600"
+                                    style="z-index: 10">Welcome To <span class="blue-color">BlueTeam</span>
                                 </div>
-                            </li>
 
+                                <div class="tp-caption rev-title bigger customin customout"
+                                    data-x="center"
+                                    data-y="220"
+                                    data-speed="1100"
+                                    data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-start="1500"
+                                    data-easing="Power3.easeInOut"
+                                    data-endspeed="600"
+                                    style="z-index: 6">
+                                    <i class="fa fa-mobile-phone"></i>
+                                        <?= $this-> blueteamContactNumber ?>
+                                </div>
+
+
+                                <div class="tp-caption rev-text customin customout"
+                                    data-x="center"
+                                    data-y="355"
+                                    data-speed ="1200"
+                                    data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-start="1900"
+                                    data-easing="Power3.easeInOut"
+                                    data-endspeed="600"
+                                    style="z-index: 12">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price
+                                </div>
+
+                                <div class="tp-caption customin customout"
+                                    data-x="center"
+                                    data-y="460"
+                                    data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-speed="1200"
+                                    data-start="2500"
+                                    data-easing="Power3.easeInOut"
+                                    data-endspeed="600"
+                                    style="z-index: 14">
+                                       <a href="#hire" class="btn btn-lightblue" title="Hire Now">
+                                       Hire Now</a>
+                                </div>
+                                
+                            </li>
                         </ul>
-                    </div> -->
-                </div>
-            </header>
-            <section class="hero" style="padding-top: 0px; padding-bottom: 20px;">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6  col-md-offset-3">
-                            <h2 class="hero-title">Hire Now</h2>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 hero-title">
-                            <div class="fb-like" data-href="https://www.facebook.com/blueteam.in" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>    
-                        </div>
-                    </div>
-                    
-                    <p class="hero-description">High skilled, Background verified, experienced and certified professional.</p>
-                    <!-- <div class="row hero-search-box">
-                        <form>
-                            <div class="col-md-4 col-sm-4 search-input">
-                                <input class="form-control input-lg search-first" placeholder="I'm feeling lucky..." type="text">
-                            </div>
-                            <div class="col-md-4 col-sm-4 search-input">
-                                        <select class="form-control input-lg search-second">
-                                            <option selected="selected">All Location</option>
-                                            <option>New York</option>
-                                            <option>Washington</option>
-                                            <option>California</option>
-                                        </select>
-                            </div>
-                            <div class="col-md-4 col-sm-4 search-input">
-                                <button class="btn btn-custom btn-block btn-lg"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div> -->
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Maid">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-car shortcut-icon icon-blue"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/images.jpeg" >
-                                    <h3>Maid</h3>
-                                </a>
-                                <!-- <span class="total-items">234,567</span> -->
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Cook">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-motorcycle shortcut-icon icon-green"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg">
-                                    <h3>Cook</h3>
-                                </a>
-                                <!-- <span class="total-items">25,366</span> -->
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut"  id="Electrician">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-home shortcut-icon icon-brown"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg">
-                                    <h3>Electrician</h3>
-                                </a>
-                                <!-- <span class="total-items">252,546</span> -->
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Plumber">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-female shortcut-icon icon-violet"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg">
-                                    <h3>Plumber</h3>
-                                </a>
-                               <!--  <span class="total-items">52,546</span> -->
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Baby Sitter">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg">
-                                    <h3>Baby Sitter</h3>
-                                </a>
-                                <!-- <span class="total-items">215,546</span> -->
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Security Guard">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securitygard.jpeg">
-                                    <h3>Security Guard</h3>
-                                </a>
-                                <!-- <span class="total-items">415,546</span> -->
-                            </div>  
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Driver">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-gears shortcut-icon icon-light-blue"></i> -->
-                                    <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png">
-                                    <h3>Driver</h3>
-                                </a>
-                                <!-- <span class="total-items">15,546</span> -->
-                            </div>  
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="shortcut" id="Gardener">
-                                <a href="#" data-target="#service_request" data-toggle="modal">
-                                    <!-- <i class="fa fa-wrench shortcut-icon icon-light-green"></i> -->
-                                    <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gadener.jpeg">
-                                    <h3>Gardener</h3>
-                                </a>
-                                <!-- <span class="total-items">152,546</span> -->
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- <section class="main">
+                    </div><!-- End revslider -->
+                </div><!-- End revslider-container -->
+            </section><!-- End #home -->
+            
+            
+            <?php /*
+            <!-- Skills Section -->
+            <div class="skills-container background-new parallax" data-stellar-background-ratio="0.15">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
+                <div class="parallax-content">
+                        <div class="container">
+                            <header class="parallax-header clearfix text-center">
+                                <h2 class="parallax-title fancy">Our Experience</h2>
+                                <p class="parallax-desc">Some of our lucky numbers, our experiences. How good we are and What do we offer...</p>
+                            </header>
+                            <div class="row">
+
+                                <div class="col-md-3 col-sm-6 col-xs-6 circle-progress-container">
+                                    <div class="circle-progress progress-animate">
+                                        <input type="text" class="knob" data-width="160"  data-height="160" data-readOnly="true" data-fgColor="#f8d61b" data-animateto="92" data-thickness=".06" data-animatespeed="1000">
+                                    </div><!-- End .circle-progress -->
+                                    <h3 class="progress-title">Web Design</h3>
+                                </div><!-- End .col-md-3 -->
+
+                                <div class="col-md-3 col-sm-6 col-xs-6 circle-progress-container">
+                                    <div class="circle-progress progress-animate">
+                                        <input type="text" class="knob" data-width="160"  data-height="160" data-readOnly="true" data-fgColor="#1bc4f5" data-animateto="86" data-thickness=".06" data-animatespeed="1400">
+                                    </div><!-- End .circle-progress -->
+                                    <h3 class="progress-title">Logo Design</h3>
+                                </div><!-- End .col-md-3 -->
+
+                                <div class="lg-margin visible-sm visible-xs hidden-xss clearfix"></div><!-- space -->
+
+                                <div class="col-md-3 col-sm-6 col-xs-6 circle-progress-container">
+                                    <div class="circle-progress progress-animate">
+                                        <input type="text" class="knob" data-width="160"  data-height="160" data-readOnly="true" data-fgColor="#c90e31" data-animateto="90" data-thickness=".06" data-animatespeed="1800">
+                                    </div><!-- End .circle-progress -->
+                                    <h3 class="progress-title">Advertising</h3>
+                                </div><!-- End .col-md-3 -->
+
+                                <div class="col-md-3 col-sm-6 col-xs-6 circle-progress-container">
+                                    <div class="circle-progress progress-animate">
+                                        <input type="text" class="knob" data-width="160"  data-height="160" data-readOnly="true" data-fgColor="#09d33d" data-animateto="100" data-thickness=".06" data-animatespeed="2200">
+                                    </div><!-- End .circle-progress -->
+                                    <h3 class="progress-title">Happy Face</h3>
+                                </div><!-- End .col-md-3 -->
+                                
+                            </div><!-- End .row -->
+                        </div><!-- End .container -->
+                </div><!-- End parallax-content -->
+            </div><!-- End .skills-container -->
+            */ ?>
+            
+            <!-- Portfolio Section -->
+            <!-- id="portfolio" changed to home and  style="padding-top: 115px;" is added for home-->
+            <section id="hire" class="section padding-bottom" style="padding-top: 115px;">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">Hire Now</h1>
+                    <p class="section-desc">
+                        High skilled, Background verified, experienced and certified professional.
+                    </p>
+                </header>
+
+                <!-- <ul id="portfolio-filter" class="container text-center clearfix ">
+                    <li><a href="index14.html#" class="active" data-filter="*">All</a></li>
+                    <li><a href="index14.html#" data-filter=".photography">Photography</a></li>
+                    <li><a href="index14.html#" data-filter=".design">Design</a></li>
+                    <li><a href="index14.html#" data-filter=".video">Video</a></li>
+                    <li><a href="index14.html#" data-filter=".illustration">Illustration</a></li>
+                </ul><!- End .portfolio-filter -->
+
+                <div id="portfolio-single-content" class="container"></div><!-- End #portfolio-single-content -->
+                
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-sm-8">
+                        <div class="col-sm-12">
+                            <div id="portfolio-wrapper">
+
+                                <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
+                                    <li class="portfolio-item animate-item photography" data-animate-time="80">
+                                        <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid">
+                                            <div class="portfolio-overlay yellowbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid">Maid</a>
+                                                        </h2>
+                                                        
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
+                                        <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook">
+                                            <div class="portfolio-overlay lightbluebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook">Cook</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item design" data-animate-time="240">
+                                        <div class="portfolio-item-wrapper shortcut"  id="Electrician">
+                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg" alt="Electrician">
+                                            <div class="portfolio-overlay redbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician">Electrician</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item photography video" data-animate-time="320">
+                                        <div class="portfolio-item-wrapper shortcut" id="Plumber">
+                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg" alt="Plumber">
+                                            <div class="portfolio-overlay lightgreenbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <!-- <a href="http://eonythemes.com/themes/wb/geass/light/projects/project4.html" title="Nam facilisis condimentum" class="open-btn"></a>
+                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
+                                                        <p class="portfolio-tags">
+                                                            <a href="index14.html#" title="Photography">Photography</a>
+                                                            <a href="index14.html#" title="Video">Video</a>
+                                                        </p> -->
+
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber">Plumber</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item illustration design" data-animate-time="400">
+                                        <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
+                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter">
+                                            <div class="portfolio-overlay bluebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter">Baby Sitter</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item design" data-animate-time="480">
+                                        <div class="portfolio-item-wrapper shortcut" id="Security Guard">
+                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.jpeg" alt="Security Guard">
+                                            <div class="portfolio-overlay greenbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard">Security Guard</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
+                                        <div class="portfolio-item-wrapper shortcut" id="Driver">
+                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver">
+                                            <div class="portfolio-overlay orangebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Driver" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Driver">Driver</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item illustration" data-animate-time="640">
+                                        <div class="portfolio-item-wrapper shortcut" id="Gardener">
+                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.jpeg" alt="Gardener">
+                                            <div class="portfolio-overlay purplebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener" class="open-btn"></a>
+                                                        <h2 class="portfolio-title">
+                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener">Gardener</a>
+                                                        </h2>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <?php /*
+                                    <li class="portfolio-item animate-item photography" data-animate-time="720">
+                                        <div class="portfolio-item-wrapper">
+                                            <img src="images/portfolio/item9.jpg" alt="item 9">
+                                            <div class="portfolio-overlay yellowbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="http://eonythemes.com/themes/wb/geass/light/projects/project9.html" title="Nam facilisis condimentum" class="open-btn"></a>
+                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
+                                                        <p class="portfolio-tags">
+                                                        <a href="index14.html#" title="Photography">Photography</a>
+                                                        </p>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item photography" data-animate-time="800">
+                                        <div class="portfolio-item-wrapper">
+                                            <img src="images/portfolio/item10.jpg" alt="item 10">
+                                            <div class="portfolio-overlay lightbluebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="http://eonythemes.com/themes/wb/geass/light/projects/project10.html" title="Nam facilisis condimentum" class="open-btn"></a>
+                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
+                                                        <p class="portfolio-tags">
+                                                        <a href="index14.html#" title="Photography">Photography</a>,
+                                                        </p>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item design video" data-animate-time="880">
+                                        <div class="portfolio-item-wrapper">
+                                            <img src="images/portfolio/item11.jpg" alt="item 11">
+                                            <div class="portfolio-overlay lightgreenbg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="http://eonythemes.com/themes/wb/geass/light/projects/project11.html" title="Nam facilisis condimentum" class="open-btn"></a>
+                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
+                                                        <p class="portfolio-tags">
+                                                        <a href="index14.html#" title="Design">Design</a>
+                                                        <a href="index14.html#" title="Video">Video</a>
+                                                        </p>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    <li class="portfolio-item animate-item photography video" data-animate-time="960">
+                                        <div class="portfolio-item-wrapper">
+                                            <img src="images/portfolio/item12.jpg" alt="item 12">
+                                            <div class="portfolio-overlay purplebg">
+                                                <div class="vcenter-container">
+                                                    <div class="vcenter">
+                                                        <a href="http://eonythemes.com/themes/wb/geass/light/projects/project12.html" title="Nam facilisis condimentum" class="open-btn"></a>
+                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
+                                                        <p class="portfolio-tags">
+                                                        <a href="index14.html#" title="Photography">Photography</a>
+                                                        <a href="index14.html#" title="Video">Video</a>
+                                                        </p>
+                                                    </div><!-- End .portfolio-overlay -->
+                                                </div><!-- End .portfolio-item-wrapper -->
+                                            </div><!-- End .portfolio-overlay -->
+                                        </div><!-- End .portfolio-item-wrapper -->
+                                    </li>
+                                    */ ?>
+                                </ul><!-- End #portfolio-item-container -->
+                            </div><!-- End .portfolio-wrapper -->
+
+                            <!-- <div class="lg-margin2x"></div>
+                            <div class="text-center">
+                                <a href="index14.html#" class="btn btn-lg btn-lightblue wow tada">Go to Portfolio</a>
+                            </div> -->
+                        </div><!-- End .col-sm-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="section">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">Services</h1>
+                    <p class="section-desc">
+                        What we offer is our best. We promise you that we will do what we are best at. Check out our services and find the one you want...
+                    </p>
+                </header>
+
+                <div id="our-services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service box yellow wow fadeInUp" data-wow-delay="0.25s">
+                                    <div class="service-header">
+                                        <span class="service-icon yellowbg"><i class="fa fa-calendar"></i></span>
+                                        <h2>Monthly</h2>
+                                    </div><!-- End .services-header -->
+                                    <p>We are providing monthly based service. You can it if you want it daily</p>
+                                </div><!-- End .service -->
+                            </div><!-- End .col-md-3 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service box orange wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="service-header">
+                                        <span class="service-icon orangebg"><i class="fa fa-calendar-check-o"></i></span>
+                                        <h2>Weekly</h2>
+                                    </div><!-- End .services-header -->
+                                    <p>If you want once in a week. You don't need to be worry. Jus call BlueTeam</p>
+                                </div><!-- End .service -->
+                            </div><!-- End .col-md-3 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service box lightblue wow fadeInUp" data-wow-delay="0.75s">
+                                    <div class="service-header">
+                                        <span class="service-icon lightbluebg"><i class="fa fa-certificate"></i></span>
+                                        <h2>On-Demand</h2>
+                                    </div><!-- End .services-header -->
+                                    <p>Forget about having trouble at any time for any of home servive. Just sit relax</p>
+                                </div><!-- End .service -->
+                            </div><!-- End .col-md-3 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service box blue wow fadeInUp" data-wow-delay="1s">
+                                    <div class="service-header">
+                                        <span class="service-icon bluebg"><i class="fa fa-random"></i></span>
+                                        <h2>Alternative</h2>
+                                    </div><!-- End .services-header -->
+                                    <p>You can take our service at anyhow suits you. Pay for only service, not for holidays. </p>
+                                </div><!-- End .service -->
+                            </div><!-- End .col-md-3 -->
+                        </div><!-- End .row -->
+
+                        
+                    </div><!-- Ênd .container -->
+
+                    <!-- <div class="sm-margin"></div><! space -->
+
+                   <!--  <div class="container text-center">
+                        <a href="index14.html#" class="btn btn-lg btn-yellow wow tada">More Services</a>
+                    </div> --> 
+                </div><!-- End #our-services -->
+            </section>
+            
+
+            <!-- Count Parallax Section -->
+            <div class="countto-container background-new parallax" data-stellar-background-ratio="0.15">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
+                <div class="parallax-content">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 count-container">
+                                <span class="count" data-from="0" data-to="132" data-speed="3000" data-refresh-interval="50">0</span>
+                                <h3 class="fancy">Requests<!--  <span>Projects</span> --></h3>
+                            </div><!-- End .count-container -->
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 count-container">
+                                <span class="count" data-from="0" data-to="121" data-speed="3000" data-refresh-interval="50">0</span>
+                                <h3 class="fancy">Users<!--  <span>Customers</span> --></h3>
+                            </div><!-- End .count-container -->
+
+                            <div class="xlg-margin visible-sm visible-xs hidden-xss clearfix"></div><!-- space -->
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 count-container">
+                                <span class="count" data-from="0" data-to="14" data-speed="3000" data-refresh-interval="50">0</span>
+                                <h3 class="fancy">Locations<!--  <span>Awards</span> --></h3>
+                            </div><!-- End .count-container -->
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 count-container">
+                                <span class="count" data-from="0" data-to="78" data-speed="3000" data-refresh-interval="50">0</span>
+                                <h3 class="fancy">Workers<!--  <span>Days</span> --></h3>
+                            </div><!-- End .count-container -->
+
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End .parallax-content -->
+            </div><!-- End .countto-container -->
+            
+            
+            <!-- About Us Section -->
+            <section id="aboutus" class="section">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">About Us</h1>
+                    <p class="section-desc">
+                        <span class="highlight blue">BlueTeam</span> aims to provide high quality, cheap, flexible bluecollar service to your doorstep.
+                    </p>
+                </header>
+                <?php /*
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3 col-xs-6 member-container">
+                            <div class="member member-second">
+                                <figure>
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/rahul.jpg" alt="eric" class="img-responsive">
+                                </figure>
+                                <div class="member-overlay">
+                                    <div class="vcenter-container">
+                                        <div class="vcenter">
+                                            <h2>Rahul Lahoria</h2>
+                                            <p>Founder</p>
+                                            <hr>
+                                            <ul class="social-icons-container small-icons">
+                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </div><!-- End .vcenter -->
+                                    </div><!-- End .vcenter-container -->
+                                </div><!-- End .member-overlay -->
+                            </div><!-- End .member -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="col-md-3 col-xs-6 member-container">
+                            <div class="member member-second">
+                                <figure>
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/rutwik.jpg" alt="barbara" class="img-responsive">
+                                </figure>
+                                <div class="member-overlay">
+                                    <div class="vcenter-container">
+                                        <div class="vcenter">
+                                            <h2>Rutwik Rao</h2>
+                                            <p>Co-founder and Legal Advisor</p>
+                                            <hr>
+                                            <ul class="social-icons-container small-icons">
+                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div><!-- End .vcenter -->
+                                    </div><!-- End .vcenter-container -->
+                                </div><!-- End .member-overlay -->
+                            </div><!-- End .member -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="col-md-3 col-xs-6 member-container">
+                            <div class="member member-second">
+                                <figure>
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/rajnish.jpg" alt="steve" class="img-responsive">
+                                </figure>
+                                <div class="member-overlay">
+                                    <div class="vcenter-container">
+                                        <div class="vcenter">
+                                            <h2>Rajnish Panwar</h2>
+                                            <p>Developer</p>
+                                            <hr>
+                                            <ul class="social-icons-container small-icons">
+                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div><!-- End .vcenter -->
+                                    </div><!-- End .vcenter-container -->
+                                </div><!-- End .member-overlay -->
+                            </div><!-- End .member -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="col-md-3 col-xs-6 member-container">
+                            <div class="member member-second">
+                                <figure>
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/jane.jpg" alt="jane" class="img-responsive">
+                                </figure>
+                                <div class="member-overlay">
+                                    <div class="vcenter-container">
+                                        <div class="vcenter">
+                                            <h2>Jane Criess</h2>
+                                            <p>Designer</p>
+                                            <hr>
+                                            <ul class="social-icons-container small-icons">
+                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </div><!-- End .vcenter -->
+                                    </div><!-- End .vcenter-container -->
+                                </div><!-- End .member-overlay -->
+                            </div><!-- End .member -->
+                        </div><!-- End .col-md-3 -->
+
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+                */ ?>
+                <div class="lg-margin visible-xs clearfix"></div><!-- space -->
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Get to know us!</h3>
+                            <p> <span class="highlight blue">BlueTeam</span> aim is to provide flexible services. So pay only for used service </p>
+                            <p>For more information about blueteam <a href="#contactus" class="scrollto add-tooltip" data-placement="bottom" title="Get in Touch Now!">Contact Us!</a></p>
+                        </div><!-- End .col-md-6 -->
+
+                        <div class="md-margin visible-xs clearfix"></div><!-- space -->
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="accordion" id="accordion3">
+                                <div class="accordion-group panel yellow">
+                                    <div class="accordion-header">
+                                        <div class="accordion-title"><i class="fa fa-briefcase"></i>What we do?</div><!-- End .accourdion-title -->
+                                        <a class="accordion-btn open" data-toggle="collapse" data-parent="#accordion3" href="#accordion3-one"></a>
+                                    </div><!-- End .accordion-header -->
+
+                                    <div class="accordion-body collapse in" id="accordion3-one">
+                                        <div class="accordion-body-wrapper">
+                                        <p>BlueTeam provides high quality, cheap, flexible with high skilled, background verification, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price.</p>
+                                        <p></p>
+                                        </div><!-- End .accordion-body-wrapper -->
+                                    </div><!-- End .accordion-body -->
+                                </div><!-- End .accordion-group --> 
+                                <div class="accordion-group panel red">
+                                    <div class="accordion-header">
+                                        <div class="accordion-title"><i class="fa fa-bar-chart"></i>How we Do?</div><!-- End .accourdion-title -->
+                                        <a class="accordion-btn" data-toggle="collapse" data-parent="#accordion3" href="#accordion3-three"></a>
+                                    </div><!-- End .accordion-header -->
+
+                                    <div class="accordion-body collapse" id="accordion3-three">
+                                        <div class="accordion-body-wrapper">
+                                            <p>We have a three step process for a verified Blueteam Worker</p>
+                                            <p>First background verification is checked out for character, honest.</p>
+                                            <p>Desired skills are verified with quality check according to experience.</p>
+                                            <p>A demo session is set, if customer doesnot like his/her service the worker will immediately replaced according to customer needs.</p>
+                                        </div><!-- End .accordion-body-wrapper -->
+                                    </div><!-- End .accordion-body -->
+                                </div><!-- End .accordion-group --> 
+                                <?php /*
+                                <div class="accordion-group panel lightblue">
+                                    <div class="accordion-header">
+                                        <div class="accordion-title"><i class="fa fa-group"></i>More About Us!</div><!-- End .accourdion-title -->
+                                        <a class="accordion-btn" data-toggle="collapse" data-parent="#accordion3" href="index14.html#accordion3-four"></a>
+                                    </div><!-- End .accordion-header -->
+
+                                    <div class="accordion-body collapse" id="accordion3-four">
+                                        <div class="accordion-body-wrapper">
+                                            <p>Pellentesque malesuada sollicitudin fermentum. Nullam ultricesposuere congue. Turpis rhoncus. Nullam pretium eleifend neque, eget congue purus tincidunt id. Duis quam vitae condimentum.</p>
+                                            <p>Sed pretium, elit eget fermentum mattis, tortor eros aliquam purus, a nisl a nulla. Proin eu orci orci, ac venenatis tortor. Donec laoreet, nu fringilla mollis, lacus mauris pellentesque odio, ut rhoncus erat risus sed.</p>
+                                        </div><!-- End .accordion-body-wrapper -->
+                                    </div><!-- End .accordion-body -->
+                                </div><!-- End .accordion-group -->
+                                */ ?>
+                            </div><!-- End .accordion -->
+                        </div><!-- End .col-md-6 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+<?php /*
+                <div class="container img-container small">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="images/geass2.png" alt="Geass" class="img-responsive wow fadeInUpBig">
+                        </div><!-- End .col-md-8 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+*/ ?>
+            </section>
+            <?php /*
+            <!-- Testimonials Section -->
+            <div class="testimonials-container background-new parallax" data-stellar-background-ratio="0.15">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
+                <div class="parallax-content">
+                    <div class="container">
+                        <header class="parallax-header clearfix text-center md-margin2x">
+                            <h2 class="parallax-title fancy clear-margin">Testimonials</h2>
+                        </header>
+                        <div class="row">
+
+                            <div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
+                                <div class="owl-carousel testimonials-carousel">
+                                    <div class="testimonial">
+                                        <figure><img src="images/testimonials/dean.jpg" alt="Dean Winchester"></figure>
+                                        <p>First of all thank you very much for awesome product. What i like about you, is you don't give us only quality products, you also provide awesome supports. I am a life time customer here.</p>
+                                        <span class="testimonial-owner">Dean Winchester - <span>Ceo of Parke</span></span>
+                                    </div><!-- End .testimonial -->
+
+                                    <div class="testimonial">
+                                        <figure><img src="images/testimonials/jane.jpg" alt="Jane Watson"></figure>
+                                        <p>I have used Geass’s services for the last three years. I have three sources of income - one from my rental property, one from my full time job and the other from my investments..</p>
+                                        <span class="testimonial-owner">Jane Watson - <span>Developer of Cacky</span></span>
+                                    </div><!-- End .testimonial -->
+
+                                    <div class="testimonial">
+                                        <figure><img src="images/testimonials/sam.jpg" alt="Sam Smimsonn"></figure>
+                                        <p>Fantastic product, my sites all run super fast and the support is excellent! Thank you very much for helping our company getting better. Can't wait to wokr with you again.</p>
+                                        <span class="testimonial-owner">Sam Smimsonn - <span>Designer of Goopsy</span></span>
+                                    </div><!-- End .testimonial -->
+                                </div><!-- End. owl-carousel -->
+                            </div><!-- End .col-md-8 -->
+                            
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End parallax-content -->
+            </div><!-- End .testimonials-container -->
+            
+            <!-- Blog Section -->
+            <section id="blog" class="section">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">Blog</h1>
+                    <p class="section-desc">
+                        Follow our blog. Read our latest news and do not miss the new features. Stay in touch and share your comments with us...
+                    </p>
+                </header>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-car shortcut-icon icon-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Car</h3></a>
-                                        <span class="total-items">234,567</span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-motorcycle shortcut-icon icon-green"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Motorcycle</h3></a>
-                                        <span class="total-items">25,366</span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-home shortcut-icon icon-brown"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Property</h3></a>
-                                        <span class="total-items">252,546</span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-female shortcut-icon icon-violet"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Fashion</h3></a>
-                                        <span class="total-items">52,546</span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-mobile-phone shortcut-icon icon-dark-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Gadget</h3></a>
-                                        <span class="total-items">215,546</span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-soccer-ball-o shortcut-icon icon-orange"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Sport</h3></a>
-                                        <span class="total-items">415,546</span>
-                                    </div>  
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-gears shortcut-icon icon-light-blue"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Industry</h3></a>
-                                        <span class="total-items">15,546</span>
-                                    </div>  
-                                </div>
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="shortcut">
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-wrench shortcut-icon icon-light-green"></i></a>
-                                        <a href="http://themes.gie-art.com/Blue Team/category.html"><h3>Job</h3></a>
-                                        <span class="total-items">152,546</span>
-                                    </div>  
-                                </div>
+                                <div id="blog-container">
+                                    <article class="article lightblue wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container">
+                                                <img src="images/blog/post3.jpg" alt="post 1">
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-image-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Yusam temor eamet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illo fuga similique.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>20 July, 2014</span> at <span>11:34 am</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article red wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.2s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="../../../../../www.youtube.com/embed/ZmJ4EvOE6x0.html" allowfullscreen></iframe>
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-video-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illo fuga ore omnis.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>18 July, 2014</span> at <span>4:30 pm</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article orange wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.4s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container quote-container">
+                                                <blockquote class="orange">
+                                                    <p>Every man must decide whether he will walk in the light of creative altruism or in the darkness of destructive selfishness.</p>
+                                                    <cite>--Martin Luther King Jr.</cite>
+                                                </blockquote>
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-quote-left"></i></span>
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article blue wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.6s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container">
+                                                <img src="images/blog/post1.jpg" alt="post 1">
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-image-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illo fuga debitis.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>20 July, 2014</span> at <span>11:34 am</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article green wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.8s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="../../../../../player.vimeo.com/video/17668930%3Fcolor=ffffff.html" width="500" height="281" allowfullscreen></iframe>
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-video-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quidam tempore. Aspernatur dolores quibusdam, illo fuga  molestiae.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>18 July, 2014</span> at <span>4:30 pm</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article purple wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.2s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container">
+                                                <img src="images/blog/post2.jpg" alt="post 1">
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-image-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illo fuga similique.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>11 July, 2014</span> at <span>10:22 am</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article yellow wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.4s">
+                                        <div class="article-wrapper">
+                                            <div id="post-id" class="article-media-container carousel slide" data-ride="carousel" data-interval="7000">
+                                                <!-- Wrapper for slides -->
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img src="images/blog/post2.jpg" class="img-responsive" alt="Slider 2">
+                                                    </div><!-- End .item -->
+
+                                                    <div class="item">
+                                                        <img src="images/blog/post1.jpg" class="img-responsive" alt="Slider 1">
+                                                    </div><!-- End .item -->
+
+                                                </div><!-- End .carousel-inner -->
+
+                                                <!-- Controls -->
+                                                <a class="left carousel-control" href="index14.html#post-id" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                                                <a class="right carousel-control" href="index14.html#post-id" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-image-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illo fuga aborum.</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>13 July, 2014</span> at <span>7:30 am</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+
+                                    <article class="article lightgreen wow fadeInUpBig col-xs-12 col-sm-6 col-md-4 col-lg-3" data-wow-delay="0.6s">
+                                        <div class="article-wrapper">
+                                            <div class="article-media-container embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="../../../../../www.youtube.com/embed/FpDJhx3i9oU.html" allowfullscreen></iframe>
+                                            </div><!-- End .article-media-container -->
+                                            <div class="article-meta-container">
+                                                <span class="article-icon"><i class="fa fa-file-audio-o"></i></span>
+                                                <h2><a href="http://eonythemes.com/themes/wb/geass/light/single.html" title="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</a></h2>
+                                                <p>Omnis officia, quibusdam tempore. Aspernatur dolores quibusdam, illos adi pis minus!</p>
+                                                <div class="article-meta clearfix">
+                                                    <div class="article-meta-box article-date">in <span>09 July, 2014</span> at <span>2:30 pm</span></div>
+                                                </div><!-- End .article-meta -->
+                                            </div><!-- End .article-meta-container -->
+                                        </div><!-- End .article-wrapper -->
+                                    </article><!-- End .article -->
+                                    
+                                </div><!-- End #blog-container -->
+                            </div><!-- End .row -->
+                            <div class="xlg-margin"></div>
+                            <div class="text-center">
+                                <a href="http://eonythemes.com/themes/wb/geass/light/blog.html" class="btn btn-lg btn-red wow tada">Go to Blog</a>
                             </div>
+                        </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </section>
+            */ ?>
+            <!-- Twitterfeed Section -->
+            <div class="twitterfeed-container background-new parallax" data-stellar-background-ratio="0.15">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
+                <div class="parallax-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
+                                <span class="twitter-icon"><i class="fa fa-twitter"></i></span>
+                                <div class="twitter_feed">
+                                </div><!-- End. twitter_feed -->
+                            </div><!-- End .col-md-8 -->
+                            
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End parallax-content -->
+            </div><!-- End .twitterfeed-container -->
+
+            <?php /*
+            <!-- Pricing Section -->
+            <section id="pricing" class="section">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">Pricing</h1>
+                    <p class="section-desc">
+                        Learn our pricing policy.. Decide the service you want and learn the pricing in this section for your best interest...
+                    </p>
+                </header>
+
+                <div class="md-margin"></div><!-- space -->
+
+                <div class="container">
+                    <div class="row pricing-row">
+                        <div class="col-md-3 pricing-table-container">
+                            <div class="pricing-table">
+                                <h3 class="lightblue">Web Design</h3>
+                                <header>
+                                    <div class="price lightbluebg">
+                                        <span>$128</span>
+                                        per month
+                                    </div>
+                                </header>
+                                <ul class="pricing-list">
+                                    <li>Psd Design</li>
+                                    <li>Html5/Css3 Templates</li>
+                                    <li>Php, Asp.Net, Python</li>
+                                    <li>Wordpress</li>
+                                    <li>Drupal, Joomla etc..</li>
+                                    <li>Seo Powered</li>
+                                </ul>
+
+                                <div class="pricing-action">
+                                    <a href="index14.html#" class="btn btn-lightblue">Order now</a>
+                                </div>
+                            </div><!-- End .pricing-table -->
+                        </div><!-- End .col-md-3 -->
+                        <div class="col-md-3 pricing-table-container">
+                            <div class="pricing-table active">
+                                <h3 class="lightblue">Logo Design</h3>
+                                <header>
+                                    <div class="price yellowbg">
+                                        <span>$100</span>
+                                        per each
+                                    </div>
+                                </header>
+                                <ul class="pricing-list">
+                                    <li>Psd Design</li>
+                                    <li>Html5/Css3 Templates</li>
+                                    <li>Php, Asp.Net, Python</li>
+                                    <li>Wordpress</li>
+                                    <li>Drupal, Joomla etc..</li>
+                                    <li>Seo Powered</li>
+                                </ul>
+
+                                <div class="pricing-action">
+                                    <a href="index14.html#" class="btn btn-yellow">Order now</a>
+                                </div>
+                            </div><!-- End .pricing-table -->
+                        </div><!-- End .col-md-3 -->
+                        <div class="col-md-3 pricing-table-container">
+                            <div class="pricing-table">
+                                <h3 class="lightblue">Illustration</h3>
+                                <header>
+                                    <div class="price redbg">
+                                        <span>$299</span>
+                                        per each
+                                    </div>
+                                </header>
+                                <ul class="pricing-list">
+                                    <li>Psd Design</li>
+                                    <li>Html5/Css3 Templates</li>
+                                    <li>Php, Asp.Net, Python</li>
+                                    <li>Wordpress</li>
+                                    <li>Drupal, Joomla etc..</li>
+                                    <li>Seo Powered</li>
+                                </ul>
+
+                                <div class="pricing-action">
+                                    <a href="index14.html#" class="btn btn-red">Order now</a>
+                                </div>
+                            </div><!-- End .pricing-table -->
+                        </div><!-- End .col-md-3 -->
+                        <div class="col-md-3 pricing-table-container">
+                            <div class="pricing-table">
+                                <h3 class="lightblue">Social Media</h3>
+                                <header>
+                                    <div class="price purplebg">
+                                        <span>$88</span>
+                                        per week
+                                    </div>
+                                </header>
+                                <ul class="pricing-list">
+                                    <li>Psd Design</li>
+                                    <li>Html5/Css3 Templates</li>
+                                    <li>Php, Asp.Net, Python</li>
+                                    <li>Wordpress</li>
+                                    <li>Drupal, Joomla etc..</li>
+                                    <li>Seo Powered</li>
+                                </ul>
+
+                                <div class="pricing-action">
+                                    <a href="index14.html#" class="btn btn-purple">Order now</a>
+                                </div>
+                            </div><!-- End .pricing-table -->
+                        </div><!-- End .col-md-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </section>
+            
+            <!-- Video Background Section -->
+            <div id="videobg-container" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=kn-1D5z3-Cs',containment:'#videobg-container',startAt:0,mute:true,autoPlay:true,loop:false,opacity:1}">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
+                <div class="parallax-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 text-center">
+                                <h2 class="fancy">Geass Video Background</h2>
+                                <p>Easy to add youtube videos as a background. You just need to change the video's id and get ready to be amazed...</p>
+                            </div><!-- End .col-md-8 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End parallax-content -->
+            </div><!-- End .videobg-container -->
+            */ ?>
+            <!-- Contact Us Section -->
+            <section id="contactus" class="section">
+                <header class="container text-center">
+                    <h1 class="section-title fancy">Contact Us</h1>
+                    <p class="section-desc">
+                        Get in touch with us. We want to hear from you. Let's discuss how can we provide better support and services...
+                    </p>
+                </header>
+                <div id="map"></div><!-- End #map -->
+
+                <div class="lg-margin2x"></div><!-- space -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="contact-info-box box yellow text-center">
+                                <h3>Addresses</h3>
+                                <span class="contact-info-icon yellowbg"><i class="fa fa-map-marker"></i></span>
+                                <ul class="contact-info-list">
+                                    <li>DLF Phase IV</li>
+                                    <li>Gurgaon, India</li>
+                                </ul>
+                            </div><!-- End .contact-info-box -->
+                        </div><!-- End .col-md-4 -->
+                    
+                        <div class="col-md-4 col-sm-4">
+                            <div class="contact-info-box box lightblue text-center">
+                                <h3>Call Us</h3>
+                                <span class="contact-info-icon lightbluebg"><i class="fa fa-mobile-phone"></i></span>
+                                <ul class="contact-info-list">
+                                    <!-- <li>8901414422</li> -->
+                                    <li><?= $this-> blueteamContactNumber ?></li>
+                                </ul>
+                            </div><!-- End .contact-info-box -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="contact-info-box box red text-center">
+                                <h3>Quick Contact</h3>
+                                <span class="contact-info-icon redbg"><i class="fa fa-envelope-o"></i></span>
+                                <ul class="contact-info-list">
+                                    <li><a href="mailto:hire.blueteam.in@gmail.com">hire.blueteam.in@gmail.com</a></li>
+                                    <li><em class="highlight red">Twitter:</em> hireblueteam</li>
+                                </ul>
+                            </div><!-- End .contact-info-box -->
+                        </div><!-- End .col-md-4 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+
+                <div class="lg-margin2x hidden-sm hidden-xs"></div><!-- space -->
+                <div class="xlg-margin visible-sm visible-xs"></div><!-- space -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-10 col-md-push-2 col-sm-push-1">
+                            <h2 class="h3 text-center lg-margin">Get In Touch</h2>
+                            <form id="contact-form"  novalidate  onSubmit="return (validateGetInTouch());">
+                                <div class="form-group">
+                                    <input type="text" name="contactname" id="contactname" required class="form-control input-lg">
+                                    <span class="animated-label">Your Name *</span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group">
+                                    <input type="email" name="contactemail" id="contactemail" required class="form-control input-lg">
+                                    <span class="animated-label">Your Email *</span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group">
+                                    <input type="text" name="contactsubject" id="contactsubject" class="form-control input-lg">
+                                    <span class="animated-label">Subject *</span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group">
+                                    <textarea name="contactmessage" id="contactmessage" class="form-control input-lg" cols="30" rows="7"></textarea>
+                                    <span class="animated-label textarea-label">Your Message *</span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-lightblue btn-lg" value="Send">
+                                    <input type="reset" class="btn btn-yellow btn-lg" id="reset_form" value="Reset">
+                                </div><!-- End .form-group -->
+                            </form>
+                        </div><!-- End .col-md-8 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </section>
+
+            <footer id="footer" class="parallax" data-stellar-background-ratio="0.15">
+                <div class="overlaybg overlay-pattern1"></div><!-- End .section-overlay -->
+                <div class="section-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#home" class="footer-logo" title="BlueTeam | Hire now"><img src="<?= $this -> baseUrl ?>static/images/logo.png" width="210" alt="BlueTeam"></a>
+                            </div><!-- End .col-md-12 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+
+                    <div class="fb-like" data-href="https://www.facebook.com/blueteam.in" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+                    <div class="footer-social-icons transparent">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="section-header">
-                                        <h2>Featured</h2>
-                                    </div>
-                                    <div style="opacity: 1; display: block;" id="featured-products" class="owl-carousel owl-carousel-featured owl-theme">
-                                        <div class="owl-wrapper-outer"><div style="width: 2500px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);" class="owl-wrapper"><div style="width: 250px;" class="owl-item"><div class="item">
-                                            <div class="item-ads-grid">
-                                                <div class="item-badge-grid featured-ads">
-                                                    <a href="#">Featured Ads</a>
-                                                </div>
-                                                <div class="item-img-grid">
-                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
-                                                </div>
-                                                <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
-                                                </div>
-                                                <div class="item-meta">
-                                                    <ul>
-                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-footer">
-                                                    <div class="item-price-grid pull-left">
-                                                        <h3>$ 100</h3>
-                                                        <span>Negotiable</span>
-                                                    </div>
-                                                    <div class="item-action-grid pull-right">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>   
-                                        </div></div><div style="width: 250px;" class="owl-item"><div class="item">
-                                            <div class="item-ads-grid">
-                                                <div class="item-badge-grid premium-ads">
-                                                    <a href="#">Featured Ads</a>
-                                                </div>
-                                                <div class="item-img-grid">
-                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-6.jpg" class="img-responsive img-center">
-                                                </div>
-                                                <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Samsung Tab 3 V 116</h4></a>
-                                                </div>
-                                                <div class="item-meta">
-                                                    <ul>
-                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-footer">
-                                                    <div class="item-price-grid pull-left">
-                                                        <h3>$ 100</h3>
-                                                        <span>Negotiable</span>
-                                                    </div>
-                                                    <div class="item-action-grid pull-right">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div></div><div style="width: 250px;" class="owl-item"><div class="item">
-                                            <div class="item-ads-grid highlight-ads">
-                                                <div class="item-img-grid">
-                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-7.jpg" class="img-responsive img-center">
-                                                </div>
-                                                <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Sony Experia Z2 LTE</h4></a>
-                                                </div>
-                                                <div class="item-meta">
-                                                    <ul>
-                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-footer">
-                                                    <div class="item-price-grid pull-left">
-                                                        <h3>$ 100</h3>
-                                                        <span>Negotiable</span>
-                                                    </div>
-                                                    <div class="item-action-grid pull-right">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div></div><div style="width: 250px;" class="owl-item"><div class="item">
-                                            <div class="item-ads-grid">
-                                                <div class="item-badge-grid hot-ads">
-                                                    <a href="#">Featured Ads</a>
-                                                </div>
-                                                <div class="item-img-grid">
-                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
-                                                </div>
-                                                <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
-                                                </div>
-                                                <div class="item-meta">
-                                                    <ul>
-                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-footer">
-                                                    <div class="item-price-grid pull-left">
-                                                        <h3>$ 100</h3>
-                                                        <span>Negotiable</span>
-                                                    </div>
-                                                    <div class="item-action-grid pull-right">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div></div><div style="width: 250px;" class="owl-item"><div class="item">
-                                            <div class="item-ads-grid">
-                                                <div class="item-badge-grid featured-ads">
-                                                    <a href="#">Featured Ads</a>
-                                                </div>
-                                                <div class="item-img-grid">
-                                                    <img alt="" src="Blue Team%20-%20General%20Listing%20Template_files/product-1.jpg" class="img-responsive img-center">
-                                                </div>
-                                                <div class="item-title">
-                                                    <a href="http://themes.gie-art.com/Blue Team/detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
-                                                </div>
-                                                <div class="item-meta">
-                                                    <ul>
-                                                        <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
-                                                        <li class="item-cat"><i class="fa fa-bars"></i> <a href="http://themes.gie-art.com/Blue Team/category.html">Electronics</a> , <a href="http://themes.gie-art.com/Blue Team/category.html">Smartphone</a></li>
-                                                        <li class="item-location"><a href="http://themes.gie-art.com/Blue Team/category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                                        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-footer">
-                                                    <div class="item-price-grid pull-left">
-                                                        <h3>$ 100</h3>
-                                                        <span>Negotiable</span>
-                                                    </div>
-                                                    <div class="item-action-grid pull-right">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
-                                                            <li><a href="http://themes.gie-art.com/Blue Team/detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div></div></div></div>
-
-                                        
-
-                                        
-
-                                        
-
-                                        
-                                    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="widget">
-                                <div class="widget-header">
-                                    <h3>Quick Signup</h3>
-                                </div>
-                                <div class="widget-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" placeholder="Name" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" placeholder="Email" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control input-lg" placeholder="Password" type="password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label class="string optional" for="terms">
-                                                    <input id="terms" style="" type="checkbox">
-                                                    <a href="#">I Agree with Term and Conditions</a>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <button class="btn btn-block btn-custom">Sign Up</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <div class="widget-header">
-                                    <h3>Trends</h3>
-                                </div>
-                                <div class="widget-body">
-                                    <ul class="trends">
-                                        <li><a href="#">Smartphone &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Watch &amp; Jewelry &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Clothes &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Shoes &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Music &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Furniture &nbsp;<span class="item-numbers">(2,342)</span></a></li>
-                                        <li><a href="#">Photography &nbsp;<span class="item-numbers">(242)</span></a></li>
-                                        <li><a href="#">Web Development &nbsp;<span class="item-numbers">(2,342)</span></a></li>
+                                    <ul class="social-icons-container">
+                                        <li><a href="https://www.facebook.com/blueteam.in" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/hireblueteam" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                        <!-- <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="index14.html#" class="tumblr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Tumblr"><i class="fa fa-tumblr"></i></a></li>
+                                        <li><a href="index14.html#" class="flickr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Flickr"><i class="fa fa-flickr"></i></a></li> -->
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="banner-widget">
-                                <img src="Blue Team%20-%20General%20Listing%20Template_files/600x275.png" alt="banner" class="img-responsive">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <div class="counter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="item-counter">
-                                <span class="item-icon"><i class="fa fa-database"></i></span>
-                                <div data-refresh-interval="100" data-speed="3000" data-to="245" data-from="0" class="item-count">245</div>
-                                <span class="item-info">Requests</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="item-counter">
-                                <span class="item-icon"><i class="fa fa-user-plus"></i></span>
-                                <div data-refresh-interval="50" data-speed="5000" data-to="152" data-from="0" class="item-count">152</div>
-                                <span class="item-info">Users</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="item-counter">
-                                <span class="item-icon"><i class="fa fa-map-marker"></i></span>
-                                <div data-refresh-interval="80" data-speed="5000" data-to="123" data-from="0" class="item-count">123</div>
-                                <span class="item-info">Locations</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="item-counter">
-                                <span class="item-icon"><i class="fa fa-users"></i></span>
-                                <div data-refresh-interval="80" data-speed="5000" data-to="84" data-from="0" class="item-count">84</div>
-                                <span class="item-info">Workers</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- / .counter -->
-    </div>
-    <div class="footer">
-        <div class="container">
-        <ul class="pull-left footer-menu">
-            <li>
-                <a href="#"> Home </a>
-                <a href="#"> About us </a>
-                <a href="#"> Contact us </a>
-            </li>
+                                </div><!-- End .col-md-12 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .container -->
+                    </div><!-- End .footer-social-icons -->
 
-        </ul>
-        <ul class="pull-right footer-menu">
-            <li> © 2015 Blue Team </li>
-        </ul>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="modal fade modal-styled" id="service_request">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <!--Modal header-->
-        <div class="modal-header" >
-          <button data-dismiss="modal" class="close" type="button">
-          <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title">Contact Details</h4>
-        </div>
-
-        <!--Modal body-->
-        <div class="modal-body" id="modal_body_form">
-
-            <div class="account-wrapper">
-
-                
-                <form onSubmit="return (validateServiceRequest());">
-                    <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Name" name="name" id="name" type="text">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control input-lg" placeholder="Enter 10 digit mobile number" id="mobile" type="text">
-                    </div>
-                    <span id = "mobile_status"></span>
-                    <div class="form-group">
-                        <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
-                    </div>
-
-                    <span id = "post_request_status"></span>
-
-                    <!-- <div class="form-group">
-                        <div class="checkbox">
-                            <label class="string optional" for="terms">
-                                <input id="terms" style="" type="checkbox">
-                                <a href="#">I Agree with Term and Conditions</a>
-                            </label>
-                        </div>
-                    </div> -->
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-block btn-custom">Submit Request</button>
-                    </div>
-                </form>
-
-                    
-            </div> <!-- /.account-wrapper -->
-          
-        </div>
-
-        <div class="modal-body" id="modal_result_show">
-            <span>
-                <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
-                    <p > <h4 align='center'> <b>Thank you <span id="client_name" ></span></b><br /> <br />
-                                    Our team will contact you in next 24 hours.<br>
-                                    </h4>
-                                    <h5  align='center'>If you have any query, you can contact 24x7 <br/>
-                                        <i class="fa fa-whatsapp shortcut-icon icon-green"></i> or
-                                        <i class="fa fa-phone shortcut-icon icon-blue"></i>
-                                        <b style="font-size: 18px; color: #1ba7de">  +91 - 8901414422 </b>
-                                    </h5>
-                            </p>        
-                </div>
-            </span>
-        </div>
-
-        <!--Modal footer-->
-        <div class="modal-footer">
-          <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Essentials -->
-<script src="<?= $this-> baseUrl ?>static/js/bootstrap.js"></script>
-<script src="<?= $this-> baseUrl ?>static/js/owl.js"></script>
-<script src="<?= $this-> baseUrl ?>static/js/jquery.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $("#modal_result_show").hide();
-        // ===========Featured Owl Carousel============
-        if ($(".owl-carousel-featured").length > 0) {
-            $(".owl-carousel-featured").owlCarousel({
-                items: 3,
-                lazyLoad: true,
-                pagination: true,
-                autoPlay: 5000,
-                stopOnHover: true
-            });
-        }
-
-        // ==================Counter====================
-        $('.item-count').countTo({
-            formatter: function (value, options) {
-                return value.toFixed(options.decimals);
-            },
-            onUpdate: function (value) {
-                console.debug(this);
-            },
-            onComplete: function (value) {
-                console.debug(this);
-            }
-        });
-    });
-</script>
-
-<script type="text/javascript">
-
-
-    function genericEmptyFieldValidator(fields){
-        returnBool = true;
-        $.each(fields, function( index, value ) {
-          console.log(value);
-          if($('#'+value).val() == "" || $('#'+value).val() == null){
-            $('#'+value).keypress(function() {
-                genericEmptyFieldValidator([value]);
-            });
-
-            $('#'+value).css("border-color", "red");
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>All rights reserved &copy; <a href="http://dpower4.com" class="yellow-color" title="Dpower4" target="_blank">Dpower4&trade;</a></p>
+                                <span class="footer-date highlight red">2014</span>
+                            </div><!-- End .col-md-12 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End .section-content -->
+            </footer>
             
-            returnBool = false;
-          }else{
-            $('#'+value).css("border-color", "blue");
-          }
-        });
+        </div><!-- End #wrapper -->
 
-        return returnBool;
-    }
+        <!-- Scroll Top Button -->
+        <a href="#" id="scroll-top" class="add-tooltip" data-placement="top" title="Go to top"><i class="fa fa-angle-double-up"></i></a>
 
-    function postServiceRequest(fields, hire_type) {
-        
-        $('span[id^="post_request_status"]').empty();
 
-        var dataString = "";
-        $('#client_name').html( $('#'+fields[0]).val().capitalizeFirstLetter() );
-        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
+        <!-- Service Request Modal -->
+        <div class="modal fade modal-styled" id="service_request">
+            <div class="modal-dialog">
+              <div class="modal-content">
 
-        $.ajax({
-            type: "POST",
-            url: "<?= $this-> baseUrl ?>" + "home/serviceRequest",
-            data: dataString,
-            cache: false,
-            success: function(result){
+                <!--Modal header-->
+                <div class="modal-header" >
+                  <button data-dismiss="modal" class="close" type="button">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title">Contact Details</h4>
+                </div>
 
-                $("#name").val("");
-                $("#mobile").val("");
-                $("#address").val("");
-                console.log("inside success");
-/*                $("#post_request_status").append("");
-                setTimeout(function () {
-                  $('span[id^="post_request_status"]').empty();
-                  $("#close_modal").click();
-                }, 10000);*/
-                $("#modal_body_form").hide();
-                $("#modal_result_show").show();
-                /*setTimeout(function () {
-                    $("#modal_body_form").show();
-                    $("#modal_result_show").hide();
-                    $("#close_modal").click();
-                }, 10000);*/
-            },
-            error: function(result){
-              console.log("inside error");
-              console.log(result);
-              $("#post_request_status").append(result);
-                setTimeout(function () {
-                  $('span[id^="post_request_status"]').empty();
-                }, 10000);
-            }
-        });
-        return false;
-    }
-    
-    var hire_type = "";
-    $('.shortcut').click(function(event) {
-        hire_type = $(this).attr('id') ;
-    });
+                <!--Modal body-->
+                <div class="modal-body" id="modal_body_form">
 
-    $('#close_modal').click(function(event) {
-        $("#modal_body_form").show();
-        $("#modal_result_show").hide();
-    });
+                    <div class="account-wrapper">
 
-    function validateServiceRequest(){
+                        
+                        <form onSubmit="return (validateServiceRequest());">
+                            <div class="form-group">
+                                <input class="form-control input-lg" placeholder="Name" name="name" id="name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" placeholder="Enter 10 digit mobile number" id="mobile" type="text">
+                                <span id = "mobile_status"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
+                            </div>
 
-        $('span[id^="mobile_status"]').empty();
-        
-        fields = ["name", "mobile", "address"];
+                            <span id = "post_request_status"></span>
 
-        if (genericEmptyFieldValidator(fields)) {
+                            <!-- <div class="form-group">
+                                <div class="checkbox">
+                                    <label class="string optional" for="terms">
+                                        <input id="terms" style="" type="checkbox">
+                                        <a href="#">I Agree with Term and Conditions</a>
+                                    </label>
+                                </div>
+                            </div> -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Submit Request</button>
+                            </div>
+                        </form>
 
-            var phoneVal = $('#mobile').val();
+                            
+                    </div> <!-- /.account-wrapper -->
                   
-            var stripped = phoneVal.replace(/[\(\)\.\-\ ]/g, '');    
-            if (isNaN(parseInt(stripped))) {
-                //error("Contact No", "The mobile number contains illegal characters");
-                $('#mobile').css("border", "1px solid OrangeRed");
-                $('#mobile_status').append("<font style= 'color: red;'>*Enter valid mobile number. </font>");
-                return false;
-            }
-            else if (phoneVal.length != 10) {
-                //error("Contact No", "Make sure you included valid contact number");
-                $('#mobile').css("border", "1px solid OrangeRed");
-                $('#mobile_status').append("<font style= 'color: red;'>*Enter 10 digit  mobile number. </font>");
-                return false;
-            }
-   
-            postServiceRequest(fields, hire_type);
-        
-        }
-        return false;
+                </div>
 
-    }
+                <div class="modal-body" id="modal_result_show">
+                    <span>
+                        <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
+                            <p > <h4 align='center'> <b>Thank you <span id="client_name" style="color: #1ba7de"></span></b><br /> <br />
+                                            Our team will contact you in next 24 hours.<br>
+                                            </h4>
+                                            <h6  align='center'>If you have any query, you can contact 24x7 <br/>
+                                                <i class="fa fa-whatsapp"></i> or
+                                                <i class="fa fa-phone"></i>
+                                                <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
+                                            </h6>
+                                    </p>        
+                        </div>
+                    </span>
+                </div>
 
-String.prototype.capitalizeFirstLetter = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
+                <!--Modal footer-->
+                <div class="modal-footer">
+                  <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
+        <a href="#" data-target="#modal_get_in_touch_success" data-toggle="modal" title="Thanks for your interest"></a>
 
+        <div class="modal fade modal-styled" id="modal_get_in_touch_success">
+            <div class="modal-dialog">
+              <div class="modal-content">
 
-</script>
-<script type="text/javascript">
-var LHCChatOptions = {};
-LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'blueteam.in'};
-(function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
-var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-po.src = '//livechat.blueteam.in/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true?r='+referrer+'&l='+location;
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>
+                <div class="modal-body" id="modal_result_show">
+                    <span>
+                        <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
+                            <p> <h4 align='center'> <b>Thank you <span id="get_in_touch_contact_name" style="color: #1ba7de"></span></b><br /> <br />
+                                Our team will contact you in next 24 hours.<br>
+                                </h4>
+                                <h6  align='center'>Your message has been recieved to us.<br/><br/>
+                                    <i class="fa fa-whatsapp"></i> or
+                                    <i class="fa fa-phone"></i>
+                                    <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
+                                </h6>
+                            </p>        
+                        </div>
+                    </span>
+                </div>
 
+                <!--Modal footer-->
+                <div class="modal-footer">
+                  <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=999514663402400";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+    <?php include_once 'views/footer/footer.php'; ?>        
 
-
-</body></html>
+    
+    </body>
+</html>
