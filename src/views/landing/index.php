@@ -95,9 +95,10 @@
                     <div id="revslider">
                         <ul>
                             <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
-                                <img src="<?= $this-> baseUrl ?>static/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
-
-                                <div class="tp-caption rev-subtitle bigger fancy customin customout"
+                                
+                                <img data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
+                                
+                                <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
                                     data-x="center"
                                     data-y="140"
                                     data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
@@ -106,10 +107,9 @@
                                     data-start="900"
                                     data-easing="Power3.easeInOut"
                                     data-endspeed="600"
-                                    style="z-index: 10">Welcome To <span class="blue-color">BlueTeam</span>
+                                    style="z-index: 10">Welcome To BlueTeam
                                 </div>
-
-                                <div class="tp-caption rev-title bigger customin customout"
+                                <div class="tp-caption rev-title bigger customin customout blue-color"
                                     data-x="center"
                                     data-y="220"
                                     data-speed="1100"
@@ -122,9 +122,7 @@
                                     <i class="fa fa-mobile-phone"></i>
                                         <?= $this-> blueteamContactNumber ?>
                                 </div>
-
-
-                                <div class="tp-caption rev-text customin customout"
+                                <div class="tp-caption rev-text customin customout blue-color"
                                     data-x="center"
                                     data-y="355"
                                     data-speed ="1200"
@@ -135,7 +133,7 @@
                                     data-endspeed="600"
                                     style="z-index: 12">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price
                                 </div>
-
+                                
                                 <div class="tp-caption customin customout"
                                     data-x="center"
                                     data-y="460"
@@ -1089,6 +1087,7 @@
                                 <ul class="contact-info-list">
                                     <!-- <li>8901414422</li> -->
                                     <li><?= $this-> blueteamContactNumber ?></li>
+                                    <li>+91 9599075355</li>
                                 </ul>
                             </div><!-- End .contact-info-box -->
                         </div><!-- End .col-md-4 -->
