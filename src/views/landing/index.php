@@ -230,132 +230,61 @@
 
                                 <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
                                     <li class="portfolio-item animate-item photography" data-animate-time="80">
-                                        <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid">
-                                            <div class="portfolio-overlay yellowbg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid">Maid</a>
-                                                        </h2>
-                                                        
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid">
+                                            <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
-                                        <div class="portfolio-item-wrapper  shortcut" id="Cook">
-                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook">
-                                            <div class="portfolio-overlay lightbluebg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook">Cook</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook">
+                                            <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
+
                                     <li class="portfolio-item animate-item design" data-animate-time="240">
-                                        <div class="portfolio-item-wrapper shortcut"  id="Electrician">
-                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg" alt="Electrician">
-                                            <div class="portfolio-overlay redbg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician">Electrician</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician">
+                                            <div class="portfolio-item-wrapper shortcut"  id="Electrician">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg" alt="Electrician">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item photography video" data-animate-time="320">
-                                        <div class="portfolio-item-wrapper shortcut" id="Plumber">
-                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg" alt="Plumber">
-                                            <div class="portfolio-overlay lightgreenbg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <!-- <a href="http://eonythemes.com/themes/wb/geass/light/projects/project4.html" title="Nam facilisis condimentum" class="open-btn"></a>
-                                                        <h2 class="portfolio-title"><a href="http://eonythemes.com/themes/wb/geass/light/single-portfolio.html" title="Single Portfoli Page">Lorem ipsum dolor</a></h2>
-                                                        <p class="portfolio-tags">
-                                                            <a href="index14.html#" title="Photography">Photography</a>
-                                                            <a href="index14.html#" title="Video">Video</a>
-                                                        </p> -->
-
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber">Plumber</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber">  
+                                            <div class="portfolio-item-wrapper shortcut" id="Plumber">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg" alt="Plumber">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item illustration design" data-animate-time="400">
-                                        <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
-                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter">
-                                            <div class="portfolio-overlay bluebg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter">Baby Sitter</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter">
+                                            <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item design" data-animate-time="480">
-                                        <div class="portfolio-item-wrapper shortcut" id="Security Guard">
-                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.jpeg" alt="Security Guard">
-                                            <div class="portfolio-overlay greenbg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard">Security Guard</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard">
+                                            <div class="portfolio-item-wrapper shortcut" id="Security Guard">
+                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.jpeg" alt="Security Guard">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
-                                        <div class="portfolio-item-wrapper shortcut" id="Driver">
-                                            <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver">
-                                            <div class="portfolio-overlay orangebg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Driver" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Driver">Driver</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Driver">
+                                            <div class="portfolio-item-wrapper shortcut" id="Driver">
+                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <li class="portfolio-item animate-item illustration" data-animate-time="640">
-                                        <div class="portfolio-item-wrapper shortcut" id="Gardener">
-                                            <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.jpeg" alt="Gardener">
-                                            <div class="portfolio-overlay purplebg">
-                                                <div class="vcenter-container">
-                                                    <div class="vcenter">
-                                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener" class="open-btn"></a>
-                                                        <h2 class="portfolio-title">
-                                                            <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener">Gardener</a>
-                                                        </h2>
-                                                    </div><!-- End .portfolio-overlay -->
-                                                </div><!-- End .portfolio-item-wrapper -->
-                                            </div><!-- End .portfolio-overlay -->
-                                        </div><!-- End .portfolio-item-wrapper -->
+                                        <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener">
+                                            <div class="portfolio-item-wrapper shortcut" id="Gardener">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.jpeg" alt="Gardener">
+                                            </div><!-- End .portfolio-item-wrapper -->
+                                        </a>
                                     </li>
                                     <?php /*
                                     <li class="portfolio-item animate-item photography" data-animate-time="720">
@@ -539,7 +468,7 @@
                 <header class="container text-center">
                     <h1 class="section-title fancy">About Us</h1>
                     <p class="section-desc">
-                        <span class="highlight blue">BlueTeam</span> aims to provide high quality, cheap, flexible bluecollar service to your doorstep.
+                        <span class="highlight blue">BlueTeam</span> aims to provide high quality, cost-effective, flexible bluecollar service to your doorstep.
                     </p>
                 </header>
                 <?php /*
@@ -1074,7 +1003,7 @@
                                 <h3>Addresses</h3>
                                 <span class="contact-info-icon yellowbg"><i class="fa fa-map-marker"></i></span>
                                 <ul class="contact-info-list">
-                                    <li>DLF Phase IV</li>
+                                    <li>Sector 31</li>
                                     <li>Gurgaon, India</li>
                                 </ul>
                             </div><!-- End .contact-info-box -->
@@ -1087,7 +1016,7 @@
                                 <ul class="contact-info-list">
                                     <!-- <li>8901414422</li> -->
                                     <li><?= $this-> blueteamContactNumber ?></li>
-                                    <li>+91 9599075355</li>
+                                    <li> +91 8901414422</li>
                                 </ul>
                             </div><!-- End .contact-info-box -->
                         </div><!-- End .col-md-4 -->
