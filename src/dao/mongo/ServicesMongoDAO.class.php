@@ -1,25 +1,22 @@
 <?php
 
 	/**
-     * @author rajnish
+     * @author rahul
 	**/
 
-/*
-* Good Programmer practicis
-* 1. Expection should be catched and thrown at right place
-* 2. Comment should be made at trike placas.
-*
-*/
 	//require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
     
+    require_once 'dao/ServiceRequestsDAO.interface.php';
+    require_once 'models/ServiceRequests.class.php';
+
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';
     require_once 'exceptions/DuplicateEntityException.class.php';
     //require_once 'exceptions/customers/CustomerNotFoundException.class.php';
 
-	class ServiceRequestsMongoDAO implements ServiceRequestsDAO {
+	class ServicesMongoDAO implements ServicesDAO {
 
         private $mongo;
         
@@ -29,105 +26,19 @@
 
         }
 
-        public function insert($serviceRequestObj) {
+        // should be implemented in future
+        public function insert($serviceListObj) {
             global $logger, $warnings_payload;
 
-            $logger -> debug("Insert the customer into `customers` collection");
-
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('service_requests');
-
-
-            $logger -> debug("Mongo Customer: " . json_encode($serviceRequestObj->toArray() ));
-            $result = $this -> mongo -> insert($serviceRequestObj->toArray()); 
-            $logger -> debug("Result: " . $result ['ok']);
-
-            return $result;
-
-            //return $return;
-        }
-
-		public function insert1($customerObj, $raw = null) {
-            global $logger, $warnings_payload;
-
-            $customerResult = $identifierMappingsResult = $rawResult = array(); 
-            $customerInConflictResult = $conflictResult = array(); 
+            $logger -> debug("Insert the customer into `services` collection");
             try {
-                /* Check whether all identifiers are new ones */
-                $identifiers = $customerObj -> getIdentifiers();
-                $result = $this -> checkIfAllNewIdentifiers($identifiers);
+            $logger -> debug ("Selecting collection: services");
+            $this -> mongo -> selectCollection('services');
 
-                $duplicate = $result ['duplicate'];
-                if ($duplicate) {
 
-                    /* Throw exception if identifier already exists in the system */
-                    require_once 'exceptions/customers/DuplicateCustomerException.class.php';
-                    throw new DuplicateCustomerException($result ['duplicate_uuid']);
-
-                } else {
-
-                    $conflict = $result ['conflict'];
-                    if ($conflict) {
-
-                        /* Insert the conflicted customer into the `conflictedCustomers` and get it's UUID */
-                        $custToInsert = $customerObj -> serialize();
-                        $customerInConflictResult = $this -> insertCustomerInConflict($custToInsert);
-                        $conflictUuid = $custToInsert['_id'] -> {'$id'};
-
-                        if ($customerInConflictResult ['ok']) {
-                            $cases = $result ['conflictCases'];
-                            $conflictResult = $this -> insertConflict($conflictUuid, $cases);                    
-                        }
-
-                        /* Store the raw data */
-                        if (! is_null($raw)) {
-                            $raw ['customerUUID'] = $conflictUuid;
-                            $raw ['inConflict'] = 'true';
-                            $rawResult = $this -> insertRawdata($raw);
-                        }
-
-                        $return = array(
-                            'insertResults' => array (
-                                'conflict' => $conflictResult,
-                                'customerInConflict' => $customerInConflictResult, 
-                                'raw' => $rawResult
-                            ), 
-                            'conflict' => true, 
-                            'customer' => $customerObj
-                        );
-
-                    } else {
-                        /* Insert the customer into `customers` collection */
-                        $custToInsert = $customerObj -> serialize();
-                        $customerResult = $this -> insertCustomer($custToInsert);
-
-                        /* Map the identifiers against the UUID in the `customer_id_mapping` table */
-                        $uuid = null;
-                        if ($customerResult ['ok']) {
-                            $uuid = $custToInsert['_id'] -> {'$id'};
-                            $customerObj -> setUuid ($uuid);
-                            $identifierMappingsResult = $this -> mapCustomerIdentifiers($identifiers, $uuid);
-                            $logger -> debug("Identifiers Mapped: " . json_encode($identifierMappings));
-                        }
-
-                        /* Store the raw data */
-                        if (! is_null($raw)) {
-                            $raw ['customerUUID'] = $uuid;
-                            $raw ['inConflict'] = 'false';
-                            $rawResult = $this -> insertRawdata($raw);
-                        }
-
-                        $return = array(
-                            'insertResults' => array (
-                                'customer' => $customerResult, 
-                                'customerIdMappings' => $identifierMappingsResult,
-                                'raw' => $rawResult
-                            ), 
-                            'conflict' => false, 
-                            'customer' => $customerObj
-                        );
-                    }
-                }
+            $logger -> debug("Mongo Customer: " . json_encode($serviceListObj->toArray() ));
+            $result = $this -> mongo -> insert($serviceListObj->toArray()); 
+            $logger -> debug("Result: " . $result ['ok']);
             } catch(MongoException $e) {
                 $logger -> error("MongoException: " . $e -> getMessage());
                 throw new MongoDbException($e, $e);
@@ -135,8 +46,10 @@
                 throw $e;
             }
 
-            return $return;
+            return $result;
+
         }
+
 
         public function multiInsert($customerObjs, $raw) {
 
@@ -359,17 +272,21 @@
         
         public function loadAll() {
             global $logger;
-            $customers = $mongoCustomers = null;
+            $services = null;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: services");
+            $this -> mongo -> selectCollection('services');     
 
-            $mongoCustomers = $this -> mongo -> find(array());
-            foreach ($mongoCustomers as $mongoCustomer) {
-                $customers [] = Customer :: deserialize($mongoCustomer);
+            $mongoServices = $this -> mongo -> find(array());
+            
+            foreach ($mongoServices as $key => $value) {
+                //$name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null
+                $logger -> debug ("mongo array : " . json_encode($value["name"]));
+
+                $services[] = new Service($value["name"], $value["img"], $value["status"], null, null, $key );
             }
             
-            return $customers;
+            return $services;
         }
         
         public function loadAllInOrderOf($sortByKey) {

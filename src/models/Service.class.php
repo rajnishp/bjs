@@ -1,38 +1,34 @@
 <?php
 	/**
-	 * Object represents collection 'service_requests'
+	 * Object represents collection 'users'
 	 *
-     	 * @author: rajnish
-     	 * @date: 2015-09-08 12:40	 
+     	 * @author: rahul
+     	 * @date: 2015-25-10 12:40	 
 	 */
-	class ServiceRequests{
+	class Service{
 		
-		private $uid;
+		private $uuid;
 		private $name;
-		private $mobile;
-		private $address;
-		private $type;
+		private $img;
 		private $status;
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $mobile, $address, $type, $status, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null) {
 			
-			$this -> uid = $uid;
+			$this -> uuid = $uuid;
 			$this -> name = $name;
-			$this -> mobile = $mobile;
-			$this -> address = $address;
-			$this -> type = $type;
+			$this -> img = $img;
 			$this -> status = $status;
 			$this -> addedOn = $addedOn;
 			$this -> lastUpdateOn = $lastUpdateOn;
 
 		}
 
-		function setUid($uid){
+		function setUuid($uid){
 			$this -> uid = $uid;
 		}
-		function getUid(){
+		function getUuid(){
 			return $this-> uid;
 		}
 
@@ -43,32 +39,17 @@
 			return $this-> name;
 		}
 
-		function setMobile($mobile){
-			$this -> mobile = $mobile;
+		function setImg($img){
+			$this -> img = $img;
 		}
-		function getMobile(){
-			return $this-> mobile;
+		function getImg(){
+			return $this-> img;
 		}
-
 		function setStatus($status){
 			$this -> status = $status;
 		}
 		function getStatus(){
 			return $this-> status;
-		}
-
-		function setAddress($address){
-			$this -> address = $address;
-		}
-		function getAddress(){
-			return $this-> address;
-		}
-
-		function setType($type){
-			$this -> type = $type;
-		}
-		function getType(){
-			return $this-> type;
 		}
 
 		function setAddedOn($addedOn){
@@ -88,10 +69,8 @@
 		function toArray() {
 			return array (
 							name => $this -> name,
-							mobile=> $this -> mobile,
-							address => $this -> address,
-							type => $this -> type,
-							status => $this -> status,
+							img=> $this -> img,
+							status=> $this -> status,
 							addedOn => $this -> addedOn									
 						);
 		}
