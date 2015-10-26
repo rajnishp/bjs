@@ -21,7 +21,7 @@ class DAOFactory{
 	public static function getServiceRequestDAO(){
 		
 		require_once('ServiceRequestsDAO.interface.php');
-		require_once('models/ServiceRequests.class.php');
+		require_once('models/ServiceRequest.class.php');
 		require_once('mongo/ServiceRequestsMongoDAO.class.php');
 
 		return new ServiceRequestsMongoDAO();

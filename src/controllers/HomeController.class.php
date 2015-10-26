@@ -34,7 +34,7 @@ class HomeController extends BaseController {
 	function serviceRequest (){
 		if (isset($_POST['name'], $_POST['mobile'], $_POST['address'], $_POST['type'])) {
 
-			$serviceRequestObj = new ServiceRequests (
+			$serviceRequestObj = new ServiceRequest (
 													$_POST['name'],
 													$_POST['mobile'],
 													$_POST['address'],
