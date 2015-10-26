@@ -52,10 +52,11 @@ class HomeController extends BaseController {
 			echo "Your request submitted successfuly";
 
 			$adminMembers = explode(',', $this-> adminMembers);
-			$subject = "Service Request for". $_POST['type']. "on Blueteam";
-			$body = $_POST['name']. "have requested you a service for " .$_POST['type'] . "<br/><br/>
+			
+			$subject = "Service Request for <b>". $_POST['type']. "</b> on Blueteam";
+			$body = "<b>". $_POST['name']. "</b> have requested you a service for " .$_POST['type'] . "<br/><br/>
 									Name: ". $_POST['name'] . ", <br/>
-									Mobile Number: ". $_POST['mobile'] ."
+									Mobile Number: ". $_POST['mobile'] ."<br/>
 									Address: ". $_POST['address'] . "<br/> Kindly process the request.";
 
 			foreach ($adminMembers as $key => $member) {

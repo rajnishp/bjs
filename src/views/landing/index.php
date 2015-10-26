@@ -1105,7 +1105,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <p>All rights reserved &copy; <a href="http://dpower4.com" class="yellow-color" title="Dpower4" target="_blank">Dpower4&trade;</a></p>
+                                <p>All rights reserved &copy; <a href="http://shatkonlabs.com" class="yellow-color" title="Shatkon Labs" target="_blank">Shatkon Labs&trade;</a></p>
                                 <span class="footer-date highlight red">2014</span>
                             </div><!-- End .col-md-12 -->
                         </div><!-- End .row -->
