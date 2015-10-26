@@ -50,6 +50,20 @@ class HomeController extends BaseController {
 				$this->logger->error( "Error occur :500 ".json_encode($e) );
 			}
 			echo "Your request submitted successfuly";
+
+			$adminMembers = explode(',', $this-> adminMembers);
+			$subject = "Service Request for". $_POST['type']. "on Blueteam";
+			$body = $_POST['name']. "have requested you a service for " .$_POST['type'] . "<br/><br/>
+									Name: ". $_POST['name'] . ", <br/>
+									Mobile Number: ". $_POST['mobile'] ."
+									Address: ". $_POST['address'] . "<br/> Kindly process the request.";
+
+			foreach ($adminMembers as $key => $member) {
+
+				EmailController :: sendMail( $member, $subject, $body);
+
+			}
+
 		}
 		else{
 			header('HTTP/1.1 500 Internal Server Error');

@@ -18,6 +18,9 @@ abstract class BaseController {
 		
 		global $configs;
 		$this->baseUrl = $configs["BLUETEAM_BASE_URL"];
+		
+		$this->adminMembers = $configs["BLUETEAM_ADMIN_MEMBERS"];
+
 		$this->blueteamContactNumber = $configs["BLUETEAM_CONTACT_NUMBER"];
 
 		$this->url = rtrim($this->baseUrl,"/").$_SERVER[REQUEST_URI];
