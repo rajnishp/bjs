@@ -7,9 +7,7 @@
 	//require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
-    
-    require_once 'dao/ServiceRequestsDAO.interface.php';
-    require_once 'models/ServiceRequests.class.php';
+ 
 
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';

@@ -40,7 +40,7 @@ class UserResource implements Resource {
             throw new UnsupportedResourceMethodException();
         }
 
-        $userInfoObj = new User($data ['username'], $data ['mobile'], $data ['gpslocation']);
+        $userInfoObj = new User($data ['name'], $data ['mobile'], $data ['gpslocation']);
         //$logger -> debug ("POSTed User Detail: " . $userInfoObj -> toString());
 
         
