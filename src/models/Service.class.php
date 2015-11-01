@@ -11,13 +11,15 @@
 		private $name;
 		private $img;
 		private $status;
+		private $plans;
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null) {
+		function __construct ($name, $img, $status, $plans, $addedOn, $lastUpdateOn, $uuid = null) {
 			
 			$this -> uuid = $uuid;
 			$this -> name = $name;
+			$this -> plans = $plans;
 			$this -> img = $img;
 			$this -> status = $status;
 			$this -> addedOn = $addedOn;
@@ -37,6 +39,13 @@
 		}
 		function getName(){
 			return $this-> name;
+		}
+
+		function setPlans($plans){
+			$this -> plans = $plans;
+		}
+		function getPlans(){
+			return $this-> plans;
 		}
 
 		function setImg($img){
@@ -71,9 +80,11 @@
 							name => $this -> name,
 							img=> $this -> img,
 							status=> $this -> status,
-							addedOn => $this -> addedOn									
+							plans => $this -> plans,
+							addedOn => $this -> addedOn
+
 						);
-		}
+		}	
 
 	}
 ?>

@@ -279,9 +279,9 @@
             
             foreach ($mongoServices as $key => $value) {
                 //$name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null
-                $logger -> debug ("mongo array : " . json_encode($value["name"]));
+                $logger -> debug ("mongo array : " . json_encode($value));
 
-                $services[] = new Service($value["name"], $value["img"], $value["status"], null, null, $key );
+                $services[] = new Service($value["name"], $value["img"], $value["status"], $value["plans"],null, null, $key );
             }
             
             return $services;
