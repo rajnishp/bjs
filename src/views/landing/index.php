@@ -1147,6 +1147,11 @@
                                 <!-- <span class="animated-label">Enter 10 digit mobile number *</span> -->
                                 <span id = "mobile_status"></span>
                             </div>
+
+                            <div class="form-group">
+                                <textarea  required class="form-control input-lg" placeholder="Full Requirements" id="requirements" type="textarea"></textarea>
+                                <!-- <span class="animated-label textarea-label">Full Address *</span> -->
+                            </div>
                             
                             <div class="form-group">
                                 <textarea  required class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>

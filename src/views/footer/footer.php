@@ -130,7 +130,7 @@
 
         var dataString = "";
         $('#client_name').html( $('#'+fields[0]).val().capitalizeFirstLetter() );
-        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&address=" + $('#'+fields[2]).val() + "&type=" + hire_type;
+        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&requirements=" + $('#'+fields[2]).val() + "&address=" + $('#'+fields[3]).val() + "&type=" + hire_type;
 
         $.ajax({
             type: "POST",
@@ -142,6 +142,7 @@
                 $("#name").val("");
                 $("#mobile").val("");
                 $("#address").val("");
+                $("#requirements").val("");
                 console.log("inside success");
 
                 $("#modal_body_form").hide();
@@ -178,7 +179,7 @@
 
         $('span[id^="mobile_status"]').empty();
         
-        fields = ["name", "mobile", "address"];
+        fields = ["name", "mobile", "requirements", "address"];
 
         if (genericEmptyFieldValidator(fields)) {
 
