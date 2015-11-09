@@ -92,14 +92,33 @@
             
             <section id="home" class="section gfullscreen">
                 
-                    <div class="row">
+                    
                     <!-- <div class="slotholder" style="width:100%;height:100%;" data-duration="4800" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center center" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg" data-src="undefined" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                      -->    
                         <!-- <img src="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" style="width:100%;height:100%;" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
                          -->
-                        <div class="col-md-3 pricing-row" style="margin-top: 106px;">
+                        
                             
-                            <div class="pricing-table-container">
+
+                       
+                            <div id="revslider-container">
+                                <div id="revslider">
+                                    
+                                    <ul>
+                                        <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
+                                            
+                                            <img data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
+                                            
+                                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
+                                                data-x="left"
+                                                data-y="140"
+                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                                data-speed="1100"
+                                                data-start="900"
+                                                data-easing="Power3.easeInOut"
+                                                data-endspeed="600"
+                                                style="z-index: 10"><div class="pricing-table-container">
                                 <div class="pricing-table active">
                                     <h3 class="lightblue">Monthly</h3>
                                     <header>
@@ -131,20 +150,49 @@
                                     </div>
                                 </div><!-- End .pricing-table -->
                             </div><!-- End .col-md-3 -->
+                                            </div>
 
-                              
-                        </div>
-                            
+                                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
+                                                data-x="right"
+                                                data-y="140"
+                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                                data-speed="1100"
+                                                data-start="900"
+                                                data-easing="Power3.easeInOut"
+                                                data-endspeed="600"
+                                                style="z-index: 10">     <div class="pricing-table-container">
+                                <div class="pricing-table active">
+                                    <h3 class="lightblue">On Demand</h3>
+                                    <header>
+                                        <div class="price lightbluebg">
+                                            <span>25 % <br/> off</span>
+                                            on First Visit
+                                        </div>
+                                    </header>
+                                    <ul class="pricing-list">
+                                        <h4 class="lightblue">Maid</h4>
+                                        <li>149 <i class="fa fa-inr"></i> / hour</li>
+                                    </ul>
 
-                        <div class="col-md-6">
-                            <div id="revslider-container">
-                                <div id="revslider">
-                                    
-                                    <ul>
-                                        <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
-                                            
-                                            <img data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
-                            
+                                    <ul class="pricing-list">
+                                        <h4 class="lightblue">Cook</h4>
+                                        <li>169 <i class="fa fa-inr"></i>/ hour</li>
+                                    </ul>
+
+                                    <ul class="pricing-list">
+                                        <h4 class="lightblue">Driver</h4>
+                                        <li>199 <i class="fa fa-inr"></i>/ hour</li>
+                                    </ul>
+
+                                    <div class="pricing-action">
+                                        <a href="#hire" class="btn btn-lightblue">Book now</a>
+                                    </div>
+                                </div><!-- End .pricing-table -->
+                            </div><!-- End .col-md-3 -->
+
+                                            </div>
+
                                             <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
                                                 data-x="center"
                                                 data-y="140"
@@ -201,44 +249,10 @@
                                 </div><!-- End revslider -->
                             </div><!-- End revslider-container -->
 
-                        </div>
-                        
-                        <div class="col-md-3 pricing-row" style="margin-top: 106px;">
                             
-                            <div class="pricing-table-container">
-                                <div class="pricing-table active">
-                                    <h3 class="lightblue">On Demand</h3>
-                                    <header>
-                                        <div class="price lightbluebg">
-                                            <span>25 % <br/> off</span>
-                                            on First Visit
-                                        </div>
-                                    </header>
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Maid</h4>
-                                        <li>149 <i class="fa fa-inr"></i> / hour</li>
-                                    </ul>
-
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Cook</h4>
-                                        <li>169 <i class="fa fa-inr"></i>/ hour</li>
-                                    </ul>
-
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Driver</h4>
-                                        <li>199 <i class="fa fa-inr"></i>/ hour</li>
-                                    </ul>
-
-                                    <div class="pricing-action">
-                                        <a href="#hire" class="btn btn-lightblue">Book now</a>
-                                    </div>
-                                </div><!-- End .pricing-table -->
-                            </div><!-- End .col-md-3 -->
-
+                       
                               
-                        </div>
-                            
-                    </div>
+                       
                 
             </section><!-- End #home -->
             

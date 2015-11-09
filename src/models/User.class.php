@@ -10,15 +10,17 @@
 		private $uid;
 		private $name;
 		private $mobile;
+		private $email;
 		private $gpsLocation;
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $mobile, $gpsLocation, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $mobile, $email, $gpsLocation, $addedOn, $lastUpdateOn, $uid = null) {
 			
 			$this -> uid = $uid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
+			$this -> email = $email;
 			$this -> gpsLocation = $gpsLocation;
 			$this -> addedOn = $addedOn;
 			$this -> lastUpdateOn = $lastUpdateOn;
@@ -45,6 +47,12 @@
 		function getMobile(){
 			return $this-> mobile;
 		}
+		function setEmail($email){
+			$this -> email = $email;
+		}
+		function getEmail(){
+			return $this-> email;
+		}
 		function setGpsLocation($gpsLocation){
 			$this -> gpsLocation = $gpsLocation;
 		}
@@ -70,6 +78,7 @@
 			return array (
 							name => $this -> name,
 							mobile=> $this -> mobile,
+							email=> $this -> email,
 							gpsLocaiton=> $this -> gpsLocaiton,
 							addedOn => $this -> addedOn									
 						);
