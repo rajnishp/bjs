@@ -1,262 +1,276 @@
 <!DOCTYPE html>
 <!--[if IE 9]> <html class="ie9"> <![endif]-->
 <!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        
-        <title>BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price.</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
 
-        <!-- for Google -->
-        <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
-        <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
-        <meta name="author" content="BlueTeam" />
-        <meta name="copyright" content="true" />
-        <meta name="application-name" content="website" />
+    <title>BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price.</title>
 
-        <!-- for Facebook -->          
-        <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
-        <meta name="og:author" content="BlueTeam" />
-        <meta property="og:type" content="website"/>
-      
-        <meta name="p:domain_verify" content=""/>
-        <meta property="og:image" content='<?= $this-> baseUrl ?>static/images/logo.png' />
-        <meta property="og:url" content="<?= $this-> baseUrl ?>" />
-        <meta property="og:image:type" content="image/jpeg" />
+    <!-- for Google -->
+    <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+    <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
+    <meta name="author" content="BlueTeam" />
+    <meta name="copyright" content="true" />
+    <meta name="application-name" content="website" />
 
-        <meta property="og:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+    <!-- for Facebook -->          
+    <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+    <meta name="og:author" content="BlueTeam" />
+    <meta property="og:type" content="website"/>
 
-        <!-- for Twitter -->          
-        <!-- <meta name="twitter:card" content="n/a" /> -->
-        <meta name="twitter:site" content="@hireblueteam">
-        <meta name="twitter:creator" content="@hireblueteam">
-        <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
-        <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
-        <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
-        <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
-        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content=""/>
+    <meta property="og:image" content='<?= $this-> baseUrl ?>static/images/logo.png' />
+    <meta property="og:url" content="<?= $this-> baseUrl ?>" />
+    <meta property="og:image:type" content="image/jpeg" />
 
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/fonts.css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.min.css">
+    <meta property="og:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+
+    <!-- for Twitter -->          
+    <!-- <meta name="twitter:card" content="n/a" /> -->
+    <meta name="twitter:site" content="@hireblueteam">
+    <meta name="twitter:creator" content="@hireblueteam">
+    <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
+    <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+    <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+    <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/fonts.css">
+    <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/bootstrap.min.css">
        <!--  <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/font-awesome.min.css">
-        --> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   --> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/animate.css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/revslider2.css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/style.css">
-        <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/responsive.css">
+   <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/animate.css">
+   <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/revslider2.css">
+   <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/style.css">
+   <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/responsive.css">
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="57x57" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="<?= $this-> baseUrl ?>static/images/fevicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-16x16.png">
-        <link rel="manifest" href="<?= $this-> baseUrl ?>static/images/fevicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="<?= $this-> baseUrl ?>static/images/fevicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        
-        <!--- jQuery -->
-        <script src="<?= $this-> baseUrl ?>static/js/jquery.min.js"></script>
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" sizes="57x57" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="<?= $this-> baseUrl ?>static/images/fevicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="<?= $this-> baseUrl ?>static/images/fevicon/favicon-16x16.png">
+   <link rel="manifest" href="<?= $this-> baseUrl ?>static/images/fevicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="<?= $this-> baseUrl ?>static/images/fevicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
 
-        <!-- Queryloader -->
-        <script src="<?= $this-> baseUrl ?>static/js/queryloader2.min.js"></script>
+   <!--- jQuery -->
+   <script src="<?= $this-> baseUrl ?>static/js/jquery.min.js"></script>
 
-        <!-- Modernizr -->
-        <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
-        
-        
-    </head>
-    <body data-spy="scroll" data-target="#main-menu">
-        <div class="geass-loader-overlay left"></div><!-- End .geass-loader-overlay left -->
-        <div class="geass-loader-overlay right"></div><!-- End .geass-loader-overlay right -->
-        <div id="wrapper">
+   <!-- Queryloader -->
+   <script src="<?= $this-> baseUrl ?>static/js/queryloader2.min.js"></script>
+
+   <!-- Modernizr -->
+   <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
 
 
-            <?php include_once 'views/navbar/navbar.php'; ?>
+</head>
+<body data-spy="scroll" data-target="#main-menu">
+    <div class="geass-loader-overlay left"></div><!-- End .geass-loader-overlay left -->
+    <div class="geass-loader-overlay right"></div><!-- End .geass-loader-overlay right -->
+    <div id="wrapper">
 
-            <!-- Home Section -->
 
-            
-            <section id="home" class="section gfullscreen">
-                
-                    
+        <?php include_once 'views/navbar/navbar.php'; ?>
+
+        <!-- Home Section -->
+
+
+        <section id="home" class="section gfullscreen">
+
+
                     <!-- <div class="slotholder" style="width:100%;height:100%;" data-duration="4800" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center center" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg" data-src="undefined" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(http://loc.blueteam.in/static/images/homeslider/mobilejob.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                     -->    
+                -->    
                         <!-- <img src="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" style="width:100%;height:100%;" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
-                         -->
-                        
-                            
+                    -->
 
-                       
-                            <div id="revslider-container">
-                                <div id="revslider">
-                                    
-                                    <ul>
-                                        <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
-                                            
-                                            <img data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
-                                            
-                                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
-                                                data-x="left"
-                                                data-y="140"
-                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-speed="1100"
-                                                data-start="900"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 10"><div class="pricing-table-container">
-                                <div class="pricing-table active">
-                                    <h3 class="lightblue">Monthly</h3>
-                                    <header>
-                                        <div class="price lightbluebg">
-                                            <span>20 % off</span>
-                                            on First Month
+
+
+
+                    <div id="revslider-container">
+                        <div id="revslider">
+
+                            <ul>
+                                <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
+
+                                    <img data-lazyload="<?= $this-> baseUrl ?>static/images/homeslider/mobilejob.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
+
+                                    <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
+                                    data-x="left"
+                                    data-y="100"
+                                    data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                    data-speed="1100"
+                                    data-start="900"
+                                    data-easing="Power3.easeInOut"
+                                    data-endspeed="600"
+                                    style="z-index: 10">
+                                    <div class="pricing-table-container">
+                                        <div class="pricing-table active">
+                                            <h3 class="lightblue" style="padding: 5px 10px 0px;">Monthly</h3>
+                                            <header style="margin-bottom: 0px;">
+                                                <div class="price lightbluebg">
+                                                    <span>20% off</span>
+                                                    on First Month
+                                                </div>
+                                            </header>
+
+                                            <ul class="pricing-list">
+                                                <h4 class="lightblue" style="margin-bottom: 0px;">Maid</h4>
+                                                <li> 4 BHK - <i class="fa fa-inr"> 3499 </i> </li>
+                                                <li> 3 BHK - <i class="fa fa-inr"> 2999 </i> </li>
+
+                                            </ul>
+                                            <ul class="pricing-list">
+                                                <h4 class="lightblue" style="margin-bottom: 0px;">Cook</h4>
+                                                <li><i class="fa fa-inr"></i> 3500  one time</li>
+                                                <li><i class="fa fa-inr"></i> 6000 </i> two time</li>
+                                            </ul>
+
+
+
+                                            <ul class="pricing-list" style="margin-bottom: 0px;">
+                                                <h4 class="lightblue">Driver</h4>
+                                                <li> <i class="fa fa-inr"></i> 15000/10hr</li>
+                                            </ul>
+
+                                            <div class="pricing-action" style="
+                                            padding-top: 0px;
+                                            padding-bottom: 10px;
+                                            ">
+                                            <a href="#hire" class="btn btn-lightblue">Book now</a>
                                         </div>
-                                    </header>
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Cook</h4>
-                                        <li><i class="fa fa-inr"></i> 3500  one time</li>
-                                        <li><i class="fa fa-inr"></i> 6000 </i> two time</li>
-                                    </ul>
+                                    </div><!-- End .pricing-table -->
+                                </div><!-- End .col-md-3 -->
+                            </div>
 
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Maid</h4>
-                                        <li> 4 BHK - <i class="fa fa-inr"> 3500 </i> </li>
-                                        <li> 3 BHK - <i class="fa fa-inr"> 3000 </i> </li>
-                                        <li> 2 BHK - <i class="fa fa-inr"> 2500 </i> </li>
-                                    </ul>
-
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Driver</h4>
-                                        <li> <i class="fa fa-inr"></i> 15000 / 10 hours daily</li>
-                                    </ul>
-
-                                    <div class="pricing-action">
-                                        <a href="#hire" class="btn btn-lightblue">Book now</a>
+                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
+                            data-x="right"
+                            data-y="100"
+                            data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1100"
+                            data-start="900"
+                            data-easing="Power3.easeInOut"
+                            data-endspeed="600"
+                            style="z-index: 10">     <div class="pricing-table-container">
+                            <div class="pricing-table active">
+                                <h3 class="lightblue" style="padding: 5px 10px 0px;">On Demand</h3>
+                                <header style="margin-bottom: 0px;">
+                                    <div class="price lightbluebg">
+                                        <span>25% off</span>
+                                        on First Visit
                                     </div>
-                                </div><!-- End .pricing-table -->
-                            </div><!-- End .col-md-3 -->
-                                            </div>
+                                </header>
+                                <ul class="pricing-list">
+                                    <h4 class="lightblue" style="margin-bottom: 0px;">Maid</h4>
+                                    <li>149 <i class="fa fa-inr"></i> / hour</li>
+                                </ul>
 
-                                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
-                                                data-x="right"
-                                                data-y="140"
-                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-speed="1100"
-                                                data-start="900"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 10">     <div class="pricing-table-container">
-                                <div class="pricing-table active">
-                                    <h3 class="lightblue">On Demand</h3>
-                                    <header>
-                                        <div class="price lightbluebg">
-                                            <span>25 % <br/> off</span>
-                                            on First Visit
-                                        </div>
-                                    </header>
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Maid</h4>
-                                        <li>149 <i class="fa fa-inr"></i> / hour</li>
-                                    </ul>
+                                <ul class="pricing-list">
+                                    <h4 class="lightblue" style="margin-bottom: 0px;">Cook</h4>
+                                    <li>169 <i class="fa fa-inr"></i>/ hour</li>
+                                </ul>
 
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Cook</h4>
-                                        <li>169 <i class="fa fa-inr"></i>/ hour</li>
-                                    </ul>
+                                <ul class="pricing-list">
+                                    <h4 class="lightblue" style="margin-bottom: 0px;">Driver</h4>
+                                    <li>199 <i class="fa fa-inr"></i>/ hour</li>
+                                </ul>
 
-                                    <ul class="pricing-list">
-                                        <h4 class="lightblue">Driver</h4>
-                                        <li>199 <i class="fa fa-inr"></i>/ hour</li>
-                                    </ul>
+                                <ul class="pricing-list">
+                                    <h4 class="lightblue" style="margin-bottom: 0px;">Electrician</h4>
+                                    <li>199 <i class="fa fa-inr"></i>/ hour</li>
+                                </ul>
 
-                                    <div class="pricing-action">
-                                        <a href="#hire" class="btn btn-lightblue">Book now</a>
-                                    </div>
-                                </div><!-- End .pricing-table -->
-                            </div><!-- End .col-md-3 -->
+                                <div class="pricing-action" style="
+                                            padding-top: 0px;
+                                            padding-bottom: 10px;
+                                            ">
+                                    <a href="#hire" class="btn btn-lightblue">Book now</a>
+                                </div>
+                            </div><!-- End .pricing-table -->
+                        </div><!-- End .col-md-3 -->
 
-                                            </div>
+                    </div>
 
-                                            <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
-                                                data-x="center"
-                                                data-y="140"
-                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-speed="1100"
-                                                data-start="900"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 10">Welcome To BlueTeam
-                                            </div>
-                                            <div class="tp-caption rev-title bigger customin customout blue-color"
-                                                data-x="center"
-                                                data-y="220"
-                                                data-speed="1100"
-                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-start="1500"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 6">
-                                                <i class="fa fa-mobile-phone"></i>
-                                                    <?= $this-> blueteamContactNumber ?>
-                                            </div>
-                                            <div class="tp-caption rev-text customin customout blue-color"
-                                                data-x="center"
-                                                data-y="355"
-                                                data-speed ="1200"
-                                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-start="1900"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 12">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price
-                                            </div>
-                                            
-                                            <div class="tp-caption customin customout"
-                                                data-x="center"
-                                                data-y="460"
-                                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                                data-speed="1200"
-                                                data-start="2500"
-                                                data-easing="Power3.easeInOut"
-                                                data-endspeed="600"
-                                                style="z-index: 14">
-                                                   <a href="#hire" class="btn btn-lightblue" title="Hire Now">
-                                                   Hire Now</a>
-                                            </div>
-                            
-                                        </li>
-                                    </ul>
-                                           
-                                </div><!-- End revslider -->
-                            </div><!-- End revslider-container -->
+                    <div class="tp-caption rev-subtitle bigger fancy customin customout blue-color"
+                    data-x="center"
+                    data-y="140"
+                    data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="1100"
+                    data-start="900"
+                    data-easing="Power3.easeInOut"
+                    data-endspeed="600"
+                    style="z-index: 10">Welcome To BlueTeam
+                </div>
+                <div class="tp-caption rev-title bigger customin customout blue-color"
+                data-x="center"
+                data-y="220"
+                data-speed="1100"
+                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-start="1500"
+                data-easing="Power3.easeInOut"
+                data-endspeed="600"
+                style="z-index: 6; font-size: 90px;">
+                <i class="fa fa-mobile-phone"></i>
+                <?= $this-> blueteamContactNumber ?>
+            </div>
+            <div class="tp-caption rev-text customin customout blue-color"
+            data-x="center"
+            data-y="355"
+            data-speed ="1200"
+            data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-start="1900"
+            data-easing="Power3.easeInOut"
+            data-endspeed="600"
+            style="z-index: 12">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price
+        </div>
 
-                            
-                       
-                              
-                       
-                
-            </section><!-- End #home -->
-            
-            
+        <div class="tp-caption customin customout"
+        data-x="center"
+        data-y="460"
+        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+        data-speed="1200"
+        data-start="2500"
+        data-easing="Power3.easeInOut"
+        data-endspeed="600"
+        style="z-index: 14">
+        <a href="#hire" class="btn btn-lightblue" title="Hire Now">
+           Hire Now</a>
+       </div>
+
+   </li>
+</ul>
+
+</div><!-- End revslider -->
+</div><!-- End revslider-container -->
+
+
+
+
+
+
+</section><!-- End #home -->
+
+
             <?php /*
             <!-- Skills Section -->
             <div class="skills-container background-new parallax" data-stellar-background-ratio="0.15">
@@ -692,8 +706,8 @@
 
                                     <div class="accordion-body collapse in" id="accordion3-one">
                                         <div class="accordion-body-wrapper">
-                                        <p>BlueTeam provides high quality, cheap, flexible with high skilled, background verification, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price.</p>
-                                        <p></p>
+                                            <p>BlueTeam provides high quality, cheap, flexible with high skilled, background verification, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price.</p>
+                                            <p></p>
                                         </div><!-- End .accordion-body-wrapper -->
                                     </div><!-- End .accordion-body -->
                                 </div><!-- End .accordion-group --> 
@@ -740,7 +754,7 @@
                     </div><!-- End .row -->
                 </div><!-- End .container -->
 */ ?>
-            </section>
+</section>
             <?php /*
             <!-- Testimonials Section -->
             <div class="testimonials-container background-new parallax" data-stellar-background-ratio="0.15">
@@ -1110,7 +1124,7 @@
                                 </ul>
                             </div><!-- End .contact-info-box -->
                         </div><!-- End .col-md-4 -->
-                    
+
                         <div class="col-md-4 col-sm-4">
                             <div class="contact-info-box box lightblue text-center">
                                 <h3>Call Us</h3>
@@ -1229,38 +1243,38 @@
                 <!--Modal header-->
                 <div class="modal-header" >
                   <button data-dismiss="modal" class="close" type="button">
-                  <span aria-hidden="true">&times;</span>
+                      <span aria-hidden="true">&times;</span>
                   </button>
                   <h4 class="modal-title">Contact Details</h4>
-                </div>
+              </div>
 
-                <!--Modal body-->
-                <div class="modal-body" id="modal_body_form">
+              <!--Modal body-->
+              <div class="modal-body" id="modal_body_form">
 
-                    <div class="account-wrapper">
+                <div class="account-wrapper">
 
-                        <form onSubmit="return (validateServiceRequest());">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" placeholder="Your Name" required class="form-control input-lg">
-                                <!-- <span class="animated-label">Your Name *</span> -->
-                            </div>
-                            <div class="form-group">
-                                <input  required class="form-control input-lg"  placeholder="Enter 10 digit mobile number" id="mobile" type="text">
-                                <!-- <span class="animated-label">Enter 10 digit mobile number *</span> -->
-                                <span id = "mobile_status"></span>
-                            </div>
+                    <form onSubmit="return (validateServiceRequest());">
+                        <div class="form-group">
+                            <input name="name" id="name" type="text" placeholder="Your Name" required class="form-control input-lg">
+                            <!-- <span class="animated-label">Your Name *</span> -->
+                        </div>
+                        <div class="form-group">
+                            <input  required class="form-control input-lg"  placeholder="Enter 10 digit mobile number" id="mobile" type="text">
+                            <!-- <span class="animated-label">Enter 10 digit mobile number *</span> -->
+                            <span id = "mobile_status"></span>
+                        </div>
 
-                            <div class="form-group">
-                                <textarea  required class="form-control input-lg" placeholder="Full Requirements" id="requirements" type="textarea"></textarea>
-                                <!-- <span class="animated-label textarea-label">Full Address *</span> -->
-                            </div>
-                            
-                            <div class="form-group">
-                                <textarea  required class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
-                                <!-- <span class="animated-label textarea-label">Full Address *</span> -->
-                            </div>
+                        <div class="form-group">
+                            <textarea  required class="form-control input-lg" placeholder="Full Requirements" id="requirements" type="textarea"></textarea>
+                            <!-- <span class="animated-label textarea-label">Full Address *</span> -->
+                        </div>
 
-                            <span id = "post_request_status"></span>
+                        <div class="form-group">
+                            <textarea  required class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
+                            <!-- <span class="animated-label textarea-label">Full Address *</span> -->
+                        </div>
+
+                        <span id = "post_request_status"></span>
 
                             <!-- <div class="form-group">
                                 <div class="checkbox">
@@ -1275,67 +1289,67 @@
                             </div>
                         </form>
 
-                            
+
                     </div> <!-- /.account-wrapper -->
-                  
+
                 </div>
 
                 <div class="modal-body" id="modal_result_show">
                     <span>
                         <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
                             <p > <h4 align='center'> <b>Thank you <span id="client_name" style="color: #1ba7de"></span></b><br /> <br />
-                                            Our team will contact you in next 24 hours.<br>
-                                            </h4>
-                                            <h6  align='center'>If you have any query, you can contact 24x7 <br/>
-                                                <i class="fa fa-whatsapp"></i> or
-                                                <i class="fa fa-phone"></i>
-                                                <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
-                                            </h6>
-                                    </p>        
-                        </div>
-                    </span>
-                </div>
-
-                <!--Modal footer-->
-                <div class="modal-footer">
-                  <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <a href="#" data-target="#modal_get_in_touch_success" data-toggle="modal" title="Thanks for your interest"></a>
-
-        <div class="modal fade modal-styled" id="modal_get_in_touch_success">
-            <div class="modal-dialog">
-              <div class="modal-content">
-
-                <div class="modal-body" id="modal_result_show">
-                    <span>
-                        <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
-                            <p> <h4 align='center'> <b>Thank you <span id="get_in_touch_contact_name" style="color: #1ba7de"></span></b><br /> <br />
                                 Our team will contact you in next 24 hours.<br>
-                                </h4>
-                                <h6  align='center'>Your message has been recieved to us.<br/><br/>
-                                    <i class="fa fa-whatsapp"></i> or
-                                    <i class="fa fa-phone"></i>
-                                    <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
-                                </h6>
-                            </p>        
-                        </div>
-                    </span>
-                </div>
-
-                <!--Modal footer-->
-                <div class="modal-footer">
-                  <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
-                </div>
-              </div>
+                            </h4>
+                            <h6  align='center'>If you have any query, you can contact 24x7 <br/>
+                                <i class="fa fa-whatsapp"></i> or
+                                <i class="fa fa-phone"></i>
+                                <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
+                            </h6>
+                        </p>        
+                    </div>
+                </span>
             </div>
-        </div>
 
-    <?php include_once 'views/footer/footer.php'; ?>        
+            <!--Modal footer-->
+            <div class="modal-footer">
+              <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
 
-    
-    </body>
+<a href="#" data-target="#modal_get_in_touch_success" data-toggle="modal" title="Thanks for your interest"></a>
+
+<div class="modal fade modal-styled" id="modal_get_in_touch_success">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body" id="modal_result_show">
+            <span>
+                <div  style='margin-top: 10px; color: rgb(46, 19, 19); margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px'>
+                    <p> <h4 align='center'> <b>Thank you <span id="get_in_touch_contact_name" style="color: #1ba7de"></span></b><br /> <br />
+                        Our team will contact you in next 24 hours.<br>
+                    </h4>
+                    <h6  align='center'>Your message has been recieved to us.<br/><br/>
+                        <i class="fa fa-whatsapp"></i> or
+                        <i class="fa fa-phone"></i>
+                        <b style="font-size: 18px; color: #1ba7de">  <?= $this-> blueteamContactNumber ?> </b>
+                    </h6>
+                </p>        
+            </div>
+        </span>
+    </div>
+
+    <!--Modal footer-->
+    <div class="modal-footer">
+      <button data-dismiss="modal" class="btn btn-default" type="button"  id="close_modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+<?php include_once 'views/footer/footer.php'; ?>        
+
+
+</body>
 </html>
