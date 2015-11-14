@@ -73,10 +73,10 @@
 
    <!-- Queryloader -->
    <script src="<?= $this-> baseUrl ?>static/js/queryloader2.min.js"></script>
-
+<?php /*
    <!-- Modernizr -->
    <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
-
+*/?>
 
 </head>
 <body data-spy="scroll" data-target="#main-menu">
@@ -509,7 +509,7 @@
                                         <span class="service-icon orangebg"><i class="fa fa-calendar-check-o"></i></span>
                                         <h2>Weekly</h2>
                                     </div><!-- End .services-header -->
-                                    <p>If you want once in a week. You don't need to be worry. Jus call BlueTeam</p>
+                                    <p>If you want once in a week. You don't need to be worry. Just call BlueTeam</p>
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-3 col-sm-6">
