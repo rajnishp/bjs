@@ -353,9 +353,10 @@
                                     </div><!-- End .pricing-table -->
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
-                            <div class="col-md-8 col-sm-6" style="text-align:center">
-                                <h1 class="section-title fancy blue-color">Welcome To BlueTeam</h1>
-                                <h3 class="section-title blue-color"><i class="fa fa-mobile-phone"></i> <?= $this-> blueteamContactNumber ?></h3>
+                            <div class="col-md-8 col-sm-6" style="text-align:center;font-size:75px;">
+                                <p class="section-title fancy blue-color">Welcome To BlueTeam</p>
+                                <p class="section-title blue-color"><i class="fa fa-mobile-phone"></i> <?= $this-> blueteamContactNumber ?></p>
+                                <p style="font-size:30px;color:blue;">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price</p>
                                 <a href="#hire" class="btn btn-lightblue" title="Hire Now">Hire Now</a><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-2 col-sm-3">
