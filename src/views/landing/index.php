@@ -1358,26 +1358,30 @@
 
                 <div class="account-wrapper">
 
-                    <form onSubmit="return (validateServiceRequest());">
+                    <form class="form-group" onSubmit="return (validateServiceRequest());">
                         <div class="form-group">
-                            <input name="name" id="name" type="text" placeholder="Your Name" required class="form-control input-lg">
+                            <span>Your Name</span>
+                            <input name="name" id="name" type="text" placeholder="Your Name" required class="form-control input-sm">
                             <!-- <span class="animated-label">Your Name *</span> -->
                         </div>
                         <div class="form-group">
-                            <input  required class="form-control input-lg"  placeholder="Enter 10 digit mobile number" id="mobile" type="text">
+                            <span>Enter 10 digit mobile number</span>
+                            <input  required class="form-control input-sm"  placeholder="Enter 10 digit mobile number" id="mobile" type="text">
                             <!-- <span class="animated-label">Enter 10 digit mobile number *</span> -->
                             <span id = "mobile_status"></span>
                         </div>
 
                         <div class="form-group">
+                            <span>Full Requirements</span>
                             <textarea  required class="form-control input-lg" placeholder="Full Requirements" id="requirements" type="textarea"></textarea>
                             <!-- <span class="animated-label textarea-label">Full Address *</span> -->
                         </div>
 
                         <div class="form-group">
+                            <span>Full Address</span>
                             <textarea  required class="form-control input-lg" placeholder="Full Address" id="address" type="textarea"></textarea>
                             <!-- <span class="animated-label textarea-label">Full Address *</span> -->
-                        </div>
+                        </div><br/>
 
                         <span id = "post_request_status"></span>
 

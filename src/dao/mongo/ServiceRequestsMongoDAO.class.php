@@ -1,8 +1,8 @@
 <?php
 
-	/**
+    /**
      * @author rajnish
-	**/
+    **/
 
 /*
 * Good Programmer practicis
@@ -10,7 +10,7 @@
 * 2. Comment should be made at trike placas.
 *
 */
-	//require_once 'dao/CustomerIdMappingDAO.interface.php';
+    //require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
     
@@ -19,7 +19,7 @@
     require_once 'exceptions/DuplicateEntityException.class.php';
     //require_once 'exceptions/customers/CustomerNotFoundException.class.php';
 
-	class ServiceRequestsMongoDAO implements ServiceRequestsDAO {
+    class ServiceRequestsMongoDAO implements ServiceRequestsDAO {
 
         private $mongo;
         
@@ -47,7 +47,7 @@
             //return $return;
         }
 
-		public function insert1($customerObj, $raw = null) {
+        public function insert1($customerObj, $raw = null) {
             global $logger, $warnings_payload;
 
             $customerResult = $identifierMappingsResult = $rawResult = array(); 
@@ -359,17 +359,21 @@
         
         public function loadAll() {
             global $logger;
-            $customers = $mongoCustomers = null;
+            $services = null;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: service_requests");
+            $this -> mongo -> selectCollection('service_requests');     
 
-            $mongoCustomers = $this -> mongo -> find(array());
-            foreach ($mongoCustomers as $mongoCustomer) {
-                $customers [] = Customer :: deserialize($mongoCustomer);
+            $mongoServices = $this -> mongo -> find(array());
+            
+            foreach ($mongoServices as $key => $value) {
+                //$name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null
+                $logger -> debug ("mongo array : " . json_encode($value));
+
+                $services[] =  new ServiceRequest($value['name'], $value['mobile'], $value['address'], $value ['service'], $value["type"], $value ['timestamp']);
             }
             
-            return $customers;
+            return $services;
         }
         
         public function loadAllInOrderOf($sortByKey) {
@@ -584,4 +588,4 @@
 
             return $result;
         }
-	}  
+    }  

@@ -59,19 +59,29 @@ class ServiceRequestResource implements Resource {
 
     public function get($resourceVals, $data, $ServiceRequestId) {
 
-        //$ServiceRequestId = 1;
-
-        $ServiceRequestInfoId = $resourceVals ['ServiceRequest'];
-        if (isset($ServiceRequestInfoId))
-            return array('code' => '6004');
-            //$result = $this->getServiceRequestDetail($ServiceRequestId);
-            
-        else
-            $result = $this -> getServiceRequestDetail($ServiceRequestId);
+        global $logger;
+        $logger->debug('Fetch List of services Detail...');
         
-        if (!is_array($result)) {
-            return array('code' => '6004');
+        $serviceObjs = $this -> ServiceRequestDAO -> loadAll();
+        $result = null;
+
+        if(empty($serviceObjs)) 
+                return array('code' => '6004');
+
+         
+        foreach ($serviceObjs as $key => $value) {
+
+            $result [] = $value -> toArray();
         }
+
+        $logger -> debug ('Fetched details: ' . json_encode($this -> result));
+
+
+        return array('code' => '6000', 
+                     'data' => array(
+                                'services' => $result
+                            )
+            );
 
         return $result;
     }
