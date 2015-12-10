@@ -428,6 +428,9 @@
                     <h1 class="section-title fancy">Hire Now</h1>
                     <p class="section-desc">
                         High skilled, Background verified, experienced and certified professional.
+                    </p><br/>
+                    <p style="align:center;font-size:20px;">
+                    Click on picture to choose a service
                     </p>
                 </header>
 
