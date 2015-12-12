@@ -40,7 +40,18 @@ class ServiceRequestResource implements Resource {
             throw new UnsupportedResourceMethodException();
         }
 
-        $ServiceRequestInfoObj = new ServiceRequest($data['name'], $data['mobile'], $data['address'], $data ['service'], $data["type"], $data ['timestamp']);
+        $ServiceRequestInfoObj = new ServiceRequest(
+                                                    $data['name'], 
+                                                    $data['mobile'], 
+                                                    $data['address'], 
+                                                    $data['service'], 
+                                                    $data["type"], 
+                                                    $data["salary_criteria"], 
+                                                    $data["requirements"], 
+                                                    $data["working_hour"], 
+                                                    $data["status"], 
+                                                    $data ['timestamp']
+                                                    );
         //$logger -> debug ("POSTed ServiceRequest Detail: " . $ServiceRequestInfoObj -> toString());
 
         

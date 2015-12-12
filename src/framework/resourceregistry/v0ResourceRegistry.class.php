@@ -14,11 +14,16 @@
 
             switch($resourceType) {
 
-                case '/user': 
-                    require_once 'resources/UserResource.class.php';
-                    $this -> resource = new UserResource();
+                case '/users': 
+                    require_once 'resources/UsersResource.class.php';
+                    $this -> resource = new UsersResource();
                 break;
             	
+                case '/employees': 
+                    require_once 'resources/EmployeesResource.class.php';
+                    $this -> resource = new EmployeesResource();
+                break;
+
                 case '/services': 
                     require_once 'resources/ServicesResource.class.php';
                     $this -> resource = new ServicesResource();
@@ -29,6 +34,20 @@
                     $this -> resource = new ServiceRequestResource();
                 break;
 
+                case '/workers': 
+                    require_once 'resources/WorkersResource.class.php';
+                    $this -> resource = new WorkersResource();
+                break;
+
+                case '/feedback': 
+                    require_once 'resources/FeedbackResource.class.php';
+                    $this -> resource = new FeedbackResource();
+                break;
+
+                case '/followback': 
+                    require_once 'resources/FollowbackResource.class.php';
+                    $this -> resource = new FollowbackResource();
+                break;
                 
                 default:
                     require_once 'exceptions/UnsupportedResourceTypeException.class.php';

@@ -21,8 +21,8 @@
 			$this -> email = $email;
 			$this -> count = $count;
 			$this -> status = $status;
-			$this -> addedOn = $addedOn;
-			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> added_on = $addedOn;
+			$this -> last_updated = $lastUpdateOn;
 
 		}
 
@@ -62,14 +62,14 @@
 		}
 
 		function setAddedOn($addedOn){
-			$this -> addedOn = $addedOn;
+			$this -> added_on = $addedOn;
 		}
 		function getAddedOn(){
 			return $this-> addedOn;
 		}
 
 		function setLastUpdateOn($lastUpdateOn){
-			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> last_updated = $lastUpdateOn;
 		}
 		function getLastUpdateOn(){
 			return $this-> lastUpdateOn;

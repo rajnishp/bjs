@@ -9,7 +9,7 @@ require_once 'models/User.class.php';
 require_once 'exceptions/MissingParametersException.class.php';
 require_once 'exceptions/UnsupportedResourceMethodException.class.php';
 
-class UserResource implements Resource {
+class UsersResource implements Resource {
 
     private $userDAO;
     private $user;
@@ -33,14 +33,21 @@ class UserResource implements Resource {
     public function post ($resourceVals, $data, $userId) {
         global $logger, $warnings_payload;
 
-        $UserInfoId = $resourceVals ['user'];
+        $UserInfoId = $resourceVals ['users'];
         if (isset($UserInfoId)) {
             $warnings_payload [] = 'POST call to /user must not have ' . 
                                         '/user_ID appended i.e. POST /user';
             throw new UnsupportedResourceMethodException();
         }
 
-        $userInfoObj = new User($data ['name'], $data ['mobile'], $data ['email'], $data ['gpslocation']);
+        $userInfoObj = new User (
+                                $data ['name'], 
+                                $data ['mobile'], 
+                                $data ['email'], 
+                                $data ['address'], 
+                                $data ['gps_location'],
+                                date("Y-m-d H:i:s")
+                                );
         //$logger -> debug ("POSTed User Detail: " . $userInfoObj -> toString());
 
         
@@ -61,38 +68,50 @@ class UserResource implements Resource {
 
         //$userId = 1;
 
-        $UserInfoId = $resourceVals ['user'];
+        $UserInfoId = $resourceVals ['users'];
         if (isset($UserInfoId))
-            return array('code' => '6004');
+            $result = $this -> getUserDetail($userId);
             //$result = $this->getUserDetail($userId);
             
         else
-            $result = $this -> getUserDetail($userId);
+            $result = $this -> getAllUsers();
         
         if (!is_array($result)) {
             return array('code' => '6004');
         }
 
-        return $result;
+        return array('code' => '6000', 
+                     'data' => $result
+            );
     }
 
     private function getUserDetail($userId) {
     
         global $logger;
         $logger->debug('Fetch User Detail...');
-        $userInfoObj = $this -> mobacDAO -> load($userId);
+        $userInfoObj = $this -> usersDAO -> load($userId);
 
-        if(empty($userInfoObj)) 
-                return array('code' => '6004');        
-             
         $this -> userDetail [] = $userInfoObj-> toArray();
         $logger -> debug ('Fetched details: ' . json_encode($this -> userDetail));
 
-        return array('code' => '6000', 
-                     'data' => array(
-                                'user' => $this -> userDetail
-                            )
-            );
+        return $this -> userDetail;
+    }
+
+    private function getAllUsers() {
+    
+        global $logger;
+        $usersArray = null;
+        $logger->debug('Fetch User Detail...');
+        $userInfoObjs = $this -> usersDAO -> loadAllUsers();
+
+              
+        foreach ($userInfoObjs as $key => $userInfoObj) {
+                  $usersArray [] = $userInfoObj-> toArray();
+             }     
+       
+        $logger -> debug ('Fetched details: ' . json_encode($this -> userDetail));
+
+        return $usersArray;
     }
 
 }

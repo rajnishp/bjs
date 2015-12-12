@@ -68,5 +68,16 @@ class DAOFactory{
 		return new ServiceRequestsMongoDAO();
 	}
 
+	//getWorkersDAO
+
+	public static function getWorkersDAO(){
+		
+		require_once('WorkersDAO.interface.php');
+		require_once('models/Worker.class.php');
+		require_once('mongo/WorkersMongoDAO.class.php');
+
+		return new WorkersMongoDAO();
+	}
+
 }
 ?>
