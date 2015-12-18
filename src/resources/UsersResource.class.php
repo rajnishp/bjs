@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author rajnish
+ * @author anil
  */
 require_once 'resources/Resource.interface.php';
 require_once 'dao/DAOFactory.class.php';
@@ -11,12 +11,12 @@ require_once 'exceptions/UnsupportedResourceMethodException.class.php';
 
 class UsersResource implements Resource {
 
-    private $userDAO;
+    private $usersDAO;
     private $user;
 
     public function __construct() {
 		$DAOFactory = new DAOFactory();
-		$this -> userDAO = $DAOFactory -> getUsersDAO();
+		$this -> usersDAO = $DAOFactory -> getUsersDAO();
     }
 
     public function checkIfRequestMethodValid($requestMethod) {
@@ -51,7 +51,7 @@ class UsersResource implements Resource {
         //$logger -> debug ("POSTed User Detail: " . $userInfoObj -> toString());
 
         
-            $this -> userDAO -> insert($userInfoObj);
+            $this -> usersDAO -> insert($userInfoObj);
 
             $userDetail = $userInfoObj -> toArray();
             

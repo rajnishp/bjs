@@ -5,7 +5,7 @@
      	 * @author: anil
      	 * @date: 2015-12-12 10:50	 
 	 */
-	class Worker{
+	class employee{
 		
 		private $firstName;
 		private $lastName;

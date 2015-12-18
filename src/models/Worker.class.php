@@ -2,8 +2,8 @@
 	/**
 	 * Object represents collection 'workers'
 	 *
-     	 * @author: rajnish
-     	 * @date: 2015-09-09 22:40	 
+     	 * @author: anil
+     	 * @date: 2015-17-12 22:40	 
 	 */
 	class Worker{
 		

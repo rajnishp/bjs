@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author rahul
+ * @author anil
  */
 require_once 'resources/Resource.interface.php';
 require_once 'dao/DAOFactory.class.php';
@@ -74,7 +74,7 @@ class WorkersResource implements Resource {
                                     );
 
         
-            $this -> workersDAO -> insert($newWorkerObj);
+            $this -> WorkersDAO -> insert($newWorkerObj);
 
             $workerDetail = $newWorkerObj -> toArray();
             
@@ -111,7 +111,7 @@ class WorkersResource implements Resource {
     
         global $logger;
         $logger->debug('Fetch User Detail...');
-        $workerInfoObj = $this -> workersDAO -> load($workerId);
+        $workerInfoObj = $this -> WorkersDAO -> load($workerId);
 
               
              
@@ -126,7 +126,7 @@ class WorkersResource implements Resource {
         global $logger;
         $workersArray = null;
         $logger->debug('Fetch User Detail...');
-        $workerInfoObjs = $this -> workersDAO -> loadAllWorkers();
+        $workerInfoObjs = $this -> WorkersDAO -> loadAllWorkers();
 
               
         foreach ($workerInfoObjs as $key => $workerInfoObj) {

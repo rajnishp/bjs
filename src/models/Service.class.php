@@ -2,8 +2,8 @@
 	/**
 	 * Object represents collection 'users'
 	 *
-     	 * @author: rahul
-     	 * @date: 2015-25-10 12:40	 
+     	 * @author: anil
+     	 * @date: 2015-17-12 12:40	 
 	 */
 	class Service{
 		

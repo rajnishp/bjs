@@ -2,8 +2,8 @@
 	/**
 	 * Object represents collection 'service_requests'
 	 *
-     	 * @author: rajnish
-     	 * @date: 2015-09-08 12:40	 
+     	 * @author: anil
+     	 * @date: 2015-18-12 12:40	 
 	 */
 	class ServiceRequest{
 		
@@ -14,15 +14,14 @@
 		private $service;
 		private $type;
 		private $salaryCriteria;
-
 		private $workingHour;
 		private $requirements ;
-		
 		private $status;
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $mobile, $address, $service, $type, $salaryCriteria, $requirements, $workingHour, $status, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $mobile, $address, $service, $type, $salaryCriteria, $requirements, 
+								$workingHour, $status, $addedOn, $lastUpdateOn, $uid = null) {
 			
 			$this -> uid = $uid;
 			$this -> name = $name;

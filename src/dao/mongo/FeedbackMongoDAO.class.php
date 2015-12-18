@@ -1,20 +1,25 @@
 <?php
 
-	/**
+    /**
      * @author anil
-	**/
+    **/
 
-	//require_once 'dao/CustomerIdMappingDAO.interface.php';
+/*
+* Good Programmer practicis
+* 1. Expection should be catched and thrown at right place
+* 2. Comment should be made at trike placas.
+*
+*/
+    //require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
- 
-
+    
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';
     require_once 'exceptions/DuplicateEntityException.class.php';
-    //require_once 'exceptions/customers/CustomerNotFoundException.class.php';
+    //require_once 'exceptions/feedback/CustomerNotFoundException.class.php';
 
-	class ServicesMongoDAO implements ServicesDAO {
+    class FeedbackMongoDAO implements FeedbackDAO {
 
         private $mongo;
         
@@ -24,19 +29,105 @@
 
         }
 
-        // should be implemented in future
-        public function insert($serviceListObj) {
+        public function insert($FeedbackObj) {
             global $logger, $warnings_payload;
 
-            $logger -> debug("Insert the customer into `services` collection");
-            try {
-            $logger -> debug ("Selecting collection: services");
-            $this -> mongo -> selectCollection('services');
+            $logger -> debug("Insert the customer into `feedback` collection");
+
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');
 
 
-            $logger -> debug("Mongo Customer: " . json_encode($serviceListObj->toArray() ));
-            $result = $this -> mongo -> insert($serviceListObj->toArray()); 
+            $logger -> debug("Mongo Customer: " . json_encode($FeedbackObj->toArray() ));
+            $result = $this -> mongo -> insert($FeedbackObj->toArray()); 
             $logger -> debug("Result: " . $result ['ok']);
+
+            return $result;
+
+            //return $return;
+        }
+
+        public function insert1($customerObj, $raw = null) {
+            global $logger, $warnings_payload;
+
+            $customerResult = $identifierMappingsResult = $rawResult = array(); 
+            $customerInConflictResult = $conflictResult = array(); 
+            try {
+                /* Check whether all identifiers are new ones */
+                $identifiers = $customerObj -> getIdentifiers();
+                $result = $this -> checkIfAllNewIdentifiers($identifiers);
+
+                $duplicate = $result ['duplicate'];
+                if ($duplicate) {
+
+                    /* Throw exception if identifier already exists in the system */
+                    require_once 'exceptions/feedback/DuplicateCustomerException.class.php';
+                    throw new DuplicateCustomerException($result ['duplicate_uuid']);
+
+                } else {
+
+                    $conflict = $result ['conflict'];
+                    if ($conflict) {
+
+                        /* Insert the conflicted customer into the `conflictedfeedback` and get it's UUID */
+                        $custToInsert = $customerObj -> serialize();
+                        $customerInConflictResult = $this -> insertCustomerInConflict($custToInsert);
+                        $conflictUuid = $custToInsert['_id'] -> {'$id'};
+
+                        if ($customerInConflictResult ['ok']) {
+                            $cases = $result ['conflictCases'];
+                            $conflictResult = $this -> insertConflict($conflictUuid, $cases);                    
+                        }
+
+                        /* Store the raw data */
+                        if (! is_null($raw)) {
+                            $raw ['customerUUID'] = $conflictUuid;
+                            $raw ['inConflict'] = 'true';
+                            $rawResult = $this -> insertRawdata($raw);
+                        }
+
+                        $return = array(
+                            'insertResults' => array (
+                                'conflict' => $conflictResult,
+                                'customerInConflict' => $customerInConflictResult, 
+                                'raw' => $rawResult
+                            ), 
+                            'conflict' => true, 
+                            'customer' => $customerObj
+                        );
+
+                    } else {
+                        /* Insert the customer into `feedback` collection */
+                        $custToInsert = $customerObj -> serialize();
+                        $customerResult = $this -> insertCustomer($custToInsert);
+
+                        /* Map the identifiers against the UUID in the `customer_id_mapping` table */
+                        $uuid = null;
+                        if ($customerResult ['ok']) {
+                            $uuid = $custToInsert['_id'] -> {'$id'};
+                            $customerObj -> setUuid ($uuid);
+                            $identifierMappingsResult = $this -> mapCustomerIdentifiers($identifiers, $uuid);
+                            $logger -> debug("Identifiers Mapped: " . json_encode($identifierMappings));
+                        }
+
+                        /* Store the raw data */
+                        if (! is_null($raw)) {
+                            $raw ['customerUUID'] = $uuid;
+                            $raw ['inConflict'] = 'false';
+                            $rawResult = $this -> insertRawdata($raw);
+                        }
+
+                        $return = array(
+                            'insertResults' => array (
+                                'customer' => $customerResult, 
+                                'customerIdMappings' => $identifierMappingsResult,
+                                'raw' => $rawResult
+                            ), 
+                            'conflict' => false, 
+                            'customer' => $customerObj
+                        );
+                    }
+                }
             } catch(MongoException $e) {
                 $logger -> error("MongoException: " . $e -> getMessage());
                 throw new MongoDbException($e, $e);
@@ -44,10 +135,8 @@
                 throw $e;
             }
 
-            return $result;
-
+            return $return;
         }
-
 
         public function multiInsert($customerObjs, $raw) {
 
@@ -88,8 +177,8 @@
             $customerResult = $deleteIdentifierMappings = $identifierMappingsResult = $rawResult = array(); 
 
             try {
-                $logger -> debug ("Selecting collection: services");
-                $this -> mongo -> selectCollection('services');
+                $logger -> debug ("Selecting collection: feedback");
+                $this -> mongo -> selectCollection('feedback');
 
                 $uuid = $customer -> getUuid();
                 $custToUpdate = $customer -> serialize();
@@ -139,8 +228,8 @@
         public function delete($uuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: services");
-            $this -> mongo -> selectCollection('services');     
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');     
 
             $result = $this -> mongo -> removeByObjectId($uuid);
 
@@ -169,7 +258,7 @@
             try {
                 $result = $this -> delete($customerIdMapping [0] ['uuid']);
             } catch (CustomerNotFoundException $e) {
-                /* In case of an entry in the `customer_id_mapping` table but not in the `customers` collection */
+                /* In case of an entry in the `customer_id_mapping` table but not in the `feedback` collection */
                 throw new CustomerNotFoundException($idType, $idValue, null, $e);
             } catch (Exception $e) {
                 throw $e;
@@ -182,8 +271,8 @@
             global $logger;
             $customerObjs = $output = array();
 
-            $logger -> debug ("Selecting collection: services");
-            $this -> mongo -> selectCollection('services');     
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');     
 
             if (sizeof($uuidValues) == 1) {
                 $customer = $this -> mongo -> findByObjectIdAndOrgId($uuidValues [0], $orgId, $projection);
@@ -201,9 +290,9 @@
                     $output ['failures'] ['uuid'] = $failures;
             }
 
-            $customers = $output ['result'];
+            $feedback = $output ['result'];
             unset($output ['result']);
-            foreach ($customers as $uuid => $customer) {
+            foreach ($feedback as $uuid => $customer) {
                 $output ['result'] [] = Customer :: deserialize($customer);
             }
 
@@ -219,10 +308,10 @@
             try {
                 if (! empty($mappingOutput ['result'])) {
                     $uuids = array_keys($mappingOutput ['result']);
-                    $customersOutput = $this -> load($uuids, $orgId, $projection);
+                    $feedbackOutput = $this -> load($uuids, $orgId, $projection);
                 }
-                if (! empty($customersOutput ['failures'] ['uuid'])) {
-                    foreach ($customersOutput ['failures'] ['uuid'] as $uuid) {
+                if (! empty($feedbackOutput ['failures'] ['uuid'])) {
+                    foreach ($feedbackOutput ['failures'] ['uuid'] as $uuid) {
                         $mappingOutput ['failures'] [$idType] [] = 
                             $mappingOutput ['result'] [$uuid] ['idValue'];
                     }
@@ -233,7 +322,7 @@
 
             return array (
                 'failures' => $mappingOutput ['failures'],
-                'result' => $customersOutput ['result']
+                'result' => $feedbackOutput ['result']
             );
         }
 
@@ -246,10 +335,10 @@
 
             try {
                 $uuids = array_keys($mappingOutput ['result']);
-                $customersOutput = $this -> load($uuids, $orgId, $projection);
+                $feedbackOutput = $this -> load($uuids, $orgId, $projection);
 
-                if (! empty($customersOutput ['failures'] ['uuid'])) {
-                    foreach ($customersOutput ['failures'] ['uuid'] as $uuid) {
+                if (! empty($feedbackOutput ['failures'] ['uuid'])) {
+                    foreach ($feedbackOutput ['failures'] ['uuid'] as $uuid) {
                         $idType = $mappingOutput ['result'] [$uuid] ['idType'];
                         $idValue = $mappingOutput ['result'] [$uuid] ['idValue'];
 
@@ -262,7 +351,7 @@
 
             return array (
                 'failures' => $mappingOutput ['failures'],
-                'result' => $customersOutput ['result']
+                'result' => $feedbackOutput ['result']
             );
         }        
         
@@ -272,8 +361,8 @@
             global $logger;
             $services = null;
 
-            $logger -> debug ("Selecting collection: services");
-            $this -> mongo -> selectCollection('services');     
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');     
 
             $mongoServices = $this -> mongo -> find(array());
             
@@ -281,7 +370,7 @@
                 //$name, $img, $status, $addedOn, $lastUpdateOn, $uuid = null
                 $logger -> debug ("mongo array : " . json_encode($value));
 
-                $services[] = new Service($value["name"], $value["img"], $value["status"], $value["plans"],null, null, $key );
+                $services[] =  new Feedback($value['name'], $value['mobile'], $value['address'], $value ['service'], $value["type"], $value ['timestamp']);
             }
             
             return $services;
@@ -289,17 +378,17 @@
         
         public function loadAllInOrderOf($sortByKey) {
             global $logger;
-            $customers = $mongoCustomers = null;
+            $feedback = $mongofeedback = null;
 
-            $logger -> debug ("Selecting collection: services");
-            $this -> mongo -> selectCollection('services');     
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');     
 
-            $mongoCustomers = $this -> mongo -> find(array(), array('$sortByKey' => 1));
-            foreach ($mongoCustomers as $mongoCustomer) {
-                $customers [] = Customer :: deserialize($mongoCustomer);
+            $mongofeedback = $this -> mongo -> find(array(), array('$sortByKey' => 1));
+            foreach ($mongofeedback as $mongoCustomer) {
+                $feedback [] = Customer :: deserialize($mongoCustomer);
             }
             
-            return $customers;
+            return $feedback;
         }
                 
         public function loadFromCustomerIdMapping($idType, $idValue) {
@@ -384,8 +473,8 @@
         public function loadCustomerInConflict($conflictCustomerUuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: conflictCustomers");
-            $this -> mongo -> selectCollection('conflictCustomers');     
+            $logger -> debug ("Selecting collection: conflictfeedback");
+            $this -> mongo -> selectCollection('conflictfeedback');     
 
             $conflictCustomer = $this -> mongo -> findByObjectId($conflictCustomerUuid);
 
@@ -393,28 +482,28 @@
             return $conflictCustomerObj;
         }
 
-        public function loadAllCustomersInConflict() {
+        public function loadAllfeedbackInConflict() {
             global $logger;
-            $customersInConflict = $mongoCustomersInConflict = null;
+            $feedbackInConflict = $mongofeedbackInConflict = null;
 
-            $logger -> debug ("Selecting collection: conflictCustomers");
-            $this -> mongo -> selectCollection('conflictCustomers');     
+            $logger -> debug ("Selecting collection: conflictfeedback");
+            $this -> mongo -> selectCollection('conflictfeedback');     
 
-            $mongoCustomersInConflict = $this -> mongo -> find(array());
-            foreach ($mongoCustomersInConflict as $mongoCustomerInConflict) {
-                $customersInConflict [] = Customer :: deserialize($mongoCustomerInConflict);
+            $mongofeedbackInConflict = $this -> mongo -> find(array());
+            foreach ($mongofeedbackInConflict as $mongoCustomerInConflict) {
+                $feedbackInConflict [] = Customer :: deserialize($mongoCustomerInConflict);
             }
             
-            return $customersInConflict;
+            return $feedbackInConflict;
         }
 
         public function insertCustomer($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the customer into `customers` collection");
+            $logger -> debug("Insert the customer into `feedback` collection");
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');
+            $logger -> debug ("Selecting collection: feedback");
+            $this -> mongo -> selectCollection('feedback');
 
             $logger -> debug("Mongo Customer: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 
@@ -449,7 +538,7 @@
         public function insertConflict($conflictUuid, $conflictCases) {
 
             global $logger;    
-            $logger -> debug("Insert the conflicted customer into `conflictedCustomers` and get it's UUID");
+            $logger -> debug("Insert the conflicted customer into `conflictedfeedback` and get it's UUID");
 
             /* Take the UUID and the conflict cases and insert into `conflict` collection */
             $logger -> debug ("Selecting collection: conflicts");
@@ -470,10 +559,10 @@
         public function insertCustomerInConflict($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the conflicted customer into `conflictedCustomers` and get it's UUID");
+            $logger -> debug("Insert the conflicted customer into `conflictedfeedback` and get it's UUID");
             
-            $logger -> debug ("Selecting collection: conflictCustomers");
-            $this -> mongo -> selectCollection('conflictCustomers');
+            $logger -> debug ("Selecting collection: conflictfeedback");
+            $this -> mongo -> selectCollection('conflictfeedback');
 
             $logger -> debug("Mongo Conflicted Customer: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 
@@ -485,9 +574,9 @@
         public function insertRawdata($raw) {
 
             global $logger;    
-            $logger -> debug("Insert the raw data into the 'customersInput' collection");
+            $logger -> debug("Insert the raw data into the 'feedbackInput' collection");
 
-            $this -> mongo -> selectCollection('customersInput');
+            $this -> mongo -> selectCollection('feedbackInput');
             $result = $this -> mongo -> insert($raw); 
 
             if ($result ['ok']) {
@@ -499,4 +588,4 @@
 
             return $result;
         }
-	}  
+    }  

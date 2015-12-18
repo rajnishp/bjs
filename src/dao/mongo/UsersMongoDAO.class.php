@@ -1,7 +1,7 @@
 <?php
 
 	/**
-     * @author rahul
+     * @author anil
 	**/
 
 	//require_once 'dao/CustomerIdMappingDAO.interface.php';
@@ -138,8 +138,8 @@
         public function delete($uuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             $result = $this -> mongo -> removeByObjectId($uuid);
 
@@ -181,8 +181,8 @@
             global $logger;
             $customerObjs = $output = array();
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             if (sizeof($uuidValues) == 1) {
                 $customer = $this -> mongo -> findByObjectIdAndOrgId($uuidValues [0], $orgId, $projection);
@@ -284,8 +284,8 @@
             global $logger;
             $customers = $mongoCustomers = null;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             $mongoCustomers = $this -> mongo -> find(array(), array('$sortByKey' => 1));
             foreach ($mongoCustomers as $mongoCustomer) {
@@ -404,10 +404,10 @@
         public function insertCustomer($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the customer into `customers` collection");
+            $logger -> debug("Insert the customer into `Users` collection");
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');
 
             $logger -> debug("Mongo Customer: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 

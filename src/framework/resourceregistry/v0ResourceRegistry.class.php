@@ -44,6 +44,11 @@
                     $this -> resource = new FeedbackResource();
                 break;
 
+                case '/match': 
+                    require_once 'resources/MatchResource.class.php';
+                    $this -> resource = new MatchResource();
+                break;
+
                 case '/followback': 
                     require_once 'resources/FollowbackResource.class.php';
                     $this -> resource = new FollowbackResource();
