@@ -62,7 +62,7 @@ class EmployeesResource implements Resource {
                                         $data['password'],
                                         $data['employee_type'],
                                         $data['remarks'],
-                                        date("Y-m-d H:i:s"),
+                                        date("Y-m-d H:i:s")
                                     );
 
         

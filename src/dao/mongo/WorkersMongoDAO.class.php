@@ -260,7 +260,7 @@
                                             $worker['mobile'],null, null, null, $worker['skills'], $worker['experience'], null,
                                             $worker['currentWorkingCity'], $worker['currentWorkingArea'], $worker['preferredWorkingCity'],$worker['preferredWorkingArea'],null, null, null, null, null,
                                             $worker['gender'], $worker['timings'], $worker['home_town'], $worker['remarks'], $worker['police'], $worker['agentId'], 
-                                            $worker['addedOn'], $worker['lastUpdateOn'], $worker['_id']->{'$id'});
+                                            $worker['addedOn'], $worker['lastUpdateOn'], $worker['uuid']->{'$id'});
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {

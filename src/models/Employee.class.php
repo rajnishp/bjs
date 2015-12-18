@@ -233,7 +233,7 @@
 							id_proof_id => $this -> idProofId,
 							cuurent_address => $this -> currentAddress,
 							permanent_address => $this -> permanentAddress,
-							age => $this -> age
+							age => $this -> age,
 							mobile => $this -> mobile,
 							emergency_mobile=> $this -> emergencyMobile,
 							education => $this -> education,

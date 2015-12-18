@@ -70,11 +70,11 @@ class WorkersResource implements Resource {
                                         $data['remarks'],
                                         $data['police'],
                                         $employeeId,
-                                        date("Y-m-d H:i:s"),
+                                        date("Y-m-d H:i:s")
                                     );
 
         
-            $this -> WorkersDAO -> insert($newWorkerObj);
+            $this -> workersDAO -> insert($newWorkerObj);
 
             $workerDetail = $newWorkerObj -> toArray();
             
@@ -111,7 +111,7 @@ class WorkersResource implements Resource {
     
         global $logger;
         $logger->debug('Fetch User Detail...');
-        $workerInfoObj = $this -> WorkersDAO -> load($workerId);
+        $workerInfoObj = $this -> workersDAO -> load($workerId);
 
               
              
@@ -126,7 +126,7 @@ class WorkersResource implements Resource {
         global $logger;
         $workersArray = null;
         $logger->debug('Fetch User Detail...');
-        $workerInfoObjs = $this -> WorkersDAO -> loadAllWorkers();
+        $workerInfoObjs = $this -> workersDAO -> loadAllWorkers();
 
               
         foreach ($workerInfoObjs as $key => $workerInfoObj) {

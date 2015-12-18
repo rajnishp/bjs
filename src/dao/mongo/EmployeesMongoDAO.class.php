@@ -5,7 +5,7 @@
 	**/
     
     require_once 'dao/EmployeesDAO.interface.php';
-    require_once 'models/employee.class.php';
+    require_once 'models/Employee.class.php';
 
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';
