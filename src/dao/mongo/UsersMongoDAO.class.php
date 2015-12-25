@@ -275,9 +275,11 @@
             $this -> mongo -> selectCollection('Users');     
 
             $mongoUsers = $this -> mongo -> find(array());
-            
-            
-            return $mongoUsers;
+            foreach ($mongoUsers as $user) {
+                $Users [] = new User($user['_id']->{'$id'}, $user['name'], $user['mobile'], $user['email'], $user['address'], 
+                                    $user['gps_location'], $user['added_on'], $user['last_updated']);
+            }            
+            return $Users;
         }
         
         public function loadAllInOrderOf($sortByKey) {

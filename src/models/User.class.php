@@ -16,7 +16,7 @@
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($uid, $name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn ) {
 			
 			$this -> uid = $uid;
 			$this -> name = $name;
