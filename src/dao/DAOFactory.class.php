@@ -64,7 +64,7 @@ class DAOFactory{
 		require_once('models/Employee.class.php');
 		require_once('mongo/EmployeesMongoDAO.class.php');
 
-		return new UsersMongoDAO();
+		return new EmployeesMongoDAO();
 	}
 
 	//getFeedbackDAO()

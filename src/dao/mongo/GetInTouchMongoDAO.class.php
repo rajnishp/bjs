@@ -28,7 +28,6 @@
 
         public function insert($getInTouchObj) {
             global $logger, $warnings_payload;
-
             $logger -> debug("Insert the customer into `customers` collection");
 
             $logger -> debug ("Selecting collection: get_in_touch");
@@ -37,6 +36,7 @@
 
             $logger -> debug("Mongo Customer: " . json_encode($getInTouchObj->toArray() ));
             $result = $this -> mongo -> insert($getInTouchObj->toArray()); 
+            console.log($result);
             $logger -> debug("Result: " . $result ['ok']);
 
             return $result;

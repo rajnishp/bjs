@@ -66,7 +66,7 @@ class EmployeesResource implements Resource {
                                     );
 
         
-            $this -> EmployeesDAO -> insert($newEmployeeObj);
+            $this -> employeesDAO -> insert($newEmployeeObj);
 
             $employeeDetail = $newEmployeeObj -> toArray();
             
@@ -103,7 +103,7 @@ class EmployeesResource implements Resource {
     
         global $logger;
         $logger->debug('Fetch User Detail...');
-        $employeeInfoObj = $this -> EmployeesDAO -> load($employeeId);
+        $employeeInfoObj = $this -> employeesDAO -> load($employeeId);
 
               
              
@@ -118,7 +118,7 @@ class EmployeesResource implements Resource {
         global $logger;
         $workersArray = null;
         $logger->debug('Fetch User Detail...');
-        $employeeInfoObjs = $this -> EmployeesDAO -> loadAllEmployees();
+        $employeeInfoObjs = $this -> employeesDAO -> loadAllEmployees();
 
               
         foreach ($employeeInfoObjs as $key => $employeeInfoObj) {

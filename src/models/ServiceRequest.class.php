@@ -124,7 +124,6 @@
 
 		function toArray() {
 			return array (
-							uid => $this -> uid,
 							name => $this -> name,
 							mobile=> $this -> mobile,
 							address => $this -> address,

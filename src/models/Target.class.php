@@ -8,10 +8,10 @@
 	class Target{
 		
 		private $id;
-		private $email;
-		private $status;
-		private $type;
-		private $time;
+		private $email;
+		private $status;
+		private $type;
+		private $time;
 		function __construct($email,$status,$time,$type,$id = null)
 		{
 			$this->id = $id;
@@ -64,9 +64,7 @@
 						type=>$this->type
 						
 						);
-
-			
-}
-		
+		}
+		
 	}
 ?>

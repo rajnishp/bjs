@@ -24,10 +24,10 @@
         public function insert($EmployeeObj) {
             global $logger, $warnings_payload;
 
-            $logger -> debug("Insert the employee details into `employees` collection");
+            $logger -> debug("Insert the employee details into `employee` collection");
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');
 
 
             $logger -> debug("Mongo employee: " . json_encode($EmployeeObj->toArray() ));
@@ -39,10 +39,10 @@
             //return $return;
         }
 
-        public function countFreeEmployees(){
+        public function countFreeemployee(){
 
                 try {
-                    $this -> mongo -> selectCollection('employees');
+                    $this -> mongo -> selectCollection('employee');
                     return count($this -> mongo -> find(array('status' => 1)));
 
 
@@ -89,23 +89,23 @@
 
         public function loadAllEmployees() {
             global $logger;
-            //$allemployees = $mongoemployeesInConflict = null;
+            $allemployee = $mongoemployeeInConflict = null;
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');     
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');     
 
-            $mongoemployees = $this -> mongo -> find(array());
+            $mongoemployee = $this -> mongo -> find(array());
             //$timings, $home_town, $remarks, $police, $agentId, $addedOn, $lastUpdateOn, $uuid = null
-            foreach ($mongoemployees as $employee) {
+            foreach ($mongoemployee as $employee) {
 
-                $allemployees [] = new employee($employee['firstName'], $employee['lastName'],null, null, null, null, null, 
+                $allemployee [] = new employee($employee['firstName'], $employee['lastName'],null, null, null, null, null, 
                                             $employee['mobile'],null, null, null, $employee['skills'], $employee['experience'], null,
                                             $employee['currentWorkingCity'], $employee['currentWorkingArea'], $employee['preferredWorkingCity'],$employee['preferredWorkingArea'],null, null, null, null, null,
                                             $employee['gender'], $employee['timings'], $employee['home_town'], $employee['remarks'], $employee['police'], $employee['agentId'], 
                                             $employee['addedOn'], $employee['lastUpdateOn'], $employee['_id']->{'$id'});
             }
             
-            return $allemployees;
+            return $allemployee;
         }
 
         public function update($employee, $raw) {
@@ -113,8 +113,8 @@
             $employeeResult = $deleteIdentifierMappings = $identifierMappingsResult = $rawResult = array(); 
 
             try {
-                $logger -> debug ("Selecting collection: employees");
-                $this -> mongo -> selectCollection('employees');
+                $logger -> debug ("Selecting collection: employee");
+                $this -> mongo -> selectCollection('employee');
 
                 $uuid = $employee -> getUuid();
                 $custToUpdate = $employee -> serialize();
@@ -164,8 +164,8 @@
         public function delete($uuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');     
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');     
 
             $result = $this -> mongo -> removeByObjectId($uuid);
 
@@ -194,7 +194,7 @@
             try {
                 $result = $this -> delete($employeeIdMapping [0] ['uuid']);
             } catch (employeeNotFoundException $e) {
-                /* In case of an entry in the `employee_id_mapping` table but not in the `employees` collection */
+                /* In case of an entry in the `employee_id_mapping` table but not in the `employee` collection */
                 throw new employeeNotFoundException($idType, $idValue, null, $e);
             } catch (Exception $e) {
                 throw $e;
@@ -207,8 +207,8 @@
             global $logger;
             $employeeObjs = $output = array();
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');     
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');     
 
             /*if (sizeof($uuidValues) == 1) {*/
                 $employee = $this -> mongo -> findByObjectId($uuidValues );
@@ -227,9 +227,9 @@
                     $output ['failures'] ['uuid'] = $failures;
             }*/
 
-           /* $employees = $output ['result'];
+           /* $employee = $output ['result'];
             unset($output ['result']);
-            foreach ($employees as $uuid => $employee) {
+            foreach ($employee as $uuid => $employee) {
                 $output ['result'] [] = employee :: deserialize($employee);
             }*/
            
@@ -249,10 +249,10 @@
             try {
                 if (! empty($mappingOutput ['result'])) {
                     $uuids = array_keys($mappingOutput ['result']);
-                    $employeesOutput = $this -> load($uuids, $orgId, $projection);
+                    $employeeOutput = $this -> load($uuids, $orgId, $projection);
                 }
-                if (! empty($employeesOutput ['failures'] ['uuid'])) {
-                    foreach ($employeesOutput ['failures'] ['uuid'] as $uuid) {
+                if (! empty($employeeOutput ['failures'] ['uuid'])) {
+                    foreach ($employeeOutput ['failures'] ['uuid'] as $uuid) {
                         $mappingOutput ['failures'] [$idType] [] = 
                             $mappingOutput ['result'] [$uuid] ['idValue'];
                     }
@@ -263,7 +263,7 @@
 
             return array (
                 'failures' => $mappingOutput ['failures'],
-                'result' => $employeesOutput ['result']
+                'result' => $employeeOutput ['result']
             );
         }
 
@@ -276,10 +276,10 @@
 
             try {
                 $uuids = array_keys($mappingOutput ['result']);
-                $employeesOutput = $this -> load($uuids, $orgId, $projection);
+                $employeeOutput = $this -> load($uuids, $orgId, $projection);
 
-                if (! empty($employeesOutput ['failures'] ['uuid'])) {
-                    foreach ($employeesOutput ['failures'] ['uuid'] as $uuid) {
+                if (! empty($employeeOutput ['failures'] ['uuid'])) {
+                    foreach ($employeeOutput ['failures'] ['uuid'] as $uuid) {
                         $idType = $mappingOutput ['result'] [$uuid] ['idType'];
                         $idValue = $mappingOutput ['result'] [$uuid] ['idValue'];
 
@@ -292,7 +292,7 @@
 
             return array (
                 'failures' => $mappingOutput ['failures'],
-                'result' => $employeesOutput ['result']
+                'result' => $employeeOutput ['result']
             );
         }        
         
@@ -300,32 +300,32 @@
         
         public function loadAll() {
             global $logger;
-            $employees = $mongoemployees = null;
+            $employee = $mongoemployee = null;
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');     
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');     
 
-            $mongoemployees = $this -> mongo -> find(array());
-            foreach ($mongoemployees as $mongoemployee) {
-                $employees [] = employee :: deserialize($mongoemployee);
+            $mongoemployee = $this -> mongo -> find(array());
+            foreach ($mongoemployee as $mongoemployee) {
+                $employee [] = employee :: deserialize($mongoemployee);
             }
             
-            return $employees;
+            return $employee;
         }
         
         public function loadAllInOrderOf($sortByKey) {
             global $logger;
-            $employees = $mongoemployees = null;
+            $employee = $mongoemployee = null;
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');     
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');     
 
-            $mongoemployees = $this -> mongo -> find(array(), array('$sortByKey' => 1));
-            foreach ($mongoemployees as $mongoemployee) {
-                $employees [] = employee :: deserialize($mongoemployee);
+            $mongoemployee = $this -> mongo -> find(array(), array('$sortByKey' => 1));
+            foreach ($mongoemployee as $mongoemployee) {
+                $employee [] = employee :: deserialize($mongoemployee);
             }
             
-            return $employees;
+            return $employee;
         }
                 
         public function loadFromemployeeIdMapping($idType, $idValue) {
@@ -410,8 +410,8 @@
         public function loademployeeInConflict($conflictemployeeUuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: conflictemployees");
-            $this -> mongo -> selectCollection('conflictemployees');     
+            $logger -> debug ("Selecting collection: conflictemployee");
+            $this -> mongo -> selectCollection('conflictemployee');     
 
             $conflictemployee = $this -> mongo -> findByObjectId($conflictemployeeUuid);
 
@@ -419,28 +419,28 @@
             return $conflictemployeeObj;
         }
 
-        public function loadAllemployeesInConflict() {
+        public function loadAllemployeeInConflict() {
             global $logger;
-            $employeesInConflict = $mongoemployeesInConflict = null;
+            $employeeInConflict = $mongoemployeeInConflict = null;
 
-            $logger -> debug ("Selecting collection: conflictemployees");
-            $this -> mongo -> selectCollection('conflictemployees');     
+            $logger -> debug ("Selecting collection: conflictemployee");
+            $this -> mongo -> selectCollection('conflictemployee');     
 
-            $mongoemployeesInConflict = $this -> mongo -> find(array());
-            foreach ($mongoemployeesInConflict as $mongoemployeeInConflict) {
-                $employeesInConflict [] = employee :: deserialize($mongoemployeeInConflict);
+            $mongoemployeeInConflict = $this -> mongo -> find(array());
+            foreach ($mongoemployeeInConflict as $mongoemployeeInConflict) {
+                $employeeInConflict [] = employee :: deserialize($mongoemployeeInConflict);
             }
             
-            return $employeesInConflict;
+            return $employeeInConflict;
         }
 
         public function insertemployee($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the employee into `employees` collection");
+            $logger -> debug("Insert the employee into `employee` collection");
 
-            $logger -> debug ("Selecting collection: employees");
-            $this -> mongo -> selectCollection('employees');
+            $logger -> debug ("Selecting collection: employee");
+            $this -> mongo -> selectCollection('employee');
 
             $logger -> debug("Mongo employee: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 
@@ -475,7 +475,7 @@
         public function insertConflict($conflictUuid, $conflictCases) {
 
             global $logger;    
-            $logger -> debug("Insert the conflicted employee into `conflictedemployees` and get it's UUID");
+            $logger -> debug("Insert the conflicted employee into `conflictedemployee` and get it's UUID");
 
             /* Take the UUID and the conflict cases and insert into `conflict` collection */
             $logger -> debug ("Selecting collection: conflicts");
@@ -496,10 +496,10 @@
         public function insertemployeeInConflict($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the conflicted employee into `conflictedemployees` and get it's UUID");
+            $logger -> debug("Insert the conflicted employee into `conflictedemployee` and get it's UUID");
             
-            $logger -> debug ("Selecting collection: conflictemployees");
-            $this -> mongo -> selectCollection('conflictemployees');
+            $logger -> debug ("Selecting collection: conflictemployee");
+            $this -> mongo -> selectCollection('conflictemployee');
 
             $logger -> debug("Mongo Conflicted employee: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 
@@ -511,9 +511,9 @@
         public function insertRawdata($raw) {
 
             global $logger;    
-            $logger -> debug("Insert the raw data into the 'employeesInput' collection");
+            $logger -> debug("Insert the raw data into the 'employeeInput' collection");
 
-            $this -> mongo -> selectCollection('employeesInput');
+            $this -> mongo -> selectCollection('employeeInput');
             $result = $this -> mongo -> insert($raw); 
 
             if ($result ['ok']) {

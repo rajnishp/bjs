@@ -18,12 +18,12 @@
 		function __construct ($contactName, $contactEmail, $contactSubject, $contactMessage, $status, $addedOn, $uuid = null) {
 			
 			$this -> uuid = $uuid;
-			$this -> contact_name = $contactName;
-			$this -> contact_email = $contactEmail;
-			$this -> contact_subject = $contactSubject;
-			$this -> contact_message = $contactMessage;
+			$this -> contactName = $contactName;
+			$this -> contactEmail = $contactEmail;
+			$this -> contactSubject = $contactSubject;
+			$this -> contactMessage = $contactMessage;
 			$this -> status = $status;
-			$this -> added_on = $addedOn;
+			$this -> addedon = $addedOn;
 		}
 
 		function setUuid($uuid){
@@ -34,14 +34,14 @@
 		}
 
 		function setContactName($contactName){
-			$this -> contact_name = $contactName;
+			$this -> contactName = $contactName;
 		}
 		function getContactName(){
 			return $this-> contactName;
 		}
 
 		function setContactEmail($contactEmail){
-			$this -> contact_email = $contactEmail;
+			$this -> contactEmail = $contactEmail;
 		}
 		function getContactEmail(){
 			return $this-> contactEmail;
@@ -55,22 +55,21 @@
 		}
 
 		function setContactSubject($contactSubject){
-			$this -> contact_subject = $contactSubject;
+			$this -> contactSubject = $contactSubject;
 		}
 		function getContactSubject(){
 			return $this-> contactSubject;
 		}
 
-
 		function setAddedOn($addedOn){
-			$this -> added_on = $addedOn;
+			$this -> addedOn = $addedOn;
 		}
 		function getAddedOn(){
 			return $this-> addedOn;
 		}
 
 		function setContactMessage($contactMessage){
-			$this -> contact_message = $contactMessage;
+			$this -> contactMessage = $contactMessage;
 		}
 		function getContactMessage(){
 			return $this-> contactMessage;

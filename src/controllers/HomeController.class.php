@@ -88,6 +88,7 @@ class HomeController extends BaseController {
 													"not_checked",
 													date("Y-m-d H:i:s")
 												);
+			
 			try {
 				$this -> getInTouchDAO -> insert($getInTouchObj);
 			}
