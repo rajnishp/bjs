@@ -277,7 +277,7 @@
             $mongoUsers = $this -> mongo -> find(array());
             
             
-            return $Users;
+            return $mongoUsers;
         }
         
         public function loadAllInOrderOf($sortByKey) {

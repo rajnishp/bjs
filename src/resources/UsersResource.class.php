@@ -102,7 +102,7 @@ class UsersResource implements Resource {
         global $logger;
         $usersArray = null;
         $logger->debug('Fetch User Detail...');
-        $userInfoObjs = $this -> usersDAO -> loadAllUsers();
+        $userInfoObjs = $this -> usersDAO -> loadAll();
 
               
         foreach ($userInfoObjs as $key => $userInfoObj) {

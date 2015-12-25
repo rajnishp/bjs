@@ -98,11 +98,14 @@
             //$timings, $home_town, $remarks, $police, $agentId, $addedOn, $lastUpdateOn, $uuid = null
             foreach ($mongoWorkers as $worker) {
 
-                $allWorkers [] = new Worker($worker['firstName'], $worker['lastName'],null, null, null, null, null, 
-                                            $worker['mobile'],null, null, null, $worker['skills'], $worker['experience'], null,
-                                            $worker['currentWorkingCity'], $worker['currentWorkingArea'], $worker['preferredWorkingCity'],$worker['preferredWorkingArea'],null, null, null, null, null,
-                                            $worker['gender'], $worker['timings'], $worker['home_town'], $worker['remarks'], $worker['police'], $worker['agentId'], 
-                                            $worker['addedOn'], $worker['lastUpdateOn'], $worker['_id']->{'$id'});
+                $allWorkers [] = new Worker($worker['_id']->{'$id'}, $worker['first_name'], $worker['last_name'], $worker['address_proof_name'],
+                                            $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'], $worker['age'],
+                                            $worker['cuurent_address'], $worker['permanent_address'], $worker['mobile'], $worker['emergency_mobile'],
+                                            $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'], $worker['working_domain'],
+                                            $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
+                                            $worker['preferred_working_area'], $worker['salary_expected'], $worker['work_time_slots'],
+                                            $worker['free_time_slots'], $worker['birth_date'], $worker['gender'], $worker['employee_id'],
+                                            $worker['addedOn'], $worker['lastUpdateOn'],$worker['remarks'], $worker['police']);
             }
             
             return $allWorkers;

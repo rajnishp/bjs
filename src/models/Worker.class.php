@@ -38,11 +38,11 @@
 		private $remarks;
 		private $police;
 
-		function __construct ($firstName, $lastName, $addressProofName, $addressProofId, $idProofName, $idProofId, $age, 
+		function __construct ($uuid, $firstName, $lastName, $addressProofName, $addressProofId, $idProofName, $idProofId, $age, 
 							$currentAddress, $permanentAddress, $mobile, $emergencyMobile, $education, $languages, $skills,	
 							$experience, $workingDomain, $currentWorkingCity, $currentWorkingArea, $preferredWorkingCity, 
 							$preferredWorkingArea, $guessedSalary, $workTimeSlots, $freeTimeSlots, $birthDate, $gender, 
-							$agentId, $addedOn, $lastUpdateOn, $remarks, $police, $uuid = null) {
+							$agentId, $addedOn, $lastUpdateOn, $remarks, $police) {
 			
 			$this -> uuid = $uuid;
 			$this -> first_name = $firstName;
