@@ -105,7 +105,7 @@
                                             $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
                                             $worker['preferred_working_area'], $worker['salary_expected'], $worker['work_time_slots'],
                                             $worker['free_time_slots'], $worker['birth_date'], $worker['gender'], $worker['employee_id'],
-                                            $worker['addedOn'], $worker['lastUpdateOn'],$worker['remarks'], $worker['police']);
+                                            $worker['added_on'], $worker['last_updated'],$worker['remarks'], $worker['police']);
             }
             
             return $allWorkers;
