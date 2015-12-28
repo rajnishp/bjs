@@ -1250,7 +1250,7 @@
                                 <h3>Quick Contact</h3>
                                 <span class="contact-info-icon redbg"><i class="fa fa-envelope-o"></i></span>
                                 <ul class="contact-info-list">
-                                    <li><a href="mailto:hire.blueteam.in@gmail.com">hire.blueteam.in@gmail.com</a></li>
+                                    <li><a href="mailto:hire@blueteam.in">hire@blueteam.in</a></li>
                                     <li><em class="highlight red">Twitter:</em> hireblueteam</li>
                                 </ul>
                             </div><!-- End .contact-info-box -->

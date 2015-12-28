@@ -7,7 +7,7 @@
 	 */
 	class User{
 		
-		private $uid;
+		private $uuuid;
 		private $name;
 		private $mobile;
 		private $email;
@@ -16,9 +16,9 @@
 		private $addedOn;
 		private $lastUpdateOn;
 
-		function __construct ($uid, $name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn ) {
+		function __construct ($uuid=null, $name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn ) {
 			
-			$this -> uid = $uid;
+			$this -> uuid = $uuid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
 			$this -> email = $email;
@@ -29,11 +29,11 @@
 
 		}
 
-		function setUid($uid){
-			$this -> uid = $uid;
+		function setUuid($uuid){
+			$this -> uuid = $uuid;
 		}
-		function getUid(){
-			return $this-> uid;
+		function getUuid(){
+			return $this-> uuid;
 		}
 
 		function setName($name){
@@ -87,6 +87,7 @@
 
 		function toArray() {
 			return array (
+							uuid => $this -> uuid,
 							name => $this -> name,
 							mobile=> $this -> mobile,
 							email=> $this -> email,

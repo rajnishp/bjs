@@ -191,7 +191,8 @@
                     $output ['failures'] ['uuid'] [] = $uuidValues [0];
 
                 $output ['result'] [$uuidValues [0]] = $customer;
-            } else {
+            } 
+            else {
                 $output = $this -> mongo -> findManyByObjectIdAndOrgId($uuidValues, $orgId, $projection);
 
                 $failures = $output ['failures'];

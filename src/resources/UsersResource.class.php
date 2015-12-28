@@ -45,7 +45,8 @@ class UsersResource implements Resource {
                                 $data ['mobile'], 
                                 $data ['email'], 
                                 $data ['address'], 
-                                $data ['gps_location'],
+                                $data ['gpsLocation'],
+                                date("Y-m-d H:i:s"),
                                 date("Y-m-d H:i:s")
                                 );
         //$logger -> debug ("POSTed User Detail: " . $userInfoObj -> toString());

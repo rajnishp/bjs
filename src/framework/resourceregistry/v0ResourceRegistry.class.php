@@ -39,9 +39,14 @@
                     $this -> resource = new WorkersResource();
                 break;
 
-                case '/feedback': 
-                    require_once 'resources/FeedbackResource.class.php';
-                    $this -> resource = new FeedbackResource();
+                case '/feedback/workers': 
+                    require_once 'resources/FeedbackWorkerResource.class.php';
+                    $this -> resource = new FeedbackWorkerResource();
+                break;
+
+                case '/feedback/users': 
+                    require_once 'resources/FeedbackUserResource.class.php';
+                    $this -> resource = new FeedbackUserResource();
                 break;
 
                 case '/match': 
@@ -49,11 +54,16 @@
                     $this -> resource = new MatchResource();
                 break;
 
-                case '/followback': 
-                    require_once 'resources/FollowbackResource.class.php';
-                    $this -> resource = new FollowbackResource();
+                case '/followback/workers': 
+                    require_once 'resources/FollowbackWorkerResource.class.php';
+                    $this -> resource = new FollowbackWorkerResource();
                 break;
                 
+                case '/followback/users': 
+                    require_once 'resources/FollowbackUserResource.class.php';
+                    $this -> resource = new FollowbackUserResource();
+                break;
+
                 default:
                     require_once 'exceptions/UnsupportedResourceTypeException.class.php';
             		throw new UnsupportedResourceTypeException();
