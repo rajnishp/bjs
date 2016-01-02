@@ -695,7 +695,7 @@
                         <span class="highlight blue">BlueTeam</span> aims to provide high quality, cost-effective, flexible bluecollar service to your doorstep.
                     </p>
                 </header>
-                <?php /*
+                
                 <div class="container">
                     <div class="row">
 
@@ -708,13 +708,13 @@
                                     <div class="vcenter-container">
                                         <div class="vcenter">
                                             <h2>Rahul Lahoria</h2>
-                                            <p>Founder</p>
+                                            <p>Founder & CEO</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
                                                 <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
                                                 <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
                                                 <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                                <!--<li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li> -->
                                             </ul>
                                         </div><!-- End .vcenter -->
                                     </div><!-- End .vcenter-container -->
@@ -753,7 +753,7 @@
                                     <div class="vcenter-container">
                                         <div class="vcenter">
                                             <h2>Rajnish Panwar</h2>
-                                            <p>Developer</p>
+                                            <p>Co-founder, CCEM</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
                                                 <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -769,19 +769,19 @@
                         <div class="col-md-3 col-xs-6 member-container">
                             <div class="member member-second">
                                 <figure>
-                                    <img src="<?= $this-> baseUrl ?>static/images/team/jane.jpg" alt="jane" class="img-responsive">
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/vikas.jpg" alt="steve" class="img-responsive">
                                 </figure>
                                 <div class="member-overlay">
                                     <div class="vcenter-container">
                                         <div class="vcenter">
-                                            <h2>Jane Criess</h2>
-                                            <p>Designer</p>
+                                            <h2>Vikas Nagar</h2>
+                                            <p>Co-founder, CME, HR</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
                                                 <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
                                                 <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
                                                 <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                                <!--<li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li> -->
                                             </ul>
                                         </div><!-- End .vcenter -->
                                     </div><!-- End .vcenter-container -->
@@ -791,7 +791,7 @@
 
                     </div><!-- End .row -->
                 </div><!-- End .container -->
-                */ ?>
+                
                 <div class="lg-margin visible-xs clearfix"></div><!-- space -->
                 
                 <div class="container">
@@ -863,7 +863,7 @@
                 </div><!-- End .container -->
 */ ?>
 </section>
-            <?php /*
+            
             <!-- Testimonials Section -->
             <div class="testimonials-container background-new parallax" data-stellar-background-ratio="0.15">
                 <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
@@ -877,19 +877,19 @@
                             <div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
                                 <div class="owl-carousel testimonials-carousel">
                                     <div class="testimonial">
-                                        <figure><img src="images/testimonials/dean.jpg" alt="Dean Winchester"></figure>
+                                        <figure><img src="<?= $this-> baseUrl ?>static/images/testimonials/dean.jpg" alt="Dean Winchester"></figure>
                                         <p>First of all thank you very much for awesome product. What i like about you, is you don't give us only quality products, you also provide awesome supports. I am a life time customer here.</p>
                                         <span class="testimonial-owner">Dean Winchester - <span>Ceo of Parke</span></span>
                                     </div><!-- End .testimonial -->
 
                                     <div class="testimonial">
-                                        <figure><img src="images/testimonials/jane.jpg" alt="Jane Watson"></figure>
+                                        <figure><img src="<?= $this-> baseUrl ?>static/images/testimonials/jane.jpg" alt="Jane Watson"></figure>
                                         <p>I have used Geass’s services for the last three years. I have three sources of income - one from my rental property, one from my full time job and the other from my investments..</p>
                                         <span class="testimonial-owner">Jane Watson - <span>Developer of Cacky</span></span>
                                     </div><!-- End .testimonial -->
 
                                     <div class="testimonial">
-                                        <figure><img src="images/testimonials/sam.jpg" alt="Sam Smimsonn"></figure>
+                                        <figure><img src="<?= $this-> baseUrl ?>static/images/testimonials/sam.jpg" alt="Sam Smimsonn"></figure>
                                         <p>Fantastic product, my sites all run super fast and the support is excellent! Thank you very much for helping our company getting better. Can't wait to wokr with you again.</p>
                                         <span class="testimonial-owner">Sam Smimsonn - <span>Designer of Goopsy</span></span>
                                     </div><!-- End .testimonial -->
@@ -900,7 +900,7 @@
                     </div><!-- End .container -->
                 </div><!-- End parallax-content -->
             </div><!-- End .testimonials-container -->
-            
+            <?php /*
             <!-- Blog Section -->
             <section id="blog" class="section">
                 <header class="container text-center">
