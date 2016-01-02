@@ -711,9 +711,9 @@
                                             <p>Founder & CEO</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
-                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="https://www.facebook.com/rahul.lahoria" target='_blank' class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/rahul_lahoria" target='_blank' class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://plus.google.com/u/0/110694793146590155461/about" target='_blank' class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
                                                 <!--<li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li> -->
                                             </ul>
                                         </div><!-- End .vcenter -->
@@ -734,9 +734,9 @@
                                             <p>Co-founder and Legal Advisor</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
-                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="https://www.facebook.com/rutwikrao" target='_blank' class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/rutwikrao" target='_blank' class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://plus.google.com/u/0/109631708785875608152/about" target='_blank' class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
                                             </ul>
                                         </div><!-- End .vcenter -->
                                     </div><!-- End .vcenter-container -->
@@ -756,9 +756,9 @@
                                             <p>Co-founder, CCEM</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
-                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="https://www.facebook.com/Er.rajnish" target='_blank' class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/rajnish90" target='_blank' class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://plus.google.com/u/0/+rajnishpanwargotohell/about" target='_blank' class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
                                             </ul>
                                         </div><!-- End .vcenter -->
                                     </div><!-- End .vcenter-container -->
@@ -778,9 +778,9 @@
                                             <p>Co-founder, CME, HR</p>
                                             <hr>
                                             <ul class="social-icons-container small-icons">
-                                                <li><a href="index14.html#" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="index14.html#" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index14.html#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="https://www.facebook.com/vikas.nagar.9803" target='_blank' class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="index14.html#" target='_blank' class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://plus.google.com/u/0/109385069248634223664/about" target='_blank' class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
                                                 <!--<li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li> -->
                                             </ul>
                                         </div><!-- End .vcenter -->
