@@ -71,7 +71,7 @@ class UsersResource implements Resource {
 
         $UserInfoId = $resourceVals ['users'];
         if (isset($UserInfoId))
-            $result = $this -> getUserDetail($userId);
+            $result = $this -> getUserDetail($UserInfoId);
             //$result = $this->getUserDetail($userId);
             
         else

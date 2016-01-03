@@ -177,8 +177,15 @@
         }
 
 
-        public function load($uuidValues, $orgId = null, $projection = null) {
-            global $logger;
+        public function load($uuidValues) {
+             global $logger;
+            $customerObjs = $output = array();
+
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
+
+            $user = $this -> mongo -> findByObjectId($uuidValues );
+            /*global $logger;
             $customerObjs = $output = array();
 
             $logger -> debug ("Selecting collection: Users");
@@ -205,9 +212,10 @@
             unset($output ['result']);
             foreach ($customers as $uuid => $customer) {
                 $output ['result'] [] = Customer :: deserialize($customer);
-            }
+            }*/
 
-            return $output;
+            return new User($user['_id']->{'$id'}, $user['name'], $user['mobile'], $user['email'], $user['address'], 
+                                    $user['gps_location'], $user['added_on'], $user['last_updated']);
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {
