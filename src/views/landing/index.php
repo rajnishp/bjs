@@ -863,7 +863,7 @@
                 </div><!-- End .container -->
 */ ?>
 </section>
-            
+   <?php /*         
             <!-- Testimonials Section -->
             <div class="testimonials-container background-new parallax" data-stellar-background-ratio="0.15">
                 <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
@@ -900,7 +900,7 @@
                     </div><!-- End .container -->
                 </div><!-- End parallax-content -->
             </div><!-- End .testimonials-container -->
-            <?php /*
+       */?>     <?php /*
             <!-- Blog Section -->
             <section id="blog" class="section">
                 <header class="container text-center">
