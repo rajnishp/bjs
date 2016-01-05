@@ -9,7 +9,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $testamonial = $_POST['testamonial'];
-    $target_dir = "/var/www/html/shatkonLabs/bjs/src/static/images/testimonials/";
+    $target_dir = "/var/www/html/blueteam/prod/bjs/src/static/images/testimonials/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -20,12 +20,12 @@
     }*/
     // Check file size
     if ($_FILES["fileToUpload"]["size"] > 5000000) {
-      echo "Sorry, your file is too large.";
+      echo '<script type="text/javascript">alert("Sorry, your file is too large.");</script>';
       $uploadOk = 0;
     }
     // Allow certain file formats
     if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-      echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+      echo '<script type="text/javascript">alert("Sorry, only JPG, JPEG, PNG & GIF files are allowed.");</script>';
       $uploadOk = 0;
     }
     // Check if $uploadOk is set to 0 by an error
@@ -36,13 +36,13 @@
     else {  
       $temp = explode(".", $_FILES["fileToUpload"]["name"]);
       $newfilename = $name. '.' .$temp[1];
-      if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "/var/www/html/shatkonLabs/bjs/src/static/images/testimonials/".$newfilename)){
+      if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "/var/www/html/blueteam/prod/bjs/src/static/images/testimonials/".$newfilename)){
         $sql = mysqli_query ($db_handle, "INSERT INTO teastamonials (name, email, testamonial) VALUES ('$name','$email','$testamonial');");
         echo '<script type="text/javascript">alert("Thank you for your valuable Feedback");</script>';
         header("refresh:1; home");   
       }
       else {
-        echo "Sorry, your photo was not uploaded.<br/> Please try again";
+        echo '<script type="text/javascript">alert("Sorry, your photo was not uploaded.\n Please try again");</script>';
       }
     }
   }

@@ -7,6 +7,7 @@
 	 */
 	class Worker{
 		
+		private $uuid;
 		private $firstName;
 		private $lastName;
 		private $addressProofName;
