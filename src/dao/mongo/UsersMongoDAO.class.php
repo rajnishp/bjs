@@ -214,8 +214,8 @@
                 $output ['result'] [] = Customer :: deserialize($customer);
             }*/
 
-            return new User($user['_id']->{'$id'}, $user['name'], $user['mobile'], $user['email'], $user['address'], 
-                                    $user['gps_location'], $user['added_on'], $user['last_updated']);
+            return new User($user['name'], $user['mobile'], $user['email'], $user['address'], $user['gps_location'], $user['added_on'],
+                            $user['last_updated'], $user['_id']->{'$id'});
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {
@@ -285,8 +285,8 @@
 
             $mongoUsers = $this -> mongo -> find(array());
             foreach ($mongoUsers as $user) {
-                $Users [] = new User($user['_id']->{'$id'}, $user['name'], $user['mobile'], $user['email'], $user['address'], 
-                                    $user['gps_location'], $user['added_on'], $user['last_updated']);
+                $Users [] = new User($user['name'], $user['mobile'], $user['email'], $user['address'], $user['gps_location'],
+                                    $user['added_on'], $user['last_updated'], $user['_id']->{'$id'});
             }            
             return $Users;
         }

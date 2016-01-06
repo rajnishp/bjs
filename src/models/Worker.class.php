@@ -7,77 +7,76 @@
 	 */
 	class Worker{
 		
-		private $uuid;
 		private $firstName;
 		private $lastName;
-		private $addressProofName;
-		private $addressProofId;
-		private $idProofName;
-		private $idProofId;
 		private $age;
 		private $currentAddress;
 		private $permanentAddress;
 		private $mobile;
-		private $emergencyMobile;
+		private $gender;
 		private $education;
 		private $languages;
 		private $skills;
 		private $experience;
+		private $guessedSalary;
+		private $remarks;
+		private $police;
+		private $birthDate;
 		private $workingDomain;
 		private $currentWorkingCity;
 		private $currentWorkingArea;
 		private $preferredWorkingCity;
-		private $preferredworkingArea;
-		private $guessedSalary;
+		private $preferredWorkingArea;
 		private $workTimeSlots;
 		private $freeTimeSlots;
-		private $birthDate;
-		private $gender;
+		private $emergencyMobile;
+		private $addressProofName;
+		private $addressProofId;
+		private $idProofName;
+		private $idProofId;
 		private $agentId;
 		private $addedOn;
 		private $lastUpdateOn;
-		private $remarks;
-		private $police;
+		private $uuid;
 
-		function __construct ($uuid, $firstName, $lastName, $addressProofName, $addressProofId, $idProofName, $idProofId, $age, 
-							$currentAddress, $permanentAddress, $mobile, $emergencyMobile, $education, $languages, $skills,	
-							$experience, $workingDomain, $currentWorkingCity, $currentWorkingArea, $preferredWorkingCity, 
-							$preferredWorkingArea, $guessedSalary, $workTimeSlots, $freeTimeSlots, $birthDate, $gender, 
-							$agentId, $addedOn, $lastUpdateOn, $remarks, $police) {
+		function __construct ($firstName, $lastName, $age, $currentAddress, $permanentAddress, $mobile, $gender, $education, $languages,
+								$skills, $experience, $guessedSalary, $remarks, $police, $birthDate, $workingDomain, $currentWorkingCity,
+								$currentWorkingArea, $preferredWorkingCity, $preferredWorkingArea, $workTimeSlots, $freeTimeSlots,
+								$emergencyMobile, $addressProofName, $addressProofId, $idProofName, $idProofId, $agentId, $addedOn,
+								$lastUpdateOn, $uuid) {
 			
-			$this -> uuid = $uuid;
-			$this -> first_name = $firstName;
-			$this -> last_name = $lastName;
-			$this -> address_proof_name = $addressProofName;
-			$this -> address_proof_id = $addressProofId;
-			$this -> id_proof_name = $idProofName;
-			$this -> id_proof_id = $idProofId;
+			$this -> firstName = $firstName;
+			$this -> lastName = $lastName;
 			$this -> age = $age;
-			$this -> current_address = $currentAddress;
-			$this -> permanent_address = $permanentAddress;
+			$this -> currentAddress = $currentAddress;
+			$this -> permanentAddress = $permanentAddress;
 			$this -> mobile = $mobile;
-			$this -> emergency_mobile = $emergencyMobile;
+			$this -> gender = $gender;
 			$this -> education = $education;
 			$this -> languages = $languages;
 			$this -> skills = $skills;
+			$this -> mobile = $mobile;
 			$this -> experience = $experience;
-			$this -> working_domain = $workingDomain;
-			$this -> current_working_city = $currentWorkingCity;
-			$this -> current_working_area = $currentWorkingArea;
-			$this -> preferred_working_city = $preferredWorkingCity;
-			$this -> preferred_working_area = $preferredWorkingArea;
-
-			$this -> salary_expected = $guessedSalary;
-			$this -> work_time_slots = $workTimeSlots;
-			$this -> free_time_slots = $freeTimeSlots;
-			$this -> birth_date = $birthDate;
-			$this -> gender = $gender;
+			$this -> guessedSalary = $guessedSalary;
 			$this -> remarks = $remarks;
 			$this -> police = $police;
-
-			$this -> employee_id = $agentId;
-			$this -> added_on = $addedOn;
-			$this -> last_updated = $lastUpdateOn;
+			$this -> birthDate = $birthDate;
+			$this -> workingDomain = $workingDomain;
+			$this -> currentWorkingCity = $currentWorkingCity;
+			$this -> currentWorkingArea = $currentWorkingArea;
+			$this -> preferredWorkingCity = $preferredWorkingCity;
+			$this -> preferredWorkingArea = $preferredWorkingArea;
+			$this -> workTimeSlots = $workTimeSlots;
+			$this -> freeTimeSlots = $freeTimeSlots;
+			$this -> emergencyMobile = $emergencyMobile;
+			$this -> addressProofName = $addressProofName;
+			$this -> addressProofId = $addressProofId;
+			$this -> idProofName = $idProofName;
+			$this -> idProofId = $idProofId;
+			$this -> agentId = $agentId;
+			$this -> addedOn = $addedOn;
+			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> uuid = $uuid;
 
 		}
 
