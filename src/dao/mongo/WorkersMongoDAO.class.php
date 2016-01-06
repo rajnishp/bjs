@@ -97,17 +97,15 @@
             $mongoWorkers = $this -> mongo -> find(array());
             //$timings, $home_town, $remarks, $police, $agentId, $addedOn, $lastUpdateOn, $uuid = null
             foreach ($mongoWorkers as $worker) {
-
-                $allWorkers [] = new Worker($worker['_id']->{'$id'}, $worker['first_name'], $worker['last_name'], $worker['address_proof_name'],
-                                            $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'], $worker['age'],
-                                            $worker['cuurent_address'], $worker['permanent_address'], $worker['mobile'], $worker['emergency_mobile'],
-                                            $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'], $worker['working_domain'],
+                //var_dump($worker['first_name']);die();
+                $allWorkers [] = new Worker($worker['first_name'], $worker['last_name'], $worker['age'], $worker['cuurent_address'], $worker['permanent_address'],
+                                            $worker['mobile'], $worker['gender'], $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'],
+                                            $worker['salary_expected'], $worker['remarks'], $worker['police'], $worker['birth_date'], $worker['working_domain'],
                                             $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
-                                            $worker['preferred_working_area'], $worker['salary_expected'], $worker['work_time_slots'],
-                                            $worker['free_time_slots'], $worker['birth_date'], $worker['gender'], $worker['employee_id'],
-                                            $worker['added_on'], $worker['last_updated'],$worker['remarks'], $worker['police']);
-            }
-            
+                                            $worker['preferred_working_area'], $worker['work_time_slots'], $worker['free_time_slots'], $worker['emergency_mobile'],
+                                            $worker['address_proof_name'], $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'],
+                                            $worker['employee_id'], $worker['added_on'], $worker['last_updated'], $worker['_id']->{'$id'});
+            } 
             return $allWorkers;
         }
 
@@ -125,11 +123,13 @@
             $agentWorkers = $this -> mongo -> find(array($agentQuery));
 
             foreach ($agentWorkers as $worker) {
-                $agentWorkers [] = new Worker($worker['firstName'], $worker['lastName'],null, null, null, null, null, 
-                                            $worker['mobile'],null, null, null, $worker['skills'], $worker['experience'], null,
-                                            $worker['currentWorkingCity'], $worker['currentWorkingArea'], $worker['preferredWorkingCity'],
-                                            $worker['preferredWorkingArea'],null, null, null, null, null,
-                                            $worker['gender'], null, null, null);
+                $agentWorkers [] = new Worker($worker['first_name'], $worker['last_name'], $worker['age'], $worker['cuurent_address'], $worker['permanent_address'],
+                                            $worker['mobile'], $worker['gender'], $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'],
+                                            $worker['salary_expected'], $worker['remarks'], $worker['police'], $worker['birth_date'], $worker['working_domain'],
+                                            $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
+                                            $worker['preferred_working_area'], $worker['work_time_slots'], $worker['free_time_slots'], $worker['emergency_mobile'],
+                                            $worker['address_proof_name'], $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'],
+                                            $worker['employee_id'], $worker['added_on'], $worker['last_updated'], $worker['_id']->{'$id'});
             }
             
             return $agentWorkers;
@@ -260,14 +260,13 @@
                 $output ['result'] [] = worker :: deserialize($worker);
             }*/
            
-            return new Worker($worker['_id']->{'$id'}, $worker['first_name'], $worker['last_name'], $worker['address_proof_name'],
-                                $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'], $worker['age'],
-                                $worker['cuurent_address'], $worker['permanent_address'], $worker['mobile'], $worker['emergency_mobile'],
-                                $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'], $worker['working_domain'],
-                                $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
-                                $worker['preferred_working_area'], $worker['salary_expected'], $worker['work_time_slots'],
-                                $worker['free_time_slots'], $worker['birth_date'], $worker['gender'], $worker['employee_id'],
-                                $worker['added_on'], $worker['last_updated'],$worker['remarks'], $worker['police']);
+            return new Worker($worker['first_name'], $worker['last_name'], $worker['age'], $worker['cuurent_address'], $worker['permanent_address'],
+                            $worker['mobile'], $worker['gender'], $worker['education'], $worker['languages'], $worker['skills'], $worker['experience'],
+                            $worker['salary_expected'], $worker['remarks'], $worker['police'], $worker['birth_date'], $worker['working_domain'],
+                            $worker['current_working_city'], $worker['current_working_area'], $worker['preferred_working_city'],
+                            $worker['preferred_working_area'], $worker['work_time_slots'], $worker['free_time_slots'], $worker['emergency_mobile'],
+                            $worker['address_proof_name'], $worker['address_proof_id'], $worker['id_proof_name'], $worker['id_proof_id'],
+                            $worker['employee_id'], $worker['added_on'], $worker['last_updated'], $worker['_id']->{'$id'});
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {

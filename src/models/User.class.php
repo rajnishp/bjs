@@ -7,7 +7,6 @@
 	 */
 	class User{
 		
-		private $uuuid;
 		private $name;
 		private $mobile;
 		private $email;
@@ -15,17 +14,18 @@
 		private $gpsLocation;
 		private $addedOn;
 		private $lastUpdateOn;
+		private $uuid;
 
-		function __construct ($uuid, $name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn ) {
+		function __construct ($name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn, $uuid) {
 			
-			$this -> uuid = $uuid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
 			$this -> email = $email;
 			$this -> address = $address;
-			$this -> gps_location = $gpsLocation;
-			$this -> added_on = $addedOn;
-			$this -> last_updated = $lastUpdateOn;
+			$this -> gpsLocation = $gpsLocation;
+			$this -> addedOn = $addedOn;
+			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> uuid = $uuid;
 
 		}
 

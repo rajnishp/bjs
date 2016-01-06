@@ -5,19 +5,14 @@
      	 * @author: anil
      	 * @date: 2015-12-12 10:50	 
 	 */
-	class employee{
+	class Employee{
 		
 		private $firstName;
 		private $lastName;
-		private $addressProofName;
-		private $addressProofId;
-		private $idProofName;
-		private $idProofId;
 		private $age;
 		private $currentAddress;
 		private $permanentAddress;
 		private $mobile;
-		private $emergencyMobile;
 		private $education;
 		private $languages;
 		private $birthDate;
@@ -26,36 +21,43 @@
 		private $username;
 		private $password;
 		private $employeeType;
-		private $remarke;
+		private $remarks;
+		private $addressProofName;
+		private $addressProofId;
+		private $idProofName;
+		private $idProofId;
+		private $emergencyMobile;
 		private $addedOn;
 		private $lastUpdateOn;
-		function __construct ($firstName, $lastName, $addressProofName, $addressProofId, $idProofName, $idProofId, $age, 
-							$currentAddress, $permanentAddress, $mobile, $emergencyMobile, $education, $languages, $birthDate, 
-							$gender, $email, $employeeType, $addedOn, $lastUpdateOn, $remarks, $username, $password, $uuid = null) {
+		private $uuid;
+
+		function __construct ($firstName, $lastName, $age, $currentAddress, $permanentAddress, $mobile, $education, $languages, 
+							$birthDate,	$gender, $email, $username, $password, $employeeType, $remarks, $addressProofName, $addressProofId, 
+							$idProofName, $idProofId, $emergencyMobile,  $addedOn, $lastUpdateOn, $uuid) {
 			
-			$this -> uuid = $uuid;
-			$this -> first_name = $firstName;
-			$this -> last_name = $lastName;
-			$this -> address_proof_name = $addressProofName;
-			$this -> address_proof_id = $addressProofId;
-			$this -> id_proof_name = $idProofName;
-			$this -> id_proof_id = $idProofId;
+			$this -> firstName = $firstName;
+			$this -> lastName = $lastName;
 			$this -> age = $age;
-			$this -> current_address = $currentAddress;
-			$this -> permanent_address = $permanentAddress;
+			$this -> currentAddress = $currentAddress;
+			$this -> permanentAddress = $permanentAddress;
 			$this -> mobile = $mobile;
-			$this -> emergency_mobile = $emergencyMobile;
 			$this -> education = $education;
 			$this -> languages = $languages;
-			$this -> birth_date = $birthDate;
+			$this -> birthDate = $birthDate;
 			$this -> gender = $gender;
 			$this -> email = $email;
 			$this -> username = $username;
 			$this -> password = $password;
-			$this -> employee_type = $employeeType;
+			$this -> employeeType = $employeeType;
 			$this -> remarks = $remarks;
-			$this -> added_on = $addedOn;
-			$this -> last_updated = $lastUpdateOn;
+			$this -> addressProofName = $addressProofName;
+			$this -> addressProofId = $addressProofId;
+			$this -> idProofName = $idProofName;
+			$this -> idProofId = $idProofId;
+			$this -> emergencyMobile = $emergencyMobile;
+			$this -> addedOn = $addedOn;
+			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> uuid = $uuid;
 
 		}
 
@@ -233,32 +235,21 @@
 							id_proof_id => $this -> idProofId,
 							cuurent_address => $this -> currentAddress,
 							permanent_address => $this -> permanentAddress,
+							username => $this -> username,
+							password => $this -> password,
+							employee_type => $this -> employeeType,
 							age => $this -> age,
 							mobile => $this -> mobile,
+							birth_date => $this -> birthDate,
 							emergency_mobile=> $this -> emergencyMobile,
 							education => $this -> education,
 							languages => $this-> languages,
-							skills => $this-> skills,
-							experience => $this -> experience,
-							working_domain=> $this -> workingDomain,
-							current_working_city => $this -> currentWorkingCity,
-							current_working_area => $this -> currentWorkingArea,
-							preferred_working_city => $this -> preferredWorkingCity,
-							preferred_working_area => $this -> preferredWorkingArea,
-							salary_expected => $this -> guessedSalary,
-							work_time_slots=> $this -> workTimeSlots,
-							free_time_slots => $this -> freeTimeSlots,
-							birth_date => $this -> birthDate,
 							gender => $this -> gender,
-							timings => $this -> timings,
-							home_town => $this -> home_town,
-							police => $this -> police,
+							email => $this -> email,
 							remarks => $this -> remarks,
-							employee_id => $this -> agentId,
 							added_on => $this -> addedOn,
 							last_updated => $this -> lastUpdateOn
 						);
 		}
-
 	}
 	?>

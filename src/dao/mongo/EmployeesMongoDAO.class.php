@@ -98,13 +98,12 @@
             //$timings, $home_town, $remarks, $police, $agentId, $addedOn, $lastUpdateOn, $uuid = null
             foreach ($mongoemployee as $employee) {
 
-                $allemployee [] = new employee($employee['firstName'], $employee['lastName'],null, null, null, null, null, 
-                                            $employee['mobile'],null, null, null, $employee['skills'], $employee['experience'], null,
-                                            $employee['currentWorkingCity'], $employee['currentWorkingArea'], $employee['preferredWorkingCity'],$employee['preferredWorkingArea'],null, null, null, null, null,
-                                            $employee['gender'], $employee['timings'], $employee['home_town'], $employee['remarks'], $employee['police'], $employee['agentId'], 
-                                            $employee['addedOn'], $employee['lastUpdateOn'], $employee['_id']->{'$id'});
+                $allemployee [] = new Employee($employee['first_name'], $employee['last_name'], $employee['age'], $employee['current_address'], $employee['permanent_address'],
+                                                $employee['mobile'], $employee['education'], $employee['languages'], $employee['birth_date'], $employee['gender'], 
+                                                $employee['email'], $employee['username'], $employee['password'], $employee['employee_type'], $employee['remarks'], 
+                                                $employee['address_proof_name'], $employee['address_proof_id'], $employee['id_proof_name'], $employee['id_proof_id'], 
+                                                $employee['emergency_mobile'], $employee['added_on'],$employee['last_updated'],$employee['_id']->{'$id'});
             }
-            
             return $allemployee;
         }
 
@@ -233,11 +232,11 @@
                 $output ['result'] [] = employee :: deserialize($employee);
             }*/
            
-            return new employee($employee['firstName'], $employee['lastName'],null, null, null, null, null, 
-                                            $employee['mobile'],null, null, null, $employee['skills'], $employee['experience'], null,
-                                            $employee['currentWorkingCity'], $employee['currentWorkingArea'], $employee['preferredWorkingCity'],$employee['preferredWorkingArea'],null, null, null, null, null,
-                                            $employee['gender'], $employee['timings'], $employee['home_town'], $employee['remarks'], $employee['police'], $employee['agentId'], 
-                                            $employee['addedOn'], $employee['lastUpdateOn'], $employee['_id']->{'$id'});
+            return new Employee($employee['first_name'], $employee['last_name'], $employee['age'], $employee['current_address'], $employee['permanent_address'],
+                                $employee['mobile'], $employee['education'], $employee['languages'], $employee['birth_date'], $employee['gender'], 
+                                $employee['email'], $employee['username'], $employee['password'], $employee['employee_type'], $employee['remarks'], 
+                                $employee['address_proof_name'], $employee['address_proof_id'], $employee['id_proof_name'], $employee['id_proof_id'], 
+                                $employee['emergency_mobile'], $employee['added_on'],$employee['last_updated'],$employee['_id']->{'$id'});
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {
