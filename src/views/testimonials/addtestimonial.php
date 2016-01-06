@@ -37,7 +37,7 @@
       $temp = explode(".", $_FILES["fileToUpload"]["name"]);
       $newfilename = $name. '.' .$temp[1];
       if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "/var/www/html/blueteam/prod/bjs/src/static/images/testimonials/".$newfilename)){
-        $sql = mysqli_query ($db_handle, "INSERT INTO teastamonials (name, email, testamonial) VALUES ('$name','$email','$testamonial');");
+        $sql = mysqli_query ($db_handle, "INSERT INTO teastamonials (name, email, testamonial,image) VALUES ('$name','$email','$testamonial','$newfilename');");
         echo '<script type="text/javascript">alert("Thank you for your valuable Feedback");</script>';
         header("refresh:1; home");   
       }
@@ -140,18 +140,18 @@
                         <h2 class="h3 text-center lg-margin">Give your valuable feedback</h2>
                         <form method="post" enctype="multipart/form-data">
                             <div class="form-group">
+                                Your Name *
                                 <input type="text"  name="name" required class="form-control input-lg">
-                                <span class="animated-label">Your Name *</span>
                             </div><!-- End .form-group -->
 
                             <div class="form-group">
+                                Your Email *
                                 <input type="email"  name="email" required class="form-control input-lg">
-                                <span class="animated-label">Your Email *</span>
                             </div><!-- End .form-group -->
                             
                             <div class="form-group">
+                                Your Feedback *
                                 <textarea name="testamonial" class="form-control input-lg" cols="30" rows="7"></textarea>
-                                <span class="animated-label textarea-label">Your Feedback *</span>
                             </div><!-- End .form-group -->
                             <div class="form-group">
                                 Upload your photo *
