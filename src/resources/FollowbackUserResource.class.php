@@ -16,7 +16,7 @@ class FollowbackResource implements Resource {
 
     public function __construct() {
         $DAOFactory = new DAOFactory();
-        $this -> FollowbackDAO = $DAOFactory -> getFollowbackDAO();
+        $this -> FollowbackDAO = $DAOFactory -> getFollowbackUserDAO();
     }
 
     public function checkIfRequestMethodValid($requestMethod) {

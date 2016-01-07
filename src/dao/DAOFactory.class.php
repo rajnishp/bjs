@@ -18,7 +18,7 @@ class DAOFactory{
 	/**
 	 * @return ServiceRequestsDAO
 	 */
-	public static function getServiceRequestDAO(){
+	public static function getServiceRequestsDAO(){
 		
 		require_once('ServiceRequestsDAO.interface.php');
 		require_once('models/ServiceRequest.class.php');
@@ -67,24 +67,46 @@ class DAOFactory{
 		return new EmployeesMongoDAO();
 	}
 
-	//getFeedbackDAO()
+	//getFeedbackWorkerDAO()
 
-	public static function getFeedbackDAO(){
+	public static function getFeedbackWorkerDAO(){
 		
 		require_once('FeedbackDAO.interface.php');
-		require_once('models/Feedback.class.php');
-		require_once('mongo/FeedbackMongoDAO.class.php');
+		require_once('models/FeedbackWorker.class.php');
+		require_once('mongo/FeedbackWorkerMongoDAO.class.php');
 
-		return new FeedbackMongoDAO();
+		return new FeedbackWorkerMongoDAO();
 	}
 
-	//getFollowbackDAO()
+	//getFeedbackUserDAO()
 
-	public static function getFollowbackDAO(){
+	public static function getFeedbackUserDAO(){
+		
+		require_once('FeedbackDAO.interface.php');
+		require_once('models/FeedbackUser.class.php');
+		require_once('mongo/FeedbackUserMongoDAO.class.php');
+
+		return new FeedbackUserMongoDAO();
+	}
+
+	//getFollowbackWorkerDAO()
+
+	public static function getFollowbackWorkerDAO(){
 		
 		require_once('FollowbackDAO.interface.php');
-		require_once('models/Followback.class.php');
-		require_once('mongo/FollowbackMongoDAO.class.php');
+		require_once('models/FollowbackWorker.class.php');
+		require_once('mongo/FollowbackWorkerMongoDAO.class.php');
+
+		return new FollowbackMongoDAO();
+	}
+
+	//getFollowbackUserDAO()
+
+	public static function getFollowbackUserDAO(){
+		
+		require_once('FollowbackDAO.interface.php');
+		require_once('models/FollowbackUser.class.php');
+		require_once('mongo/FollowbackUserMongoDAO.class.php');
 
 		return new FollowbackMongoDAO();
 	}

@@ -7,7 +7,6 @@
 	 */
 	class ServiceRequest{
 		
-		private $uid;
 		private $name;
 		private $mobile;
 		private $address;
@@ -16,33 +15,36 @@
 		private $salaryCriteria;
 		private $workingHour;
 		private $requirements ;
+		private $remarks ;
 		private $status;
 		private $addedOn;
 		private $lastUpdateOn;
+		private $uuid;
 
-		function __construct ($name, $mobile, $address, $service, $type, $salaryCriteria, $requirements, 
-								$workingHour, $status, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $mobile, $address, $service, $type, $salaryCriteria, $requirements, $remarks,
+								$workingHour, $status, $addedOn, $lastUpdateOn, $uuid) {
 			
-			$this -> uid = $uid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
 			$this -> address = $address;
 			$this -> service = $service;
 			$this -> type = $type;
-			$this -> salary_criteria = $salaryCriteria;
+			$this -> salaryCriteria = $salaryCriteria;
 			$this -> requirements = $requirements;
-			$this -> working_hour = $workingHour;
+			$this -> remarks = $remarks;
+			$this -> workingHour = $workingHour;
 			$this -> status = $status;
-			$this -> added_on = $addedOn;
-			$this -> last_updated = $lastUpdateOn;
+			$this -> addedOn = $addedOn;
+			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> uuid = $uuid;
 
 		}
 
-		function setUid($uid){
-			$this -> uid = $uid;
+		function setUuid($uuid){
+			$this -> uuid = $uuid;
 		}
-		function getUid(){
-			return $this-> uid;
+		function getUuid(){
+			return $this-> uuid;
 		}
 
 		function setName($name){
@@ -94,6 +96,13 @@
 			return $this-> requirements;
 		}
 		
+		function setRemarks($remarks){
+			$this -> remarks = $remarks;
+		}
+		function getRemarks(){
+			return $this-> remarks;
+		}
+		
 		function setWorkingHour($workingHour){
 			$this -> working_hour = $workingHour;
 		}
@@ -124,6 +133,7 @@
 
 		function toArray() {
 			return array (
+							uuid => $this -> uuid,
 							name => $this -> name,
 							mobile=> $this -> mobile,
 							address => $this -> address,
@@ -131,10 +141,12 @@
 							type => $this -> type,
 							salary_criteria => $this -> salaryCriteria,
 							requirements => $this -> requirements,
+							remarks => $this -> remarks,
 							working_hour => $this -> workingHour,
 							status => $this -> status,
 							added_on => $this -> addedOn,									
-							last_updated => $this -> lastUpdateOn									
+							last_updated => $this -> lastUpdateOn								
+																
 						);
 		}
 

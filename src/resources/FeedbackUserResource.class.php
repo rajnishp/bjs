@@ -16,7 +16,7 @@ class FeedbackResource implements Resource {
 
     public function __construct() {
         $DAOFactory = new DAOFactory();
-        $this -> FeedbackDAO = $DAOFactory -> getFeedbackDAO();
+        $this -> feedbackDAO = $DAOFactory -> getFeedbackUserDAO();
     }
 
     public function checkIfRequestMethodValid($requestMethod) {

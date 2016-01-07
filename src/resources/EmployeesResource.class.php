@@ -41,7 +41,7 @@ class EmployeesResource implements Resource {
         }
 
         
-        $newEmployeeObj = new employee (
+        $newEmployeeObj = new Employee (
                                         $data['first_name'],
                                         $data['last_name'],
                                         $data['address_proof_name'],
@@ -116,13 +116,13 @@ class EmployeesResource implements Resource {
     private function getAllEmployees() {
     
         global $logger;
-        $workersArray = null;
+        $employeesArray = null;
         $logger->debug('Fetch User Detail...');
         $employeeInfoObjs = $this -> employeesDAO -> loadAllEmployees();
 
               
         foreach ($employeeInfoObjs as $key => $employeeInfoObj) {
-                  $workersArray [] = $employeeInfoObj-> toArray();
+                  $employeesArray [] = $employeeInfoObj-> toArray();
              }     
        
         $logger -> debug ('Fetched details: ' . json_encode($this -> employeeDetail));

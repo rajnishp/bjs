@@ -233,7 +233,7 @@
 							address_proof_id => $this -> addressProofId,
 							id_proof_name => $this -> idProofName,
 							id_proof_id => $this -> idProofId,
-							cuurent_address => $this -> currentAddress,
+							current_address => $this -> currentAddress,
 							permanent_address => $this -> permanentAddress,
 							username => $this -> username,
 							password => $this -> password,
@@ -250,6 +250,6 @@
 							added_on => $this -> addedOn,
 							last_updated => $this -> lastUpdateOn
 						);
-		}
+		} 
 	}
 	?>

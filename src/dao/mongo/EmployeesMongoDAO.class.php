@@ -6,7 +6,6 @@
     
     require_once 'dao/EmployeesDAO.interface.php';
     require_once 'models/Employee.class.php';
-
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';
     require_once 'exceptions/DuplicateEntityException.class.php';
@@ -93,8 +92,9 @@
 
             $logger -> debug ("Selecting collection: employee");
             $this -> mongo -> selectCollection('employee');     
-
+             
             $mongoemployee = $this -> mongo -> find(array());
+            //var_dump($mongoemployee);die();
             //$timings, $home_town, $remarks, $police, $agentId, $addedOn, $lastUpdateOn, $uuid = null
             foreach ($mongoemployee as $employee) {
 
@@ -103,7 +103,9 @@
                                                 $employee['email'], $employee['username'], $employee['password'], $employee['employee_type'], $employee['remarks'], 
                                                 $employee['address_proof_name'], $employee['address_proof_id'], $employee['id_proof_name'], $employee['id_proof_id'], 
                                                 $employee['emergency_mobile'], $employee['added_on'],$employee['last_updated'],$employee['_id']->{'$id'});
+            //
             }
+            //var_dump($allemployee);die();
             return $allemployee;
         }
 
