@@ -33,7 +33,7 @@ abstract class BaseController {
 
 		$DAOFactory = new DAOFactory();
 		
-		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestDAO();
+		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestsDAO();
 		$this -> getInTouchDAO = $DAOFactory->getGetInTouchDAO();
 		
 		$this->process();
