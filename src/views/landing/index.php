@@ -354,10 +354,11 @@
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-8 col-sm-6" style="text-align:center;font-size:75px;">
-                                <p class="section-title fancy blue-color">Welcome To BlueTeam</p>
-                                <p class="section-title blue-color"><i class="fa fa-mobile-phone"></i> <?= $this-> blueteamContactNumber ?></p>
-                                <p style="font-size:30px;color:blue;">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price</p>
-                                <a href="#hire" class="btn btn-lightblue" title="Hire Now">Hire Now</a><!-- End .service -->
+                                <p class="section-title fancy blue-color">Get Relief from Maid on Leave</p>
+                                <p class="section-title blue-color"><i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"></i> <br/><?= $this-> blueteamContactNumber ?></p>
+                                <p style="font-size:30px;color:blue;">50+ Maids, Cooks, BabySitters, CareTakers & Drivers getting registered with BlueTeam daily 
+                                <a href="#hire" class="btn btn-lightblue" title="Hire Now">Hire Now</a></p>
+                                <!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-2 col-sm-3">
                                 <div class="pricing-table-container">
