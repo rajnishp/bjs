@@ -1390,7 +1390,7 @@
                                 </div>
                             </div> -->
                             <div class="form-group">
-                                <button type="submit" class="btn btn-block btn-primary">Submit Request</button>
+                                <button type="submit" id="submit_request" class="btn btn-block btn-primary">Submit Request</button>
                             </div>
                         </form>
 
