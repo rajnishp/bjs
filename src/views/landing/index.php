@@ -307,12 +307,12 @@
                                 <div class="pricing-table-container">
                                     <div class="pricing-table active">
                                             <h3 class="lightblue" style="padding: 5px 10px 0px;">Monthly</h3>
-                                            <header style="margin-bottom: 0px;">
+                                            <!-- <header style="margin-bottom: 0px;">
                                                 <div class="price lightbluebg">
                                                     <span>20% off</span>
                                                     on First Month
                                                 </div>
-                                            </header>
+                                            </header> -->
 
                                             <ul class="pricing-list">
                                                 <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
@@ -352,12 +352,12 @@
                                 <div class="pricing-table-container">
                                 <div class="pricing-table active">
                                     <h3 class="lightblue" style="padding: 5px 10px 0px;">On Demand</h3>
-                                    <header style="margin-bottom: 0px;">
+                                    <!-- <header style="margin-bottom: 0px;">
                                         <div class="price lightbluebg">
                                             <span>25% off</span>
                                             on First Visit
                                         </div>
-                                    </header>
+                                    </header> -->
                                     <ul class="pricing-list">
                                         <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
                                         <li style="color:blue;">149 <i class="fa fa-inr"></i> / hour</li>
