@@ -23,7 +23,7 @@
 			$this -> contactSubject = $contactSubject;
 			$this -> contactMessage = $contactMessage;
 			$this -> status = $status;
-			$this -> addedOn = $addedOn;
+			$this -> addedon = $addedOn;
 		}
 
 		function setUuid($uuid){
@@ -61,7 +61,6 @@
 			return $this-> contactSubject;
 		}
 
-
 		function setAddedOn($addedOn){
 			$this -> addedOn = $addedOn;
 		}
@@ -78,12 +77,12 @@
 
 		function toArray() {
 			return array (
-							contactName => $this -> contactName,
-							contactEmail=> $this -> contactEmail,
-							contactSubject => $this -> contactSubject,
-							contactMessage => $this -> contactMessage,
+							contact_name => $this -> contactName,
+							contact_email=> $this -> contactEmail,
+							contact_subject => $this -> contactSubject,
+							contact_message => $this -> contactMessage,
 							status => $this -> status,
-							addedOn => $this -> addedOn							
+							added_on => $this -> addedOn							
 						);
 		}
 

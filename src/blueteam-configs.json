@@ -18,10 +18,10 @@
         }, 
         "expiry": 86400
     },
-    "BLUETEAM_BASE_URL" : "http://loc.blueteam.in/",
-    "BLUETEAM_CONTACT_NUMBER" : "+91-8901414422",
+    "BLUETEAM_BASE_URL" : "http://blueteam.in/",
+    "BLUETEAM_CONTACT_NUMBER" : "+91-9599075355",
     "BLUETEAM_FILE_ROOT" : "/var/www/dpower4/BLUETEAM_files/uploads/",
-    "BLUETEAM_ADMIN_MEMBERS" : "vikas.niper2012@gmail.com, rahul@collap.com, rajnish@collap.com",
+    "BLUETEAM_ADMIN_MEMBERS" : "vikas.niper2012@gmail.com, rahul@collap.com, rajnish@collap.com, singhrajgaurav20@gmail.com",
     "BLUETEAM_VERSION"  : "v0",
     "BLUETEAM_DOMAIN" : "BLUETEAM.in"
 }

@@ -1,7 +1,7 @@
 <?php
 
 	/**
-     * @author rahul
+     * @author anil
 	**/
 
 	//require_once 'dao/CustomerIdMappingDAO.interface.php';
@@ -138,8 +138,8 @@
         public function delete($uuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             $result = $this -> mongo -> removeByObjectId($uuid);
 
@@ -177,12 +177,19 @@
         }
 
 
-        public function load($uuidValues, $orgId = null, $projection = null) {
-            global $logger;
+        public function load($uuidValues) {
+             global $logger;
             $customerObjs = $output = array();
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
+
+            $user = $this -> mongo -> findByObjectId($uuidValues );
+            /*global $logger;
+            $customerObjs = $output = array();
+
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             if (sizeof($uuidValues) == 1) {
                 $customer = $this -> mongo -> findByObjectIdAndOrgId($uuidValues [0], $orgId, $projection);
@@ -191,7 +198,8 @@
                     $output ['failures'] ['uuid'] [] = $uuidValues [0];
 
                 $output ['result'] [$uuidValues [0]] = $customer;
-            } else {
+            } 
+            else {
                 $output = $this -> mongo -> findManyByObjectIdAndOrgId($uuidValues, $orgId, $projection);
 
                 $failures = $output ['failures'];
@@ -204,9 +212,10 @@
             unset($output ['result']);
             foreach ($customers as $uuid => $customer) {
                 $output ['result'] [] = Customer :: deserialize($customer);
-            }
+            }*/
 
-            return $output;
+            return new User($user['name'], $user['mobile'], $user['email'], $user['address'], $user['gps_location'], $user['added_on'],
+                            $user['last_updated'], $user['_id']->{'$id'});
         }
 
         public function loadByExternalIdentifier($idType, $idValues, $orgId = null, $projection = null) {
@@ -275,8 +284,10 @@
             $this -> mongo -> selectCollection('Users');     
 
             $mongoUsers = $this -> mongo -> find(array());
-            
-            
+            foreach ($mongoUsers as $user) {
+                $Users [] = new User($user['name'], $user['mobile'], $user['email'], $user['address'], $user['gps_location'],
+                                    $user['added_on'], $user['last_updated'], $user['_id']->{'$id'});
+            }            
             return $Users;
         }
         
@@ -284,8 +295,8 @@
             global $logger;
             $customers = $mongoCustomers = null;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');     
 
             $mongoCustomers = $this -> mongo -> find(array(), array('$sortByKey' => 1));
             foreach ($mongoCustomers as $mongoCustomer) {
@@ -404,10 +415,10 @@
         public function insertCustomer($custToInsert) {
 
             global $logger;    
-            $logger -> debug("Insert the customer into `customers` collection");
+            $logger -> debug("Insert the customer into `Users` collection");
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');
+            $logger -> debug ("Selecting collection: Users");
+            $this -> mongo -> selectCollection('Users');
 
             $logger -> debug("Mongo Customer: " . json_encode($custToInsert));
             $result = $this -> mongo -> insert($custToInsert); 

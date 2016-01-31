@@ -18,7 +18,7 @@ class DAOFactory{
 	/**
 	 * @return ServiceRequestsDAO
 	 */
-	public static function getServiceRequestDAO(){
+	public static function getServiceRequestsDAO(){
 		
 		require_once('ServiceRequestsDAO.interface.php');
 		require_once('models/ServiceRequest.class.php');
@@ -57,15 +57,80 @@ class DAOFactory{
 		return new UsersMongoDAO();
 	}
 
-	//getServiceRequestsDAO()
-
-	public static function getServiceRequestsDAO(){
+	//getEmployeesDAO
+	public static function getEmployeesDAO(){
 		
-		require_once('ServiceRequestsDAO.interface.php');
-		require_once('models/ServiceRequest.class.php');
-		require_once('mongo/ServiceRequestsMongoDAO.class.php');
+		require_once('EmployeesDAO.interface.php');
+		require_once('models/Employee.class.php');
+		require_once('mongo/EmployeesMongoDAO.class.php');
 
-		return new ServiceRequestsMongoDAO();
+		return new EmployeesMongoDAO();
+	}
+
+	//getFeedbackWorkerDAO()
+
+	public static function getFeedbackWorkerDAO(){
+		
+		require_once('FeedbackDAO.interface.php');
+		require_once('models/FeedbackWorker.class.php');
+		require_once('mongo/FeedbackWorkerMongoDAO.class.php');
+
+		return new FeedbackWorkerMongoDAO();
+	}
+
+	//getFeedbackUserDAO()
+
+	public static function getFeedbackUserDAO(){
+		
+		require_once('FeedbackDAO.interface.php');
+		require_once('models/FeedbackUser.class.php');
+		require_once('mongo/FeedbackUserMongoDAO.class.php');
+
+		return new FeedbackUserMongoDAO();
+	}
+
+	//getFollowbackWorkerDAO()
+
+	public static function getFollowbackWorkerDAO(){
+		
+		require_once('FollowbackDAO.interface.php');
+		require_once('models/FollowbackWorker.class.php');
+		require_once('mongo/FollowbackWorkerMongoDAO.class.php');
+
+		return new FollowbackMongoDAO();
+	}
+
+	//getFollowbackUserDAO()
+
+	public static function getFollowbackUserDAO(){
+		
+		require_once('FollowbackDAO.interface.php');
+		require_once('models/FollowbackUser.class.php');
+		require_once('mongo/FollowbackUserMongoDAO.class.php');
+
+		return new FollowbackMongoDAO();
+	}
+
+	//getMatchesDAO()
+
+	public static function getMatchesDAO(){
+		
+		require_once('MatchesDAO.interface.php');
+		require_once('models/Match.class.php');
+		require_once('mongo/MatchesMongoDAO.class.php');
+
+		return new MatchesMongoDAO();
+	}
+
+	//getWorkersDAO
+
+	public static function getWorkersDAO(){
+		
+		require_once('WorkersDAO.interface.php');
+		require_once('models/Worker.class.php');
+		require_once('mongo/WorkersMongoDAO.class.php');
+
+		return new WorkersMongoDAO();
 	}
 
 }

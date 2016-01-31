@@ -2,8 +2,8 @@
 	/**
 	 * Object represents collection 'users'
 	 *
-     	 * @author: rahul
-     	 * @date: 2015-25-10 12:40	 
+     	 * @author: anil
+     	 * @date: 2015-17-12 12:40	 
 	 */
 	class Service{
 		
@@ -22,8 +22,8 @@
 			$this -> plans = $plans;
 			$this -> img = $img;
 			$this -> status = $status;
-			$this -> addedOn = $addedOn;
-			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> added_on = $addedOn;
+			$this -> last_updated = $lastUpdateOn;
 
 		}
 
@@ -62,14 +62,14 @@
 		}
 
 		function setAddedOn($addedOn){
-			$this -> addedOn = $addedOn;
+			$this -> added_on = $addedOn;
 		}
 		function getAddedOn(){
 			return $this-> addedOn;
 		}
 
 		function setLastUpdateOn($lastUpdateOn){
-			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> last_updated = $lastUpdateOn;
 		}
 		function getLastUpdateOn(){
 			return $this-> lastUpdateOn;
@@ -81,7 +81,8 @@
 							img=> $this -> img,
 							status=> $this -> status,
 							plans => $this -> plans,
-							addedOn => $this -> addedOn
+							addedon => $this -> addedOn,
+							last_updated => $this -> lastUpdateOn
 
 						);
 		}	

@@ -16,7 +16,7 @@ class ServiceRequestResource implements Resource {
 
     public function __construct() {
         $DAOFactory = new DAOFactory();
-        $this -> ServiceRequestDAO = $DAOFactory -> getServiceRequestsDAO();
+        $this -> serviceRequestsDAO = $DAOFactory -> getServiceRequestsDAO();
     }
 
     public function checkIfRequestMethodValid($requestMethod) {
@@ -40,7 +40,19 @@ class ServiceRequestResource implements Resource {
             throw new UnsupportedResourceMethodException();
         }
 
-        $ServiceRequestInfoObj = new ServiceRequest($data['name'], $data['mobile'], $data['address'], $data ['service'], $data["type"], $data ['timestamp']);
+        $ServiceRequestInfoObj = new ServiceRequest(
+                                                    $data['name'], 
+                                                    $data['mobile'], 
+                                                    $data['address'], 
+                                                    $data['service'], 
+                                                    $data["type"], 
+                                                    $data["salary_criteria"], 
+                                                    $data["requirements"], 
+                                                    $data["remarks"], 
+                                                    $data["working_hour"], 
+                                                    $data["status"], 
+                                                    $data ['timestamp']
+                                                    );
         //$logger -> debug ("POSTed ServiceRequest Detail: " . $ServiceRequestInfoObj -> toString());
 
         
@@ -56,27 +68,58 @@ class ServiceRequestResource implements Resource {
             );
         
     }
-
     public function get($resourceVals, $data, $ServiceRequestId) {
 
-        //$ServiceRequestId = 1;
+        //$userId = 1;
 
-        $ServiceRequestInfoId = $resourceVals ['ServiceRequest'];
+        $ServiceRequestInfoId = $resourceVals ['service_request'];
         if (isset($ServiceRequestInfoId))
-            return array('code' => '6004');
-            //$result = $this->getServiceRequestDetail($ServiceRequestId);
+            $result = $this -> getServiceRequest($ServiceRequestInfoId);
             
         else
-            $result = $this -> getServiceRequestDetail($ServiceRequestId);
-        
+            $result = $this -> getAllServiceRequest();
+                                                                                                                                                                                                                                                                                
         if (!is_array($result)) {
             return array('code' => '6004');
         }
 
-        return $result;
+        return array('code' => '6000', 
+                     'data' => $result
+            );
     }
 
-    private function getServiceRequestDetail($ServiceRequestId) {
+    private function getServiceRequest($ServiceRequestId) {
+    
+        global $logger;
+        $logger->debug('Fetch User Detail...');
+        $ServiceRequestInfoObj = $this -> serviceRequestsDAO -> load($ServiceRequestId);
+
+              
+             
+        $this -> serviceRequestDetail [] = $ServiceRequestInfoObj-> toArray();
+        $logger -> debug ('Fetched details: ' . json_encode($this -> serviceRequestDetail));
+
+        return $this -> serviceRequestDetail;
+    }
+
+    private function getAllServiceRequest() {
+    
+        global $logger;
+        $serviceRequestsArray = null;
+        $logger->debug('Fetch User Detail...');
+        $serviceRequestInfoObjs = $this -> serviceRequestsDAO -> loadAllServiceRequests();
+
+              
+        foreach ($serviceRequestInfoObjs as $key => $serviceRequestInfoObj) {
+                  $serviceRequestsArray [] = $serviceRequestInfoObj-> toArray();
+             }     
+       
+        $logger -> debug ('Fetched details: ' . json_encode($this -> serviceRequestsArray));
+
+        return $serviceRequestsArray;
+    }
+
+    /*private function getServiceRequestDetail($ServiceRequestId) {
     
         global $logger;
         $logger->debug('Fetch ServiceRequest Detail...');
@@ -93,6 +136,6 @@ class ServiceRequestResource implements Resource {
                                 'ServiceRequest' => $this -> ServiceRequestDetail
                             )
             );
-    }
+    }*/
 
 }

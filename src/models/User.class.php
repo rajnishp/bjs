@@ -1,37 +1,39 @@
-<?php
+<?php																																																																																																																																																																																																																																																																																																																																				
 	/**
 	 * Object represents collection 'users'
 	 *
-     	 * @author: rahul
-     	 * @date: 2015-25-10 12:40	 
+     	 * @author: anil
+     	 * @date: 2015-17-12 12:40	 
 	 */
 	class User{
 		
-		private $uid;
 		private $name;
 		private $mobile;
 		private $email;
+		private $address;
 		private $gpsLocation;
 		private $addedOn;
 		private $lastUpdateOn;
+		private $uuid;
 
-		function __construct ($name, $mobile, $email, $gpsLocation, $addedOn, $lastUpdateOn, $uid = null) {
+		function __construct ($name, $mobile, $email, $address, $gpsLocation, $addedOn, $lastUpdateOn, $uuid) {
 			
-			$this -> uid = $uid;
 			$this -> name = $name;
 			$this -> mobile = $mobile;
 			$this -> email = $email;
+			$this -> address = $address;
 			$this -> gpsLocation = $gpsLocation;
 			$this -> addedOn = $addedOn;
 			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> uuid = $uuid;
 
 		}
 
-		function setUid($uid){
-			$this -> uid = $uid;
+		function setUuid($uuid){
+			$this -> uuid = $uuid;
 		}
-		function getUid(){
-			return $this-> uid;
+		function getUuid(){
+			return $this-> uuid;
 		}
 
 		function setName($name){
@@ -47,28 +49,37 @@
 		function getMobile(){
 			return $this-> mobile;
 		}
+
 		function setEmail($email){
 			$this -> email = $email;
 		}
 		function getEmail(){
 			return $this-> email;
 		}
+
+		function setAddress($address){
+			$this -> address = $address;
+		}
+		function getAddress(){
+			return $this-> address;
+		}
+
 		function setGpsLocation($gpsLocation){
-			$this -> gpsLocation = $gpsLocation;
+			$this -> gps_location = $gpsLocation;
 		}
 		function getGpsLocation(){
 			return $this-> gpsLocation;
 		}
 
 		function setAddedOn($addedOn){
-			$this -> addedOn = $addedOn;
+			$this -> added_on = $addedOn;
 		}
 		function getAddedOn(){
 			return $this-> addedOn;
 		}
 
 		function setLastUpdateOn($lastUpdateOn){
-			$this -> lastUpdateOn = $lastUpdateOn;
+			$this -> last_updated = $lastUpdateOn;
 		}
 		function getLastUpdateOn(){
 			return $this-> lastUpdateOn;
@@ -76,11 +87,14 @@
 
 		function toArray() {
 			return array (
+							uuid => $this -> uuid,
 							name => $this -> name,
 							mobile=> $this -> mobile,
 							email=> $this -> email,
-							gpsLocaiton=> $this -> gpsLocaiton,
-							addedOn => $this -> addedOn									
+							address => $this -> address,
+							gps_location=> $this -> gpsLocation,
+							added_on => $this -> addedOn,									
+							last_updated => $this -> lastUpdated									
 						);
 		}
 

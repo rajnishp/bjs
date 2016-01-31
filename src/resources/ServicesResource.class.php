@@ -1,11 +1,11 @@
 <?php
 
 /**
- * @author rajnish
+ * @author anil
  */
 require_once 'resources/Resource.interface.php';
 require_once 'dao/DAOFactory.class.php';
-require_once 'models/User.class.php';
+require_once 'models/Service.class.php';
 require_once 'exceptions/MissingParametersException.class.php';
 require_once 'exceptions/UnsupportedResourceMethodException.class.php';
 

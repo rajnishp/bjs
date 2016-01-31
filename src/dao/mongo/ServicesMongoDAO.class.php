@@ -1,13 +1,12 @@
 <?php
 
 	/**
-     * @author rahul
+     * @author anil
 	**/
 
 	//require_once 'dao/CustomerIdMappingDAO.interface.php';
     //require_once 'dao/mysql/CustomerIdMappingMySqlDAO.class.php';
     //require_once 'models/customer/Customer.class.php';
- 
 
     require_once 'utils/mongo/MongoDBUtil.class.php';
     require_once 'exceptions/MongoDbException.class.php';
@@ -88,8 +87,8 @@
             $customerResult = $deleteIdentifierMappings = $identifierMappingsResult = $rawResult = array(); 
 
             try {
-                $logger -> debug ("Selecting collection: customers");
-                $this -> mongo -> selectCollection('customers');
+                $logger -> debug ("Selecting collection: services");
+                $this -> mongo -> selectCollection('services');
 
                 $uuid = $customer -> getUuid();
                 $custToUpdate = $customer -> serialize();
@@ -139,8 +138,8 @@
         public function delete($uuid) {
             global $logger;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: services");
+            $this -> mongo -> selectCollection('services');     
 
             $result = $this -> mongo -> removeByObjectId($uuid);
 
@@ -182,8 +181,8 @@
             global $logger;
             $customerObjs = $output = array();
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: services");
+            $this -> mongo -> selectCollection('services');     
 
             if (sizeof($uuidValues) == 1) {
                 $customer = $this -> mongo -> findByObjectIdAndOrgId($uuidValues [0], $orgId, $projection);
@@ -291,8 +290,8 @@
             global $logger;
             $customers = $mongoCustomers = null;
 
-            $logger -> debug ("Selecting collection: customers");
-            $this -> mongo -> selectCollection('customers');     
+            $logger -> debug ("Selecting collection: services");
+            $this -> mongo -> selectCollection('services');     
 
             $mongoCustomers = $this -> mongo -> find(array(), array('$sortByKey' => 1));
             foreach ($mongoCustomers as $mongoCustomer) {
