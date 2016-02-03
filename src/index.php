@@ -11,6 +11,7 @@ session_set_cookie_params(728000);
 
 include_once "controllers/HomeController.class.php";
 include_once "controllers/TermsController.class.php";
+include_once "controllers/VarifiedController.class.php";
 include_once "controllers/TestimonailController.class.php";
 
 require_once 'utils/Util.php';
@@ -82,6 +83,12 @@ $logger -> debug ("get :: " .json_encode($_GET));
 			case "terms&Conditions":
 				$termsController = new TermsController();
 				$termsController -> render ();
+					
+				break;
+				
+			case "blueteamVarified":
+				$varifiedController = new VarifiedController();
+				$varifiedController -> render ();
 					
 				break;
 

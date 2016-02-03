@@ -27,6 +27,7 @@
                             <ul class="nav navbar-nav">
                                 <?php /*<li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li> */ ?>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">Terms&Conditions</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>blueteamVarified">BlueTeam Varification</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>#services">Services</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>#contactus">Contact</a></li>
