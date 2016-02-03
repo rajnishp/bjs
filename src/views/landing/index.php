@@ -307,13 +307,6 @@
                                 <div class="pricing-table-container">
                                     <div class="pricing-table active">
                                             <h3 class="lightblue" style="padding: 5px 10px 0px;">Monthly</h3>
-                                            <!-- <header style="margin-bottom: 0px;">
-                                                <div class="price lightbluebg">
-                                                    <span>20% off</span>
-                                                    on First Month
-                                                </div>
-                                            </header> -->
-
                                             <ul class="pricing-list">
                                                 <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
                                                 <li style="color:blue;"> 4 BHK - <i class="fa fa-inr"> 3499 </i> </li>
@@ -353,12 +346,6 @@
                                 <div class="pricing-table-container">
                                 <div class="pricing-table active">
                                     <h3 class="lightblue" style="padding: 5px 10px 0px;">On Demand</h3>
-                                    <!-- <header style="margin-bottom: 0px;">
-                                        <div class="price lightbluebg">
-                                            <span>25% off</span>
-                                            on First Visit
-                                        </div>
-                                    </header> -->
                                     <ul class="pricing-list">
                                         <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
                                         <li style="color:blue;">149 <i class="fa fa-inr"></i> / hour</li>
@@ -692,7 +679,7 @@
                         <div class="col-md-3 col-xs-6 member-container">
                             <div class="member member-second">
                                 <figure>
-                                    <img src="<?= $this-> baseUrl ?>static/images/team/rahul.jpg" alt="eric" class="img-responsive">
+                                    <img src="<?= $this-> baseUrl ?>static/images/team/rahul.jpg" alt="rahul" class="img-responsive">
                                 </figure>
                                 <div class="member-overlay">
                                     <div class="vcenter-container">
