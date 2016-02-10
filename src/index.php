@@ -86,7 +86,7 @@ $logger -> debug ("get :: " .json_encode($_GET));
 					
 				break;
 				
-			case "blueteamVarified":
+			case "blueteamVerified":
 				$varifiedController = new VarifiedController();
 				$varifiedController -> render ();
 					
