@@ -1,5 +1,4 @@
 <!-- Plugins -->
-
         <script src="<?= $this-> baseUrl ?>static/js/bootstrap.min.js"></script>
         <script src="<?= $this-> baseUrl ?>static/js/plugins.js"></script>
         <script src="<?= $this-> baseUrl ?>static/js/twitter/jquery.tweet.min.js"></script>
@@ -102,8 +101,7 @@
         </script>
 
 <script type="text/javascript">
-
-
+   
     function genericEmptyFieldValidator(fields){
         returnBool = true;
         $.each(fields, function( index, value ) {
@@ -132,44 +130,49 @@
 
         var dataString = "";
         $('#client_name').html( $('#'+fields[0]).val().capitalizeFirstLetter() );
-        dataString = "name=" + $('#'+fields[0]).val() + "&mobile=" + $('#'+fields[1]).val() + "&requirements=" + $('#'+fields[2]).val() + "&address=" + $('#'+fields[3]).val() + "&type=" + hire_type;
+        dataString = "name=" + $('#'+fields[0]).val() + "&email=" + $('#'+fields[1]).val() + "&mobile=" + $('#'+fields[2]).val() + 
+                    "&needed=" + $('#'+fields[3]).val() + "&timing=" + $('#'+fields[4]).val() + "&timing2=" + $('#'+fields[5]).val() + 
+                    "&salary=" + $('#'+fields[6]).val() + "&salary2=" + $('#'+fields[7]).val() + "&remarks=" + $('#'+fields[8]).val() + 
+                    "&address=" + $('#'+fields[9]).val() + "&type=" + hire_type;
 
         $.ajax({
-             xhr: function()
-{
-var xhr = new window.XMLHttpRequest();
-//Upload progress
-xhr.upload.addEventListener("progress", function(evt){
-  if (evt.lengthComputable) {
-    var percentComplete = evt.loaded / evt.total;
-    //Do something with upload progress
-    console.log(percentComplete);
-  }
-}, false);
-//Download progress
-xhr.addEventListener("progress", function(evt){
-  if (evt.lengthComputable) {
-    var percentComplete = evt.loaded / evt.total;
-    //Do something with download progress
-    console.log(percentComplete);
-  }
-}, false);
-return xhr;
-},
+             xhr: function(){
+                    var xhr = new window.XMLHttpRequest();
+                    //Upload progress
+                    xhr.upload.addEventListener("progress", function(evt){
+                      if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        //Do something with upload progress
+                        console.log(percentComplete);
+                      }
+                    }, false);
+                    //Download progress
+                    xhr.addEventListener("progress", function(evt){
+                      if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        //Do something with download progress
+                        console.log(percentComplete);
+                      }
+                    }, false);
+                    return xhr;
+                },
             type: "POST",
             url: "<?= $this-> baseUrl ?>" + "home/serviceRequest",
             data: dataString,
             cache: false,
             success: function(result){
-
                 document.getElementById("submit_request").disabled = false;
-
                 $("#name").val("");
                 $("#mobile").val("");
+                $("#email").val("");
+                $("#timing").val("");
+                $("#needed").val("");
+                $("#timing2").val("");
+                $("#salary").val("");
+                $("#salary2").val("");
                 $("#address").val("");
-                $("#requirements").val("");
+                $("#remarks").val("");
                 console.log("inside success");
-
                 $("#modal_body_form").hide();
                 $("#modal_result_show").show();
                 setTimeout(function () {
@@ -200,15 +203,44 @@ return xhr;
         $("#modal_result_show").hide();
     });
 
+    function isValidDate(subject){
+      if (subject.match(/^(?:(19|20)[0-9]{2})[\- \/.](0[1-9]|1[012])[\- \/.](0[1-9]|[12][0-9]|3[01])$/)){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+
+    function validateTime(time){
+      var a=true;
+      var time_arr=time.split(":");
+      if(time_arr.length!=2)  a=false;
+      else {
+        if(isNaN(time_arr[0]) || isNaN(time_arr[1])){                
+          a=false;
+        }
+        if(time_arr[0]<24 && time_arr[1]<60) {}
+        else a =false;         
+      }
+      return a;
+    }
+
     function validateServiceRequest(){
 
         $('span[id^="mobile_status"]').empty();
         
-        fields = ["name", "mobile", "requirements", "address"];
+        fields = ["name","email","mobile","needed","timing","timing2","salary","salary2","remarks","address"];
 
         if (genericEmptyFieldValidator(fields)) {
 
             var phoneVal = $('#mobile').val();
+            var emailVal = $('#email').val();
+            var date = $('#needed').val();
+            var timing = $('#timing').val();
+            var timing2 = $('#timing2').val();
+            var salary = $('#salary').val();
+            var salary2 = $('#salary2').val();
                   
             var stripped = phoneVal.replace(/[\(\)\.\-\ ]/g, '');    
             if (isNaN(parseInt(stripped))) {
@@ -223,12 +255,42 @@ return xhr;
                 $('#mobile_status').append("<font style= 'color: red;'>*Enter 10 digit  mobile number. </font>");
                 return false;
             }
-   
+            else if(!(IsEmail(emailVal))) {
+                $('#email').css("border", "1px solid OrangeRed");
+                $('#email_status').append("<font style= 'color: red;'>*Enter valid Email-ID. </font>");
+                return false;
+            }
+            else if(!(isValidDate(date))) {
+                $('#needed').css("border", "1px solid OrangeRed");
+                $('#needed_status').append("<font style= 'color: red;'>*Enter valid Date. </font>");
+                return false;
+            }
+            else if(!(validateTime(timing))) {
+                $('#timing').css("border", "1px solid OrangeRed");
+                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                return false;
+            }
+            else if(!(validateTime(timing2))) {
+                $('#timing2').css("border", "1px solid OrangeRed");
+                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                return false;
+            }
+            else if(timing == 0 || timing2 == 0 || parseInt(timing2) < parseInt(timing)){
+                $('#timing').css("border", "1px solid OrangeRed");
+                $('#timing2').css("border", "1px solid OrangeRed");
+                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                return false;
+            }
+            else if(salary == 0 || salary2 == 0 || parseInt(salary2) < parseInt(salary)){
+                $('#salary').css("border", "1px solid OrangeRed");
+                $('#salary2').css("border", "1px solid OrangeRed");
+                $('#salary_status').append("<font style= 'color: red;'>*Enter valid Salary. </font>");
+                return false;
+            }
             postServiceRequest(fields, hire_type);
         
         }
         return false;
-
     }
 
     function postGetInTouch(fields) {
