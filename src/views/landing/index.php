@@ -1357,18 +1357,44 @@
                         <div class="form-group">
                             <span>Your Name</span>
                             <input name="name" id="name" type="text" placeholder="Your Name" required class="form-control input-sm">
-                            <!-- <span class="animated-label">Your Name *</span> -->
+                        </div>
+                        <div class="form-group">   
+                            <span>Your Email</span>
+                            <input name="email" id="email" type="text" placeholder="Your Email" required class="form-control input-sm">
+                            <span id="email_status"></span>
                         </div>
                         <div class="form-group">
-                            <span>Enter 10 digit mobile number</span>
+                            <span>Enter 10 digit moblie number</span>
                             <input  required class="form-control input-sm"  placeholder="Enter 10 digit mobile number" id="mobile" type="text">
-                            <!-- <span class="animated-label">Enter 10 digit mobile number *</span> -->
-                            <span id = "mobile_status"></span>
+                            <span id="mobile_status"></span>
+                        </div>
+                        <div class="form-group">
+                            <span>Needed From</span>
+                            <input name="needed" id="needed" type="date" placeholder="YYYY-MM-DD" required class="form-control input-sm"><br/>
+                            <span id="needed_status"></span>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-4 ">Worker timings</span>
+                            <div class="col-md-8 input-group">
+                                <input type="time" id ="timing" class="form-control input-sm" required placeholder="Enter Time" />
+                                <div class="input-group-addon" style="min-width:35px;max-height:30px;">To</div>
+                                <input type="time" id ="timing2" class="form-control input-sm" required placeholder="Enter Time" />
+                                <span id="timing_status"></span>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <span>Full Requirements</span>
-                            <textarea  required class="form-control input-lg" placeholder="Full Requirements" id="requirements" type="textarea"></textarea>
+                            <span class="col-md-4 ">Expected Salary</span>
+                            <div class="col-md-8 input-group">
+                                <input type="number" id ="salary" class="form-control input-sm" required placeholder="Enter Salary Range" />
+                                <div class="input-group-addon" style="min-width:35px;max-height:30px;">To</div>
+                                <input type="number" id ="salary2" class="form-control input-sm" required placeholder="Enter Salary Range" />
+                                <span id="salary_status"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span>Full Specifications</span>
+                            <textarea  required class="form-control input-lg" placeholder="Full Specifications" id="remarks" type="textarea"></textarea>
                             <!-- <span class="animated-label textarea-label">Full Address *</span> -->
                         </div>
 
