@@ -1387,7 +1387,7 @@
                                     <i class="small" >Like 19:00</i>
                                 </div>
                             </div>
-                            <span id="s" ></span>
+                            <span id="timing_status" ></span>
                         </div><br/>
 
                         <div class="form-group">
@@ -1401,6 +1401,7 @@
                                 <div class="col-md-5">
                                     <input type="number" id ="salary2" class="form-control input-sm" required placeholder="Enter SalaryIn Rupees" />
                                     <i class="small" >Like 5000</i>
+                                </div>
                             </div>
                             <span id="salary_status" ></span>
                         </div><br/>
