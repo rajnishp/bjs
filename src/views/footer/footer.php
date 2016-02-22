@@ -246,45 +246,45 @@
             if (isNaN(parseInt(stripped))) {
                 //error("Contact No", "The mobile number contains illegal characters");
                 $('#mobile').css("border", "1px solid OrangeRed");
-                $('#mobile_status').append("<font style= 'color: red;'>*Enter valid mobile number. </font>");
+                $('#mobile_status').html("<font style= 'color: red;'>*Enter valid mobile number. </font>");
                 return false;
             }
             else if (phoneVal.length != 10) {
                 //error("Contact No", "Make sure you included valid contact number");
                 $('#mobile').css("border", "1px solid OrangeRed");
-                $('#mobile_status').append("<font style= 'color: red;'>*Enter 10 digit  mobile number. </font>");
+                $('#mobile_status').html("<font style= 'color: red;'>*Enter 10 digit  mobile number. </font>");
                 return false;
             }
             else if(!(IsEmail(emailVal))) {
                 $('#email').css("border", "1px solid OrangeRed");
-                $('#email_status').append("<font style= 'color: red;'>*Enter valid Email-ID. </font>");
+                $('#email_status').html("<font style= 'color: red;'>*Enter valid Email-ID. </font>");
                 return false;
             }
             else if(!(isValidDate(date))) {
                 $('#needed').css("border", "1px solid OrangeRed");
-                $('#needed_status').append("<font style= 'color: red;'>*Enter valid Date. </font>");
+                $('#needed_status').html("<font style= 'color: red;'>*Enter valid Date. </font>");
                 return false;
             }
             else if(!(validateTime(timing))) {
                 $('#timing').css("border", "1px solid OrangeRed");
-                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                $('#timing_status').html("<font style= 'color: red;'>*Enter valid Time. </font>");
                 return false;
             }
             else if(!(validateTime(timing2))) {
                 $('#timing2').css("border", "1px solid OrangeRed");
-                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                $('#timing_status').html("<font style= 'color: red;'>*Enter valid Time. </font>");
                 return false;
             }
             else if(timing == 0 || timing2 == 0 || parseInt(timing2) < parseInt(timing)){
                 $('#timing').css("border", "1px solid OrangeRed");
                 $('#timing2').css("border", "1px solid OrangeRed");
-                $('#timing_status').append("<font style= 'color: red;'>*Enter valid Time. </font>");
+                $('#timing_status').html("<font style= 'color: red;'>*Enter valid Time. </font>");
                 return false;
             }
             else if(salary == 0 || salary2 == 0 || parseInt(salary2) < parseInt(salary)){
                 $('#salary').css("border", "1px solid OrangeRed");
                 $('#salary2').css("border", "1px solid OrangeRed");
-                $('#salary_status').append("<font style= 'color: red;'>*Enter valid Salary. </font>");
+                $('#salary_status').html("<font style= 'color: red;'>*Enter valid Salary. </font>");
                 return false;
             }
             postServiceRequest(fields, hire_type);
