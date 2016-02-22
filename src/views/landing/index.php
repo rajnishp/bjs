@@ -1359,28 +1359,40 @@
                         </div>
                         <div class="form-group">
                             <span>Needed From</span>
-                            <input name="needed" id="needed" type="date" placeholder="YYYY-MM-DD" required class="form-control input-sm"><br/>
-                            <span id="needed_status"></span>
+                            <input name="needed" id="needed" type="date" placeholder="YYYY-MM-DD" required class="form-control input-sm">
+                            <i class="small" >Like   2016-02-22</i>
+                            <span id="needed_status"></span><br/><br/>
                         </div>
                         <div class="form-group">
-                            <span class="col-md-4 ">Worker timings</span>
-                            <div class="col-md-8 input-group">
-                                <input type="time" id ="timing" class="form-control input-sm" required placeholder="Enter Time" />
-                                <div class="input-group-addon" style="min-width:35px;max-height:30px;">To</div>
-                                <input type="time" id ="timing2" class="form-control input-sm" required placeholder="Enter Time" />
-                                <span id="timing_status"></span>
+                            <span>Worker timings</span>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="time" id ="timing" class="form-control input-sm" required placeholder="Enter Time" />
+                                    <i class="small">Like 8:00 </i>
+                                </div>
+                                <div class="col-md-1">To</div>
+                                <div class="col-md-5">
+                                    <input type="time" id ="timing2" class="form-control input-sm" required placeholder="Enter Time" />
+                                    <i class="small" >Like 19:00</i>
+                                </div>
                             </div>
-                        </div>
+                            <span id="s" ></span>
+                        </div><br/>
 
                         <div class="form-group">
-                            <span class="col-md-4 ">Expected Salary</span>
-                            <div class="col-md-8 input-group">
-                                <input type="number" id ="salary" class="form-control input-sm" required placeholder="Enter Salary Range" />
-                                <div class="input-group-addon" style="min-width:35px;max-height:30px;">To</div>
-                                <input type="number" id ="salary2" class="form-control input-sm" required placeholder="Enter Salary Range" />
-                                <span id="salary_status"></span>
+                            <span >Expected Salary</span>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="number" id ="salary" class="form-control input-sm" required placeholder="Enter Salary In Rupees" />
+                                    <i class="small">Like 2000 </i>
+                                </div>
+                                <div class="col-md-1">To</div>
+                                <div class="col-md-5">
+                                    <input type="number" id ="salary2" class="form-control input-sm" required placeholder="Enter SalaryIn Rupees" />
+                                    <i class="small" >Like 5000</i>
                             </div>
-                        </div>
+                            <span id="salary_status" ></span>
+                        </div><br/>
                         <div class="form-group">
                             <span>Full Specifications</span>
                             <textarea  required class="form-control input-lg" placeholder="Full Specifications" id="remarks" type="textarea"></textarea>
