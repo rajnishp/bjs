@@ -56,11 +56,11 @@ class HomeController extends BaseController {
 			$salary2 = $_POST['salary2'];
 			$address = $_POST['address'];
 			$remarks = $_POST['remarks'];
-			$db_handle = mysqli_connect("localhost","root","redhat111111","bluenethack_v0");
-			mysqli_query ($db_handle, "INSERT INTO service_request (name, mobile, email, requirements, timings, 
-																	min_salary, max_salary, address, remarks, status, created_time)	
-															VALUES ('$name', '$mobile', '$email', '$type', '$newtime', '$salary', '$salary2',
-																	'$address', '$remarks', 'open', '$created_time');");
+			$need = $_POST['needed'];
+			$db_handle = mysqli_connect("localhost","root","redhat@11111p","bluenet_v0");
+			mysqli_query ($db_handle, "INSERT INTO service_request (name, mobile, email, requirements, timings, needed_from, 
+										min_salary, max_salary, address, remarks, status, created_time)
+									VALUES ('$name', '$mobile', '$email', '$type', '$newtime', '$need', '$salary', 											'$salary2', '$address', '$remarks', 'open', '$created_time');");
 
 			$serviceRequestObj = new ServiceRequest (
 													$_POST['name'],
