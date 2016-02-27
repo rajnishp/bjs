@@ -1375,6 +1375,18 @@
                             <span id="needed_status"></span><br/><br/>
                         </div>
                         <div class="form-group">
+                            <span>Please choose Service Type </span>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5">
+                                    <input type="radio" name="service_type" value="1" onclick="showclass();"> Monthly
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="radio" name="service_type" value="0" onclick="hideclass();"> On - Demand
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <span>Worker timings</span>
                             <div class="row">
                                 <div class="col-md-5">
@@ -1390,7 +1402,7 @@
                             <span id="timing_status" ></span>
                         </div><br/>
 
-                        <div class="form-group">
+                        <div class="form-group salary_check">
                             <span >Expected Salary</span>
                             <div class="row">
                                 <div class="col-md-5">
