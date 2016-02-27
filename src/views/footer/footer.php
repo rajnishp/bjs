@@ -101,7 +101,14 @@
         </script>
 
 <script type="text/javascript">
-   
+    
+    function showclass() {
+        $(".salary_check").show();
+    }
+    function hideclass() {
+        $(".salary_check").hide();
+    }
+
     function genericEmptyFieldValidator(fields){
         returnBool = true;
         $.each(fields, function( index, value ) {
@@ -122,7 +129,7 @@
         return returnBool;
     }
 
-    function postServiceRequest(fields, hire_type) {
+    function postServiceRequest(fields, hire_type, value) {
 
         document.getElementById("submit_request").disabled = true;
         
@@ -134,7 +141,15 @@
                     "&needed=" + $('#'+fields[3]).val() + "&timing=" + $('#'+fields[4]).val() + "&timing2=" + $('#'+fields[5]).val() + 
                     "&salary=" + $('#'+fields[6]).val() + "&salary2=" + $('#'+fields[7]).val() + "&remarks=" + $('#'+fields[8]).val() + 
                     "&address=" + $('#'+fields[9]).val() + "&type=" + hire_type;
-
+        if(value != 0){
+            if(salary == 0 || salary2 == 0 || parseInt(salary2) < parseInt(salary)){
+                $('#salary').css("border", "1px solid OrangeRed");
+                $('#salary2').css("border", "1px solid OrangeRed");
+                $('#salary_status').html("<font style= 'color: red;'>*Enter valid Salary. </font>");
+                return false;
+            }
+        }
+        else {}
         $.ajax({
              xhr: function(){
                     var xhr = new window.XMLHttpRequest();
@@ -229,8 +244,9 @@
     function validateServiceRequest(){
 
         $('span[id^="mobile_status"]').empty();
-        
-        fields = ["name","email","mobile","needed","timing","timing2","salary","salary2","remarks","address"];
+        var value = $("input[name=rate]:checked").val();
+        if(value == 0) fields = ["name","email","mobile","needed","timing","timing2","remarks","address"];
+        else fields = ["name","email","mobile","needed","timing","timing2","salary","salary2","remarks","address"];
 
         if (genericEmptyFieldValidator(fields)) {
 
@@ -281,13 +297,7 @@
                 $('#timing_status').html("<font style= 'color: red;'>*Enter valid Time. </font>");
                 return false;
             }
-            else if(salary == 0 || salary2 == 0 || parseInt(salary2) < parseInt(salary)){
-                $('#salary').css("border", "1px solid OrangeRed");
-                $('#salary2').css("border", "1px solid OrangeRed");
-                $('#salary_status').html("<font style= 'color: red;'>*Enter valid Salary. </font>");
-                return false;
-            }
-            postServiceRequest(fields, hire_type);
+            postServiceRequest(fields, hire_type, value);
         
         }
         return false;
