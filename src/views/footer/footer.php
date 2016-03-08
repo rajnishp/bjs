@@ -9,7 +9,7 @@
         <script src="<?= $this-> baseUrl ?>static/js/main.js"></script>
             
         <!-- Google map javascript api v3 -->
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
         <script>
             /*----------------------------------------------------*/
