@@ -102,7 +102,7 @@
                     IF YOU DO NOT ACCEPT THE TERMS AND CONDITIONS OF USE STATED HEREIN, KINDLY REFRAIN FROM USING THE WEBSITE AND ITS SERVICES.
                     <br/><br/>
 
-                    These Terms of Use include the BlueTeam.in Privacy Statement (http://www.BlueTeam.in/Privacy) which is incorporated into these Terms of Use by reference. By using BlueTeam.in, You are indicating your acceptance to be bound by these Terms of Use, including the BlueTeam.in Privacy Statement.
+                    These Terms of Use include the BlueTeam.in Privacy Statement (https://www.BlueTeam.in/Privacy) which is incorporated into these Terms of Use by reference. By using BlueTeam.in, You are indicating your acceptance to be bound by these Terms of Use, including the BlueTeam.in Privacy Statement.
                     <br/><br/>
                     In the event of any inconsistency between the provisions under the Terms of Use and the BlueTeam.in Privacy Statement, the provisions under the Terms of Use will prevail.
                     <br/>
