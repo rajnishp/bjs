@@ -430,14 +430,14 @@
                                     <li class="portfolio-item animate-item photography" data-animate-time="80">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Maid">
                                             <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpg" alt="Maid">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Cook">
                                             <div class="portfolio-item-wrapper  shortcut" id="Cook">
-                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook">
+                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.png" alt="Cook">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
@@ -445,28 +445,28 @@
                                     <li class="portfolio-item animate-item design" data-animate-time="240">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Electrician">
                                             <div class="portfolio-item-wrapper shortcut"  id="Electrician">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg" alt="Electrician">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.png" alt="Electrician">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item photography video" data-animate-time="320">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Plumber">  
                                             <div class="portfolio-item-wrapper shortcut" id="Plumber">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg" alt="Plumber">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.png" alt="Plumber">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item illustration design" data-animate-time="400">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Baby Sitter">
                                             <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.png" alt="Baby Sitter">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item design" data-animate-time="480">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Security Guard">
                                             <div class="portfolio-item-wrapper shortcut" id="Security Guard">
-                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.jpeg" alt="Security Guard">
+                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.png" alt="Security Guard">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
@@ -480,7 +480,7 @@
                                     <li class="portfolio-item animate-item illustration" data-animate-time="640">
                                         <a href="#" data-target="#service_request" data-toggle="modal" title="Hire Gardener">
                                             <div class="portfolio-item-wrapper shortcut" id="Gardener">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.jpeg" alt="Gardener">
+                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.png" alt="Gardener">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
