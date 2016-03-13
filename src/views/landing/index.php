@@ -306,33 +306,48 @@
                             <div class="col-md-2 col-sm-3">
                                 <div class="pricing-table-container">
                                     <div class="pricing-table active">
-                                            <h3 class="lightblue" style="padding: 5px 10px 0px;">Monthly</h3>
-                                            <ul class="pricing-list">
-                                                <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
-                                                <li style="color:blue;"> 4 BHK - <i class="fa fa-inr"> 3499 </i> </li>
-                                                <li style="color:blue;"> 3 BHK - <i class="fa fa-inr"> 2999 </i> </li>
-
-                                            </ul>
-                                            <ul class="pricing-list">
-                                                <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Cook</h4>
-                                                <li style="color:blue;"><i class="fa fa-inr"></i> 3500  one time</li>
-                                                <li style="color:blue;"><i class="fa fa-inr"></i> 6000 </i> two time</li>
-                                            </ul>
-
-
-
-                                            <ul class="pricing-list" style="margin-bottom: 0px;color:blue;">
-                                                <h4 class="lightblue">Driver</h4>
-                                                <li style="color:blue;"> <i class="fa fa-inr"></i> 15000/10hr</li>
-                                            </ul>
-
-                                            <div class="pricing-action" style="
-                                            padding-top: 0px;
-                                            padding-bottom: 10px;
-                                            ">
+                                        <h3 class="lightblue" style="padding: 5px 10px 0px;">Monthly</h3>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Cook</h4>
+                                            <li></li>
+                                        </ul>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
+                                            <li></li>
+                                        </ul>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Driver</h4>
+                                            <li></li>
+                                        </ul>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Babysitter</h4>
+                                            <li></li>
+                                        </ul>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Download our App</h4>
+                                            <li></li>
+                                        </ul>
+                                        <div class="pricing-action" style="padding-top: 0px;padding-bottom: 10px;">
+                                            <a href="https://goo.gl/EGxeu3" target="_blank" class="btn btn-lightblue">Click Here</a>
+                                        </div>
+                                        <!-- <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Maid</h4>
+                                            <li style="color:blue;"> 4 BHK - <i class="fa fa-inr"> 3499 </i> </li>
+                                            <li style="color:blue;"> 3 BHK - <i class="fa fa-inr"> 2999 </i> </li>
+                                        </ul>
+                                        <ul class="pricing-list">
+                                            <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Cook</h4>
+                                            <li style="color:blue;"><i class="fa fa-inr"></i> 3500  one time</li>
+                                            <li style="color:blue;"><i class="fa fa-inr"></i> 6000 </i> two time</li>
+                                        </ul>
+                                        <ul class="pricing-list" style="margin-bottom: 0px;color:blue;">
+                                            <h4 class="lightblue">Driver</h4>
+                                             <li style="color:blue;"> <i class="fa fa-inr"></i> 15000/10hr</li>
+                                        </ul>
+                                        <div class="pricing-action" style="padding-top: 0px;padding-bottom: 10px;">
                                             <a href="#hire" class="btn btn-lightblue">Book now</a>
+                                        </div> -->
                                     </div>
-                                    </div><!-- End .pricing-table -->
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-8 col-sm-6" style="text-align:center;font-size:75px;">
