@@ -19,7 +19,7 @@
                             </a> -->
 
                             <a href="<?= $this -> baseUrl ?>" class="navbar-brand" style="padding-top: 0px;"><span class="logo" style="color: #ff2e8a06;">
-                            <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"> Blue Team</span></a>
+                            <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"></span></a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
