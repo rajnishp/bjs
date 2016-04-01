@@ -365,7 +365,7 @@
                                 <p class="section-title fancy blue-color">Get Relief from Maid on Leave</p>
                                 <p class="section-title blue-color"><i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"></i> <br/><?= $this-> blueteamContactNumber ?></p>
                                 <p style="font-size:30px;color:blue;">50+ Maids, Cooks, BabySitters, CareTakers & Drivers getting registered with BlueTeam daily 
-                                <a href="#hire" class="btn btn-lightblue" title="Hire Now">Book Now</a></p>
+                                <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-2 col-sm-3">
@@ -393,7 +393,7 @@
                                     </ul>
 
                                     <div class="pricing-action" style="padding-top: 0px;padding-bottom: 10px;">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" class="btn btn-lightblue">Book now</a>
+                                        <a <?= $this-> bookLink ?> class="btn btn-lightblue">Book now</a>
                                     </div>
                                 </div><!-- End .pricing-table -->
                             </div><!-- End .service -->
@@ -441,14 +441,14 @@
 
                                 <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
                                     <li class="portfolio-item animate-item photography" data-animate-time="80">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Maid">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut" id="Maid">
                                                 <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Cook">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper  shortcut" id="Cook">
                                                 <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook">
                                             </div><!-- End .portfolio-item-wrapper -->
@@ -456,42 +456,42 @@
                                     </li>
 
                                     <li class="portfolio-item animate-item design" data-animate-time="240">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Electrician">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut"  id="Electrician">
                                                 <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/electrician.jpeg" alt="Electrician">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item photography video" data-animate-time="320">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Plumber">  
+                                        <a <?= $this-> bookLink ?>>  
                                             <div class="portfolio-item-wrapper shortcut" id="Plumber">
                                                 <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/plumber.jpeg" alt="Plumber">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item illustration design" data-animate-time="400">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Baby Sitter">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
                                                 <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item design" data-animate-time="480">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Security Guard">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut" id="Security Guard">
                                                 <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/securityguard.jpeg" alt="Security Guard">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Driver">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut" id="Driver">
                                                 <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver">
                                             </div><!-- End .portfolio-item-wrapper -->
                                         </a>
                                     </li>
                                     <li class="portfolio-item animate-item illustration" data-animate-time="640">
-                                        <a href="#" data-target="#iframe" data-toggle="modal" title="Hire Gardener">
+                                        <a <?= $this-> bookLink ?>>
                                             <div class="portfolio-item-wrapper shortcut" id="Gardener">
                                                 <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/gardener.jpeg" alt="Gardener">
                                             </div><!-- End .portfolio-item-wrapper -->
