@@ -56,6 +56,10 @@
 
             }());
 
+            function iframe() {
+                window.open('http://blueteam.in/web-app/#', 'height:300px', 'width:300px', '_blank');
+            }
+
             $(function() {
                 // Slider Revolution for Home Section
                 jQuery('#revslider').revolution({
