@@ -49,10 +49,10 @@ abstract class BaseController {
 		$os = $this->getOS();
 		//iPhone, iPod, Mobile, BlackBerry, Android, iPad
 		if($os == "Android")
-			$this-> bookLink = "href=\"https://goo.gl/EGxeu3\"";
+			$this-> bookLink = "href=\"//goo.gl/EGxeu3\"";
 
 		else if($os == "iPhone" || $os == "iPod" || $os == "Mobile" || $os == "BlackBerry" || $os == "iPad" )
-			$this-> bookLink = "href=\"http://goo.gl/Ko19Gq\"";
+			$this-> bookLink = "href=\"//goo.gl/Ko19Gq\"";
 		else
 			$this-> bookLink = "href=\"#\" data-target=\"#iframe\" data-toggle=\"modal\" ";
 	}

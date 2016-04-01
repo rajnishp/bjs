@@ -32,9 +32,9 @@
                                 <li ><a href="<?= $this-> baseUrl ?>#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>#contactus">Contact</a></li>
                                 <li class="active"><a href=""> <i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"> <?= $this-> blueteamContactNumber ?></i> </a></li>
-                                <li ><a href="https://goo.gl/EGxeu3" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/android.png"></span></a></li>
-                                <li ><a href="http://goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/apple.jpeg"></span></a></li>
-                                <li ><a href="http://goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/window.png"></span></a></li>
+                                <li ><a href="//goo.gl/EGxeu3" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/android.png"></span></a></li>
+                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/apple.jpeg"></span></a></li>
+                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/window.png"></span></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
