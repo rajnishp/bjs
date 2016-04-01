@@ -1338,7 +1338,7 @@
         <div class="modal fade modal-styled" id="iframe" style="width:350px;margin-left: 35em;">
             <div class="modal-dialog">
               <div class="modal-content">
-                <iframe src="http://blueteam.in/web-app/" width="350" height="550" frameborder="5px"></iframe>
+                <iframe src="//blueteam.in/web-app/" width="350" height="550" frameborder="5px"></iframe>
               </div>
             </div>
         </div>
