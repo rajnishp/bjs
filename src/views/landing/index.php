@@ -379,7 +379,7 @@
 
                                     <ul class="pricing-list">
                                         <h4 class="lightblue" style="margin-bottom: 0px;color:blue;">Cook</h4>
-                                        <li style="color:blue;">169 <i class="fa fa-inr"></i>/ hour</li>
+                                        <li style="color:blue;">179 <i class="fa fa-inr"></i>/ hour</li>
                                     </ul>
 
                                     <ul class="pricing-list">
