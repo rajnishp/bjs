@@ -808,7 +808,7 @@
 
                                     <div class="accordion-body collapse in" id="accordion3-one">
                                         <div class="accordion-body-wrapper">
-                                            <p>BlueTeam provides high quality, cheap, flexible with high skilled, background verification, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price.</p>
+                                            <p>BlueTeam provides high quality, in reasonable price, flexible with high skilled, background verification, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price.</p>
                                             <p></p>
                                         </div><!-- End .accordion-body-wrapper -->
                                     </div><!-- End .accordion-body -->

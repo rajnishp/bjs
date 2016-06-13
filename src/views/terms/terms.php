@@ -107,7 +107,7 @@
                     Shatkon Labs Private Limited, a company incorporated under the Indian Companies Act, 1956, is operating the app \“BlueTeam\” and website www.blueteam.in.<br/>
                     This page states the terms of use (\"Terms of Use\" / \“Terms\”) under which you (\“You\” / \“Your\”) may use BlueTeam, an on-line service to provide domestic helper.<br/><br/>
                     <h4 class="fancy">TERMS OF USE</h4>
-                    <br/>
+                    <br/></p><p align="left">
                   
                     1) BlueTeam.in don\'t charges service charge or commission, monthly cost of consuming BlueTeam Services should be paid in advance. Taxes as may be applicable shall be payable separately by the user.
                     <br/><br/>
@@ -150,7 +150,6 @@
                     20) All disputes shall be subject to Delhi Jurisdiction only.
                     <br/><br/>
                     21) If due to any circumstance where a refund becomes due to the client, the amount shall be refunded within 90 days of the candidate leaving the job.
-                    <br/>
                     </p>
                 </header>
 

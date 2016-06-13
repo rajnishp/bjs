@@ -18,7 +18,7 @@
                                 </span>
                             </a> -->
 
-                            <a href="<?= $this -> baseUrl ?>" class="navbar-brand" style="padding-top: 0px;"><span class="logo" style="color: #ff2e8a06;">
+                            <a href="<?= $this -> baseUrl ?>home" class="navbar-brand" style="padding-top: 0px;"><span class="logo" style="color: #ff2e8a06;">
                             <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"></span></a>
                         </div>
 
@@ -28,9 +28,9 @@
                                 <?php /*<li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li> */ ?>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">Terms&Conditions</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
-                                <li ><a href="<?= $this-> baseUrl ?>#services">Services</a></li>
-                                <li ><a href="<?= $this-> baseUrl ?>#aboutus">About</a></li>
-                                <li ><a href="<?= $this-> baseUrl ?>#contactus">Contact</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>home#services">Services</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>
                                 <li class="active"><a href=""> <i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"> <?= $this-> blueteamContactNumber ?></i> </a></li>
                                 <li ><a href="//goo.gl/EGxeu3" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/android.png"></span></a></li>
                                 <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/apple.jpeg"></span></a></li>
