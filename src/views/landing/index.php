@@ -351,8 +351,8 @@
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-8 col-sm-6" style="text-align:center;font-size:75px;">
-                                <p class="section-title fancy" style="font-color:#1bc4f5;">Get Relief from Maid on Leave</p>
-                                <p class="section-title " style="font-color:#1bc4f5;"><i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"></i> <br/><?= $this-> blueteamContactNumber ?></p>
+                                <p class="section-title fancy" style="color:#1bc4f5;">Get Relief from Maid on Leave</p>
+                                <p class="section-title " style="color:#1bc4f5;"><i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #1bc4f5"></i> <br/><?= $this-> blueteamContactNumber ?></p>
                                 <p style="font-size:30px;color:#1bc4f5;">50+ Maids, Cooks, BabySitters, CareTakers & Drivers getting registered with BlueTeam daily 
                                 <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
