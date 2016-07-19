@@ -1,6 +1,6 @@
 <?php
 
-require_once 'dao/DAOFactory.class.php';
+//require_once 'dao/DAOFactory.class.php';
 //require_once 'components/xxx.class.php';
 //require_once '.class.php';
 
@@ -26,16 +26,16 @@ abstract class BaseController {
 
 		$this->url = rtrim($this->baseUrl,"/").$_SERVER[REQUEST_URI];
 
-		global $logger;
+	/*	global $logger;
 		$this -> logger = $logger;
 
 		$this -> logger -> debug("BaseController started");
-		
+		*/
 
-		$DAOFactory = new DAOFactory();
+//		$DAOFactory = new DAOFactory();
 		
-		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestsDAO();
-		$this -> getInTouchDAO = $DAOFactory->getGetInTouchDAO();
+//		$this -> serviceRequestDAO = $DAOFactory->getServiceRequestsDAO();
+//		$this -> getInTouchDAO = $DAOFactory->getGetInTouchDAO();
 		
 		$this->process();
 

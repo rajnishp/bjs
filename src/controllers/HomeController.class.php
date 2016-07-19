@@ -9,7 +9,7 @@ class HomeController extends BaseController {
 		
 		parent::__construct();
 
-		$this -> logger -> debug("HomeController started");
+		/*$this -> logger -> debug("HomeController started");*/
 
 	}
 
@@ -25,14 +25,14 @@ class HomeController extends BaseController {
 		} catch (Exception $e) {
 
 			//require_once 'views/error/pages-404.php';	
-			$this->logger->error( "Error occur :500 ".json_encode($e) );
+			/*$this->logger->error( "Error occur :500 ".json_encode($e) );*/
 		}
 
 	}
 
 
 	function serviceRequest (){
-		if (isset($_POST['name'],$_POST['email'],$_POST['mobile'],$_POST['needed'],$_POST['timing'], $_POST['timing2'],$_POST['address'],
+/*		if (isset($_POST['name'],$_POST['email'],$_POST['mobile'],$_POST['needed'],$_POST['timing'], $_POST['timing2'],$_POST['address'],
 					 $_POST['salary'], $_POST['salary2'],$_POST['remarks'], $_POST['type'])) {
 			$time11 = explode(":", $_POST['timing']);
 			$time22 = explode(":", $_POST['timing2']);
@@ -102,11 +102,11 @@ class HomeController extends BaseController {
 			die();
 			//header('Location: '.$this-> baseUrl);
 			//base url redirected for any error occurred
-		}
+		}*/
 	}
 
 	function getInTouch (){
-		if (isset($_POST['contactname'], $_POST['contactemail'], $_POST['contactsubject'], $_POST['contactmessage'])) {
+/*		if (isset($_POST['contactname'], $_POST['contactemail'], $_POST['contactsubject'], $_POST['contactmessage'])) {
 
 			$getInTouchObj = new GetInTouch (
 													$_POST['contactname'],
@@ -131,7 +131,7 @@ class HomeController extends BaseController {
 			die();
 			//header('Location: '.$this-> baseUrl);
 			//base url redirected for any error occurred
-		}
+		}*/
 	}
 
 }
