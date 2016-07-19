@@ -9,7 +9,7 @@ class VarifiedController extends BaseController {
 		
 		parent::__construct();
 
-		$this -> logger -> debug("VarifiedController started");
+		/*$this -> logger -> debug("VarifiedController started");*/
 
 	}
 
@@ -25,7 +25,7 @@ class VarifiedController extends BaseController {
 		} catch (Exception $e) {
 
 			//require_once 'views/error/pages-404.php';	
-			$this->logger->error( "Error occur :500 ".json_encode($e) );
+			/*$this->logger->error( "Error occur :500 ".json_encode($e) );*/
 		}
 
 	}
