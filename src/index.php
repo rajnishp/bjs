@@ -14,10 +14,10 @@ include_once "controllers/TermsController.class.php";
 include_once "controllers/VarifiedController.class.php";
 include_once "controllers/TestimonailController.class.php";
 
-require_once 'utils/Util.php';
+/*require_once 'utils/Util.php';
 require_once 'utils/Timer.php';
 require_once 'utils/ShopbookLogger.php';
-require_once 'cache/AppCacheRegistry.class.php';
+require_once 'cache/AppCacheRegistry.class.php';*/
 
 /*
 
@@ -37,10 +37,10 @@ global $configs;
 $configs = json_decode (file_get_contents('blueteam-configs.json'), true);
 
 /* Setting up the logger globally for use across classes */
-global $logger;
+/*global $logger;
 $logger = new ShopbookLogger();
 $logger -> enabled = true;
-$logger -> debug ("Setting up ...");
+$logger -> debug ("Setting up ...");*/
 
 
 
@@ -63,11 +63,11 @@ if(in_array('uploads', $route)){
 }
 
 //router uploads hack end
-$logger -> debug ("router :: " .json_encode($route));
+/*$logger -> debug ("router :: " .json_encode($route));
 
 $logger -> debug ("post :: " .json_encode($_POST));
 
-$logger -> debug ("get :: " .json_encode($_GET));
+$logger -> debug ("get :: " .json_encode($_GET));*/
 
 
 		$page = $route[1];
@@ -75,10 +75,7 @@ $logger -> debug ("get :: " .json_encode($_GET));
 		switch ($page) {
 
 
-			case "fileUpload":
-				require_once "controllers/FilesController.class.php";
-					
-				break;
+
 
 			case "terms&Conditions":
 				$termsController = new TermsController();
