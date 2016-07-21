@@ -31,10 +31,13 @@
                                 <li ><a href="<?= $this-> baseUrl ?>home#services">Services</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>
-                                <li class="active"><a href=""> <i class="fa fa-phone"></i> or <i class="fa fa-whatsapp" style="color: #ff2e8a06"> <?= $this-> blueteamContactNumber ?></i> </a></li>
-                                <li ><a href="//goo.gl/EGxeu3" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/android.png"></span></a></li>
-                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/apple.jpeg"></span></a></li>
-                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span ><img src="<?= $this-> baseUrl ?>static/images/window.png"></span></a></li>
+                                <li class="active"><a href="" style="color: #fff">
+                                        <i class="fa fa-phone" style="color: #fff"></i> or <i class="fa fa-whatsapp" style="color: #fff">
+                                            <?= $this-> blueteamContactNumber ?></i> </a></li>
+                                <li ><a href="//goo.gl/EGxeu3" target="_blank">
+                                        <span class="fa fa-android"></span></a></li>
+                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span class="fa fa-apple"></span></a></li>
+                                <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span class="fa fa-windows"></span></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
