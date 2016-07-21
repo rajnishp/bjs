@@ -568,12 +568,12 @@
                         <div class="row">
 
                             <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                                <span class="count" data-from="0" data-to="132" data-speed="3000" data-refresh-interval="50">0</span>
+                                <span class="count" data-from="0" data-to="2021" data-speed="3000" data-refresh-interval="50">0</span>
                                 <h3 class="fancy">Requests<!--  <span>Projects</span> --></h3>
                             </div><!-- End .count-container -->
 
                             <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                                <span class="count" data-from="0" data-to="121" data-speed="3000" data-refresh-interval="50">0</span>
+                                <span class="count" data-from="0" data-to="987" data-speed="3000" data-refresh-interval="50">0</span>
                                 <h3 class="fancy">Users<!--  <span>Customers</span> --></h3>
                             </div><!-- End .count-container -->
 
@@ -585,7 +585,7 @@
                             </div><!-- End .count-container -->
 
                             <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                                <span class="count" data-from="0" data-to="78" data-speed="3000" data-refresh-interval="50">0</span>
+                                <span class="count" data-from="0" data-to="243" data-speed="3000" data-refresh-interval="50">0</span>
                                 <h3 class="fancy">Workers<!--  <span>Days</span> --></h3>
                             </div><!-- End .count-container -->
 
