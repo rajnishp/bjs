@@ -31,8 +31,9 @@
                                 <li ><a href="<?= $this-> baseUrl ?>home#services">Services</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>
-                                <li class="active"><a href="" style="color: #fff">
-                                        <i class="fa fa-phone" style="color: #fff"></i> or <i class="fa fa-whatsapp" style="color: #fff">
+                                <li ><a href="" >
+                                        <i class="fa fa-phone" ></i> or
+                                        <i class="fa fa-whatsapp" >
                                             <?= $this-> blueteamContactNumber ?></i> </a></li>
                                 <li ><a href="//goo.gl/EGxeu3" target="_blank">
                                         <span class="fa fa-android"></span></a></li>
