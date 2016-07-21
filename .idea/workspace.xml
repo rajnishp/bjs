@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fefe462-d7d1-4d12-93e5-083a7f789927" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/app_iphone.png" afterPath="$PROJECT_DIR$/src/static/images/app_iphone.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/landing/index.php" afterPath="$PROJECT_DIR$/src/views/landing/index.php" />
     </list>
     <ignored path="bjs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -512,7 +512,13 @@
       <option name="project" value="LOCAL" />
       <updated>1469088027078</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="disable mongo">
+      <created>1469088349629</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1469088349629</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
