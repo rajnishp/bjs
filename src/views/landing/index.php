@@ -527,7 +527,7 @@
                                         <span class="service-icon yellowbg"><i class="fa fa-calendar"></i></span>
                                         <h2>Monthly</h2>
                                     </div><!-- End .services-header -->
-                                    <p>We are providing monthly based service. You can it if you want it daily</p>
+                                    <p>We are providing monthly based service. You can have it, if you want it daily</p>
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-3 col-sm-6">
@@ -536,7 +536,7 @@
                                         <span class="service-icon orangebg"><i class="fa fa-calendar-check-o"></i></span>
                                         <h2>Weekly</h2>
                                     </div><!-- End .services-header -->
-                                    <p>If you want once in a week. You don't need to be worry. Just call BlueTeam</p>
+                                    <p>If you want once in a week. You don't need to  worry. Just call BlueTeam</p>
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-3 col-sm-6">
@@ -545,7 +545,7 @@
                                         <span class="service-icon lightbluebg"><i class="fa fa-certificate"></i></span>
                                         <h2>On-Demand</h2>
                                     </div><!-- End .services-header -->
-                                    <p>Forget about having trouble at any time for any of home servive. Just sit relax</p>
+                                    <p>Forget about having trouble at any time for any of home service. Just sit relax</p>
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                             <div class="col-md-3 col-sm-6">
@@ -554,7 +554,7 @@
                                         <span class="service-icon bluebg"><i class="fa fa-random"></i></span>
                                         <h2>Alternative</h2>
                                     </div><!-- End .services-header -->
-                                    <p>You can take our service at anyhow suits you. Pay for only service, not for holidays. </p>
+                                    <p>You can take our service as it suits you. Pay for only service days, not for holidays. </p>
                                 </div><!-- End .service -->
                             </div><!-- End .col-md-3 -->
                         </div><!-- End .row -->
