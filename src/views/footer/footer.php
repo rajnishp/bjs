@@ -365,9 +365,10 @@ String.prototype.capitalizeFirstLetter = function() {
 
 
 </script>
+
 <script type="text/javascript">
 var LHCChatOptions = {};
-LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'blueteam.in'};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
@@ -376,7 +377,6 @@ po.src = '//livechat.blueteam.in/index.php/chat/getstatus/(click)/internal/(posi
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 </script>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
