@@ -325,8 +325,9 @@
                                 <p style="font-size:30px;color:#fff;">Monthly & On-demand Domestic Help <br/>
                                 <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
-                                <table class="table table-bordered" style="font-size:20px;color:#fff;">
-                                    <thead class="thead-default">
+                                <p  style="font-size:14px;color:#fff;">*Monthly based charges</p>
+                                <table class="table table-bordered" style="font-size:18px;color:#fff;">
+                                    <thead >
                                         <tr>
                                             <th>Hours</th>
                                             <th>Maid</th>
@@ -394,7 +395,8 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p  style="font-size:12px;color:#fff;">*Monthly based charges</p>
+                                <p  style="font-size:10px;color:#fff;">*Charges may change depanding on package, area, type of services & timing.
+                                <br/>For More Details Check Price Calculator in App</p>
                             </div><!-- End .col-md-3 -->
 
                             
