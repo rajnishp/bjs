@@ -325,6 +325,76 @@
                                 <p style="font-size:30px;color:#fff;">Monthly & On-demand Domestic Help <br/>
                                 <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Hours</th>
+                                            <th>Maid</th>
+                                            <th>Cook</th>
+                                            <th>Driver</th>
+                                            <th>Babysitter</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>3000 ₹</td>
+                                            <td>3450 ₹</td>
+                                            <td>3950 ₹</td>
+                                            <td>3120 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>3950 ₹</td>
+                                            <td>4850 ₹</td>
+                                            <td>4530 ₹</td>
+                                            <td>4160 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4940 ₹</td>
+                                            <td>5790 ₹</td>
+                                            <td>5460 ₹</td>
+                                            <td>5200 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>6110 ₹</td>
+                                            <td>6890 ₹</td>
+                                            <td>6890 ₹</td>
+                                            <td>6240 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>10010 ₹</td>
+                                            <td>11440 ₹</td>
+                                            <td>14400 ₹</td>
+                                            <td>11050 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>10950 ₹</td>
+                                            <td>11990 ₹</td>
+                                            <td>14950 ₹</td>
+                                            <td>11990 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>11950 ₹</td>
+                                            <td>12990 ₹</td>
+                                            <td>15850 ₹</td>
+                                            <td>12700 ₹</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>12800 ₹</td>
+                                            <td>13800 ₹</td>
+                                            <td>16250 ₹</td>
+                                            <td>13200 ₹</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="section-title fancy" style="font-size:12px;color:#fff;">*Monthly bases charges</p>
                             </div><!-- End .col-md-3 -->
 
                             
