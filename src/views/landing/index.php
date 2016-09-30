@@ -314,7 +314,7 @@
                                 <p style="font-size:30px;color:#fff;">Monthly & On-demand Domestic Help <br/>
                                 <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
-                                <table class="fancy" style="font-size:8px;color:#fff;">
+                                <table style="font-size:16px;color:#fff;border:1px;">
                                     <thead>
                                         <tr>
                                             <th>Hours</th>
