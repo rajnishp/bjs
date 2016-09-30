@@ -325,7 +325,7 @@
                                 <p style="font-size:30px;color:#fff;">Monthly & On-demand Domestic Help <br/>
                                 <a <?= $this-> bookLink ?> class="btn btn-lightblue" >Book Now</a></p>
                                 <!-- End .service -->
-                                <table>
+                                <table class="fancy" style="font-size:8px;color:#fff;">
                                     <thead>
                                         <tr>
                                             <th>Hours</th>
@@ -394,7 +394,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="section-title fancy" style="font-size:12px;color:#fff;">*Monthly bases charges</p>
+                                <p class="section-title fancy" style="font-size:8px;color:#fff;">*Monthly bases charges</p>
                             </div><!-- End .col-md-3 -->
 
                             
