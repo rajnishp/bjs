@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fefe462-d7d1-4d12-93e5-083a7f789927" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.blueteam-configs.json.swp" afterPath="$PROJECT_DIR$/src/.blueteam-configs.json.swp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/AC-Service.png" afterPath="$PROJECT_DIR$/src/static/images/AC-Service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/Washer-Machine-service.png" afterPath="$PROJECT_DIR$/src/static/images/Washer-Machine-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/android.png" afterPath="$PROJECT_DIR$/src/static/images/android.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/app_iphone.png" afterPath="$PROJECT_DIR$/src/static/images/app_iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/apple.jpeg" afterPath="$PROJECT_DIR$/src/static/images/apple.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/babysitter.jpeg" afterPath="$PROJECT_DIR$/src/static/images/babysitter.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/carpenter.jpg" afterPath="$PROJECT_DIR$/src/static/images/carpenter.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/cook.jpeg" afterPath="$PROJECT_DIR$/src/static/images/cook.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/driver.png" afterPath="$PROJECT_DIR$/src/static/images/driver.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/electrician.jpeg" afterPath="$PROJECT_DIR$/src/static/images/electrician.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/fridge_service.png" afterPath="$PROJECT_DIR$/src/static/images/fridge_service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/gardener.jpeg" afterPath="$PROJECT_DIR$/src/static/images/gardener.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/maid.jpeg" afterPath="$PROJECT_DIR$/src/static/images/maid.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/patientcare.png" afterPath="$PROJECT_DIR$/src/static/images/patientcare.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/plumber.jpeg" afterPath="$PROJECT_DIR$/src/static/images/plumber.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/securityguard.jpeg" afterPath="$PROJECT_DIR$/src/static/images/securityguard.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/team/rahul.jpg" afterPath="$PROJECT_DIR$/src/static/images/team/rahul.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/team/vikas.jpg" afterPath="$PROJECT_DIR$/src/static/images/team/vikas.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/images/window.png" afterPath="$PROJECT_DIR$/src/static/images/window.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bjs.iml" afterPath="$PROJECT_DIR$/.idea/bjs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/landing/index.php" afterPath="$PROJECT_DIR$/src/views/landing/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/VarifiedController.class.php" afterPath="$PROJECT_DIR$/src/controllers/VarifiedController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/appRedir/appRedir.php" afterPath="$PROJECT_DIR$/src/views/appRedir/appRedir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/verified/blueteamverified.php" afterPath="$PROJECT_DIR$/src/views/verified/blueteamverified.php" />
     </list>
     <ignored path="bjs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +67,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/landing/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94614005">
+            <state vertical-scroll-proportion="1.1791809">
               <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
               <folding />
             </state>
@@ -525,7 +554,13 @@
       <option name="project" value="LOCAL" />
       <updated>1469089909659</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed gramer mistakes">
+      <created>1469783507401</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1469783507401</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -566,7 +601,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change http: to :" />
     <MESSAGE value="disable mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable mongo" />
+    <MESSAGE value="removed gramer mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed gramer mistakes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -890,6 +926,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/header/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/landing/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1791809">
+          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/navbar/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -906,26 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/VarifiedController.class.php">
+    <entry file="file://$PROJECT_DIR$/src/controllers/EmailController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/TestimonailController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/TermsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="76" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -940,34 +984,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/EmailController.class.php">
+    <entry file="file://$PROJECT_DIR$/src/controllers/TermsController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/header/header.php">
+    <entry file="file://$PROJECT_DIR$/src/controllers/TestimonailController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/navbar/navbar.php">
+    <entry file="file://$PROJECT_DIR$/src/controllers/VarifiedController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/landing/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94614005">
-          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
