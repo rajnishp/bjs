@@ -226,7 +226,7 @@ foreach( $result as $keyAll => $value ){
                                                         background-repeat: no-repeat;
                                                             background-position: top;\">
         <header class=\"container text-center\">
-            <h1 class=\"section-title fancy\">".$value['name']."</h1>
+            <h1 class=\"section-title fancy box\">".$value['name']."</h1>
 
         </header>
 
