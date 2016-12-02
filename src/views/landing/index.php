@@ -91,10 +91,17 @@
 
 
     <!-- main Section -->
-    <section id="home" class="section gfullscreen" style="background-color: #2aafc3;width:100%;height:100%;" >
+    <section id="home" class="section gfullscreen" style="overflow-y: hidden ! important;
+                                                            overflow-x: hidden ! important;
+                                                        background-image: url('https://thestartupgarage.com/wp-content/uploads/2011/10/the-startup-garage-entrepreneurship-networking-5-professionals.jpg');
+                                                        background-size:     contain;                      /* <------ */
+                                                        background-repeat: no-repeat;
+                                                            background-position: top;" >
 
-        <div id="our-services" style="margin-top:130px" >
+        <div id="our-services" style="margin-top:100px" >
             <div class="container" >
+
+                <center><h2 class=" fancy">BlueTeam Finds Best for You</h2></center>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1052" style="max-width: 100%"/ >
@@ -226,7 +233,7 @@ foreach( $result as $keyAll => $value ){
                                                         background-repeat: no-repeat;
                                                             background-position: top;\">
         <header class=\"container text-center\">
-            <h1 class=\"section-title fancy box\">".$value['name']."</h1>
+            <h3 class=\"fancy box\">".$value['name']."</h3>
 
         </header>
 
