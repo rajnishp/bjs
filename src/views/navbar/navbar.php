@@ -22,15 +22,32 @@
                             <img src="<?= $this -> baseUrl ?>static/images/logo.png" style="height: 68px; width: 68px;"></span></a>
                         </div>
 
+
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-right" id="main-menu">
                             <ul class="nav navbar-nav">
-                                <?php /*<li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li> */ ?>
+                                <?php /*<li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">Terms&Conditions</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#services">Services</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
-                                <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>*/ ?>
+                                <li >
+                                        <div class="form-group input-group">
+                                            <input type="text" id="search_box" style="vertical-align: middle;color: #000;min-width: 400px;
+	       		margin: 2px;" class="form-control input-lg" >
+                                <span class="input-group-btn">
+                                    <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="search();">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+
+                                </span>
+                                        </div>
+
+                                </li>
+                                <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">T&Cs</a></li>
+                                <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
                                 <li ><a href="" >
                                         <i class="fa fa-phone" ></i> or
                                         <i class="fa fa-whatsapp" >
@@ -39,8 +56,22 @@
                                         <span class="fa fa-android"></span></a></li>
                                 <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span class="fa fa-apple"></span></a></li>
                                 <li ><a href="//goo.gl/Ko19Gq" target="_blank"><span class="fa fa-windows"></span></a></li>
+
                             </ul>
                         </div><!-- /.navbar-collapse -->
+                        <div class="row">
+                            <div  class="col-md-3"></div>
+
+
+
+
+                        </div>
+
+                        <div class="row">
+                            <div id="search-results" >
+
+                            </div>
+                        </div>
                     </div><!-- /.container-fluid -->
                 </nav>
             </header>

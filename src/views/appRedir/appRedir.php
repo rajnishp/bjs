@@ -82,7 +82,7 @@ $user_os        =   getOS();
 //$user_browser   =   getBrowser();
 
 if($user_os = "Android"){
-    header("Location: https://goo.gl/EGxeu3");
+    header("Location: http://goo.gl/EGxeu3");
     die();
 }
 else{
