@@ -240,7 +240,7 @@ foreach( $result as $keyAll => $value ){
     foreach ($value['services'] as $key => $service) {
         $data .= "
                     <div class=\"col-md-2 col-sm-6\">
-                    <a  href='../service/index.php?load=".$service['name']."'><center>
+                    <a  href='../service/index.php?load=".$service['name']."-".$service['id']."'><center>
                         <div class=\"service box lightblue wow fadeInUp\" data-wow-delay=\"0.75s\">
                             <div class=\"service-header\">
                                 <span class=\"service-icon\" style='background-color: #fff'>
