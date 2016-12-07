@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/style.css">
     <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/responsive.css">
     <link rel="stylesheet" href="<?= $this-> baseUrl ?>static/css/dedicated_page-afeb09052819dd920d48a269a058338d.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="http://blueteam.in/service_provider/index_files/bootstrap-datetimepicker.min.css" type="text/css">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?= $this-> baseUrl ?>static/images/fevicon/apple-icon-57x57.png">
@@ -79,6 +80,82 @@
    <!-- Modernizr -->
    <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
 */?>
+    <style>
+        body,
+        html,
+        #map {
+
+        }
+
+        #map .centerMarker {
+            position: absolute;
+            /*url of the marker*/
+            background: url(http://maps.gstatic.com/mapfiles/markers2/marker.png) no-repeat;
+            /*center the marker*/
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            /*fix offset when needed*/
+            margin-left: -10px;
+            margin-top: -34px;
+            /*size of the image*/
+            height: 34px;
+            width: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+
+        /* Optional: Makes the sample page fill the window. */
+
+        .controls {
+            margin-top: 10px;
+            border: 1px solid transparent;
+            border-radius: 2px 0 0 2px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            height: 32px;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #pac-input {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 300px;
+        }
+
+        #pac-input:focus {
+            border-color: #4d90fe;
+        }
+
+        .pac-container {
+            font-family: Roboto;
+        }
+
+        #type-selector {
+            color: #fff;
+            background-color: #4d90fe;
+            padding: 5px 11px 0px 11px;
+        }
+
+        #type-selector label {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        #target {
+            width: 345px;
+        }
+    </style>
 
 </head>
 <body data-spy="scroll" data-target="#main-menu">
@@ -90,119 +167,80 @@
     <?php include_once 'views/navbar/navbar.php'; ?>
 
 
+
     <!-- main Section -->
-    <section id="home" class="section gfullscreen" style="overflow-y: hidden ! important;
-                                                            overflow-x: hidden ! important;
-                                                        background-image: url('https://thestartupgarage.com/wp-content/uploads/2011/10/the-startup-garage-entrepreneurship-networking-5-professionals.jpg');
-                                                        background-size:     contain;                      /* <------ */
-                                                        background-repeat: no-repeat;
-                                                            background-position: top;" >
+    <!-- <section id="home" class="section gfullscreen">
+        <div id="revslider-container">
+            <div id="revslider">
+                <ul>
+                    <li data-transition="fadefromtop" data-slotamount="8" data-masterspeed="400" data-thumb="<?/*= $this-> baseUrl */?>static/images/homeslider/mobilejob.jpg" data-saveperformance="on"  data-title="New Layouts">
+                        <img src="<?/*= $this-> baseUrl */?>static/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="https://thestartupgarage.com/wp-content/uploads/2011/10/the-startup-garage-entrepreneurship-networking-5-professionals.jpg" data-bgposition="center center" data-duration="4800" data-bgfit="cover">
 
-        <div id="our-services" style="margin-top:100px" >
-            <div class="container" >
+                        <div class="tp-caption rev-subtitle bigger fancy customin customout"
+                             data-x="center"
+                             data-y="140"
+                             data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="1100"
+                             data-start="900"
+                             data-easing="Power3.easeInOut"
+                             data-endspeed="600"
+                             style="z-index: 10">Welcome To <span class="blue-color">BlueTeam</span>
+                        </div>
 
-                <center><h2 class=" fancy">BlueTeam Finds Best for You</h2></center>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1052" style="max-width: 100%"/ >
-                    </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                <center><h3 class=" fancy">One Touch Services</h3></center>
+                        <div class="tp-caption rev-title bigger customin customout"
+                             data-x="center"
+                             data-y="220"
+                             data-speed="1100"
+                             data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-start="1500"
+                             data-easing="Power3.easeInOut"
+                             data-endspeed="600"
+                             style="z-index: 6">
+                            <div class="form-group input-group" style="width: 246px;">
+                                <input type="text" placeholder="Type service name your are looking for. Eg: 'yogo'" id="search_box" style="vertical-align: middle;color: #000;min-width: 400px;
+	       		margin: 2px;" class="form-control input-lg" >
+                                <span class="input-group-btn">
+                                    <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="search();">
+                                        <i class="fa fa-search"></i>
+                                    </button>
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div id="portfolio-wrapper " class="center-block">
+                                </span>
+                        </div>
 
-                                <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
-                                    <li class="portfolio-item animate-item photography" data-animate-time="80">
-                                        <a <?= $this-> bookLink ?>>
-                                            <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 100px">
-                                                <Br/>Maid
-                                            </div><!-- End .portfolio-item-wrapper -->
-                                        </a>
-                                    </li>
-                                    <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
-                                        <a <?= $this-> bookLink ?>>
-                                            <div class="portfolio-item-wrapper  shortcut" id="Cook">
-                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 100px">
-                                                <br/>Cook
-                                            </div><!-- End .portfolio-item-wrapper -->
-                                        </a>
-                                    </li>
 
-                                    <li class="portfolio-item animate-item illustration design" data-animate-time="400">
-                                        <a <?= $this-> bookLink ?>>
-                                            <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
-                                                <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 100px">
-                                                <br/>Babysitter
-                                            </div><!-- End .portfolio-item-wrapper -->
-                                        </a>
-                                    </li>
-                                    <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
-                                        <a <?= $this-> bookLink ?>>
-                                            <div class="portfolio-item-wrapper shortcut" id="Driver">
-                                                <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver" style="height: 100px">
-                                                <br/>Drive
-                                            </div><!-- End .portfolio-item-wrapper -->
-                                        </a>
-                                    </li>
+                        <div class="tp-caption rev-text customin customout"
+                             data-x="center"
+                             data-y="355"
+                             data-speed ="1200"
+                             data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-start="1900"
+                             data-easing="Power3.easeInOut"
+                             data-endspeed="600"
+                             style="z-index: 12">Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price
+                        </div>
 
-                                </ul><!-- End #portfolio-item-container -->
-                            </div><!-- End .portfolio-wrapper -->
+                        <div class="tp-caption customin customout"
+                             data-x="center"
+                             data-y="460"
+                             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="1200"
+                             data-start="2500"
+                             data-easing="Power3.easeInOut"
+                             data-endspeed="600"
+                             style="z-index: 14">
+                            <a href="#hire" class="btn btn-lightblue" title="Hire Now">
+                                Hire Now</a>
+                        </div>
 
-                            <!-- <div class="lg-margin2x"></div>
-                            <div class="text-center">
-                                <a href="index14.html#" class="btn btn-lg btn-lightblue wow tada">Go to Portfolio</a>
-                            </div> -->
-                        </div><!-- End .col-sm-12 -->
-                    </div><!-- End .row -->
-            </div>
-            <div class="col-md-4 cal-sl-12"></div>
-
-</div>
-
-<script type="text/javascript">
-    function replaceAll(find, replace, str) {
-        if(str == null) {
-            str = "";
-        }
-        return str.replace(new RegExp(find, 'g'), replace);
-    }
-    function search() {
-        $("#search").attr('disabled','disabled');
-        var keywords = replaceAll('\\s', '', $('#search_box').val());
-        if(keywords.length < 3){
-            alert ('Minimum words length is 3');
-        }
-        else {
-            $.ajax({
-                type: "POST",
-                url: "http://blueteam.in/service/ajax/search.php",
-                data: 'keywords='+ keywords,
-                cache: false,
-                success: function(result){
-                    document.getElementById("search-results").innerHTML = result ;
-                }
-            });
-            //$('#search_box').val("");
-        }
-        $("#search").removeAttr('disabled');
-        return false;
-    }
-</script>
-</div><!-- Ênd .container -->
-<!-- <div class="sm-margin"></div><! space -->
-
-<!--  <div class="container text-center">
-     <a href="index14.html#" class="btn btn-lg btn-yellow wow tada">More Services</a>
- </div> -->
-</div><!-- End #our-services -->
-</section>
-
-<!-- Portfolio Section -->
-<!-- id="portfolio" changed to home and  style="padding-top: 115px;" is added for home-->
-
+                    </li>
+                </ul>
+            </div><!-- End revslider -->
+</div><!-- End revslider-container -->
+</section><!-- End #home -->
 <?php
 function httpGet($url){
     $ch = curl_init();
@@ -220,6 +258,493 @@ function httpGet($url){
 $url = "https://blueteam.in/sp_api/services?category=true";
 
 $result = json_decode(httpGet($url), true)['allServices'];
+?>
+<section id="home" class="section gfullscreen" style="" >
+
+
+
+    <div id="our-services" style="margin-top:100px" >
+        <div class="container" >
+
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+
+                    <center>
+                    <h2 class=" fancy">Finding Best for You</h2>
+                    <div class="form-group input-group" style="width: 246px;">
+                        <input type="text" placeholder="Type service name your are looking for. Eg: 'yogo'" id="search_box" style="vertical-align: middle;color: #000;min-width: 600px;
+	       		margin: 2px;" class="form-control input-lg" >
+                                <span class="input-group-btn">
+                                    <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="showMap('search',0)">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+
+                                </span>
+                    </div>
+                    </center>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1052" style="max-width: 100%"/ >
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 ">
+                            <br/>
+                            <br/>
+
+                            <center><h3 class=" fancy">One Touch Services</h3></center>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="portfolio-wrapper " class="center-block">
+
+                                        <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
+                                            <li class="portfolio-item animate-item photography" data-animate-time="80">
+                                                <a onclick="showMap('Maid',0)">
+                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
+                                                        <Br/>Maid
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            <li class="portfolio-item animate-item photography" data-animate-time="80">
+                                                <a onclick="showMap('Maid Cum Babysitter',0)">
+                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
+
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
+                                                        <Br/>Maid Cum Babysitter
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
+                                                <a onclick="showMap('Cook',0)">
+                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
+                                                        <br/>Cook
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
+                                                <a onclick="showMap('Maid Cum Cook',0)">
+                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
+
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
+                                                        <br/>Maid Cum Cook
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+
+
+
+                                            <li class="portfolio-item animate-item illustration design" data-animate-time="400">
+                                                <a onclick="showMap('Babysitter',0)">
+                                                    <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
+                                                        <br/>Babysitter
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
+                                                <a onclick="showMap('Drive',0)">
+                                                    <div class="portfolio-item-wrapper shortcut" id="Driver">
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver" style="height: 70px">
+                                                        <br/>Drive
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+
+                                        </ul><!-- End #portfolio-item-container -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-4 col-md-4 cal-sl-12">
+
+                    <?php
+                    foreach( $result as $keyAll => $value ){
+                        echo "<a href=\"".$this-> baseUrl."#hire".$keyAll."\"><p>
+                    <img src=\"http://api.file-dog.shatkonlabs.com/files/rahul/".$value['img']."\"/ width='100px'>
+                    ".$value['name']."
+                    </p></a>
+                    ";
+                    }
+                    ?>
+                </div>
+
+
+            </div>
+
+
+        </div><!-- Ênd .container -->
+        <!-- <div class="sm-margin"></div><! space -->
+
+        <!--  <div class="container text-center">
+             <a href="index14.html#" class="btn btn-lg btn-yellow wow tada">More Services</a>
+         </div> -->
+    </div><!-- End #our-services -->
+</section>
+<div id="bookNow" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Book Now</h4>
+            </div>
+            <div class="modal-body">
+                <input id="bookName" type="text" placeholder="Type your Name">
+                <input id="bookMobile" type="text" placeholder="Type your mobile number"> <br/><br/>
+                <input id="bookAddress" type="text" placeholder="Type your Address">
+                <textarea id="remarks" type="text" placeholder="Remark" ></textarea><br/><br/>
+                <input id="bookServiceProviderId" type="hidden" value="">
+                <input id="bookServiceId" type="hidden" value="">
+                <label>Starting Date & Time</label>
+                <input id="startDate"  placeholder="Enter Starting Date and time"> <br/><br/>
+                <label>Hour</label>
+                <select id= "totalHour">
+                    <option value='1' selected >1</option>
+                    <?php
+                    for ($i=2; $i<13 ; $i++) {
+                        echo "<option value=".$i." >".$i."</option>";                 	# code...
+                    }
+                    ?>
+                </select><br/>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" id="bookService" class="btn btn-info" onclick="bookNow();">Book</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Please select your location</h4>
+            </div>
+            <div class="modal-body">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+                <div id="map"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="loadServicePage()">Take Loction</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function(){
+        //$("#map").hide();
+        $("#map-button").click(function(){
+            $("#map").toggle(1000);
+        });
+    });
+    // This example adds a search box to a map, using the Google Place Autocomplete
+    // feature. People can enter geographical searches. The search box will return a
+    // pick list containing a mix of places and predicted search terms.
+
+    // This example requires the Places library. Include the libraries=places
+    // parameter when you first load the API. For example:
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+    function initAutocomplete1() {
+        if (navigator.geolocation) {
+            console.log("got location");
+            navigator.geolocation.getCurrentPosition(initAutocomplete1);
+        } else {
+            console.log("failed to get coordinate");
+            initAutocomplete1(position);
+            //x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function book(serviceProviderId, serviceId) {
+        $("#bookServiceProviderId").val(serviceProviderId);
+        $("#bookServiceId").val(serviceId);
+        $("#bookNow").modal("show");
+    }
+    String.prototype.isValidDate = function() {
+        var IsoDateRe = new RegExp("^([0-9]{4})-([0-9]{2})-([0-9]{2})$");
+        var matches = IsoDateRe.exec(this);
+        if (!matches) return false;
+        else return true ;
+    }
+    function bookNow(){
+        $("#bookService").attr('disabled','disabled');
+        var bookName = replaceAll('\\s', '', $("#bookName").val());
+        var bookMobile = replaceAll('\\s', '', $("#bookMobile").val());
+        var bookAddress = replaceAll('\\s', '', $("#bookAddress").val());
+        var remarks = replaceAll('\\s', '', $("#remarks").val());
+        var serviceProviderId = $("#bookServiceProviderId").val();
+        var serviceId = $("#bookServiceId").val();
+        var startDate = replaceAll('\\s', '', $("#startDate").val());
+        var timeData = startDate.split(" |:");
+        var startTimeData = timeData[4];
+        var startTime = parseInt(startTimeData);
+        var totalHour = parseInt($("#totalHour").val());
+        if(parseInt(startTime+totalHour) > 20) var endtime = '20:00:00';
+        else var endtime = (startTime+totalHour)+':00:00';
+        var serviceType = $("#serviceType").val();
+        if(bookName.length < 3){
+            alert('Please Enter Valid Name');
+            $("#bookService").removeAttr('disabled');
+            return false;
+        }
+        else if(!validatePhone(bookMobile)){
+            alert("Please enter valid mobile number");
+            $("#bookService").removeAttr('disabled');
+            return false;
+        }
+        else if(bookAddress.length < 10){
+            alert("Please enter valid Address");
+            $("#bookService").removeAttr('disabled');
+            return false;
+        }
+        /*else if(!(startDate.isValidDate())){
+         alert('Enter valid date');
+         $("#bookService").removeAttr('disabled');
+         return false;
+         }*/
+        else {
+            var startDatetime = startDate+":00";
+            var startHour = startTime+":00:00";
+            $.ajax({
+                url: 'https://blueteam.in/api/service_request',
+                type: 'post',
+                dataType: 'json',
+                data: '{"root": {"name":"'+bookName+'","mobile":"'+bookMobile+'","location":"",'+
+                '"requirements":"'+serviceName+'","user_id": "1","user_type":"customer",'+
+                '"start_datatime": "'+startDatetime+'","service_type": "monthly",'+
+                '"remarks": "'+remarks+' by bt_sp web page","start_time":"'+startHour+'",'+
+                '"end_time":"'+endtime+'","location":"'+lat+","+lng+'","address":"'+bookAddress+'","priority": "3",'+
+                '"service_provider_id":"'+serviceProviderId+'"}}',
+                success: function (feedback) {
+
+                    alert("Your request has been send.\n We will connect with you soon.");
+                    console.log(feedback);
+                    $("#bookName").val("");
+                    $("#bookMobile").val("");
+                    $("#bookAddress").val("");
+                    $("#remarks").val("");
+
+                }
+            });
+        }
+        $("#bookService").removeAttr('disabled');
+        $("#bookNow").modal("hide");
+    }
+
+    function validatePhone(fld) {
+        var res = fld.split(",");
+        var filter = /^([7-9][0-9]{9})+$/;
+        var result = "" ;
+        for(var i = 0; i < res.length; i++) {
+            var stripped = res[i];
+            if (stripped.value == "") {
+                result = false;
+            }
+            else if (!(filter.test(stripped))) {
+                result = false ;
+            }
+            else if (!(stripped.length == 10)) {
+                result = false;
+            }
+            else result = true ;
+        }
+        return result;
+    }
+
+    function showMap(serviceN,serviceI) {
+        serviceName = serviceN;
+        serviceId = serviceI;
+
+        $('#myModal').modal('toggle');
+        setTimeout(initAutocomplete, 2000);
+
+    }
+
+    function loadServicePage(){
+        if(serviceName == 'search')
+            search();
+        else
+        if(serviceId == 0){
+            $('#myModal').modal('toggle');
+
+            $('#bookNow').modal('toggle');
+        }
+        else
+            window.location.href = 'http://blueteam.in/service/index.php?load='+serviceName+'-'+serviceId+'&l='+lat+','+lng;
+
+    }
+
+
+    var lat = 28.4595;
+    var lng = 77.0266;
+    var serviceName = null;
+    var serviceId = null;
+
+    function initAutocomplete() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center:  {lat:lat,lng:lng},
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        google.maps.event.addListener(map,'center_changed', function() {
+            $.get( "http://api.sp.blueteam.in/location/"+map.getCenter().lat()+","+map.getCenter().lng(), function( data ) {
+                //alert( "Data Loaded: " + data );
+            });
+            lat = map.getCenter().lat();
+            lng = map.getCenter().lng();
+        });
+
+
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            // Clear out the old markers.
+            markers.forEach(function(marker) {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // For each place, get the icon, name and location.
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function(place) {
+                if (!place.geometry) {
+                    console.log("Returned place contains no geometry");
+                    return;
+                }
+                var icon = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                // Create a marker for each place.
+                /*markers.push(new google.maps.Marker({
+                 map: map,
+                 icon: icon,
+                 title: place.name,
+                 position: place.geometry.location
+                 }));*/
+
+                if (place.geometry.viewport) {
+                    // Only geocodes have viewport.
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+
+        });
+        $('<div/>').addClass('centerMarker').appendTo(map.getDiv())
+            //do something onclick
+            .click(function() {
+                var that = $(this);
+                if (!that.data('win')) {
+                    that.data('win', new google.maps.InfoWindow({
+                        content: 'So, you are at this location!'
+                    }));
+                    that.data('win').bindTo('position', map, 'center');
+                }
+                that.data('win').open(map);
+            });
+    }
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if(scroll < 20){
+            $("#header-search-bar").hide();
+        }else
+            $("#header-search-bar").show();
+
+    });
+
+
+    function replaceAll(find, replace, str) {
+        if(str == null) {
+            str = "";
+        }
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
+    function search() {
+        $("#search").attr('disabled','disabled');
+        $("#search1").attr('disabled','disabled');
+        var keywords = replaceAll('\\s', '', $('#search_box').val());
+        if(keywords.length <= 0)
+            keywords = replaceAll('\\s', '', $('#search_box1').val());
+        if(keywords.length < 3){
+            alert ('Minimum words length is 3');
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: "http://blueteam.in/service/ajax/search.php?"+'l='+lat+','+lng,
+                data: 'keywords='+ keywords,
+                cache: false,
+                success: function(result){
+                    document.getElementById("search-results").innerHTML = result ;
+                }
+            });
+            //$('#search_box').val("");
+        }
+        $("#search").removeAttr('disabled');
+        $("#search1").removeAttr('disabled');
+        return false;
+    }
+</script>
+<!-- Portfolio Section -->
+<!-- id="portfolio" changed to home and  style="padding-top: 115px;" is added for home-->
+
+<?php
+
 //echo httpGet($url);
 
 foreach( $result as $keyAll => $value ){
@@ -247,7 +772,7 @@ foreach( $result as $keyAll => $value ){
     foreach ($value['services'] as $key => $service) {
         $data .= "
                     <div class=\"col-md-2 col-sm-6\">
-                    <a  href='../service/index.php?load=".$service['name']."-".$service['id']."'><center>
+                    <a onclick=\"showMap('".$service['name']."',".$service['id'].")\"  ><center>
                         <div class=\"service box lightblue wow fadeInUp\" data-wow-delay=\"0.75s\">
                             <div class=\"service-header\">
                                 <span class=\"service-icon\" style='background-color: #fff'>
@@ -275,6 +800,9 @@ foreach( $result as $keyAll => $value ){
 }
 
 ?>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
 
 
 
@@ -413,28 +941,7 @@ foreach( $result as $keyAll => $value ){
                 </div><!-- End .member -->
             </div><!-- End .col-md-3 -->
 
-            <div class="col-md-3 col-xs-6 member-container">
-                <div class="member member-second">
-                    <figure>
-                        <img src="<?= $this-> baseUrl ?>static/images/team/rutwik.jpg" alt="barbara" class="img-responsive">
-                    </figure>
-                    <div class="member-overlay">
-                        <div class="vcenter-container">
-                            <div class="vcenter">
-                                <h2>Rutwik Rao</h2>
-                                <p>Co-founder and Legal Advisor</p>
-                                <hr>
-                                <ul class="social-icons-container small-icons">
-                                    <li><a href="https://www.facebook.com/rutwikrao" target='_blank' class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/rutwikrao" target='_blank' class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://plus.google.com/u/0/109631708785875608152/about" target='_blank' class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/profile/view?id=AAkAAAZUIgQBoZtFQhyyi-NuunZ_9ZXj9A0Y5ik" target='_blank' class="linkedin add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div><!-- End .vcenter -->
-                        </div><!-- End .vcenter-container -->
-                    </div><!-- End .member-overlay -->
-                </div><!-- End .member -->
-            </div><!-- End .col-md-3 -->
+
 
             <div class="col-md-3 col-xs-6 member-container">
                 <div class="member member-second">
@@ -594,7 +1101,7 @@ foreach( $result as $keyAll => $value ){
                     </div><!-- End .container -->
                 </div><!-- End parallax-content -->
             </div><!-- End .testimonials-container -->
-       */?>     <?php /*
+
             <!-- Blog Section -->
             <section id="blog" class="section">
                 <header class="container text-center">
@@ -759,7 +1266,7 @@ foreach( $result as $keyAll => $value ){
                     </div><!-- End .row -->
                 </div><!-- End .container -->
             </section>
-            */ ?>
+
 <!-- Twitterfeed Section -->
 <div class="twitterfeed-container background-new parallax" data-stellar-background-ratio="0.15">
     <div class="overlaybg overlay-pattern1"></div><!-- End .overlaybg -->
@@ -776,6 +1283,7 @@ foreach( $result as $keyAll => $value ){
         </div><!-- End .container -->
     </div><!-- End parallax-content -->
 </div><!-- End .twitterfeed-container -->
+ */ ?>
 
 <?php /*
             <!-- Pricing Section -->
@@ -910,7 +1418,7 @@ foreach( $result as $keyAll => $value ){
             Get in touch with us. We want to hear from you. Let's discuss how can we provide better support and services...
         </p>
     </header>
-    <div id="map"></div><!-- End #map -->
+    <div id="mapC"></div><!-- End #map -->
 
     <div class="lg-margin2x"></div><!-- space -->
 
@@ -1034,7 +1542,7 @@ foreach( $result as $keyAll => $value ){
 </div><!-- End #wrapper -->
 
 <!-- Scroll Top Button -->
-<a href="#" id="scroll-top" class="add-tooltip" data-placement="top" title="Go to top"><i class="fa fa-angle-double-up"></i></a>
+<!--<a href="#" id="scroll-top" class="add-tooltip" data-placement="top" title="Go to top"><i class="fa fa-angle-double-up"></i></a>
 <div class="modal fade modal-styled" id="iframe" style="width:350px;margin-left: 35em;">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1042,7 +1550,7 @@ foreach( $result as $keyAll => $value ){
         </div>
     </div>
 </div>
-<!-- Service Request Modal -->
+--><!-- Service Request Modal -->
 <div class="modal fade modal-styled" id="service_request">
     <div class="modal-dialog">
         <div class="modal-content">

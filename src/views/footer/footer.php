@@ -7,9 +7,9 @@
         <script src="<?= $this-> baseUrl ?>static/js/jquery.mb.YTPlayer.js"></script>
         
         <script src="<?= $this-> baseUrl ?>static/js/main.js"></script>
-            
-        <!-- Google map javascript api v3 -->
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVq_N_uJLaBm3pYRIZfz3gy-7A-iqFfTg&libraries=places"
+        async defer></script>
 
         <script>
             /*----------------------------------------------------*/
@@ -18,7 +18,7 @@
             (function () {
                 "use strict";
 
-                if (document.getElementById("map") && typeof google === "object") {
+                if (document.getElementById("mapC") && typeof google === "object") {
                     var locations = [
                         ['<div class="map-info-box"><ul class="contact-info-list"><li><span><i class="fa fa-home fa-fw"></i></span> Mimar Sinan Mh., Konak/İzmir, Türkiye</li><li><span><i class="fa fa-phone fa-fw"></i></span> +90 0 (232) 324 11 83</li></ul></div>', 38.396652, 27.090560, 9],
                         ['<div class="map-info-box"><ul class="contact-info-list"><li><span><i class="fa fa-home fa-fw"></i></span> Kültür Mh., Konak/İzmir, Türkiye</li><li><span><i class="fa fa-phone fa-fw"></i></span> +90 0 (538) 324 11 84</li></ul></div>', 38.432742, 27.159140, 8]
@@ -100,7 +100,8 @@
             $(document).ready(function () {
 
                 $("#modal_result_show").hide();
-        
+                $("#header-search-bar").hide();
+
             });
         </script>
 
@@ -397,3 +398,18 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
   ga('send', 'pageview');
 
 </script>
+
+<script>
+    $( function() {
+        $("#startDate").datetimepicker({ format: "yyyy-mm-dd hh:ii",
+            autoclose: true,
+            todayBtn: true});
+    } );
+    $( function() {
+        $("#startTime").datetimepicker({ format: "hh:ii",
+            autoclose: true,
+            todayBtn: true});
+    } );
+</script>
+<script src="http://blueteam.in/service_provider/index_files/bootstrap-datetimepicker.min.js"></script>
+<script src="http://blueteam.in/service_provider/index_files/business_ltd_1.0.js"></script>

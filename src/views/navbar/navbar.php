@@ -34,11 +34,11 @@
                                 <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>*/ ?>
                                 <li >
-                                        <div class="form-group input-group" style="width: 246px;">
-                                            <input type="text" id="search_box" style="vertical-align: middle;color: #000;min-width: 400px;
+                                        <div id="header-search-bar" class="form-group input-group" style="width: 246px;">
+                                            <input type="text" id="search_box1" style="vertical-align: middle;color: #000;min-width: 400px;
 	       		margin: 2px;" class="form-control input-lg" >
                                 <span class="input-group-btn">
-                                    <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="search();">
+                                    <button id="search1" class="btn btn-lightblue btn-lg input-lg" onclick="search();">
                                         <i class="fa fa-search"></i>
                                     </button>
 

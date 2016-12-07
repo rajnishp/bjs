@@ -71,6 +71,8 @@
         },
         stickyMenu: function() {
             if (a.fn.waypoint && a(window).outerWidth() > 767) {
+                $("#header-search-bar").show();
+
                 var b, c = "navbar-fixed-top";
                 b = a("#header").find(".navbar").hasClass("navbar-transparent") ? -300 : 0, a("#header").hasClass("fixed-bottom") && (c = "navbar-fixed-bottom"), a("#header").find(".navbar").waypoint("sticky", {
                     stuckClass: c + " fixed-animated",
