@@ -264,7 +264,7 @@ $result = json_decode(httpGet($url), true)['allServices'];
 
 
             <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
 
                     <center>
                     <h2 class=" fancy">Finding Best for You</h2></center>
@@ -282,7 +282,7 @@ $result = json_decode(httpGet($url), true)['allServices'];
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1052" style="max-width: 100%"/ >
                         </div>
-                        <div class="col-lg-7 col-md-7 col-sm-12 ">
+                        <div class="col-lg-8 col-md-8 col-sm-12 ">
                             <br/>
                             <br/>
 
