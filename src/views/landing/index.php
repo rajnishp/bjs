@@ -247,7 +247,6 @@ function httpGet($url){
 
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
-//  curl_setopt($ch,CURLOPT_HEADER, false);
 
     $output=curl_exec($ch);
 
@@ -260,21 +259,17 @@ $url = "https://blueteam.in/sp_api/services?category=true";
 $result = json_decode(httpGet($url), true)['allServices'];
 ?>
 <section id="home" class="section gfullscreen" style="" >
-
-
-
     <div id="our-services" style="margin-top:100px" >
         <div class="container" >
 
 
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-lg-7 col-md-12 col-sm-12">
 
                     <center>
-                    <h2 class=" fancy">Finding Best for You</h2>
-                    <div class="form-group input-group" style="width: 246px;">
-                        <input type="text" placeholder="Type service name your are looking for. Eg: 'yogo'" id="search_box" style="vertical-align: middle;color: #000;min-width: 600px;
-	       		margin: 2px;" class="form-control input-lg" >
+                    <h2 class=" fancy">Finding Best for You</h2></center>
+                    <div class="form-group input-group" >
+                        <input type="text" placeholder="Type service name your are looking for. Eg: 'yoga'" id="search_box" style="color: #000;margin: 2px;" class="form-control input-lg" >
                                 <span class="input-group-btn">
                                     <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="showMap('search',0)">
                                         <i class="fa fa-search"></i>
@@ -282,12 +277,12 @@ $result = json_decode(httpGet($url), true)['allServices'];
 
                                 </span>
                     </div>
-                    </center>
+                    
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1052" style="max-width: 100%"/ >
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 ">
+                        <div class="col-lg-7 col-md-7 col-sm-12 ">
                             <br/>
                             <br/>
 
@@ -361,15 +356,9 @@ $result = json_decode(httpGet($url), true)['allServices'];
                             </div>
                         </div>
 
-
-
                     </div>
-
-
-
-
                 </div>
-                <div class="col-lg-4 col-md-4 cal-sl-12">
+                <div class="col-lg-4 col-md-12 cal-sm-12">
 
                     <?php
                     foreach( $result as $keyAll => $value ){
@@ -771,7 +760,7 @@ foreach( $result as $keyAll => $value ){
 <center>";
     foreach ($value['services'] as $key => $service) {
         $data .= "
-                    <div class=\"col-md-2 col-sm-6\">
+                    <div class=\"col-md-2 col-sm-4\">
                     <a onclick=\"showMap('".$service['name']."',".$service['id'].")\"  ><center>
                         <div class=\"service box lightblue wow fadeInUp\" data-wow-delay=\"0.75s\">
                             <div class=\"service-header\">
