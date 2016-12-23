@@ -280,7 +280,7 @@ $result = json_decode(httpGet($url), true)['allServices'];
                     
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1286" style="max-width: 100%"/ >
+                            <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1286" style="max-width: 100%;padding-top: 50px;"/ >
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12 ">
                             <br/>
@@ -301,17 +301,8 @@ $result = json_decode(httpGet($url), true)['allServices'];
                                                     </div><!-- End .portfolio-item-wrapper -->
                                                 </a>
                                             </li>
-                                            <li class="portfolio-item animate-item photography" data-animate-time="80">
-                                                <a onclick="showMap('Maid Cum Babysitter',0)">
-                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
-
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
-                                                        <Br/>Maid Cum Babysitter
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
+                                            
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="80">
                                                 <a onclick="showMap('Cook',0)">
                                                     <div class="portfolio-item-wrapper  shortcut" id="Cook">
                                                         <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
@@ -319,21 +310,7 @@ $result = json_decode(httpGet($url), true)['allServices'];
                                                     </div><!-- End .portfolio-item-wrapper -->
                                                 </a>
                                             </li>
-
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="160">
-                                                <a onclick="showMap('Maid Cum Cook',0)">
-                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
-
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
-                                                        <br/>Maid Cum Cook
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-
-
-
-                                            <li class="portfolio-item animate-item illustration design" data-animate-time="400">
+                                            <li class="portfolio-item animate-item illustration design" data-animate-time="160">
                                                 <a onclick="showMap('Babysitter',0)">
                                                     <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
                                                         <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
@@ -341,15 +318,50 @@ $result = json_decode(httpGet($url), true)['allServices'];
                                                     </div><!-- End .portfolio-item-wrapper -->
                                                 </a>
                                             </li>
-                                            <li class="portfolio-item animate-item photography illustration" data-animate-time="560">
+                                            <li class="portfolio-item animate-item photography illustration" data-animate-time="160">
                                                 <a onclick="showMap('Drive',0)">
                                                     <div class="portfolio-item-wrapper shortcut" id="Driver">
                                                         <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver" style="height: 70px">
-                                                        <br/>Drive
+                                                        <br/>Driver
                                                     </div><!-- End .portfolio-item-wrapper -->
                                                 </a>
                                             </li>
+                                            <li class="portfolio-item animate-item photography" data-animate-time="400">
+                                                <a onclick="showMap('Maid Cum Babysitter',0)">
+                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
+                                                        <Br/>Maid Cum Babysitter
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
+                                                <a onclick="showMap('Nurse',0)">
+                                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
 
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Patient Care" style="height: 70px">
+                                                        <br/>Patient Care
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="400">
+                                                <a onclick="showMap('Maid Cum Cook',0)">
+                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
+
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Maid Cum Cook" style="height: 70px">
+                                                        <br/>Maid Cum Cook
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
+                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
+                                                <a onclick="showMap('Nurse',0)">
+                                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
+
+                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Elder Care" style="height: 70px">
+                                                        <br/>Elder Care
+                                                    </div><!-- End .portfolio-item-wrapper -->
+                                                </a>
+                                            </li>
                                         </ul><!-- End #portfolio-item-container -->
                                     </div>
                                 </div>
@@ -393,16 +405,20 @@ $result = json_decode(httpGet($url), true)['allServices'];
                 <h4 class="modal-title">Book Now</h4>
             </div>
             <div class="modal-body">
-                <input id="bookName" type="text" placeholder="Type your Name">
-                <input id="bookMobile" type="text" placeholder="Type your mobile number"> <br/><br/>
-                <input id="bookAddress" type="text" placeholder="Type your Address">
-                <textarea id="remarks" type="text" placeholder="Remark" ></textarea><br/><br/>
+                <label>Name</label>
+                <input id="bookName" type="text" style="margin-left: 196px;" placeholder="Type your Name" ><br/><br/>
+                <label>Mobile Number</label>
+                <input id="bookMobile" type="text" style="margin-left: 120px;" placeholder="Type your mobile number" ><br/><br/>
+                <label>Address</label>
+                <input id="bookAddress" type="text" style="margin-left: 180px;" placeholder="Type your Address" ><br/><br/>
+                <label>Remarks</label>
+                <input id="remarks" type="text" style="margin-left: 175px;" placeholder="Remark" ><br/><br/>
                 <input id="bookServiceProviderId" type="hidden" value="">
                 <input id="bookServiceId" type="hidden" value="">
                 <label>Starting Date & Time</label>
-                <input id="startDate"  placeholder="Enter Starting Date and time"> <br/><br/>
-                <label>Hour</label>
-                <select id= "totalHour">
+                <input id="startDate" style="margin-left: 80px;" placeholder="Enter Starting Date and time" > <br/><br/>
+                <label>Number of Hours to Work</label>
+                <select id= "totalHour" style="margin-left: 40px;" >
                     <option value='1' selected >1</option>
                     <?php
                     for ($i=2; $i<13 ; $i++) {
@@ -1418,7 +1434,7 @@ foreach( $result as $keyAll => $value ){
                     <h3>Addresses</h3>
                     <span class="contact-info-icon yellowbg"><i class="fa fa-map-marker"></i></span>
                     <ul class="contact-info-list">
-                        <li>Sector 31</li>
+                        <li>UGF-125, Vyapar Kendra, Sushant Lok-1 C-Block,</li>
                         <li>Gurgaon, India</li>
                     </ul>
                 </div><!-- End .contact-info-box -->
