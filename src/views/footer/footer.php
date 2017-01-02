@@ -104,7 +104,12 @@
 
             });
         </script>
-
+        <script>
+            $("ul.nav-tabs a").click(function (e) {
+              e.preventDefault();  
+                $(this).tab('show');
+            });
+        </script>
 <script type="text/javascript">
     
     function showclass() {

@@ -1722,9 +1722,7 @@ foreach( $result as $keyAll => $value ){
         </div>
     </div>
 </div>
-
+<?php include_once 'views/footer/directory.php'; ?>
 <?php include_once 'views/footer/footer.php'; ?>
-
-
 </body>
 </html>
