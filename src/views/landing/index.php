@@ -261,126 +261,118 @@ $result = json_decode(httpGet($url), true)['allServices'];
 <section id="home" class="section gfullscreen" style="" >
     <div id="our-services" style="margin-top:100px" >
         <div class="container" >
-
-
             <div class="row">
-                <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-lg-offset-2 col-md-offset-0">
 
                     <center>
                     <h2 class=" fancy">Finding Best for You</h2></center>
                     <div class="form-group input-group" >
                         <input type="text" placeholder="Type service name your are looking for. Eg: 'yoga'" id="search_box" style="color: #000;margin: 2px;" class="form-control input-lg" >
-                                <span class="input-group-btn">
-                                    <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="showMap('search',0)">
-                                        <i class="fa fa-search"></i>
-                                    </button>
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-lightblue btn-lg input-lg" onclick="showMap('search',0)">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div><br/>
+                    <center>
+                        <a href="" style="font-size: 42px;">
+                            <i class="fa fa-phone" ></i> or
+                            <i class="fa fa-whatsapp" > <?= $this-> blueteamContactNumber ?></i> 
+                        </a><br/><br/>
+                    </center>
+                </div>                            
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            
 
-                                </span>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <img src="http://api.file-dog.shatkonlabs.com/files/rahul/1286" style="max-width: 100%;padding-top: 50px;"/ >
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 ">
-                            <br/>
-                            <br/>
+                    <center><h3 class=" fancy">One Touch Services</h3></center>
 
-                            <center><h3 class=" fancy">One Touch Services</h3></center>
+                    <div id="portfolio-wrapper " class="center-block">
 
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div id="portfolio-wrapper " class="center-block">
+                        <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="8" data-animationclass="fadeInUpBig">
+                            <li class="portfolio-item animate-item photography" data-animate-time="80">
+                                <a onclick="showMap('Maid',0)">
+                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
+                                        <Br/>Maid
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            
+                            <li class="portfolio-item animate-item design illustration video" data-animate-time="80">
+                                <a onclick="showMap('Cook',0)">
+                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
+                                        <br/>Cook
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            <li class="portfolio-item animate-item illustration design" data-animate-time="160">
+                                <a onclick="showMap('Babysitter',0)">
+                                    <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
+                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
+                                        <br/>Babysitter
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            <li class="portfolio-item animate-item photography illustration" data-animate-time="160">
+                                <a onclick="showMap('Drive',0)">
+                                    <div class="portfolio-item-wrapper shortcut" id="Driver">
+                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver" style="height: 70px">
+                                        <br/>Driver
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            <li class="portfolio-item animate-item photography" data-animate-time="400">
+                                <a onclick="showMap('Maid Cum Babysitter',0)">
+                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
+                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
+                                        <Br/>Maid Cum Babysitter
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            
+                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
+                                <a onclick="showMap('Nurse',0)">
+                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
 
-                                        <ul id="portfolio-item-container" class="clearfix" data-maxcolumn="4" data-animationclass="fadeInUpBig">
-                                            <li class="portfolio-item animate-item photography" data-animate-time="80">
-                                                <a onclick="showMap('Maid',0)">
-                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/maid.jpeg" alt="Maid" style="height: 70px">
-                                                        <Br/>Maid
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="80">
-                                                <a onclick="showMap('Cook',0)">
-                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Cook" style="height: 70px">
-                                                        <br/>Cook
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item illustration design" data-animate-time="160">
-                                                <a onclick="showMap('Babysitter',0)">
-                                                    <div class="portfolio-item-wrapper shortcut" id="Baby Sitter">
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
-                                                        <br/>Babysitter
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item photography illustration" data-animate-time="160">
-                                                <a onclick="showMap('Drive',0)">
-                                                    <div class="portfolio-item-wrapper shortcut" id="Driver">
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/driver.png" alt="Driver" style="height: 70px">
-                                                        <br/>Driver
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item photography" data-animate-time="400">
-                                                <a onclick="showMap('Maid Cum Babysitter',0)">
-                                                    <div class="portfolio-item-wrapper shortcut" id="Maid">
-                                                        <img class="service-request-image" src="<?= $this-> baseUrl ?>static/images/babysitter.jpeg" alt="Baby Sitter" style="height: 70px">
-                                                        <Br/>Maid Cum Babysitter
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
-                                                <a onclick="showMap('Nurse',0)">
-                                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
+                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Patient Care" style="height: 70px">
+                                        <br/>Patient Care
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            <li class="portfolio-item animate-item design illustration video" data-animate-time="400">
+                                <a onclick="showMap('Maid Cum Cook',0)">
+                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
 
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Patient Care" style="height: 70px">
-                                                        <br/>Patient Care
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="400">
-                                                <a onclick="showMap('Maid Cum Cook',0)">
-                                                    <div class="portfolio-item-wrapper  shortcut" id="Cook">
+                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Maid Cum Cook" style="height: 70px">
+                                        <br/>Maid Cum Cook
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
+                                <a onclick="showMap('Nurse',0)">
+                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
 
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/cook.jpeg" alt="Maid Cum Cook" style="height: 70px">
-                                                        <br/>Maid Cum Cook
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                            <li class="portfolio-item animate-item design illustration video" data-animate-time="560">
-                                                <a onclick="showMap('Nurse',0)">
-                                                    <div class="portfolio-item-wrapper  shortcut" id="Nurse">
-
-                                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Elder Care" style="height: 70px">
-                                                        <br/>Elder Care
-                                                    </div><!-- End .portfolio-item-wrapper -->
-                                                </a>
-                                            </li>
-                                        </ul><!-- End #portfolio-item-container -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                                        <img  class="service-request-image" src="<?= $this-> baseUrl ?>static/images/patientcare.png" alt="Elder Care" style="height: 70px">
+                                        <br/>Elder Care
+                                    </div><!-- End .portfolio-item-wrapper -->
+                                </a>
+                            </li>
+                        </ul><!-- End #portfolio-item-container -->
+                    </div>                       
                 </div>
-                <div class="col-lg-4 col-md-12 cal-sm-12">
 
+                <div class="col-lg-12 col-md-12 cal-sm-12">
+                    <ul class="list-inline">
                     <?php
                     foreach( $result as $keyAll => $value ){
-                        echo "<a href=\"".$this-> baseUrl."#hire".$keyAll."\"><p>
+                        echo "<li style='width:32%;padding:10px;' ><a href=\"".$this-> baseUrl."#hire".$keyAll."\"><p>
                     <img src=\"http://api.file-dog.shatkonlabs.com/files/rahul/".$value['img']."\"/ width='100px'>
                     ".$value['name']."
-                    </p></a>
-                    ";
+                    </p></a></li>";
                     }
                     ?>
+                    </ul>
                 </div>
 
 
@@ -1510,6 +1502,14 @@ foreach( $result as $keyAll => $value ){
             <div class="row">
                 <div class="col-md-12">
                     <a href="#home" class="footer-logo" title="BlueTeam | Hire now"><img src="<?= $this -> baseUrl ?>static/images/logo.png" width="210" alt="BlueTeam"></a>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5" style="height: 600px;overflow-y: scroll;">
+                    <a class="twitter-timeline" href="https://twitter.com/Blueteam_In">Tweets by Blueteam_In</a> 
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>  
+                </div>
+                <div class="col-md-5">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fblueteam.in&tabs=timeline&width=500&height=600px&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true" width="100%" height="600px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>        
                 </div><!-- End .col-md-12 -->
             </div><!-- End .row -->
         </div><!-- End .container -->
@@ -1522,8 +1522,8 @@ foreach( $result as $keyAll => $value ){
                     <div class="col-md-12">
                         <ul class="social-icons-container">
                             <li><a href="https://www.facebook.com/blueteam.in" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/hireblueteam" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://twitter.com/blueteam_in" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://plus.google.com/110262724836533344452" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" target="_blank" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
                             <!-- <li><a href="index14.html#" class="dribbble add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Dribbble"><i class="fa fa-dribbble"></i></a></li>
                             <li><a href="index14.html#" class="tumblr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Tumblr"><i class="fa fa-tumblr"></i></a></li>
                             <li><a href="index14.html#" class="flickr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Flickr"><i class="fa fa-flickr"></i></a></li> -->
@@ -1532,15 +1532,7 @@ foreach( $result as $keyAll => $value ){
                 </div><!-- End .row -->
             </div><!-- End .container -->
         </div><!-- End .footer-social-icons -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>All rights reserved &copy; <a href="http://shatkonlabs.com" class="yellow-color" title="Shatkon Labs" target="_blank">Shatkon Labs&trade;</a></p>
-                    <span class="footer-date highlight red">2014</span>
-                </div><!-- End .col-md-12 -->
-            </div><!-- End .row -->
-        </div><!-- End .container -->
+        <?php include_once 'views/footer/directory.php'; ?>        
     </div><!-- End .section-content -->
 </footer>
 
@@ -1722,7 +1714,6 @@ foreach( $result as $keyAll => $value ){
         </div>
     </div>
 </div>
-<?php include_once 'views/footer/directory.php'; ?>
 <?php include_once 'views/footer/footer.php'; ?>
 </body>
 </html>
