@@ -258,10 +258,10 @@ $url = "https://blueteam.in/sp_api/services?category=true";
 
 $result = json_decode(httpGet($url), true)['allServices'];
 ?>
-<section id="home" class="section gfullscreen" style="" >
-    <div id="our-services" style="margin-top:100px" >
-        <div class="container" >
-            <div class="row">
+<section id="home" class="section gfullscreen"  >
+    <div id="our-services" style="margin-top:100px"  >
+        <div class="container"  >
+            <div class="row" >
                 <div class="col-lg-8 col-md-12 col-sm-12 col-lg-offset-2 col-md-offset-0">
 
                     <center>
