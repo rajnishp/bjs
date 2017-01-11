@@ -4,9 +4,9 @@
     $data = "<div class='container'>
     			<div class='row'>
                 <div class='col-md-12'>
-                <ul class='list-inline' style='margin:5px;background: peachpuff none repeat scroll 0 0;'>";
+                <ul class='list-inline' style='margin:5px;'>";
     foreach ($services as $key => $value) {
-        $data .="<li style='min-width: 180px;padding:5px;margin:2px;'><a href='http://blueteam.in/directory/index.php?city=".$value['id']."' style='ext-decoration: none;background-color: #0ab9ec;color: #fff;padding:2px;'>".$value['name']."</a></li>";
+        $data .="<li style='min-width: 180px;padding:5px;margin:2px;'><a href='http://blueteam.in/directory/index.php?city=".$value['id']."' style='text-decoration: none;color: #fff;padding:2px;'>".$value['name']."</a></li>";
     }
     $data = $data."</ul>    	
                     <center>  <p>All rights reserved &copy; <a href='http://shatkonlabs.com' class='yellow-color' title='Shatkon Labs' target='_blank'>Shatkon Labs&trade;</a></p>

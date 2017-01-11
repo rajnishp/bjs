@@ -1426,7 +1426,7 @@ foreach( $result as $keyAll => $value ){
                     <h3>Addresses</h3>
                     <span class="contact-info-icon yellowbg"><i class="fa fa-map-marker"></i></span>
                     <ul class="contact-info-list">
-                        <li>UGF-125, Vyapar Kendra, Sushant Lok-1 C-Block,</li>
+                        <li>UGF-125, Vyapar Kendra, C-Block Sushant Lok-1,</li>
                         <li>Gurgaon, India</li>
                     </ul>
                 </div><!-- End .contact-info-box -->
@@ -1512,9 +1512,7 @@ foreach( $result as $keyAll => $value ){
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fblueteam.in&tabs=timeline&width=500&height=600px&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true" width="100%" height="600px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>        
                 </div><!-- End .col-md-12 -->
             </div><!-- End .row -->
-        </div><!-- End .container -->
-
-        <div class="fb-like" data-href="https://www.facebook.com/blueteam.in" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div><br/><!-- End .container -->
 
         <div class="footer-social-icons transparent">
             <div class="container">
@@ -1531,8 +1529,11 @@ foreach( $result as $keyAll => $value ){
                     </div><!-- End .col-md-12 -->
                 </div><!-- End .row -->
             </div><!-- End .container -->
+
         </div><!-- End .footer-social-icons -->
-        <?php include_once 'views/footer/directory.php'; ?>        
+        <div class="footer-social-icons transparent">
+        <?php include_once 'views/footer/directory.php'; ?>
+        </div>       
     </div><!-- End .section-content -->
 </footer>
 
