@@ -46,6 +46,7 @@
                                     </div>
 
                                 </li>
+                                <li ><a href="<?= $this-> baseUrl ?>aboutus">About Us</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">T&Cs</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
                                 <li ><a href="" >

@@ -13,6 +13,7 @@ include_once "controllers/HomeController.class.php";
 include_once "controllers/TermsController.class.php";
 include_once "controllers/VarifiedController.class.php";
 include_once "controllers/TestimonailController.class.php";
+include_once "controllers/AboutUsController.class.php";
 
 /*require_once 'utils/Util.php';
 require_once 'utils/Timer.php';
@@ -87,6 +88,22 @@ $logger -> debug ("get :: " .json_encode($_GET));*/
 				$varifiedController = new VarifiedController();
 				$varifiedController -> render ();
 					
+				break;
+
+			case "aboutus":
+				$aboutusController = new AboutUsController();
+				$where = $route[2];
+
+				switch ($where) {
+					case 'getInTouch':
+						$homeController ->  getInTouch();
+						break;
+					
+					default:
+						$aboutusController -> render ();
+						break;
+				}
+
 				break;
 
 			case "addTestimonials":

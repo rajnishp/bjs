@@ -255,8 +255,9 @@ function httpGet($url){
 }
 
 $url = "https://blueteam.in/sp_api/services?category=true";
-
+$countUrl = "https://blueteam.in/api/count" ;
 $result = json_decode(httpGet($url), true)['allServices'];
+$resultCount = json_decode(httpGet($countUrl), true)['root'];
 ?>
 <section id="home" class="section gfullscreen"  >
     <div id="our-services" style="margin-top:100px"  >
@@ -875,24 +876,24 @@ foreach( $result as $keyAll => $value ){
             <div class="row">
 
                 <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                    <span class="count" data-from="0" data-to="2021" data-speed="3000" data-refresh-interval="50">0</span>
+                    <span class="count" data-from="0" data-to="<?=$resultCount['request'];?>" data-speed="3000" data-refresh-interval="50">0</span>
                     <h3 class="fancy">Requests<!--  <span>Projects</span> --></h3>
                 </div><!-- End .count-container -->
 
                 <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                    <span class="count" data-from="0" data-to="987" data-speed="3000" data-refresh-interval="50">0</span>
+                    <span class="count" data-from="0" data-to="<?=$resultCount['user'];?>" data-speed="3000" data-refresh-interval="50">0</span>
                     <h3 class="fancy">Users<!--  <span>Customers</span> --></h3>
                 </div><!-- End .count-container -->
 
                 <div class="xlg-margin visible-sm visible-xs hidden-xss clearfix"></div><!-- space -->
 
                 <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                    <span class="count" data-from="0" data-to="14" data-speed="3000" data-refresh-interval="50">0</span>
+                    <span class="count" data-from="0" data-to="<?=$resultCount['location'];?>" data-speed="3000" data-refresh-interval="50">0</span>
                     <h3 class="fancy">Locations<!--  <span>Awards</span> --></h3>
                 </div><!-- End .count-container -->
 
                 <div class="col-md-3 col-sm-6 col-xs-6 count-container">
-                    <span class="count" data-from="0" data-to="243" data-speed="3000" data-refresh-interval="50">0</span>
+                    <span class="count" data-from="0" data-to="<?=$resultCount['worker'];?>" data-speed="3000" data-refresh-interval="50">0</span>
                     <h3 class="fancy">Workers<!--  <span>Days</span> --></h3>
                 </div><!-- End .count-container -->
 
@@ -903,6 +904,7 @@ foreach( $result as $keyAll => $value ){
 
 
 <!-- About Us Section -->
+<?php /*
 <section id="aboutus" class="section">
     <header class="container text-center">
         <h1 class="section-title fancy">About Us</h1>
@@ -1032,26 +1034,25 @@ foreach( $result as $keyAll => $value ){
                             </div><!-- End .accordion-body-wrapper -->
                         </div><!-- End .accordion-body -->
                     </div><!-- End .accordion-group -->
-                    <?php /*
-                                <div class="accordion-group panel lightblue">
-                                    <div class="accordion-header">
-                                        <div class="accordion-title"><i class="fa fa-group"></i>More About Us!</div><!-- End .accourdion-title -->
-                                        <a class="accordion-btn" data-toggle="collapse" data-parent="#accordion3" href="index14.html#accordion3-four"></a>
-                                    </div><!-- End .accordion-header -->
+                    <div class="accordion-group panel lightblue">
+                        <div class="accordion-header">
+                            <div class="accordion-title"><i class="fa fa-group"></i>More About Us!</div><!-- End .accourdion-title -->
+                            <a class="accordion-btn" data-toggle="collapse" data-parent="#accordion3" href="index14.html#accordion3-four"></a>
+                        </div><!-- End .accordion-header -->
 
-                                    <div class="accordion-body collapse" id="accordion3-four">
-                                        <div class="accordion-body-wrapper">
-                                            <p>Pellentesque malesuada sollicitudin fermentum. Nullam ultricesposuere congue. Turpis rhoncus. Nullam pretium eleifend neque, eget congue purus tincidunt id. Duis quam vitae condimentum.</p>
-                                            <p>Sed pretium, elit eget fermentum mattis, tortor eros aliquam purus, a nisl a nulla. Proin eu orci orci, ac venenatis tortor. Donec laoreet, nu fringilla mollis, lacus mauris pellentesque odio, ut rhoncus erat risus sed.</p>
-                                        </div><!-- End .accordion-body-wrapper -->
-                                    </div><!-- End .accordion-body -->
-                                </div><!-- End .accordion-group -->
-                                */ ?>
+                        <div class="accordion-body collapse" id="accordion3-four">
+                            <div class="accordion-body-wrapper">
+                                <p>Pellentesque malesuada sollicitudin fermentum. Nullam ultricesposuere congue. Turpis rhoncus. Nullam pretium eleifend neque, eget congue purus tincidunt id. Duis quam vitae condimentum.</p>
+                                <p>Sed pretium, elit eget fermentum mattis, tortor eros aliquam purus, a nisl a nulla. Proin eu orci orci, ac venenatis tortor. Donec laoreet, nu fringilla mollis, lacus mauris pellentesque odio, ut rhoncus erat risus sed.</p>
+                            </div><!-- End .accordion-body-wrapper -->
+                        </div><!-- End .accordion-body -->
+                    </div><!-- End .accordion-group -->
+                                
                 </div><!-- End .accordion -->
             </div><!-- End .col-md-6 -->
         </div><!-- End .row -->
     </div><!-- End .container -->
-    <?php /*
+    
                 <div class="container img-container small">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1059,8 +1060,9 @@ foreach( $result as $keyAll => $value ){
                         </div><!-- End .col-md-8 -->
                     </div><!-- End .row -->
                 </div><!-- End .container -->
-*/ ?>
+
 </section>
+*/ ?>
 <?php /*
             <!-- Testimonials Section -->
             <div class="testimonials-container background-new parallax" data-stellar-background-ratio="0.15">
@@ -1408,6 +1410,7 @@ foreach( $result as $keyAll => $value ){
             </div><!-- End .videobg-container -->
             */ ?>
 <!-- Contact Us Section -->
+<?php /*
 <section id="contactus" class="section">
     <header class="container text-center">
         <h1 class="section-title fancy">Contact Us</h1>
@@ -1494,7 +1497,7 @@ foreach( $result as $keyAll => $value ){
         </div><!-- End .row -->
     </div><!-- End .container -->
 </section>
-
+*/ ?>
 <footer id="footer" class="parallax" data-stellar-background-ratio="0.15">
     <div class="overlaybg overlay-pattern1"></div><!-- End .section-overlay -->
     <div class="section-content">
