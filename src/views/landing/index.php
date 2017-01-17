@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <title>BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price.</title>
+    <title>BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App</title>
 
     <!-- for Google -->
-    <meta name="description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
+    <meta name="description" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
     <meta name="author" content="BlueTeam" />
     <meta name="copyright" content="true" />
     <meta name="application-name" content="website" />
 
     <!-- for Facebook -->
-    <meta property="og:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+    <meta property="og:title" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="og:author" content="BlueTeam" />
     <meta property="og:type" content="website"/>
 
@@ -33,7 +33,7 @@
     <meta name="twitter:site" content="@hireblueteam">
     <meta name="twitter:creator" content="@hireblueteam">
     <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
-    <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
+    <meta name="twitter:title" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
     <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
