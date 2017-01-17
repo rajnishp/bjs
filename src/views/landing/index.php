@@ -159,8 +159,11 @@
 
 
     <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" id="st_insights_js" src="//w.sharethis.com/button/buttons.js?publisher=2b116127-b5f0-4211-8a7a-0870727e907d"></script>
+    <script type="text/javascript" id="st_insights_js"
+            src="//w.sharethis.com/button/buttons.js?publisher=2b116127-b5f0-4211-8a7a-0870727e907d"></script>
     <script type="text/javascript" src="//s.sharethis.com/loader.js"></script>
+    <script type="text/javascript">
+        stLight.options({publisher: "2b116127-b5f0-4211-8a7a-0870727e907d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </head>
 <body data-spy="scroll" data-target="#main-menu">
@@ -1534,6 +1537,13 @@ foreach( $result as $keyAll => $value ){
                             <li><a href="index14.html#" class="tumblr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Tumblr"><i class="fa fa-tumblr"></i></a></li>
                             <li><a href="index14.html#" class="flickr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Flickr"><i class="fa fa-flickr"></i></a></li> -->
                         </ul>
+                        <center><span class='st_facebook_large' displayText='Facebook'></span>
+                            <span class='st_twitter_large' displayText='Tweet'></span>
+                            <span class='st_whatsapp_large' displayText='WhatsApp'></span>
+                            <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                            <span class='st_pinterest_large' displayText='Pinterest'></span>
+                            <span class='st_googleplus_large' displayText='Google +'></span>
+                            <span class='st_newsvine_large' displayText='Newsvine'></span></center>
                     </div><!-- End .col-md-12 -->
                 </div><!-- End .row -->
             </div><!-- End .container -->
@@ -1723,6 +1733,7 @@ foreach( $result as $keyAll => $value ){
         </div>
     </div>
 </div>
+
 <?php include_once 'views/footer/footer.php'; ?>
 </body>
 </html>
