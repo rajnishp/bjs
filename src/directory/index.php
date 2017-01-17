@@ -103,11 +103,14 @@ else {
            });
 
            FB.getLoginStatus(function(response) {
+               console.log("inside login");
                var data = {title:document.title,url:window.location.href,user_id:"0"}
+               console.log("Login status response ",response);
                if (response.status === 'connected') {
-                   console.log(response);
+
                    //alert ("Page Title"+document.title+", page url"+window.location.href +", Your UID is " + response.authResponse.userID);
                    data.user_id = response.authResponse.userID;
+                   console.log("fb id: ",response.authResponse.userID);
                }
 
                console.log(data);
@@ -123,9 +126,12 @@ else {
                }
            });
 
-           FB.api('/me', {fields: 'last_name'}, function(response) {
-               console.log(response);
-           });
+           FB.api('/me', { locale: 'en_US', fields: 'name, email' },
+               function(response) {
+                   console.log("me api response",response);
+               }
+
+           );
 
 
        };
@@ -137,6 +143,8 @@ else {
            js.src = "//connect.facebook.net/en_US/sdk.js";
            fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+
+
 
 
    </script>

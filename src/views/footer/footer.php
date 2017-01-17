@@ -418,52 +418,42 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 </script>
 <script src="http://blueteam.in/service_provider/index_files/bootstrap-datetimepicker.min.js"></script>
 <script src="http://blueteam.in/service_provider/index_files/business_ltd_1.0.js"></script>
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
 <script>
-    window.fbAsyncInit = function() {
+    $(function() {
         FB.init({
-            appId      : '235401549997398',
-            xfbml      : true,
+            appId  : '235401549997398',l
             status : true, // check login status
             cookie : true, // enable cookies to allow the server to access the session
-
-            version    : 'v2.8'
+            xfbml  : true  // parse XFBML
         });
 
         FB.getLoginStatus(function(response) {
-            var data = {title:document.title,url:window.location.href,user_id:"0"}
-            if (response.status === 'connected') {
-                console.log(response);
-                //alert ("Page Title"+document.title+", page url"+window.location.href +", Your UID is " + response.authResponse.userID);
-                data.user_id = response.authResponse.userID;
-            }
-
-            console.log(data);
-            var xhr = new XMLHttpRequest();
-            xhr.open( "POST","http://api.ragnar.shatkonlabs.com/access", true);
-            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-
-            // send the collected data as JSON
-            xhr.send(JSON.stringify(data));
-
-            xhr.onloadend = function () {
-                // done
+            if (response.status == 'connected') {
+                getCurrentUserInfo(response)
+            } else {
+                FB.login(function(response) {
+                    if (response.authResponse){
+                        getCurrentUserInfo(response)
+                    } else {
+                        console.log('Auth cancelled.')
+                    }
+                }, { scope: 'email' });
             }
         });
 
-        FB.api('/me', {fields: 'last_name'}, function(response) {
-            console.log(response);
-        });
+        function getCurrentUserInfo() {
+            FB.api('/me', function(userInfo) {
+                console.log(userInfo.name + ': ' + userInfo.email);
+            });
+        }
+    });
+</script>
 
-
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
+<script type="text/javascript">stLight.options({publisher: "2b116127-b5f0-4211-8a7a-0870727e907d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+    var options={ "publisher": "2b116127-b5f0-4211-8a7a-0870727e907d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}};
+    var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
 </script>

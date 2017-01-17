@@ -157,6 +157,11 @@
         }
     </style>
 
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" id="st_insights_js" src="//w.sharethis.com/button/buttons.js?publisher=2b116127-b5f0-4211-8a7a-0870727e907d"></script>
+    <script type="text/javascript" src="//s.sharethis.com/loader.js"></script>
+
 </head>
 <body data-spy="scroll" data-target="#main-menu">
 <div class="geass-loader-overlay left"></div><!-- End .geass-loader-overlay left -->
