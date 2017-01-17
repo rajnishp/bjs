@@ -27,7 +27,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-right" id="main-menu">
                             <ul class="nav navbar-nav">
-                                <?php /*<li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li>
+                                <?php /*-webkit-filter: brightness(0.8);-moz-filter: brightness(0.8);-o-filter:  brightness(0.8);-ms-filter:  brightness(0.8);
+                                <li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">Terms&Conditions</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#services">Services</a></li>
@@ -45,6 +46,7 @@
                                     </div>
 
                                 </li>
+                                <li ><a href="<?= $this-> baseUrl ?>aboutus">About Us</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>terms&Conditions">T&Cs</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>blueteamVerified">BlueTeam Verification</a></li>
                                 <li ><a href="" >
