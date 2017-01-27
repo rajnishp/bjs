@@ -76,10 +76,10 @@
 
     <!-- Queryloader -->
     <script src="<?= $this-> baseUrl ?>static/js/queryloader2.min.js"></script>
-    <?php /*
+    
    <!-- Modernizr -->
    <script src="<?= $this-> baseUrl ?>static/js/modernizr.js"></script>
-*/?>
+
     <style>
         body,
         html,
