@@ -155,15 +155,43 @@
         #target {
             width: 345px;
         }
+        .side_bar_text {
+            cursor: pointer;
+            height: 160px;
+            margin-top: 250px;
+            position: fixed;
+            width: 41px;
+            z-index: 99;
+            margin-left: 98%;
+        }
+        .left_side_popup {
+            float: none;
+            left: -119px;
+            position: absolute;
+            top: 0;
+            width: 210px;
+        }
+        .left_side_popup > a {
+            background: royalblue none repeat scroll 0 0;
+            border-radius: 3px;
+            color: #fff;
+            display: block;
+            font-weight: 600;
+            margin-top: 0;
+            padding: 10px;
+            position: relative;
+            text-decoration: none;
+            transform: rotate(90deg);
+        }
     </style>
 
 
-    <script type="text/javascript">var switchTo5x=true;</script>
+    <!-- <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" id="st_insights_js"
             src="//w.sharethis.com/button/buttons.js?publisher=2b116127-b5f0-4211-8a7a-0870727e907d"></script>
     <script type="text/javascript" src="//s.sharethis.com/loader.js"></script>
     <script type="text/javascript">
-        stLight.options({publisher: "2b116127-b5f0-4211-8a7a-0870727e907d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+        stLight.options({publisher: "2b116127-b5f0-4211-8a7a-0870727e907d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> -->
 
 </head>
 <body data-spy="scroll" data-target="#main-menu">
@@ -173,8 +201,16 @@
 
 
     <?php include_once 'views/navbar/navbar.php'; ?>
-
-
+    <!-- <div style="margin-top: 300px;margin-left:95%;z-index: 99;background-color: skyblue;position: relative;width: auto;">
+        <div style="position: absolute;">
+            <p class="partner" >Partner Log In / Sign Up</p>
+        </div>
+    </div> -->
+    <!-- <div class="side_bar_text">
+        <div class="left_side_popup">
+            <a href="http://bt-partner.blueteam.in"> Partner Log In / Sign Up </a>
+        </div>
+    </div> -->
 
     <!-- main Section -->
     <!-- <section id="home" class="section gfullscreen">
@@ -383,7 +419,49 @@ $resultCount = json_decode(httpGet($countUrl), true)['root'];
                     ?>
                     </ul>
                 </div>
-
+                <div class="col-lg-12 col-md-12 cal-sm-12">
+                    <center><h3 class="fancy">Why to Choose BlueTeam ?</h3></center>
+                
+                    <ul class="list-inline">
+                      <li style='width:32%;padding:10px;' >
+                        <p><center>
+                            <i class="fa fa-check-square-o fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">Verified Professionals</span><br/>
+                            <span style="font-size: 14px;">Our Professionals are thoroughly verified and background checked</span>
+                        </center></p>
+                      </li>
+                      <li style='width:32%;padding:10px;' >
+                        <p><center><i class="fa fa-binoculars fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">Choices of Service Partner</span><br/>
+                            <span style="font-size: 14px;">Choose suitable for you</span>
+                        </center></p>
+                      </li>
+                      <li style='width:32%;padding:10px;' >
+                        <p><center><i class="fa fa-certificate fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">Reliability and Quality Score</span><br/>
+                            <span style="font-size: 14px;">Compare Reliability and Quality Score of different Professional</span>
+                        </center></p>
+                      </li>
+                      <li style='width:32%;padding:10px;' >
+                        <p><center><i class="fa fa-cog fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">Skilled & Certified Professionals</span><br/>
+                            <span style="font-size: 14px;">All our Professionals are well trained, skilled and experienced</span>
+                        </center></p>
+                      </li>
+                      <li style='width:32%;padding:10px;' >
+                        <p><center><i class="fa fa-clock-o fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">On Time Services</span><br/>
+                            <span style="font-size: 14px;">We assure timely services, delivery and completion to our customers.</span>
+                        </center></p>
+                      </li>
+                      <li style='width:32%;padding:10px;' >
+                        <p><center><i class="fa fa-hand-pointer-o fa-2x"></i><br/>
+                            <span style="font-size: 20px;font-weight: bold;">Any Time Booking</span><br/>
+                            <span style="font-size: 14px;">You can book services 24x7</span>
+                        </center></p>
+                      </li>
+                    </ul>
+                </div>
 
             </div>
 

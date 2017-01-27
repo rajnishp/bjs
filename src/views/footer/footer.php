@@ -424,7 +424,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 <script>
     $(function() {
         FB.init({
-            appId  : '235401549997398',l
+            appId  : '235401549997398',
             status : true, // check login status
             cookie : true, // enable cookies to allow the server to access the session
             xfbml  : true  // parse XFBML
