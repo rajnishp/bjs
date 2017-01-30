@@ -206,11 +206,11 @@
             <p class="partner" >Partner Log In / Sign Up</p>
         </div>
     </div> -->
-    <!-- <div class="side_bar_text">
+    <div class="side_bar_text">
         <div class="left_side_popup">
             <a href="http://bt-partner.blueteam.in"> Partner Log In / Sign Up </a>
         </div>
-    </div> -->
+    </div>
 
     <!-- main Section -->
     <!-- <section id="home" class="section gfullscreen">
@@ -426,38 +426,38 @@ $resultCount = json_decode(httpGet($countUrl), true)['root'];
                       <li style='width:32%;padding:10px;' >
                         <p><center>
                             <i class="fa fa-check-square-o fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">Verified Professionals</span><br/>
-                            <span style="font-size: 14px;">Our Professionals are thoroughly verified and background checked</span>
+                            <span style="font-size: 20px;font-weight: bold;">Verified Professionals</span><!-- <br/>
+                            <span style="font-size: 14px;">Our Professionals are thoroughly verified and background checked</span> -->
                         </center></p>
                       </li>
                       <li style='width:32%;padding:10px;' >
                         <p><center><i class="fa fa-binoculars fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">Choices of Service Partner</span><br/>
-                            <span style="font-size: 14px;">Choose suitable for you</span>
+                            <span style="font-size: 20px;font-weight: bold;">Choices of Service Partner</span><!-- <br/>
+                            <span style="font-size: 14px;">Choose suitable for you</span> -->
                         </center></p>
                       </li>
                       <li style='width:32%;padding:10px;' >
                         <p><center><i class="fa fa-certificate fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">Reliability and Quality Score</span><br/>
-                            <span style="font-size: 14px;">Compare Reliability and Quality Score of different Professional</span>
+                            <span style="font-size: 20px;font-weight: bold;">Reliability and Quality Score</span><!-- <br/>
+                            <span style="font-size: 14px;">Compare Reliability and Quality Score of different Professional</span> -->
                         </center></p>
                       </li>
                       <li style='width:32%;padding:10px;' >
                         <p><center><i class="fa fa-cog fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">Skilled & Certified Professionals</span><br/>
-                            <span style="font-size: 14px;">All our Professionals are well trained, skilled and experienced</span>
+                            <span style="font-size: 20px;font-weight: bold;">Skilled & Certified Professionals</span><!-- <br/>
+                            <span style="font-size: 14px;">All our Professionals are well trained, skilled and experienced</span> -->
                         </center></p>
                       </li>
                       <li style='width:32%;padding:10px;' >
                         <p><center><i class="fa fa-clock-o fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">On Time Services</span><br/>
-                            <span style="font-size: 14px;">We assure timely services, delivery and completion to our customers.</span>
+                            <span style="font-size: 20px;font-weight: bold;">On Time Services</span><!-- <br/>
+                            <span style="font-size: 14px;">We assure timely services, delivery and completion to our customers.</span> -->
                         </center></p>
                       </li>
                       <li style='width:32%;padding:10px;' >
                         <p><center><i class="fa fa-hand-pointer-o fa-2x"></i><br/>
-                            <span style="font-size: 20px;font-weight: bold;">Any Time Booking</span><br/>
-                            <span style="font-size: 14px;">You can book services 24x7</span>
+                            <span style="font-size: 20px;font-weight: bold;">Any Time Booking</span><!-- <br/>
+                            <span style="font-size: 14px;">You can book services 24x7</span> -->
                         </center></p>
                       </li>
                     </ul>
