@@ -25,7 +25,7 @@
 
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-right" id="main-menu">
+                        <div class="collapse navbar-collapse navbar-right" style="width: 90%" id="main-menu">
                             <ul class="nav navbar-nav">
                                 <?php /*-webkit-filter: brightness(0.8);-moz-filter: brightness(0.8);-o-filter:  brightness(0.8);-ms-filter:  brightness(0.8);
                                 <li ><a href="<?= $this-> baseUrl ?>#home">Home</a></li>
@@ -35,7 +35,7 @@
                                 <li ><a href="<?= $this-> baseUrl ?>home#aboutus">About</a></li>
                                 <li ><a href="<?= $this-> baseUrl ?>home#contactus">Contact</a></li>*/ ?>
                                 <li >
-                                    <div id="header-search-bar" class="form-group input-group" style="margin-top: 12px;" >
+                                    <div id="header-search-bar" class="form-group input-group" style="width: 300px;margin-top: 12px;" >
                                         <input type="text" id="search_box1" style="vertical-align: middle;color: #000;margin: 2px;" class="form-control input-sm" >
                                         <span class="input-group-btn">
                                             <button id="search1" class="btn btn-lightblue btn-sm input-sm" onclick="search();">

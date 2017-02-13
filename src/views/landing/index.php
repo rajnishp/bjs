@@ -10,7 +10,7 @@
     <title>BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App</title>
 
     <!-- for Google -->
-    <meta name="description" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
+    <meta name="description" content="BlueTeam | 9599075355 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="keywords" content="Awesome hiring services, Hire, hire cook, hire maid, hire electrician, hire plumber, gurgaon, hire cook in gurgaon, blueteam, hire security guard" />
     <meta name="author" content="BlueTeam" />
     <meta name="copyright" content="true" />
