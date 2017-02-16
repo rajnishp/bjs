@@ -69,8 +69,8 @@ else {
 
     <!-- for Twitter -->
     <!-- <meta name="twitter:card" content="n/a" /> -->
-    <meta name="twitter:site" content="@hireblueteam">
-    <meta name="twitter:creator" content="@hireblueteam">
+    <meta name="twitter:site" content="@blueteam_in">
+    <meta name="twitter:creator" content="@blueteam_in">
     <meta name="twitter:title" content="BlueTeam | Awesome Hiring Services, Hire maid, cook, baby sitter, electrician, plumber, security guard, driver, gardener at Affordable price." />
     <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->

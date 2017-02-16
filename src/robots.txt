@@ -1,0 +1,4 @@
+# robots.txt for http://www.blueteam.in/
+
+User-agent: *
+Disallow: /static/ # This is an infinite virtual URL space

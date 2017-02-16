@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <title>BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App</title>
+    <title>BlueTeam | 9599075355 |Awesome Hiring Services | Verified & Experienced | All Customer Services App</title>
 
     <!-- for Google -->
     <meta name="description" content="BlueTeam | 9599075355 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
@@ -17,7 +17,7 @@
     <meta name="application-name" content="website" />
 
     <!-- for Facebook -->
-    <meta property="og:title" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
+    <meta property="og:title" content="BlueTeam | 9599075355 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="og:author" content="BlueTeam" />
     <meta property="og:type" content="website"/>
 
@@ -30,10 +30,10 @@
 
     <!-- for Twitter -->
     <!-- <meta name="twitter:card" content="n/a" /> -->
-    <meta name="twitter:site" content="@hireblueteam">
-    <meta name="twitter:creator" content="@hireblueteam">
+    <meta name="twitter:site" content="@blueteam_in">
+    <meta name="twitter:creator" content="@blueteam_in">
     <meta name="twitter:url" content="<?= $this-> baseUrl ?>" />
-    <meta name="twitter:title" content="BlueTeam | 9599075955 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
+    <meta name="twitter:title" content="BlueTeam | 9599075355 |Awesome Hiring Services | Verified & Experienced | All Customer Services App" />
     <meta name="twitter:description" content="Hire high skilled, Background verified, experienced and certified professional services like maid, cook, electrician, plumber, baby sitter, gardener and more at affordable price." />
     <meta name="twitter:image" content="<?= $this-> baseUrl ?>static/images/logo.png" />
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
