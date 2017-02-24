@@ -223,7 +223,7 @@
                 <h3>Addresses</h3>
                 <span class="contact-info-icon yellowbg"><i class="fa fa-map-marker"></i></span>
                 <ul class="contact-info-list">
-                  <li>UGF-125, Vyapar Kendra, C-Block Sushant Lok-1,</li>
+                  <li>DLF,</li>
                   <li>Gurgaon, India</li>
                 </ul>
               </div><!-- End .contact-info-box -->
